@@ -1,0 +1,96 @@
+.article_body{
+	width: 100%;
+	/*height: 100px;*/
+	background: white;
+}
+.colorLine{
+	width: 100%;
+    height: 12px;
+    background: #D0D0D0;
+}
+
+.articleNames{
+	position: absolute;
+    top: -1px;
+	display: table;
+	border-collapse: collapse;
+}
+.articleNames .active{
+	background: #D0D0D0;
+    color: #616161;
+}
+.articleNames .disArt{
+	border: initial;
+    padding: 0px 5px;
+}
+.articleNames #newArticle{
+	padding: 0px 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.articleButNames{
+	display: table-cell;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9A9A9A;
+    border: 1px solid #D0D0D0;
+    padding: 3px 26px;
+    cursor: pointer;
+}
+.putData{
+	text-align: right;
+    font-weight: bold;
+    padding: 0px 7px;
+    margin-top: 10px;
+}
+.articleDesc{
+	display:table;
+	border-collapse: collapse;
+	width: 100%;
+}
+.articleDescTr{
+	display:table-cell;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.articleSEO{
+	border: 1px solid gray;
+    padding: 8px;
+    margin: 0px 5px;
+    background: #F3F3F3;
+}
+
+.pushTags{
+	font-size: 15px;
+}
+
+.addTags{
+	display: table;
+	margin-left: 10px;
+	border-collapse: collapse;
+}
+
+.addTagsTr{
+	display: table-cell;
+	border: 1px solid #4E3A33;
+}
+.addTags #butTags{
+    padding: 0px 7px;
+    font-size: 18px;
+    background: #4E3A33;
+    color: white;
+	cursor: pointer;
+}
+.addTags #inputTags{
+	position: absolute;
+}
+.readTags{
+	padding-left: 10px;
+}
+.readTags span{
+    background: #E6E6E6;
+    color: #464545;
+    margin: 0px 5px;
+    padding: 2px 5px;
+}
