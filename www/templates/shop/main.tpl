@@ -34,11 +34,12 @@
         <link rel="stylesheet" type="text/css" href="/templates/shop/css/katalog-style.css">
         <link rel="stylesheet" type="text/css" href="/templates/shop/css/fast_order.css">
         <link rel="stylesheet" type="text/css" href="/templates/shop/css/profile_new.css" >
+
         <link rel="stylesheet" href="/templates/shop/css/actions-style.css">
         <link rel="stylesheet" type="text/css" href="../../modules/online/style_chat.css"><!-- chat -->
-
+        <link rel="stylesheet" href="/templates/shop/css/main-cat.css">
         <link rel="stylesheet" href="/templates/shop/build/app.min.css">
-        <link rel="stylesheet" href="/templates/shop/fonts/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/templates/shop/fonts/css/font-awesome.min.css"> 
         
 
     </head>
