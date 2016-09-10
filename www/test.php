@@ -1,1 +1,1 @@
-<? phpinfi("ccc"); ?>
+<? phpinfi("heloo!!!"); ?>
