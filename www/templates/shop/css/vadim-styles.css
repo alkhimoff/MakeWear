@@ -1,0 +1,20 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/****** other */
+.wrap-color {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.2);
+}
+.gift-slider_home {
+	padding-bottom: 20px;
+}
+/****** tabs category */
+.tabs-wrap-category_home {
+	margin: 20px 0;
+}

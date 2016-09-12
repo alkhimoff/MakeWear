@@ -1,9 +1,6 @@
 .clear {
 	clear: both;
 }
-.tabs-wrap-category_home .insets-wrap {
-	margin-top: -100px;
-}
 .insets-wrap {
     width: 100%;
     background-color: #fff;
@@ -237,6 +234,55 @@
 .catalog_item:hover .catalog_image{
     opacity: .8;
 }
+.tabs-wrap-category_home {
+    font-family: "CenturyGothic";
+    position: relative;
+}
+.tabs-wrap-category_home > ul {
+    width: 100%;
+    position: relative;
+}
+.tabs-wrap-category_home > ul.side {
+    width: 225px;
+    left: -127px;
+    top: 160px;
+    position: absolute;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.tabs-wrap-category_home > ul .my-inset {
+    padding: 10px 8px 5px 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    text-transform: uppercase;
+}
+.tabs-wrap-category_home > ul .my-inset span {
+    position: relative;
+    top: -3px;
+}
+.tabs-wrap-category_home > ul .my-inset:not(:first-child) {
+    margin-left: -0.36em;
+}
+.tabs-wrap-category_home > ul .my-inset:hover {
+    color: #51a3af;
+}
+.tabs-wrap-category_home > ul .my-inset.active {
+    position: relative;
+    height: 29px;
+    border-bottom: 0;
+    padding: 10px 10px 5px 10px;
+    z-index: 1;
+    background-color: #fff;
+}
+.tabs-wrap-category_home > ul .my-inset.active:first-child{
+    /*border-left: 0px;*/
+}
 
 @media screen and (max-width: 800px) {
     .main-container.commodities .main-content .tabs-wrap-category .insets-wrap {
@@ -246,16 +292,3 @@
         padding: 10px 0 35px;
     }
 }
-
-.tabs-wrap-category_home {
-
-}
-.tabs-wrap-category_home .top li,
-.tabs-wrap-category_home .side li {
-	opacity: 0;
-} 
-.tabs-wrap-category_home .top,
-.tabs-wrap-category_home .side {
-	opacity: 0;
-}
-

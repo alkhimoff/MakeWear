@@ -84,16 +84,23 @@
             </div>
 
         </div>
-        
-        <div class="col-md-12 col-sm-12 col-xs-12" id="share-conteiner">
+    </div>
+    <!--main-container-->
+    
+    <div class="clear"></div>
+    <div class="main-width clearfix">
+        <div class="" id="share-conteiner">
             {$blockShares}
         </div>
-        <!--<div class="col-md-12 col-sm-12 col-xs-12" style="margin: 5px 0;padding: 0 5px;">
-            <a href="/organizer-sp/">
-                <img style="width: 100%;" src="http://makewear-images.azureedge.net/assets/sp-special.jpg">
-            </a>
-        </div>-->
-        <!-- about company -->
+    </div>
+    <!--<div class="col-md-12 col-sm-12 col-xs-12" style="margin: 5px 0;padding: 0 5px;">
+        <a href="/organizer-sp/">
+            <img style="width: 100%;" src="http://makewear-images.azureedge.net/assets/sp-special.jpg">
+        </a>
+    </div>-->
+    <!-- about company -->
+
+    <div class="main-content row main-width">
         <div class="col-md-12 col-sm-12 col-xs-12 company-container main-company">
             <div class="payment-and-delivery-text">О компании</div>
             <div class="company-content">

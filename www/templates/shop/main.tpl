@@ -19,28 +19,13 @@
         <meta name="mailru-domain" content="6NvZjl6IbuBXqfXo"/>
         <meta name="google-site-verification" content="zsFMvp2Y03QSY-jesjj4n2fEZ4eghq7Wp8VOZADpFI4"/>
         <meta name="interkassa-verification" content="5d2f67ad32c87e8b7e9d71b437035b83"/>
-        <!--nova verstka
-        <link href="/templates/shop/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/templates/shop/css/fonts.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/styles.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/jquery.rating.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/profile.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/jquery.formstyler.css" rel="stylesheet" type="text/css"> 
-        <link rel="stylesheet" type="text/css" href="/templates/shop/slick/slick.css"/> 
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/stylename.css"/> 
-        <link href="/templates/shop/css/magnific-popup.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-        <link href="/templates/shop/css/basket.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/katalog-style.css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/fast_order.css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/profile_new.css" >
-
-        <link rel="stylesheet" href="/templates/shop/css/actions-style.css">
-        <link rel="stylesheet" type="text/css" href="../../modules/online/style_chat.css"><!-- chat -->
+        
+        
         <link rel="stylesheet" href="/templates/shop/css/main-cat.css">
         <link rel="stylesheet" href="/templates/shop/build/app.min.css">
         <link rel="stylesheet" href="/templates/shop/fonts/css/font-awesome.min.css"> 
-        
+        <link rel="stylesheet" href="/templates/shop/css/style.css">
+        <link rel="stylesheet" href="/templates/shop/css/vadim-styles.css">
 
     </head>
     <body>
