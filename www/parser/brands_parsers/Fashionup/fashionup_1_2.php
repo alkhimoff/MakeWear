@@ -72,7 +72,7 @@ if ($existProd == TRUE) {
         $existProd = FALSE;
     } else {
         $price               = ceil($arrayIdUrl["price"] * $_SESSION['updatePrice']);
-        $price2              = ceil($arrayIdUrl["price2"] * 1.15);
+        $price2              = ceil($arrayIdUrl["price2"] * 1.3);
         $sizesProd           = $arrayIdUrl["colorSize"];
         $_SESSION["imgMain"] = $arrayIdUrl["imgMain"];
         if ($price == 0) {
