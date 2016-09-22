@@ -61,7 +61,7 @@
                     </li>
                 </ul>
                 <div class="insets-wrap">
-                {$wearWomen}
+               
                     <div class="wear-women all-insets active-inset" style="display: flex;">
                                     <div class="catalog_item category-name-font-large">
                     <div class="catalog_image" id="catalogue8">
