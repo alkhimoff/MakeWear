@@ -71,8 +71,8 @@
                                         <p>Сб-вс 10:00 - 18:00</p>
                                     </div>
                                     <div class="column">
-                                        <p>+38 (098) 474-22-82 <i class="icon icon-phone-operator1"></i></p>
-                                        <p>+38 (099) 098-00-82 <i class="icon icon-phone-operator2"></i></p>
+                                        <p>+38 (068) 098-49-71  <i class="icon icon-phone-operator1"></i></p>
+                                        <p>+38 (093) 381-34-72 <i class="icon icon-phone-operator2"></i></p>
                                         <p>info@makewear.com.ua</p>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                         <div class="col-md-5 col-sm-1 col-xs-12">
                             <div class="mail-wrap">
                                 <span>info@makewear.com.ua</span>
-                                <span>+38 (099) 098-00-82</span>
+                                <!--<span>+38 (099) 098-00-82</span>-->
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12">
