@@ -10,13 +10,13 @@
   font-weight: normal;
   font-style: normal;
 }
-/*@font-face {
+@font-face {
   font-family: 'helveticaneuecyrbold';
   src: url("../fonts/helveticaneuecyr-bold-webfont.eot");
   src: url("../fonts/helveticaneuecyr-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneuecyr-bold-webfont.woff2") format("woff2"), url("../fonts/helveticaneuecyr-bold-webfont.woff") format("woff"), url("../fonts/helveticaneuecyr-bold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}*/
+}
 @font-face {
   font-family: 'helveticaneuecyrmedium';
   src: url("../fonts/helveticaneuecyr-medium-webfont.eot");

@@ -79,21 +79,25 @@
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="write-us-form service-wrap">
-                                <div class="service-title">
+                            <div class="write-us-form main-feedback">
+                                <div class="main-feedback__title">
                                     <span>НАПИШИТЕ НАМ</span>
                                 </div>
-                                <form action="">
-                                    <div class="row__textarea">
-                                        <textarea name="message" maxlength="500"></textarea>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="row__input">
-                                        <input value="{$userEmail}" name="email" type="text" placeholder="e-mail" MAXLENGTH="64">
-                                        <a href="#" class="btn btn-green btn-3d">Отправить</a>
-                                    </div>
-                                </form>
+                                <div class="main-feedback-inner">
+                                    <form action="">
+                                        <div class="main-feedback-item _textarea">
+                                            <textarea class="form__field _textarea" name="message" maxlength="500"></textarea>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="main-feedback-item row__input">
+                                            <input class="form__field" value="{$userEmail}" name="email" type="text" placeholder="e-mail" MAXLENGTH="64">
+                                            <a href="#" class="btn btn-green btn-3d">Отправить</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--inner-->
                             </div>
+                            <!--main-feedback-->
                         </div>
                     </div>
                 </div>
