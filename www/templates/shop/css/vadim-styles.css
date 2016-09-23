@@ -136,3 +136,6 @@
 .main-feedback-item input::-webkit-input-placeholder {
   color: #D6D6D6;
 }
+.main-container .main-content .brand-item .info__top__column:first-child .name {
+  line-height: 14px!important;
+}

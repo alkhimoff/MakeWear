@@ -503,3 +503,141 @@ a.button span {
 .loaded .icon-load {
   display: block;
 }
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/****** other */
+.wrap-color {
+  background-color: #fff;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.gift-slider_home {
+  padding-bottom: 20px;
+}
+/****** tabs category */
+.tabs-wrap-category_home {
+  margin: 20px 0;
+}
+/* ====================================================
+   resset
+======================================================= */
+/****** fields */
+.form__field {
+  width: 175px;
+  height: 20px;
+  border: 1px solid #d3d3d3;
+  padding-left: 3px;
+  box-shadow: inset -1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+  line-height: 20px;
+  font-size: 11px;
+}
+.form__field._textarea {
+  border: 1px solid #c7c7c7;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+/****** buttons */
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 80px;
+  height: 20px;
+  margin-left: 10px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  float: right;
+  padding: 0;
+  border-radius: 0;
+  font-family: 'CenturyGothic';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #54a5b2;
+  border: none;
+}
+.button:hover {
+  background: #63adb7;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #63adb7), color-stop(100%, #4a949f));
+  background: -webkit-linear-gradient(top, #63adb7 0%, #4a949f 100%);
+  background: linear-gradient(to bottom, #63adb7 0%, #4a949f 100%);
+}
+/* ====================================================
+   independet block
+======================================================= */
+/****** main-feedback */
+.main-feedback {
+  width: 307px;
+  float: left;
+  margin-left: 30px;
+  padding: 10px 18px 12px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+}
+.main-feedback__title {
+  position: relative;
+  padding-bottom: 26px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-align: center;
+  line-height: 24px;
+  font-family: "CenturyGothic";
+  color: #2b2b2b;
+  text-transform: uppercase;
+}
+.main-feedback__title span {
+  position: relative;
+  display: inline-block;
+  padding: 0 16px;
+  z-index: 2;
+  background-color: #f2f2f2;
+}
+.main-feedback__title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 11px;
+  left: 0;
+  background-color: #b8b8b8;
+  z-index: 1;
+}
+.main-feedback-item {
+  padding-top: 8px;
+}
+.main-feedback-item._textarea {
+  height: 68px;
+}
+.main-feedback-item .btn {
+  margin-left: 10px;
+}
+.main-feedback-item input.placeholder {
+  color: #D6D6D6;
+}
+.main-feedback-item input:-moz-placeholder {
+  color: #D6D6D6;
+}
+.main-feedback-item input::-webkit-input-placeholder {
+  color: #D6D6D6;
+}

@@ -2853,9 +2853,12 @@ header .socialls-enter__network a.icon-odn:before {
 .main-container .main-content .brand-item .info__top__column:first-child .name {
   padding-bottom: 8px;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 14px; 
   font-family: "CenturyGothic";
   color: #fff;
+}
+.main-container .main-content .brand-item .info__top__column:first-child .name {
+  line-height: 14px!important;
 }
 .main-container .main-content .brand-item .info__top__column:first-child .quantity {
   font-size: 12px;
