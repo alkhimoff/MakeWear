@@ -136,10 +136,14 @@
 .main-feedback-item input::-webkit-input-placeholder {
   color: #D6D6D6;
 }
+/****** apdate styles */
 .main-container .main-content .brand-item .info__top__column:first-child .name {
   line-height: 14px!important;
 }
 #click-podarok,
 #click-regestration {
   display: none;
+}
+header .tech-info__item .out .out__info-block .pop-title .summ {
+  font-size: 13px;
 }
