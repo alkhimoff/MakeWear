@@ -2,22 +2,22 @@
         <div class="wrap-color gift-slider_home col-md-12 col-sm-12 col-xs-12 clearfix">
             <div class="col-md-12 col-sm-12 col-xs-12" id="gift-slider" dir='rtl'>
                 <div>
-                    <img src="{$photoDomain}banners/shock-2.jpg" alt="shock">
+                    <img src="/templates/shop/image/baner_comment_slider/shok1275х375.jpg" alt="shock">
                 </div>
                 <div>
                     <a href="/akcionnie-predlojeniya/#150gr/">
-                        <img src="{$photoDomain}banners/base4-c.jpg" alt="main-page-banner-4">
+                        <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="main-page-banner-4">
                     </a>
                     <button type="submit" id="click-regestration" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
                 </div>
                 <div>
                     <a href="/akcionnie-predlojeniya/#discount/">
-                        <img src="{$photoDomain}banners/base1-c1.jpg" alt="main-page-banner-1">
+                        <img src="/templates/shop/image/baner_comment_slider/vigruzka1275х375.jpg" alt="main-page-banner-1">
                     </a>
                 </div>
                 <div>
                     <a href="/akcionnie-predlojeniya/">
-                        <img src="{$photoDomain}banners/base2-c.jpg" alt="main-page-banner-2">
+                        <img src="/templates/shop/image/baner_comment_slider/dress-present1275х375.jpg" alt="main-page-banner-2">
                     </a>
                     <button type="submit" id="click-podarok" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
                 </div>
