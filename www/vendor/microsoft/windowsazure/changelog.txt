@@ -1,3 +1,7 @@
+Windows Azure SDK For PHP 0.4.4, 2016-08-16
+-------------------------------------------
+Added Widevine Base License Acquisition + FairPlay support 
+
 Windows Azure SDK For PHP 0.4.3, 2016-05-10
 -------------------------------------------
 - Updated PHP version requirement to >=5.5 for PHP Storage SDK (https://github.com/Azure/azure-storage-php)
@@ -13,6 +17,9 @@ To update your code for the new storage SDK, change
 "use WindowsAzure\Blob" to "use MicrosoftAzure\Storage\Blob", 
 "use WindowsAzure\Queue" to "use MicrosoftAzure\Storage\Queue"
 "use WindowsAzure\Table" to "use MicrosoftAzure\Storage\Table"
+
+If you use ServiceException for Storage API, you need to change "use WindowsAzure\Common\ServiceException" to "use MicrosoftAzure\Storage\Common\ServiceException". 
+This does not apply if use ServiceExpception in other APIs such as Media Services.
 
 For the following calls,
 ServicesBuilder::getInstance()->createTableService($connectionString) 

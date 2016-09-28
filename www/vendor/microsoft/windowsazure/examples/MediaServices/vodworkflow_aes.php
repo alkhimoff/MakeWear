@@ -45,9 +45,9 @@ use WindowsAzure\MediaServices\Models\AssetDeliveryPolicy;
 use WindowsAzure\MediaServices\Models\AssetDeliveryProtocol;
 use WindowsAzure\MediaServices\Models\AssetDeliveryPolicyType;
 use WindowsAzure\MediaServices\Models\AssetDeliveryPolicyConfigurationKey;
+use WindowsAzure\MediaServices\Templates\SymmetricVerificationKey;
 use WindowsAzure\MediaServices\Templates\TokenRestrictionTemplateSerializer;
 use WindowsAzure\MediaServices\Templates\TokenRestrictionTemplate;
-use WindowsAzure\MediaServices\Templates\SymmetricVerificationKey;
 use WindowsAzure\MediaServices\Templates\TokenClaim;
 use WindowsAzure\MediaServices\Templates\TokenType;
 
@@ -102,11 +102,11 @@ function uploadFileAndCreateAsset($restProxy, $mezzanineFileName)
 {
     // 1.1. create an empty "Asset" by specifying the name
     $asset = new Asset(Asset::OPTIONS_NONE);
-    $asset->setName('Mezzanine '.$mezzanineFileName);
+    $asset->setName('Mezzanine ' . basename($mezzanineFileName));
     $asset = $restProxy->createAsset($asset);
     $assetId = $asset->getId();
 
-    echo 'Asset created: name='.$asset->getName().' id='.$assetId."\r\n";
+    echo "Asset created: name={$asset->getName()} id={$assetId}\r\n";
 
     // 1.3. create an Access Policy with Write permissions
     $accessPolicy = new AccessPolicy('UploadAccessPolicy');
@@ -125,7 +125,7 @@ function uploadFileAndCreateAsset($restProxy, $mezzanineFileName)
     echo "Uploading...\r\n";
 
     // 1.6. use the 'uploadAssetFile' to perform a multi-part upload using the Block Blobs REST API storage operations
-    $restProxy->uploadAssetFile($sasLocator, $mezzanineFileName, $fileContent);
+    $restProxy->uploadAssetFile($sasLocator, basename($mezzanineFileName), $fileContent);
 
     // 1.7. notify Media Services that the file upload operation is done to generate the asset file metadata
     $restProxy->createFileInfos($asset);
@@ -284,7 +284,7 @@ function createAssetDeliveryPolicy($restProxy, $encodedAsset, $contentKey)
     // 5.2 Generate the AssetDeliveryPolicy Configuration Key
     $randomKey = Utilities::generateCryptoKey(16);
     $configuration = [AssetDeliveryPolicyConfigurationKey::ENVELOPE_KEY_ACQUISITION_URL => $acquisitionUrl,
-                      AssetDeliveryPolicyConfigurationKey::ENVELOPE_ENCRYPTION_IV_AS_BASE64 => base64_encode($randomKey), ];
+                      AssetDeliveryPolicyConfigurationKey::ENVELOPE_ENCRYPTION_IV_AS_BASE64 => base64_encode($randomKey)];
     $confJson = AssetDeliveryPolicyConfigurationKey::stringifyAssetDeliveryPolicyConfiguartionKey($configuration);
 
     // 5.3 Create the AssetDeliveryPolicy
@@ -369,3 +369,5 @@ function endsWith($haystack, $needle)
 
     return substr($haystack, -$length) === $needle;
 }
+
+?>

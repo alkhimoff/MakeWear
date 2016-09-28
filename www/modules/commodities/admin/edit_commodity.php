@@ -6,7 +6,7 @@ if ($_SESSION['status'] == "admin") {
 	$_SESSION["lastpage2"] = "/?admin=all_commodities";
 	if (isset($_GET["commodityID"])) {
 		$commodityID = $_GET["commodityID"];
-//        creatfolder("images/commodities/{$commodityID}");
+        creatfolder("images/commodities/{$commodityID}");
 		if (isset($_POST["add_commodity"])) {
 			$_SESSION["lastpage"] = $request_url;
 			$an_n                 = $_POST['name'];

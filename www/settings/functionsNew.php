@@ -404,6 +404,9 @@ if (false) {
 }
 
 function creatfolder($url) {
+    
+    global $glb;
+    
     if ($glb["use_ftp"]) {
         $ftp_conn = ftp_connect($gallery_domen);
         $ftp_log = ftplogin($ftp_conn);
@@ -412,7 +415,7 @@ function creatfolder($url) {
         if ($glb["use_ftp"]) {
             ftp_mkdir($ftp_conn, $parrent_dir . "/" . $url);
         } else {
-//            mkdir($url);
+            mkdir($url);
         }
     }
     $_SESSION["upload_dir"] = $url;
@@ -429,7 +432,7 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
      */
     global $parrent_dir, $gallery_domen, $glb;
 
-
+  //  $glb["use_ftp"] = true;
 
     $wm = ($glb["watermark"] == 0) ? 0 : $wm;
     $dest = "uploads/temp_image.jpg";
@@ -444,7 +447,7 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
             if ($glb["use_ftp"]) {
                 ftp_mkdir($ftp_conn, $parrent_dir . "/images/{$prefix}/{$item_id}");
             } else {
-//                mkdir("images/{$prefix}/{$item_id}");
+                mkdir("images/{$prefix}/{$item_id}");
             }
         }
         if ($url == "") {
@@ -511,7 +514,12 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
                     $new_left = $use_x_ratio ? 0 : floor(($new_img_x - $new_width) / 2);
                     $new_top = !$use_x_ratio ? 0 : floor(($new_img_y - $new_height) / 2);
                     $isrc = $icfunc($dest);
-                    $idest = imagecreatetruecolor($new_img_x, $new_img_y);
+    if($new_img_x == null){
+        $new_img_x = 670;
+        $new_img_y = 1024;
+    } 
+                    $idest = imagecreatetruecolor($new_img_x, $new_img_y)
+                        or die('Невозможно инициализировать GD поток');
                     if ($format == "png") {
                         imageAlphaBlending($idest, false);
                         imageSaveAlpha($idest, true);
@@ -562,6 +570,9 @@ function getnewimg_uploadify($type = 1, $x, $y, $prefix, $item_id, $new_file_nam
     $dest = "uploads/temp_image.jpg";
     $src = "images/{$prefix}/{$item_id}/" . $new_file_name;
     $path = "/" . $src;
+    
+   // $glb["use_ftp"] = true;
+    
     if (isset($_FILES["Filedata"])) {
         if ($glb["use_ftp"]) {
             $ftp_conn = ftp_connect($gallery_domen);
@@ -571,7 +582,7 @@ function getnewimg_uploadify($type = 1, $x, $y, $prefix, $item_id, $new_file_nam
             if ($glb["use_ftp"]) {
                 ftp_mkdir($ftp_conn, $parrent_dir . "/images/{$prefix}/{$item_id}");
             } else {
-                //die("images/{$prefix}/");
+                die("images/{$prefix}/");
                 mkdir($_SERVER['DOCUMENT_ROOT'] . "/images/{$prefix}/{$item_id}");
             }
         }
@@ -582,7 +593,7 @@ function getnewimg_uploadify($type = 1, $x, $y, $prefix, $item_id, $new_file_nam
         $error_flag = $_FILES["Filedata"]["error"];
 
 
-        //	ini_set('display_errors',1);
+//ini_set('display_errors',1);
 //error_reporting(E_ALL ^E_NOTICE);
 
 

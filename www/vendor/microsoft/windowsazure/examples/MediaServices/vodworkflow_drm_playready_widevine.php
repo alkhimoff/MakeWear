@@ -54,9 +54,9 @@ use WindowsAzure\MediaServices\Templates\AllowedTrackTypes;
 use WindowsAzure\MediaServices\Templates\ContentKeySpecs;
 use WindowsAzure\MediaServices\Templates\RequiredOutputProtection;
 use WindowsAzure\MediaServices\Templates\Hdcp;
+use WindowsAzure\MediaServices\Templates\SymmetricVerificationKey;
 use WindowsAzure\MediaServices\Templates\TokenRestrictionTemplateSerializer;
 use WindowsAzure\MediaServices\Templates\TokenRestrictionTemplate;
-use WindowsAzure\MediaServices\Templates\SymmetricVerificationKey;
 use WindowsAzure\MediaServices\Templates\TokenClaim;
 use WindowsAzure\MediaServices\Templates\TokenType;
 use WindowsAzure\MediaServices\Templates\WidevineMessageSerializer;
@@ -111,11 +111,11 @@ function uploadFileAndCreateAsset($restProxy, $mezzanineFileName)
 {
     // 1.1. create an empty "Asset" by specifying the name
     $asset = new Asset(Asset::OPTIONS_NONE);
-    $asset->setName('Mezzanine '.$mezzanineFileName);
+    $asset->setName('Mezzanine ' . basename($mezzanineFileName));
     $asset = $restProxy->createAsset($asset);
     $assetId = $asset->getId();
 
-    echo 'Asset created: name='.$asset->getName().' id='.$assetId."\r\n";
+    echo "Asset created: name={$asset->getName()} id={$assetId}\r\n";
 
     // 1.3. create an Access Policy with Write permissions
     $accessPolicy = new AccessPolicy('UploadAccessPolicy');
@@ -134,7 +134,7 @@ function uploadFileAndCreateAsset($restProxy, $mezzanineFileName)
     echo "Uploading...\r\n";
 
     // 1.6. use the 'uploadAssetFile' to perform a multi-part upload using the Block Blobs REST API storage operations
-    $restProxy->uploadAssetFile($sasLocator, $mezzanineFileName, $fileContent);
+    $restProxy->uploadAssetFile($sasLocator, basename($mezzanineFileName), $fileContent);
 
     // 1.7. notify Media Services that the file upload operation is done to generate the asset file metadata
     $restProxy->createFileInfos($asset);
@@ -317,11 +317,16 @@ function createAssetDeliveryPolicy($restProxy, $encodedAsset, $contentKey)
 {
     // 5.1 Get the acquisition URL
     $acquisitionUrl = $restProxy->getKeyDeliveryUrl($contentKey, ContentKeyDeliveryType::PLAYREADY_LICENSE);
-    $widevineURl = $restProxy->getKeyDeliveryUrl($contentKey, ContentKeyDeliveryType::WIDEVINE);
+    $widevineUrl = $restProxy->getKeyDeliveryUrl($contentKey, ContentKeyDeliveryType::WIDEVINE);
+
+    // remove query string
+    if (strpos($widevineUrl, '?') !== false) {
+        $widevineUrl = substr($widevineUrl, 0, strrpos($widevineUrl, "?"));
+    }
 
     // 5.2 Generate the AssetDeliveryPolicy Configuration Key
     $configuration = [AssetDeliveryPolicyConfigurationKey::PLAYREADY_LICENSE_ACQUISITION_URL => $acquisitionUrl,
-                      AssetDeliveryPolicyConfigurationKey::WIDEVINE_LICENSE_ACQUISITION_URL => $widevineURl, ];
+                      AssetDeliveryPolicyConfigurationKey::WIDEVINE_BASE_LICENSE_ACQUISITION_URL => $widevineUrl];
     $confJson = AssetDeliveryPolicyConfigurationKey::stringifyAssetDeliveryPolicyConfiguartionKey($configuration);
 
     // 5.3 Create the AssetDeliveryPolicy
@@ -455,7 +460,6 @@ function generateTokenRequirements($tokenType)
 
 function generateTestToken($tokenTemplateString, $contentKey)
 {
-    $template = TokenRestrictionTemplateSerializer::deserialize($tokenTemplateString);
     $contentKeyUUID = substr($contentKey->getId(), strlen('nb:kid:UUID:'));
     $expiration = strtotime('+12 hour');
     $token = TokenRestrictionTemplateSerializer::generateTestToken($template, null, $contentKeyUUID, $expiration);
@@ -472,3 +476,5 @@ function endsWith($haystack, $needle)
 
     return substr($haystack, -$length) === $needle;
 }
+
+?>

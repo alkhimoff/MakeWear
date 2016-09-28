@@ -43,9 +43,9 @@ Microsoft Azure tables, blobs, queues, service bus (queues and topics), service 
   * Encoding / process asset, create job, job templates
   * Manage media services entities: create / update / read / delete / get list
   * Delivery SAS and Streaming media content
-  * Dynamic encryption: AES and DRM (PlayReady/Widevine) with and without Token restriction
+  * Dynamic encryption: AES and DRM (PlayReady/Widevine/FairPlay) with and without Token restriction
   * Scale encoding reserved unit type
-  * REST API Version: 2.11
+  * REST API Version: 2.12
 
   
 # Getting Started
@@ -694,7 +694,7 @@ Erase entities with methods like “deleteAsset”, “deleteAccessPolicy”, �
 
 Also you could get linked entities with methods “getAssetLocators”, “getAssetParentAssets”, “getAssetStorageAccount”, “getLocatorAccessPolicy”, “getJobTasks” and etc. passing the entity identifier or entity data model object with non-empty identifier as a parameter.
 
-The complete list of all methods available you could find in [IMediaServices](WindowsAzure/MediaServices/Internal/IMediaServices.php) interface.
+The complete list of all methods available you could find in [IMediaServices](src/MediaServices/Internal/IMediaServices.php) interface.
 
 **For more examples please see the [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php)**
 
@@ -712,3 +712,6 @@ If you encounter any bugs with the library please file an issue in the [Issues](
 
 # Learn More
 [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php/)
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
