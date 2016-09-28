@@ -514,12 +514,14 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
                     $new_left = $use_x_ratio ? 0 : floor(($new_img_x - $new_width) / 2);
                     $new_top = !$use_x_ratio ? 0 : floor(($new_img_y - $new_height) / 2);
                     $isrc = $icfunc($dest);
-    if($new_img_x == null){
+  /*
+    if($new_img_x == null || $new_img_y == null){
         $new_img_x = 670;
         $new_img_y = 1024;
     } 
-                    $idest = imagecreatetruecolor($new_img_x, $new_img_y)
-                        or die('Невозможно инициализировать GD поток');
+    */
+                    $idest = imagecreatetruecolor($new_img_x, $new_img_y);
+                       // or die('Невозможно инициализировать GD поток');
                     if ($format == "png") {
                         imageAlphaBlending($idest, false);
                         imageSaveAlpha($idest, true);
@@ -571,7 +573,7 @@ function getnewimg_uploadify($type = 1, $x, $y, $prefix, $item_id, $new_file_nam
     $src = "images/{$prefix}/{$item_id}/" . $new_file_name;
     $path = "/" . $src;
     
-   // $glb["use_ftp"] = true;
+  //  $glb["use_ftp"] = true;
     
     if (isset($_FILES["Filedata"])) {
         if ($glb["use_ftp"]) {
@@ -593,8 +595,8 @@ function getnewimg_uploadify($type = 1, $x, $y, $prefix, $item_id, $new_file_nam
         $error_flag = $_FILES["Filedata"]["error"];
 
 
-//ini_set('display_errors',1);
-//error_reporting(E_ALL ^E_NOTICE);
+ini_set('display_errors',1);
+error_reporting(E_ALL ^E_NOTICE);
 
 
         if ($error_flag == 0) {

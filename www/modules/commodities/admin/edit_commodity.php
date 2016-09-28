@@ -34,9 +34,14 @@ if ($_SESSION['status'] == "admin") {
 			$cur_id               = $_POST["cur_id"];
 			$alvaColors           = '';
 			$use_photo            = $_POST["use_photo"];
+                    
+                        $comitemst   = 1;    //     = $_POST["comitemst"];  // in the future should be replaced by values from db
+                        $comitemsx   = 648;  //     = $_POST["comitemsx"];  // in the future should be replaced by values from db
+                        $comitemsy   = 1024; //     = $_POST["comitemsy"];  // in the future should be replaced by values from db
+     
 			$an_bp                = getnewimg(1, 1024, 1024, "commodities",
 					$commodityID, "title.jpg", 1) && getnewimg($comitemst,
-					$comitemsx, $comitemsy, "commodities", $commodityID,
+					$comitemsx, $comitemsy, "commodities", $commodityID,   
 					"s_title.jpg", 1);
 			$bp_update            = ($an_bp) || ($use_photo == 1) ? ", `commodity_bigphoto`='1'"
 				: ", `commodity_bigphoto`=''";
