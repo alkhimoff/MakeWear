@@ -1767,7 +1767,7 @@ header .tech-info__item .out .out__info-block .pop-title:first-child {
   padding-bottom: 2px;
 }
 header .tech-info__item .out .out__info-block .pop-title .summ {
-  font-size: 14px;
+  font-size: 13px;
   padding: 0 5px;
   font-weight: bold;
   margin: 0 -0.36em;
@@ -2857,9 +2857,7 @@ header .socialls-enter__network a.icon-odn:before {
   font-family: "CenturyGothic";
   color: #fff;
 }
-.main-container .main-content .brand-item .info__top__column:first-child .name {
-  line-height: 14px!important;
-}
+
 .main-container .main-content .brand-item .info__top__column:first-child .quantity {
   font-size: 12px;
   line-height: 14px;
