@@ -64,6 +64,9 @@ $(document).ready(function () {
         checkAndHideOptPrices();
         getBrandCategories();
         redirectToCatalogueByFilter();
+        getCategoryBrands();
+        tabFieldsForCategories();
+        redirectToCatalogueByFilter();
     } else if (location.pathname.match('\/c[0-9]{2,}') &&
             location.pathname.match('&menu')
             ) {
