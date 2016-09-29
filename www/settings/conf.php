@@ -32,7 +32,8 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
 
 //фото домен
-define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
+define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+//define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
 //cdn     - http://makewear-images.azureedge.net/
 //storage - https://makewear.blob.core.windows.net/
 
