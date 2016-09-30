@@ -6,6 +6,16 @@
     visibility: hidden;
 }
 
+/**
+ * Всякие заготовки
+ */
+.transition (@property: all, @duration: 0.25s, @function:linear, @delay:0s){
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+
 /****** other */
 .wrap-color {
     background-color: #fff;
@@ -85,6 +95,24 @@
 	    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#63adb7),color-stop(100%,#4a949f));
 	    background: -webkit-linear-gradient(top,#63adb7 0%,#4a949f 100%);
 	    background: linear-gradient(to bottom,#63adb7 0%,#4a949f 100%);
+    }
+}
+.button_hide {
+    margin: 10px auto 0;
+    display: table;
+    background-color: #54A5B2;
+    height: 35px;
+    color: #fff;
+    padding: 0 25px;
+    line-height: 35px;
+    .transition();
+    &._hidden {
+        display: none;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.7;
     }
 }
 
@@ -167,4 +195,8 @@
 }
 header .tech-info__item .out .out__info-block .pop-title .summ {
     font-size: 13px;  
+}
+.insets-wrap {
+    overflow: hidden;
+    height: 699px;
 }
