@@ -689,7 +689,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
 //                   Функции  записи кардо
 //==============================================================================
 //Cardo ONLY
-function insertCardo($mysqli, $comCount, $commodityID)
+/*function insertCardo($mysqli, $comCount, $commodityID)
 {
     $comCountArr = explode(";", $comCount);
     array_pop($comCountArr);
@@ -720,7 +720,7 @@ function insertCardo($mysqli, $comCount, $commodityID)
  * @param type $getCookie
  * @return type
  */
- function getWebPage($url, $getCookie)
+/* function getWebPage($url, $getCookie)
   {
   $options = array(
   CURLOPT_URL => $url,
@@ -760,7 +760,7 @@ function insertCardo($mysqli, $comCount, $commodityID)
  * регестрируемся Cardo
  * @param type $url
  */
- function loginCardo($url)
+/* function loginCardo($url)
   {
   getCurrensyCardo("http://cardo-ua.com/changecurrency.php?rand=1457530350103");
   $ch = curl_init();
@@ -791,13 +791,13 @@ function insertCardo($mysqli, $comCount, $commodityID)
   (__DIR__).'/brands_parsers/Cardo/cookie.txt');
   $result = curl_exec($ch);
   curl_close($ch);
-  } 
+  } */
 
 /**
  * Выбираем курс грн для кардо
  * @param type $url
  */
- function getCurrensyCardo($url)
+/* function getCurrensyCardo($url)
   {
   $ch = curl_init();
   if (strtolower((substr($url, 0, 5)) == 'https')) { // если соединяемся с https
@@ -824,12 +824,12 @@ function insertCardo($mysqli, $comCount, $commodityID)
   (__DIR__).'/brands_parsers/Cardo/cookie_cur.txt');
   $result = curl_exec($ch);
   curl_close($ch);
-  } 
+  } */
 
 //------------------------------------------------------------------------------
 // Проверяем читаеться ли ссылка если да создаем обьект нокогири            3
 //------------------------------------------------------------------------------
- function createNokogiriObject($curLink, $getCookie)
+/* function createNokogiriObject($curLink, $getCookie)
   {
   $resultArray = getWebPage($curLink, $getCookie);
   if (($resultArray['errno'] != 0 ) || ($resultArray['http_code'] != 200)) {
@@ -846,7 +846,7 @@ function insertCardo($mysqli, $comCount, $commodityID)
   $result = array($saw, $resultArray);
   }
   return $result;
-  } 
+  } */
 
 //==============================================================================
 //                   Функции для отчета и интерфейса
@@ -854,7 +854,7 @@ function insertCardo($mysqli, $comCount, $commodityID)
 //------------------------------------------------------------------------------
 //                          создаем файл отчета                          1
 //------------------------------------------------------------------------------
-function createFileReport($nameReport)
+/*function createFileReport($nameReport)
 {
     $date        = new \DateTime('now');
     $day         = $date->format('d_M');
@@ -867,26 +867,26 @@ function createFileReport($nameReport)
     fwrite($fp,
         "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан</h4>");
     fclose($fp);
-}
+}*/
 
 //------------------------------------------------------------------------------
 //                      Записать в файл отчета                          2
 //------------------------------------------------------------------------------
-function writeContentInReport()
+/*function writeContentInReport()
 {
     $content = ob_get_contents();
     file_put_contents($_SESSION['filename'], $content, FILE_APPEND);
     ob_flush();
     ob_end_clean();
     return $content;
-}
+}*/
 //==============================================================================
 //                   Функции для обработки XML
 //==============================================================================
 //------------------------------------------------------------------------------
 //                      Создаем файл XML                          1
 //------------------------------------------------------------------------------
-function createXmlFileAll($sawXml, $xmlPathAll)
+/*function createXmlFileAll($sawXml, $xmlPathAll)
 {
     $xmlstr = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -932,4 +932,4 @@ function xmlpattern($xml)
     $pattern = "'<\?xml.*?>'si";
     $content = preg_replace($pattern, '', $xml);
     return $content;
-}
+}*/

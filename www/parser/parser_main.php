@@ -47,7 +47,9 @@ session_start();
 
     if (isset($step) && $step == 0 && $step != "") {
         //Сохраняем массив ссылок на товар
+        
         $linkArray  = explode(" ", trim($_SESSION["links"]));
+        $tmp = count($linkArray);
         $linkArray  = array_values(array_unique($linkArray));
         $linkArray  = array_combine(array_merge(array_slice(array_keys($linkArray),
                     1), array(count($linkArray))), array_values($linkArray));
@@ -269,11 +271,13 @@ session_start();
             $insert  = FALSE;
             $content = $report->reportEnd();
 
+      echo '************************************** parser_main.pnp - str 274' . '<br>';
+            
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
                 $content, $insert);
             //die("end");
             //Рендирим на новыю ссылку товара
-            ?><meta http-equiv="refresh" content="0;URL=http://<?php echo $requestUrl ?>"><?php
+            ?><meta http-equiv="refresh" content="3;URL=http://<?php echo $requestUrl ?>"><?php
         }
     }
     ?>

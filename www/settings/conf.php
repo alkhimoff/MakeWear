@@ -32,8 +32,9 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
 
 //фото домен
-define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+//define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
 //define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
+define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
 //cdn     - http://makewear-images.azureedge.net/
 //storage - https://makewear.blob.core.windows.net/
 
@@ -48,7 +49,7 @@ $glb = array();
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_host"]            = "13.94.255.147"; // 13.94.255.147 // 127.0.0.1
+$glb["db_host"]            = "127.0.0.1"; // 13.94.255.147 // 127.0.0.1
 $glb["db_basename"]        = "test_zoond_make"; 
 $glb["db_user"]            = "test_zoond_make";
 
