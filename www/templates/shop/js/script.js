@@ -29,6 +29,14 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+//блокировка корзины если она пустая
+$(".pjax-basket").click(function() {
+	if(document.getElementById("countproduct").innerHTML == '0'){
+		return false;
+	}else{
+		return true;
+	}
+});
 $(document).ready(function () {
 
     //1-часто используемые обьекты Dom
