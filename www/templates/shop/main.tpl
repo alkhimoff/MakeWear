@@ -201,7 +201,7 @@
                                             <a href='' class="pjax-basket">
                                                 <div class="pop-title">
                                                     <span>Товаров:</span>
-                                                    <span class="number">0</span>
+                                                    <span id="countproduct" class="number">0</span>
                                                 </div>
                                                 <div class="pop-title">
                                                     <span>на</span>
