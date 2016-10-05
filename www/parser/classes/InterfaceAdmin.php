@@ -217,7 +217,6 @@ class InterfaceAdmin
      */
     public function setInterfaceParser($step, $content, $insert)
     {
-        try{
             $this->step     = $step;
             $this->content  = $content;
             $onePercent     = $this->couLinks / 100;
@@ -238,10 +237,6 @@ class InterfaceAdmin
             } else {
                 $this->updateParserProggress();
             }
-        }catch(Exception $ex){
-            echo 'Ошибка в InterfaceAdmin->setInterfaceParser()' . '<br>';
-            var_dump($ex->getMessage());
-        }
     }
 
     /**

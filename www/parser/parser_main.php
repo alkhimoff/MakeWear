@@ -49,7 +49,6 @@ session_start();
         //Сохраняем массив ссылок на товар
         
         $linkArray  = explode(" ", trim($_SESSION["links"]));
-        $tmp = count($linkArray);
         $linkArray  = array_values(array_unique($linkArray));
         $linkArray  = array_combine(array_merge(array_slice(array_keys($linkArray),
                     1), array(count($linkArray))), array_values($linkArray));
@@ -233,7 +232,7 @@ session_start();
                 if ($mysqli->errno) {
                     die('Update shop_commodity SET alias Error ('.$mysqli->errno.') '.$mysqli->error);
                 }
-
+/**/
                 //вызываем обработку и запись фоток
                 $resultImageArray = writeImage($idBrand, $curLink, $saw,
                     $commodityID, $mysqli, $verify);
@@ -245,7 +244,7 @@ session_start();
                     $comCount, $comFullDesc);
 
                 $_SESSION['linkArrayCom'][$curLink] = $commodityID;
-                $insert                             = TRUE;
+                $insert                             = TRUE;            
             } else {
 
                 //Выводим отчет если дубликат или нет в наличие
@@ -270,8 +269,6 @@ session_start();
             //записываем данные в файл отчета и в интерфейс
             $insert  = FALSE;
             $content = $report->reportEnd();
-
-      echo '************************************** parser_main.pnp - str 274' . '<br>';
             
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
                 $content, $insert);

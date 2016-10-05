@@ -25,9 +25,9 @@
 
 namespace Tests\unit\WindowsAzure\Common\Internal\Authentication;
 
-use Tests\Mock\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthSchemeMock;
+use Tests\mock\WindowsAzure\Common\Internal\Authentication\TableSharedKeyLiteAuthSchemeMock;
 use WindowsAzure\Common\Internal\Resources;
-use Tests\Framework\TestResources;
+use Tests\framework\TestResources;
 
 /**
  * Unit tests for TableSharedKeyLiteAuthScheme class.
@@ -36,7 +36,7 @@ use Tests\Framework\TestResources;
  * @copyright  2012 Microsoft Corporation
  * @license    http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.4_2016-08
+ * @version   Release: 0.4.5_2016-09
  *
  * @link       https://github.com/windowsazure/azure-sdk-for-php
  */

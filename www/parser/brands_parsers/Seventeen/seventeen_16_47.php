@@ -30,12 +30,14 @@ if (isset($arrayExist)) {
     $pos  = strpos($arrayExist[0], "Нет в наличии!");
     $pos1 = strpos($arrayExist[0], "Замена цвет");
     $pos2 = strpos($arrayExist[0], "Ожидается");
+    $pos2 = strpos($arrayExist[0], "Ожидается");
 
     if ($pos !== false || $pos1 !== FALSE || $pos2 !== FALSE) {
         $existProd = FALSE;
     }
+    
     $arrayProperty = $saw->get('span.newprice')->toArray();
-    if (!empty($arrayProperty)) {
+    if (empty($arrayProperty)) { ///!
         $existProd = FALSE;
     }
 }
@@ -48,6 +50,7 @@ $arrayPrice = checkEmptyOrChangeSelector('.id-good-'.$codPrice.'-price', $saw,
 //var_dump($arrayPrice);
 
 if (isset($arrayPrice)) {
+    $existProd = TRUE;      ///!
     $regexp = '/[^0-9]/';
     $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
     $price2 = ceil(1.15 * $price2);

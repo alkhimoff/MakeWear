@@ -312,7 +312,7 @@ function insertNewLinksInDb($report, $linksArr, $mysqli, $idBrand, $updateData)
 
     //записываем в интерфейс фдминки
     InterfaceAdmin::init($idBrand, $couLinks)->setInterfaceSpider($countNewLinks);
-    var_dump('*** ' . $updateData["from_url"]);
+   // var_dump('*** ' . $updateData["from_url"]);
 }
 
 /**

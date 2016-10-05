@@ -98,51 +98,6 @@
         "abandoned": "guzzlehttp/guzzle"
     },
     {
-        "name": "firebase/php-jwt",
-        "version": "v3.0.0",
-        "version_normalized": "3.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/firebase/php-jwt.git",
-            "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/firebase/php-jwt/zipball/fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1",
-            "reference": "fa8a06e96526eb7c0eeaa47e4f39be59d21f16e1",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2015-07-22 18:31:08",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Firebase\\JWT\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Neuman Vong",
-                "email": "neuman+pear@twilio.com",
-                "role": "Developer"
-            },
-            {
-                "name": "Anant Narayanan",
-                "email": "anant@php.net",
-                "role": "Developer"
-            }
-        ],
-        "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
-        "homepage": "https://github.com/firebase/php-jwt"
-    },
-    {
         "name": "pear/pear_exception",
         "version": "v1.0.0",
         "version_normalized": "1.0.0.0",
@@ -922,72 +877,6 @@
         ]
     },
     {
-        "name": "microsoft/windowsazure",
-        "version": "v0.4.4",
-        "version_normalized": "0.4.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Azure/azure-sdk-for-php.git",
-            "reference": "8ce9ca6ee3018d1134b5babdf9ea05b163e668d0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Azure/azure-sdk-for-php/zipball/8ce9ca6ee3018d1134b5babdf9ea05b163e668d0",
-            "reference": "8ce9ca6ee3018d1134b5babdf9ea05b163e668d0",
-            "shasum": ""
-        },
-        "require": {
-            "firebase/php-jwt": "^3.0",
-            "microsoft/azure-storage": "^0.10",
-            "pear/http_request2": "^2.3",
-            "pear/mail_mime": "^1.10",
-            "pear/mail_mime-decode": "^1.5",
-            "pear/net_url2": "^2.2",
-            "php": ">=5.5"
-        },
-        "require-dev": {
-            "fabpot/php-cs-fixer": "^1.11",
-            "mayflower/php-codebrowser": "^1.1",
-            "mikey179/vfsstream": "^1.6",
-            "pdepend/pdepend": "^2.2",
-            "phpdocumentor/phpdocumentor": "^2.8",
-            "phploc/phploc": "^2.1",
-            "phpmd/phpmd": "^2.4",
-            "phpunit/phpunit": "^4.8",
-            "sebastian/phpcpd": "^2.0",
-            "squizlabs/php_codesniffer": "^2.6"
-        },
-        "time": "2016-08-15 18:08:43",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "0.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "WindowsAzure\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "Apache-2.0"
-        ],
-        "authors": [
-            {
-                "name": "Azure PHP SDK",
-                "email": "azurephpsdk@microsoft.com"
-            }
-        ],
-        "description": "This project provides a set of PHP client libraries that make it easy to access Windows Azure tables, blobs, queues, service runtime and service management APIs.",
-        "keywords": [
-            "azure",
-            "php",
-            "sdk"
-        ]
-    },
-    {
         "name": "olamedia/nokogiri",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -1189,6 +1078,117 @@
             "grid",
             "send",
             "sendgrid"
+        ]
+    },
+    {
+        "name": "firebase/php-jwt",
+        "version": "v4.0.0",
+        "version_normalized": "4.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/firebase/php-jwt.git",
+            "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/firebase/php-jwt/zipball/dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
+            "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-07-18 04:51:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Firebase\\JWT\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Neuman Vong",
+                "email": "neuman+pear@twilio.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Anant Narayanan",
+                "email": "anant@php.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+        "homepage": "https://github.com/firebase/php-jwt"
+    },
+    {
+        "name": "microsoft/windowsazure",
+        "version": "v0.4.5",
+        "version_normalized": "0.4.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Azure/azure-sdk-for-php.git",
+            "reference": "4302dfd630b577e58d97e23b13b1cf37b6477eb1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Azure/azure-sdk-for-php/zipball/4302dfd630b577e58d97e23b13b1cf37b6477eb1",
+            "reference": "4302dfd630b577e58d97e23b13b1cf37b6477eb1",
+            "shasum": ""
+        },
+        "require": {
+            "firebase/php-jwt": "^4.0",
+            "microsoft/azure-storage": "^0.10",
+            "pear/http_request2": "^2.3",
+            "pear/mail_mime": "^1.10",
+            "pear/mail_mime-decode": "^1.5",
+            "pear/net_url2": "^2.2",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^1.11",
+            "mayflower/php-codebrowser": "^1.1",
+            "mikey179/vfsstream": "^1.6",
+            "pdepend/pdepend": "^2.2",
+            "phpdocumentor/phpdocumentor": "^2.8",
+            "phploc/phploc": "^2.1",
+            "phpmd/phpmd": "^2.4",
+            "phpunit/phpunit": "^4.8",
+            "sebastian/phpcpd": "^2.0",
+            "squizlabs/php_codesniffer": "^2.6"
+        },
+        "time": "2016-09-26 21:33:08",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WindowsAzure\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Azure PHP SDK",
+                "email": "azurephpsdk@microsoft.com"
+            }
+        ],
+        "description": "This project provides a set of PHP client libraries that make it easy to access Windows Azure tables, blobs, queues, service runtime and service management APIs.",
+        "keywords": [
+            "azure",
+            "php",
+            "sdk"
         ]
     }
 ]

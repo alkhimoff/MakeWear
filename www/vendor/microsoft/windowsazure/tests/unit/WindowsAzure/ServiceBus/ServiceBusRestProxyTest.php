@@ -25,7 +25,7 @@
 
 namespace Tests\unit\WindowsAzure\ServiceBus;
 
-use Tests\Framework\ServiceBusRestProxyTestBase;
+use Tests\framework\ServiceBusRestProxyTestBase;
 use WindowsAzure\Common\ServiceException;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\ServiceBus\ServiceBusRestProxy;
@@ -50,7 +50,7 @@ use WindowsAzure\ServiceBus\Models\TopicInfo;
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.4_2016-08
+ * @version   Release: 0.4.5_2016-09
  *
  * @link      https://github.com/WindowsAzure/azure-sdk-for-php
  */

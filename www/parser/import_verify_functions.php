@@ -45,7 +45,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
 
     if ($srcProdArray['mainSrcImg'] !== "" && isset($srcProdArray['mainSrcImg'])) {
 
-        $path   = 'uploads/temp_image.jpg';
+        $path   = '../uploads/temp_image.jpg';
         $handle = file_get_contents($srcProdArray['mainSrcImg']);
         if ($handle !== FALSE) {
             file_put_contents($path, $handle);
@@ -58,7 +58,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
             cropInboxImg($path, 335, 0);
         }
 
-        setMirrorImage($path);
+    //    setMirrorImage($path);
         if ($handle !== FALSE) {
             $nameImg  = $nameImArray[0];
             $sNameImg = $nameImArray[1];
@@ -71,7 +71,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
         $i = 0;
         foreach ($srcProdArray['dopSrcImg'] as $srcIm) {
             if ($srcIm !== "" && isset($srcIm)) {
-                $path   = 'uploads/temp_image.jpg';
+                $path   = '../uploads/temp_image.jpg';
                 $handle = file_get_contents($srcIm);
                 if ($handle === FALSE) {
                     continue;
@@ -111,15 +111,17 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
                            $idBrand)
 {
     $blobStorage = new BlobStorage();
-
-    $image = new Imagick();
-    $image->readImage($path);
-    $image->setImageCompression(Imagick::COMPRESSION_JPEG);
-    $image->setImageCompressionQuality(75);
-    $image->stripImage();
-    $image->setImageFormat('jpg');
-    $image->writeImage('../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg');
-
+    try{
+        $image = new Imagick();
+        $image->readImage($path);
+        $image->setImageCompression(Imagick::COMPRESSION_JPEG);
+        $image->setImageCompressionQuality(75);
+        $image->stripImage();
+        $image->setImageFormat('jpg');
+        $image->writeImage('../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg');
+    }catch(Exception $e){
+         var_dump($e->getMessage());
+    }
     //upload image to blob storage
     $blobStorage->uploadBlob(
         '../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg',
