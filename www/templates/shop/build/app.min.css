@@ -5862,6 +5862,8 @@ header .socialls-enter__network a.icon-odn:before {
     transform: translate(-50%,0);
     background-color: #e8e5e5}
 .main-container .main-content .product__info__bottom .column {
+    float: left}
+    .main-container .main-content .product__info__bottom .column.big-column {
     width: 72%;
     float: left}
 .main-container .main-content .product__info__bottom .column: last-child {
@@ -7272,7 +7274,9 @@ header .socialls-enter__network a.icon-odn:before {
     border-bottom: none}
 .main-container .main-info .main-info-list {
     padding: 10px 0;
-    position: relative}
+    position: relative;
+    margin-bottom: 20px;
+}
 .arrow-1,.arrow-2,.arrow-3 {
     background: url(../image/sprite.png) no-repeat -338px -516px;
     height: 18px;
@@ -13072,7 +13076,7 @@ body>.ui-tooltip {
     width: initial}
 }
 .main-container.commodities {
-    padding: 10px 0 35px 30px}
+    padding: 10px 0 0 30px}
 .main-container.commodities .main-content {
     background-color: transparent;
     box-shadow: none;

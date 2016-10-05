@@ -93,6 +93,7 @@
             {$blockShares}
         </div>
     </div>
+     {$info}
     <!--<div class="col-md-12 col-sm-12 col-xs-12" style="margin: 5px 0;padding: 0 5px;">
         <a href="/organizer-sp/">
             <img style="width: 100%;" src="http://makewear-images.azureedge.net/assets/sp-special.jpg">
@@ -148,13 +149,41 @@
             </div>
         </div>
         <!-- END about company -->
+        <div class="main-info"> 
+         <div class="row main-width SEO-wrap">
+            <div class="SEO-text ">
+                <p>
+                    Лучшие производители объединили свои предложения на MakeWear, чтобы купить одежду оптом было максимально
+                    просто и удобно для Вас.
+                    На сайте Вы можете как в розницу, так и оптом купить одежду, обувь и аксессуары по ценам производителя с
+                    доставкой по территории Украины и России.
+                </p>
 
+                <p>
+                    Женская одежда от отечественного производителя всегда пользуется большим спросом по причине высокого
+                    качества продукции, удобной размерной сетки и доступных цен. Не последним преимуществом украинских
+                    производителей одежды и обуви является и то, что продукция, производимая ими, всегда точно соответствует
+                    спросу населения СНГ и обязательно будет востребована на рынке Украины и России.
+                </p>
+
+                <p>
+                    Ассортимент каждого бренда постоянно пополняется новыми интересными моделями одежды, обуви и аксессуаров
+                    в соответствии с модными тенденциями и стандартами качества.
+                </p>
+
+                <p>
+                    Мы работаем для того, чтобы модная одежда оптом от производителя всегда была доступна для Вас на
+                    MakeWear. Оцените широкий ассортимент товаров на сайте, удобную навигацию и поиск по сайту в сочетании с
+                    доступными ценами на высококачественную продукцию.
+                </p>
+            </div>
+        </div>
+        </div>
         <!-- comments-Slider -->
         <div class="col-md-12 col-sm-12 col-xs-12" id="comments-slider" dir='rtl'>
-            <div><img  src="{$photoDomain}images/main-page-banner_3.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_0.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_1.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_2.jpg"></div>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_0.jpg"></div>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_1.jpg"></div>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_2.jpg"></div>
         </div>
         <!-- end comments slider -->
 
@@ -245,5 +274,5 @@
             <a href="https://instagram.com/makewear.com.ua/" class="btn-dark-3d" target="_blank">смотреть все</a>
         </div>-->
     </div>
-    {$info}
+   
 </div>
