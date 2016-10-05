@@ -4310,8 +4310,11 @@ header .contacts-top .service-center__columns .column {
     width: 50%;
     position: relative;
     float: left;
-    padding-left: 45px;
+    padding-left: 39px;
     box-sizing: border-box}
+    header .contacts-top .service-center__columns .column:first-child{
+        padding-left: 45px; 
+    }
 header .contacts-top .service-center__columns .column p {
     font-size: 13px;
     line-height: 24px;
