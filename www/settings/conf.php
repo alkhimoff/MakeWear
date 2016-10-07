@@ -33,17 +33,17 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 if($_SERVER['HTTP_HOST'] == 'mw'){
     define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
 }else{
-    define('PHOTO_DOMAIN', getenv('BLOB_STORAGE'));
+    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
 }
 
 //фото домен
-//if($_SERVER['HTTP_HOST'] == 'mw'){
+if($_SERVER['HTTP_HOST'] == 'mw'){
     define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
     //cdn     - http://makewear-images.azureedge.net/
     //storage - https://makewear.blob.core.windows.net/
-//}else{
-//    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-//}
+}else{
+    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+}
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
