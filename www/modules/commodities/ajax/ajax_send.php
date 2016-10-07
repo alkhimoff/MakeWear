@@ -13,7 +13,7 @@ bd_session_start();
 $db = $glb['mysqli'];
 
 require_once("../../phpmailer/PHPMailerAutoload.php");
-
+echo "Mail.RU";
 
 	if(isset($_GET['id'])){
 		$id=$_GET['id'];
