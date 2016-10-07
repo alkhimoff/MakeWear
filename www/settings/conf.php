@@ -37,13 +37,13 @@ if($_SERVER['HTTP_HOST'] == 'mw'){
 }
 
 //фото домен
-if($_SERVER['HTTP_HOST'] == 'mw'){
+//if($_SERVER['HTTP_HOST'] == 'mw'){
     define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
     //cdn     - http://makewear-images.azureedge.net/
     //storage - https://makewear.blob.core.windows.net/
-}else{
-    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-}
+//}else{
+//    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+//}
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
