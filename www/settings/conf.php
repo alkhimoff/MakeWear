@@ -30,12 +30,20 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 //define('GOOGLE_API_KEY', getenv('GOOGLE_API_KEY'));
 
 //blob storage key
-define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
+if($_SERVER['HTTP_HOST'] == 'mw'){
+    define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
+}else{
+    define('PHOTO_DOMAIN', getenv('BLOB_STORAGE'));
+}
+
 //фото домен
-define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-//define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
-//cdn     - http://makewear-images.azureedge.net/
-//storage - https://makewear.blob.core.windows.net/
+if($_SERVER['HTTP_HOST'] == 'mw'){
+    define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
+    //cdn     - http://makewear-images.azureedge.net/
+    //storage - https://makewear.blob.core.windows.net/
+}else{
+    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+}
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
@@ -48,23 +56,23 @@ $glb = array();
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_host"]            = "13.94.255.147";
-$glb["db_basename"]        = "test_zoond_make"; 
-$glb["db_user"]            = "test_zoond_make";
-
-// echo $glb["db_host"];
-// echo $glb["db_basename"];
-// echo $glb["db_user"];
-
-$glb["db_password"]        = "festivall1299";
-$glb["session_id"]         = $session_id;
-$glb["teg_robots"]         = false;
-$glb["sys_mail"]           = $global_meil               = "sales@makewear.com.ua";
-$glb["mail_host"]          = str_replace("www.", "", $_SERVER['HTTP_HOST']);
-$glb["request_url_encode"] = urldecode($request_url);
-$glb["request_url"]        = urldecode($request_url);
-$glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
-$glb["dom_mail"]           = str_replace("www.", "", $_SERVER['HTTP_HOST']);
+if($_SERVER['HTTP_HOST'] == 'mw'){
+    $glb["db_host"] = "127.0.0.1";
+   // echo '___DB = ' . $glb["db_host"];
+}else{
+    $glb["db_host"] = "13.94.255.147";
+}
+$glb["db_basename"]         = "test_zoond_make"; 
+$glb["db_user"]             = "test_zoond_make";
+$glb["db_password"]         = "festivall1299";
+$glb["session_id"]          = $session_id;
+$glb["teg_robots"]          = false;
+$glb["sys_mail"]            = $global_meil               = "sales@makewear.com.ua";
+$glb["mail_host"]           = str_replace("www.", "", $_SERVER['HTTP_HOST']);
+$glb["request_url_encode"]  = urldecode($request_url);
+$glb["request_url"]         = urldecode($request_url);
+$glb["domain"]              = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
+$glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
 
 /*
 $dblocation = "13.94.255.147";    

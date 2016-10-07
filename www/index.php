@@ -2,7 +2,11 @@
 
 header('Content-Type: text/html; charset=utf-8');
 $time1 = microtime(1);
-
+if($_SERVER['HTTP_HOST'] == 'mw'){
+    $mp = true;
+}else{
+    $mp = false;
+}
 require_once('vendor/autoload.php');
 require_once('settings/conf.php');
 require_once('settings/functionsNew.php');
