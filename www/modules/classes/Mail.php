@@ -33,7 +33,7 @@ class Mail
             //якщо екземпляр класу SendGrid не створений то створюєм
             self::$sendGrid = new SendGrid(SEND_GRID_KEY);
         }
-
+        echo "Azuremeseger";
         $email = new SendGrid\Email();
         $email
             ->addTo($to)
