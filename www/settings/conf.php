@@ -9,7 +9,7 @@ ini_set('session.bug_compat_42', 0);
 ini_set('magic_quotes_gpc', 'on');
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
-$localHostName = 'mwdev';
+$localHostName = 'mw';
 
 $_SESSION["s_id"] = 0;
 $host_name        = parse_url($_SERVER['HTTP_REFERER']);
@@ -46,9 +46,6 @@ if($_SERVER['HTTP_HOST'] == $localHostName){
 
 //echo '<title>' . $glb["db_host"] . '</title>';
 
-    require_once '/dumphper.php';
-    dump($_ENV);
-
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
 //caching time
@@ -67,9 +64,10 @@ $glb["sys_mail"]            = $global_meil              = "sales@makewear.com.ua
 $glb["mail_host"]           = str_replace("www.", "", $_SERVER['HTTP_HOST']);
 $glb["request_url_encode"]  = urldecode($request_url);
 $glb["request_url"]         = urldecode($request_url);
-$glb["domain"]              = $_SERVER['HTTP_HOST'];
+$glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
+    //$glb["domain"]              = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
-$glb["gallery_domen"]       = $gallery_domen            = "makewear";
+    //$glb["gallery_domen"]       = $gallery_domen            = "makewear";
 /*
 $dblocation = "13.94.255.147";    
 $dbname = "test_zoond_make";    

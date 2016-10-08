@@ -23,6 +23,10 @@ session_start();
 //==============================================================================
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
+    
+    require_once '../dumphper.php';
+    dump($_ENV);    
+    
     if (isset($step) && $step == 0 && $step != "") {
 
         //Сохраняем массив ссылок на товар
