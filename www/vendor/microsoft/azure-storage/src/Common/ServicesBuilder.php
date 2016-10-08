@@ -49,7 +49,7 @@ use MicrosoftAzure\Storage\Table\Internal\MimeReaderWriter;
  * @author    Azure Storage PHP SDK <dmsh@microsoft.com>
  * @copyright 2016 Microsoft Corporation
  * @license   https://github.com/azure/azure-storage-php/LICENSE
- * @version   Release: 0.10.2
+ * @version   Release: 0.10.1
  * @link      https://github.com/azure/azure-storage-php
  */
 class ServicesBuilder
@@ -132,11 +132,10 @@ class ServicesBuilder
      * Builds a queue object.
      *
      * @param string $connectionString The configuration connection string.
-     * @param array  $options          Array of options to pass to the service
      *
      * @return MicrosoftAzure\Storage\Queue\Internal\IQueue
      */
-    public function createQueueService($connectionString, $options = [])
+    public function createQueueService($connectionString)
     {
         $settings = StorageServiceSettings::createFromConnectionString(
             $connectionString
@@ -150,8 +149,7 @@ class ServicesBuilder
         $queueWrapper = new QueueRestProxy(
             $uri,
             $settings->getName(),
-            $serializer,
-            $options
+            $serializer
         );
 
         // Adding headers filter
@@ -185,10 +183,10 @@ class ServicesBuilder
      * Builds a blob object.
      *
      * @param string $connectionString The configuration connection string.
-     * @param array  $options          Array of options to pass to the service
+     *
      * @return MicrosoftAzure\Storage\Blob\Internal\IBlob
      */
-    public function createBlobService($connectionString, $options = [])
+    public function createBlobService($connectionString)
     {
         $settings = StorageServiceSettings::createFromConnectionString(
             $connectionString
@@ -198,12 +196,11 @@ class ServicesBuilder
         $uri        = Utilities::tryAddUrlScheme(
             $settings->getBlobEndpointUri()
         );
-
+    
         $blobWrapper = new BlobRestProxy(
             $uri,
             $settings->getName(),
-            $serializer,
-            $options
+            $serializer
         );
 
         // Adding headers filter
@@ -236,11 +233,10 @@ class ServicesBuilder
      * Builds a table object.
      *
      * @param string $connectionString The configuration connection string.
-     * @param array  $options          Array of options to pass to the service
      *
      * @return MicrosoftAzure\Storage\Table\Internal\ITable
      */
-    public function createTableService($connectionString, $options = [])
+    public function createTableService($connectionString)
     {
         $settings = StorageServiceSettings::createFromConnectionString(
             $connectionString
@@ -257,8 +253,7 @@ class ServicesBuilder
             $uri,
             $atomSerializer,
             $mimeSerializer,
-            $serializer,
-            $options
+            $serializer
         );
 
         // Adding headers filter
@@ -297,18 +292,18 @@ class ServicesBuilder
 
         return $tableWrapper;
     }
-
+    
     /**
      * Gets the user agent string used in request header.
-     *
+     * 
      * @return string
      */
     private static function getUserAgent()
     {
         // e.g. User-Agent: Azure-Storage/0.10.0 (PHP 5.5.32)
-        return 'Azure-Storage/' . Resources::SDK_VERSION . ' (PHP ' . PHP_VERSION . ')';
+        return 'Azure-Storage/' . Resources::SDK_VERSION . ' (PHP ' . PHP_VERSION . ')'; 
     }
-
+    
     /**
      * Gets the static instance of this class.
      *

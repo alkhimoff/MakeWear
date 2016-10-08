@@ -37,7 +37,7 @@ use WindowsAzure\Common\Internal\Resources;
  * @copyright  2012 Microsoft Corporation
  * @license    http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.5_2016-09
+ * @version   Release: 0.4.3_2016-05
  *
  * @link       https://github.com/windowsazure/azure-sdk-for-php
  */
@@ -91,7 +91,6 @@ class TestResources
     const MEDIA_SERVICES_CONTENT_KEY_AUTHORIZATION_OPTIONS_NAME = 'TestContentKeyAuthorizationPolicyOption';
     const MEDIA_SERVICES_CONTENT_KEY_AUTHORIZATION_POLICY_RESTRICTION_NAME = 'TestContentKeyAuthorizationPolicyRestriction';
     const MEDIA_SERVICES_ASSET_DELIVERY_POLICY_NAME = 'AssetDeliveryPolicyName';
-    const MEDIA_SERVICES_CHANNEL_NAME = 'PHPSDK-CHANNEL-UNITTEST';
 
     // See https://tools.ietf.org/html/rfc2616
     const STATUS_NOT_MODIFIED = 304;
@@ -571,31 +570,5 @@ class TestResources
                 <c t="0" d="20429600"/>
                 </StreamIndex>
                 </SmoothStreamingMedia>';
-    }
-
-    public static function getClientAccessPolicy()
-    {
-        return '<?xml version="1.0" encoding="utf-8"?>
-                <access-policy>
-                <cross-domain-access>
-                    <policy>
-                    <allow-from http-request-headers="*">
-                        <domain uri="http://*" />
-                    </allow-from>
-                    <grant-to>
-                        <resource path="/" include-subpaths="false" />
-                    </grant-to>
-                    </policy>
-                </cross-domain-access>
-                </access-policy>';
-    }
-
-    public static function getCrossDomainPolicy()
-    {
-        return '<?xml version="1.0" ?>
-                <!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
-                <cross-domain-policy>
-                <allow-access-from domain="*" />
-                </cross-domain-policy>';
     }
 }

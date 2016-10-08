@@ -27,7 +27,6 @@ namespace Tests\unit\WindowsAzure\Common\Internal\Filters;
 
 use WindowsAzure\Common\Internal\Filters\HeadersFilter;
 use WindowsAzure\Common\Internal\Http\HttpClient;
-use WindowsAzure\Common\Internal\Resources;
 
 /**
  * Unit tests for class HeadersFilter.
@@ -38,7 +37,7 @@ use WindowsAzure\Common\Internal\Resources;
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.5_2016-09
+ * @version   Release: 0.4.3_2016-05
  *
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
@@ -57,11 +56,8 @@ class HeadersFilterTest extends \PHPUnit_Framework_TestCase
         // Test
         $request = $filter->handleRequest($channel);
 
-        $headers = $request->getHeaders();
-        // Assert. there are two header returned back
-        // 'User-Agent' and 'expect'.
-        $this->assertCount(2, $headers);
-        $this->assertEquals(Resources::SDK_USER_AGENT, $headers['user-agent']);
+        // Assert. there is one header returned back
+        $this->assertCount(1, $request->getHeaders());
     }
 
     /**

@@ -33,7 +33,8 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 $glb = array();
 
 if($_SERVER['HTTP_HOST'] == $localHostName){
-    define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
+    //define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
+	define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=JbpoRul2hnIixQjWXmq/YrVNEv3BnAje7fYm7srGH2slrsxYfRR7Wo30t6V4PGo/VOgeVX00pOEInv/A89aiaQ==');
     define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
     //cdn     - http://makewear-images.azureedge.net/
     //storage - https://makewear.blob.core.windows.net/   

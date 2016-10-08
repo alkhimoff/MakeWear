@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/Azure/azure-sdk-for-php.svg?branch=master)](https://travis-ci.org/Azure/azure-sdk-for-php)
-
 # Microsoft Azure SDK for PHP
 
 This project provides a set of PHP client libraries that make it easy to access
@@ -45,10 +43,9 @@ Microsoft Azure tables, blobs, queues, service bus (queues and topics), service 
   * Encoding / process asset, create job, job templates
   * Manage media services entities: create / update / read / delete / get list
   * Delivery SAS and Streaming media content
-  * Dynamic encryption: AES and DRM (PlayReady/Widevine/FairPlay) with and without Token restriction
+  * Dynamic encryption: AES and DRM (PlayReady/Widevine) with and without Token restriction
   * Scale encoding reserved unit type
-  * Live streaming: live encoding and pass-through channels, programs and all their operations
-  * REST API Version: 2.13
+  * REST API Version: 2.11
 
   
 # Getting Started
@@ -403,7 +400,7 @@ try {
 ## Service Bus Queues
 The current PHP Service Bus APIs only support ACS connection strings. You need to use PowerShell to create a new ACS Service Bus namespace at the present time.  
 First, make sure you have Azure PowerShell installed, then in a PowerShell command prompt, run 
-```PowerShell
+```
 Add-AzureAccount # this will sign you in
 New-AzureSBNamespace -CreateACSNamespace $true -Name 'mytestbusname' -Location 'West US' -NamespaceType 'Messaging'
 ```
@@ -553,13 +550,12 @@ try {
 ### Set-up certificates
 
 You  need to create two certificates, one for the server (a .cer file) and one for the client (a .pem file). To create the .pem file using [OpenSSL](http://www.openssl.org), execute this: 
-```
-openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
-```
+
+  openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+
 To create the .cer certificate, execute this: 
-```
-openssl x509 -inform pem -in mycert.pem -outform der -out mycert.cer
-```
+
+  openssl x509 -inform pem -in mycert.pem -outform der -out mycert.cer
 
 ### List Available Locations
 
@@ -698,7 +694,7 @@ Erase entities with methods like “deleteAsset”, “deleteAccessPolicy”, �
 
 Also you could get linked entities with methods “getAssetLocators”, “getAssetParentAssets”, “getAssetStorageAccount”, “getLocatorAccessPolicy”, “getJobTasks” and etc. passing the entity identifier or entity data model object with non-empty identifier as a parameter.
 
-The complete list of all methods available you could find in [IMediaServices](src/MediaServices/Internal/IMediaServices.php) interface.
+The complete list of all methods available you could find in [IMediaServices](WindowsAzure/MediaServices/Internal/IMediaServices.php) interface.
 
 **For more examples please see the [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php)**
 
@@ -716,6 +712,3 @@ If you encounter any bugs with the library please file an issue in the [Issues](
 
 # Learn More
 [Microsoft Azure PHP Developer Center](http://www.windowsazure.com/en-us/develop/php/)
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

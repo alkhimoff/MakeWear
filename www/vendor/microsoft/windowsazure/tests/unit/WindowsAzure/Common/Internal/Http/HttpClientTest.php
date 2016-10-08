@@ -25,8 +25,8 @@
 
 namespace Tests\unit\WindowsAzure\Common\Internal\Http;
 
-use Tests\framework\TestResources;
-use Tests\mock\WindowsAzure\Common\Internal\Filters\SimpleFilterMock;
+use Tests\Framework\TestResources;
+use Tests\Mock\WindowsAzure\Common\Internal\Filters\SimpleFilterMock;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\Http\HttpClient;
 use WindowsAzure\Common\Internal\Http\Url;
@@ -41,7 +41,7 @@ use WindowsAzure\Common\ServiceException;
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.5_2016-09
+ * @version   Release: 0.4.3_2016-05
  *
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
@@ -144,8 +144,8 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
         $channel->setHeaders($headers);
 
         // Assert
-        $channelHeaders = $channel->getHeaders();    
-        $this->assertCount(4, $channelHeaders);
+        $channelHeaders = $channel->getHeaders();
+        $this->assertCount(3, $channelHeaders);
         $this->assertEquals($value1, $channelHeaders[$header1]);
         $this->assertEquals($value2, $channelHeaders[$header2]);
     }
@@ -168,7 +168,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
         $headers = $channel->getHeaders();
 
         // Assert
-        $this->assertCount(4, $headers);
+        $this->assertCount(3, $headers);
         $this->assertEquals($value1, $headers[$header1]);
         $this->assertEquals($value2, $headers[$header2]);
     }
@@ -186,7 +186,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
 
         // Assert
         $headers = $channel->getHeaders();
-        $this->assertCount(3, $headers);
+        $this->assertCount(2, $headers);
         $this->assertEquals(TestResources::HEADER1_VALUE, $headers[TestResources::HEADER1]);
     }
 
@@ -204,7 +204,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
 
         // Assert
         $headers = $channel->getHeaders();
-        $this->assertCount(3, $headers);
+        $this->assertCount(2, $headers);
         $this->assertEquals(TestResources::HEADER2_VALUE, $headers[TestResources::HEADER1]);
     }
 
@@ -223,7 +223,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
 
         // Assert
         $headers = $channel->getHeaders();
-        $this->assertCount(3, $headers);
+        $this->assertCount(2, $headers);
         $this->assertEquals($expected, $headers[TestResources::HEADER1]);
     }
 
@@ -234,7 +234,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('200');
 
         // Test
@@ -251,11 +251,11 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('200');
         $channel->setBody('This is body');
         $channel->setMethod('PUT');
-        $this->setExpectedException(get_class(new ServiceException('405')));
+        $this->setExpectedException(get_class(new ServiceException('404')));
 
         // Test
         $channel->send(array(), $url);
@@ -268,7 +268,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('200');
         $expectedHeader = TestResources::HEADER1;
         $expectedResponseSubstring = TestResources::HEADER1_VALUE;
@@ -291,7 +291,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('200');
         $expectedHeader1 = TestResources::HEADER1;
         $expectedResponseSubstring1 = TestResources::HEADER1_VALUE;
@@ -319,7 +319,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('201');
         $this->setExpectedException(get_class(new ServiceException('200')));
 
@@ -456,7 +456,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
 
         // Test
         $actual = clone $channel;
-        $channel->setUrl(new Url('http://example.com/'));
+        $channel->setUrl(new Url('http://www.microsoft.com'));
         $channel->setHeader('headerx', 'valuex');
 
         // Assert
@@ -471,7 +471,7 @@ class HttpClientTest extends \PHPUnit_Framework_TestCase
     {
         // Setup
         $channel = new HttpClient();
-        $url = new Url('http://example.com/');
+        $url = new Url('http://www.microsoft.com/');
         $channel->setExpectedStatusCode('200');
         $channel->send(array(), $url);
 

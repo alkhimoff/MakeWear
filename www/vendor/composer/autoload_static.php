@@ -59,7 +59,7 @@ class ComposerStaticInit17f9bccef87161a804771ce21f019f96
     public static $prefixDirsPsr4 = array (
         'WindowsAzure\\' => 
         array (
-            0 => __DIR__ . '/..' . '/microsoft/windowsazure/src',
+            0 => __DIR__ . '/..' . '/microsoft/windowsazure/WindowsAzure',
         ),
         'Symfony\\Component\\EventDispatcher\\' => 
         array (

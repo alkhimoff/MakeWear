@@ -25,9 +25,9 @@
 
 namespace Tests\unit\WindowsAzure\ServiceManagement;
 
-use Tests\framework\ServiceRestProxyTestBase;
-use Tests\framework\ServiceManagementRestProxyTestBase;
-use Tests\framework\TestResources;
+use Tests\Framework\ServiceRestProxyTestBase;
+use Tests\Framework\ServiceManagementRestProxyTestBase;
+use Tests\Framework\TestResources;
 use WindowsAzure\Common\Internal\Resources;
 use WindowsAzure\Common\Internal\Http\HttpClient;
 use WindowsAzure\Common\Internal\Serialization\XmlSerializer;
@@ -53,7 +53,7 @@ use WindowsAzure\ServiceManagement\Models\CreateDeploymentOptions;
  * @copyright 2012 Microsoft Corporation
  * @license   http://www.apache.org/licenses/LICENSE-2.0  Apache License 2.0
  *
- * @version   Release: 0.4.5_2016-09
+ * @version   Release: 0.4.3_2016-05
  *
  * @link      https://github.com/windowsazure/azure-sdk-for-php
  */
