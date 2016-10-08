@@ -26,7 +26,7 @@ session_start();
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
     
     require_once '../dumphper.php';
-    dump($_ENV);    
+    dump($GLOBALS);    
     
     if (isset($step) && $step == 0 && $step != "") {
 

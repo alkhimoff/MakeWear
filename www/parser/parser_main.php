@@ -28,7 +28,7 @@ session_start();
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
 
     require_once '../dumphper.php';
-    dump($_ENV);
+    dump($GLOBALS);
     
     if (44 == $_SESSION["id"]) {
         $action = 'parser';
