@@ -235,11 +235,11 @@ session_start();
 
                 //вызываем обработку и запись фоток
                 //после настройки на локале убрать проверку
-                if($_SERVER['HTTP_HOST'] == 'mw'){
-                    $resultImageArray = null;
-                }else{
+               // if($_SERVER['HTTP_HOST'] == 'mw'){
+               //     $resultImageArray = null;
+               // }else{
                     $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
-                }
+              //  }
                 
 
                 //выводим отчет записи в БД

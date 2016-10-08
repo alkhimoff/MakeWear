@@ -26,7 +26,7 @@ session_start();
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
     if (isset($step) && $step == 0 && $step != "") {
 
-        //Сохраняем массив ссылок на товар
+        //Сохраняем массив ссылок на товар из БД
         $linkArray  = $_SESSION['updateData']['from_url'];
         $countLinks = count($linkArray);
 
@@ -62,7 +62,7 @@ session_start();
             }
         }
 
-        //сохраняем количество ссылок в сессии выводим начало работы
+        //сохраняем количество ссылок из БД в сессии выводим начало работы
         $_SESSION["linkArray"]  = $linkArray;
         $_SESSION["countLinks"] = $countLinks;
 
@@ -73,6 +73,7 @@ session_start();
 
         InterfaceAdmin::init($_SESSION["id"], $countLinks)->setInterfaceVerify($step,
             $content, FALSE, FALSE);
+        /// отрабатывает не сразу а в конце файла (step=0)
         ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $domenName ?>/parser/vir_main.php?step=1"><?php
     }
 

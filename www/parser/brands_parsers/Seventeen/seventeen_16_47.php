@@ -23,8 +23,7 @@ $duplicateProd = "";
   } */
 
 //Exist
-$arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
-    'no_nal - наличие');
+$arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
 
 if (isset($arrayExist)) {
     $codPrice   = str_replace("http://seventeen.com.ua/shop/", "", $curLink);
@@ -48,14 +47,14 @@ if (isset($arrayExist)) {
     if($arrayPrice || $newPrice){
         $regexp = '/[^0-9]/';
         if($newPrice){
-            $price2 = filterPrice(trim($newPrice[0]), $regexp); // новая цена тоже [0]???
+            $price2 = filterPrice(trim($newPrice[0]), $regexp);
         }else{
             $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
         }
-        $price2 = ceil(1.15 * $price2);
 
         // action discount 40%
-        $price  = ceil(($price2 + 70) * $_SESSION['updatePrice']);  
+        // $price  = ceil(($price2 + 70) * $_SESSION['updatePrice']);  ///
+        $price  = ceil(($price2 + $_SESSION['per']) * $_SESSION['updatePrice']);  ///
     }
     
     if ($price2 == 0) {
@@ -63,8 +62,7 @@ if (isset($arrayExist)) {
         $price     = 0;
     }
        
-    $arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,
-    'sizeCol - размер');
+    $arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,'sizeCol - размер');
 
     if (isset($arraySize)) {
         foreach ($arraySize as $value) {
@@ -75,7 +73,7 @@ if (isset($arrayExist)) {
         $sizesProd = filterSizeColors($sizesProd);
     } // если нет размера возможно нужно скрыть
       
-    $pos1  = strpos($arrayExist[0], "Нет в наличии!");
+    $pos1  = strpos($arrayExist[0],"Нет в наличии!");
     $pos2 = strpos($arrayExist[0], "Замена цвет");
     $pos3 = strpos($arrayExist[0], "Ожидается");
     

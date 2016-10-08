@@ -9,6 +9,7 @@ ini_set('session.bug_compat_42', 0);
 ini_set('magic_quotes_gpc', 'on');
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$localHostName = 'mwdev';
 
 $_SESSION["s_id"] = 0;
 $host_name        = parse_url($_SERVER['HTTP_REFERER']);
@@ -29,21 +30,24 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 //ключ к google
 //define('GOOGLE_API_KEY', getenv('GOOGLE_API_KEY'));
 
-//blob storage key
-if($_SERVER['HTTP_HOST'] == 'mw'){
-    define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
-}else{
-    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
-}
+$glb = array();
 
-//фото домен
-if($_SERVER['HTTP_HOST'] == 'mw'){
+if($_SERVER['HTTP_HOST'] == $localHostName){
+    define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
     define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
     //cdn     - http://makewear-images.azureedge.net/
-    //storage - https://makewear.blob.core.windows.net/
+    //storage - https://makewear.blob.core.windows.net/   
+    $glb["db_host"] = "127.0.0.1";
 }else{
+    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
     define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+    $glb["db_host"] = "13.94.255.147";
 }
+
+//echo '<title>' . $glb["db_host"] . '</title>';
+
+    require_once '/dumphper.php';
+    dump($_ENV);
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
@@ -52,28 +56,20 @@ define('CACHE_TIME_PRODUCT', 60*60*3);
 define('CACHE_TIME_SLIDER', 60*60*1);
 define('CACHE_TIME_MENU', 60*60*2);
 
-$glb = array();
-
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-if($_SERVER['HTTP_HOST'] == 'mw'){
-    $glb["db_host"] = "127.0.0.1";
-   // echo '___DB = ' . $glb["db_host"];
-}else{
-    $glb["db_host"] = "13.94.255.147";
-}
 $glb["db_basename"]         = "test_zoond_make"; 
 $glb["db_user"]             = "test_zoond_make";
 $glb["db_password"]         = "festivall1299";
 $glb["session_id"]          = $session_id;
 $glb["teg_robots"]          = false;
-$glb["sys_mail"]            = $global_meil               = "sales@makewear.com.ua";
+$glb["sys_mail"]            = $global_meil              = "sales@makewear.com.ua";
 $glb["mail_host"]           = str_replace("www.", "", $_SERVER['HTTP_HOST']);
 $glb["request_url_encode"]  = urldecode($request_url);
 $glb["request_url"]         = urldecode($request_url);
-$glb["domain"]              = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
+$glb["domain"]              = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
-
+$glb["gallery_domen"]       = $gallery_domen            = "makewear";
 /*
 $dblocation = "13.94.255.147";    
 $dbname = "test_zoond_make";    
