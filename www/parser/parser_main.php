@@ -27,9 +27,6 @@ session_start();
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
 
-    //require_once '../dumphper.php';
-    //dump($GLOBALS);
-    
     if (44 == $_SESSION["id"]) {
         $action = 'parser';
         require 'brands_parsers/FashionLook/fashion_look_44_312.php';
@@ -50,7 +47,6 @@ session_start();
 
     if (isset($step) && $step == 0 && $step != "") {
         //Сохраняем массив ссылок на товар
-        
         $linkArray  = explode(" ", trim($_SESSION["links"]));
         $linkArray  = array_values(array_unique($linkArray));
         $linkArray  = array_combine(array_merge(array_slice(array_keys($linkArray),
@@ -237,13 +233,8 @@ session_start();
                 }
 
                 //вызываем обработку и запись фоток
-                //после настройки на локале убрать проверку
-               // if($_SERVER['HTTP_HOST'] == 'mw'){
-               //     $resultImageArray = null;
-               // }else{
-                    $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
-              //  }
-                
+                $resultImageArray = writeImage($idBrand, $curLink, $saw,
+                    $commodityID, $mysqli, $verify);
 
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,
@@ -252,7 +243,7 @@ session_start();
                     $comCount, $comFullDesc);
 
                 $_SESSION['linkArrayCom'][$curLink] = $commodityID;
-                $insert                             = TRUE;            
+                $insert                             = TRUE;
             } else {
 
                 //Выводим отчет если дубликат или нет в наличие
@@ -277,12 +268,12 @@ session_start();
             //записываем данные в файл отчета и в интерфейс
             $insert  = FALSE;
             $content = $report->reportEnd();
-            
+
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
                 $content, $insert);
             //die("end");
             //Рендирим на новыю ссылку товара
-            ?><meta http-equiv="refresh" content="3;URL=http://<?php echo $requestUrl ?>"><?php
+            ?><meta http-equiv="refresh" content="0;URL=http://<?php echo $requestUrl ?>"><?php
         }
     }
     ?>

@@ -13,8 +13,8 @@ $arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
 $srcProd = "";
 if (isset($arrayImage)) {
     $wovels                     = array("s_", "m_");
-    $lowSrc                     = str_replace($wovels, "_", $arrayImage[0]['src']);
-    
+    $lowSrc                     = str_replace($wovels, "_",
+        $arrayImage[0]['src']);
     $wovels1                    = array("s", "m");
     $lowSrc                     = str_replace($wovels1, "", $lowSrc);
     $lowSrc                     = str_replace("_h", "_sh", $lowSrc);
@@ -22,7 +22,7 @@ if (isset($arrayImage)) {
     $srcProdArray['mainSrcImg'] = $srcProd;
     $existIm                    = TRUE;
 }
-
+//var_dump($srcProd);
 //DopImage
 $arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw,
     'dopimg - дополнительны картинки');
@@ -46,7 +46,7 @@ if (isset($arrayDopImage)) {
         }
     }
 }
-
+//var_dump($srcProdArray);
 //die;
 //CropandWrite images
 if ($existIm == TRUE) {

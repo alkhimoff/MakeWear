@@ -1,4 +1,4 @@
-<?php
+<?   
 $edit= "
 <script type='text/javascript' src='/templates/{$theme_name}/js/tabs.js'></script>
 <form method='POST' action='{$request_url}' name='main_form' ENCTYPE='multipart/form-data'>

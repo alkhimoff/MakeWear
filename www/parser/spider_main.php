@@ -23,11 +23,6 @@ session_start();
 //==============================================================================
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
-    
-   // require_once '../dumphper.php';
-   // dump($GLOBALS); 
-   // var_dump($GLOBALS);
-   // die();
     if (isset($step) && $step == 0 && $step != "") {
 
         //Сохраняем массив ссылок на товар
@@ -317,7 +312,7 @@ function insertNewLinksInDb($report, $linksArr, $mysqli, $idBrand, $updateData)
 
     //записываем в интерфейс фдминки
     InterfaceAdmin::init($idBrand, $couLinks)->setInterfaceSpider($countNewLinks);
-   // var_dump('*** ' . $updateData["from_url"]);
+    var_dump($updateData["from_url"]);
 }
 
 /**

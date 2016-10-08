@@ -28,7 +28,6 @@ class TaskQueue
                 }
             });
         }
-        echo __DIR__ . '  register_shutdown_function()' . '</br>';
     }
 
     /**

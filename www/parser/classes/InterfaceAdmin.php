@@ -217,26 +217,26 @@ class InterfaceAdmin
      */
     public function setInterfaceParser($step, $content, $insert)
     {
-            $this->step     = $step;
-            $this->content  = $content;
-            $onePercent     = $this->couLinks / 100;
-            $this->progress = round($this->step / $onePercent, 2);
-            if ($this->step == 0) {
-                $this->addNewCom = 0;
-                $this->dateStart = date("d-m-Y H:i:s");
-                $this->updateParserStart();
-            }
-            if ($insert == TRUE) {
-                $this->addNewCom = 1;
-            } else {
-                $this->addNewCom = 0;
-            }
-            if ($this->step == $this->couLinks) {
-                $this->dateEnd = date("d-m-Y H:i:s");
-                $this->updateParserFinish();
-            } else {
-                $this->updateParserProggress();
-            }
+        $this->step     = $step;
+        $this->content  = $content;
+        $onePercent     = $this->couLinks / 100;
+        $this->progress = round($this->step / $onePercent, 2);
+        if ($this->step == 0) {
+            $this->addNewCom = 0;
+            $this->dateStart = date("d-m-Y H:i:s");
+            $this->updateParserStart();
+        }
+        if ($insert == TRUE) {
+            $this->addNewCom = 1;
+        } else {
+            $this->addNewCom = 0;
+        }
+        if ($this->step == $this->couLinks) {
+            $this->dateEnd = date("d-m-Y H:i:s");
+            $this->updateParserFinish();
+        } else {
+            $this->updateParserProggress();
+        }
     }
 
     /**

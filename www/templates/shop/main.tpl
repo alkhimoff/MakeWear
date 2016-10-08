@@ -19,27 +19,13 @@
         <meta name="mailru-domain" content="6NvZjl6IbuBXqfXo"/>
         <meta name="google-site-verification" content="zsFMvp2Y03QSY-jesjj4n2fEZ4eghq7Wp8VOZADpFI4"/>
         <meta name="interkassa-verification" content="5d2f67ad32c87e8b7e9d71b437035b83"/>
-        <!--nova verstka
-        <link href="/templates/shop/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/templates/shop/css/fonts.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/styles.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/jquery.rating.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/profile.css" rel="stylesheet" type="text/css">
-        <link href="/templates/shop/css/jquery.formstyler.css" rel="stylesheet" type="text/css"> 
-        <link rel="stylesheet" type="text/css" href="/templates/shop/slick/slick.css"/> 
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/stylename.css"/> 
-        <link href="/templates/shop/css/magnific-popup.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-        <link href="/templates/shop/css/basket.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/katalog-style.css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/fast_order.css">
-        <link rel="stylesheet" type="text/css" href="/templates/shop/css/profile_new.css" >
-        <link rel="stylesheet" href="/templates/shop/css/actions-style.css">
-        <link rel="stylesheet" type="text/css" href="../../modules/online/style_chat.css"><!-- chat -->
-
-        <link rel="stylesheet" href="/templates/shop/build/app.min.css">
-        <link rel="stylesheet" href="/templates/shop/fonts/css/font-awesome.min.css">
         
+        
+        <link rel="stylesheet" href="/templates/shop/css/main-cat.css">
+        <link rel="stylesheet" href="/templates/shop/build/app.min.css">
+        <link rel="stylesheet" href="/templates/shop/fonts/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="/templates/shop/css/style.css">
+        <link rel="stylesheet" href="/templates/shop/css/vadim-styles.css">
 
     </head>
     <body>
@@ -85,29 +71,33 @@
                                         <p>Сб-вс 10:00 - 18:00</p>
                                     </div>
                                     <div class="column">
-                                        <p>+38 (098) 474-22-82 <i class="icon icon-phone-operator1"></i></p>
-                                        <p>+38 (099) 098-00-82 <i class="icon icon-phone-operator2"></i></p>
+                                        <p>+38 (068) 098-49-71  <i class="icon icon-phone-operator1"></i></p>
+                                        <p>+38 (093) 381-34-72 <i class="icon icon-phone-operator2"></i></p>
                                         <p>info@makewear.com.ua</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="write-us-form service-wrap">
-                                <div class="service-title">
+                            <div class="write-us-form main-feedback">
+                                <div class="main-feedback__title">
                                     <span>НАПИШИТЕ НАМ</span>
                                 </div>
-                                <form action="">
-                                    <div class="row__textarea">
-                                        <textarea name="message" maxlength="500"></textarea>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <div class="row__input">
-                                        <input value="{$userEmail}" name="email" type="text" placeholder="e-mail" MAXLENGTH="64">
-                                        <a href="#" class="btn btn-green btn-3d">Отправить</a>
-                                    </div>
-                                </form>
+                                <div class="main-feedback-inner">
+                                    <form action="">
+                                        <div class="main-feedback-item _textarea">
+                                            <textarea class="form__field _textarea" name="message" maxlength="500"></textarea>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="main-feedback-item row__input">
+                                            <input class="form__field" value="{$userEmail}" name="email" type="text" placeholder="e-mail" MAXLENGTH="64">
+                                            <a href="#" class="btn btn-green btn-3d">Отправить</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--inner-->
                             </div>
+                            <!--main-feedback-->
                         </div>
                     </div>
                 </div>
@@ -124,7 +114,7 @@
                         <div class="col-md-5 col-sm-1 col-xs-12">
                             <div class="mail-wrap">
                                 <span>info@makewear.com.ua</span>
-                                <span>+38 (099) 098-00-82</span>
+                                <!--<span>+38 (099) 098-00-82</span>-->
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12">

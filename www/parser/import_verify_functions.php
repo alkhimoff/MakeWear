@@ -1,9 +1,12 @@
 <?php
 error_reporting(-1);
+
 use Modules\BlobStorage;
+
 //==============================================================================
 //                              Функции
 //==============================================================================
+
 /**
  * 
  * @global type $startTime
@@ -15,6 +18,7 @@ function myShutdown()
     (microtime(true) - $startTime).
     " seconds.";
 }
+
 //==============================================================================
 //                   Функции обрезки и записи картинок
 //==============================================================================
@@ -25,27 +29,35 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
                                 $brendName, $idBrand)
 {
     $blobStorage = new BlobStorage();
+
     if (is_dir('../images/commodities/'.$commodityID.'/') == FALSE) {
         mkdir('../images/commodities/'.$commodityID);
     }
+
     if ($blobStorage->isContainer((string)$commodityID)) {
         $blobStorage->deleteAllBlobsInContainer((string)$commodityID);
+
     }
+
     if (!$blobStorage->isContainer((string) $commodityID)) {
         $blobStorage->createContainer((string) $commodityID);
     }
+
     if ($srcProdArray['mainSrcImg'] !== "" && isset($srcProdArray['mainSrcImg'])) {
+
         $path   = 'uploads/temp_image.jpg';
         $handle = file_get_contents($srcProdArray['mainSrcImg']);
         if ($handle !== FALSE) {
             file_put_contents($path, $handle);
         }
+
         //обрезка белих полей
         if ($idBrand == 19) {
             cropInboxImg($path, 140, 10);
         } else if ($idBrand == 40) {
             cropInboxImg($path, 335, 0);
         }
+
         setMirrorImage($path);
         if ($handle !== FALSE) {
             $nameImg  = $nameImArray[0];
@@ -54,6 +66,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
                 $brendName, $idBrand);
         }
     }
+
     if (!empty($srcProdArray['dopSrcImg'])) {
         $i = 0;
         foreach ($srcProdArray['dopSrcImg'] as $srcIm) {
@@ -65,15 +78,18 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
                 } else {
                     file_put_contents($path, $handle);
                 }
+
                 if ($idBrand == 19) {
                     cropInboxImg($path, 140, 10);
                 } else if ($idBrand == 40) {
                     cropInboxImg($path, 335, 0);
                 }
+
                 //not set mirror for adidas dop images
                 if (45 != $idBrand) {
                     setMirrorImage($path);
                 }
+
                 $nameImg  = $nameImArray[2][$i];
                 $sNameImg = "s_".$nameImg;
                 $i++;
@@ -82,10 +98,12 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
             }
         }
     }
+
     if (is_dir('../images/commodities/'.$commodityID.'/') == TRUE) {
         removeDirectory('../images/commodities/'.$commodityID);
     }
 }
+
 //------------------------------------------------------------------------------
 //                  Обработка и запись картинок                             2
 //------------------------------------------------------------------------------
@@ -93,6 +111,7 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
                            $idBrand)
 {
     $blobStorage = new BlobStorage();
+
     $image = new Imagick();
     $image->readImage($path);
     $image->setImageCompression(Imagick::COMPRESSION_JPEG);
@@ -100,11 +119,13 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
     $image->stripImage();
     $image->setImageFormat('jpg');
     $image->writeImage('../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg');
+
     //upload image to blob storage
     $blobStorage->uploadBlob(
         '../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg',
         $nameImg.'.jpg', (string) $commodityID
     );
+
     list($width, $height) = getimagesize($path);
     $sImage   = $image;
     $imWidth  = 200;
@@ -135,11 +156,13 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
             $sImage->cropImage($cropWidth, $crop, $xCrop, $yCrop);
             //echo "коф: < 1.4 >= 1  Фото квадрат или высота не на много длиннее, обрезаеться по бокам\n";
         }
+
         $sImage->setImageCompression(Imagick::COMPRESSION_JPEG);
         $sImage->setImageCompressionQuality(90);
         $sImage->stripImage();
         $sImage->thumbnailImage($imWidth, $imHeight);
         $sImage->writeImage('../images/commodities/'.$commodityID.'/'.$sNameImg.'.jpg');
+
         //upload image to blob storage
         $blobStorage->uploadBlob(
             '../images/commodities/'.$commodityID.'/'.$sNameImg.'.jpg',
@@ -147,6 +170,7 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
         );
     }
 }
+
 //------------------------------------------------------------------------------
 //                запись в базу данных если есть доп картинки              3
 //------------------------------------------------------------------------------
@@ -159,6 +183,7 @@ function insertInShopImBd($commodityID, $mysqli)
     $photoId = $mysqli->insert_id;
     return $photoId;
 }
+
 //------------------------------------------------------------------------------
 //              выбираем id доп фото для перезаливки              4
 //------------------------------------------------------------------------------
@@ -169,9 +194,11 @@ function deleteDopImgFromDB($commodityID, $mysqli)
         die('DELETE shop_images Error ('.$mysqli->errno.') '.$mysqli->error);
     }
 }
+
 //------------------------------------------------------------------------------
 //                         режим входящие картинки                       5
 //------------------------------------------------------------------------------
+
 function cropInboxImg($path, $widthMinus, $heightMinus)
 {
     $image      = new Imagick();
@@ -185,6 +212,7 @@ function cropInboxImg($path, $widthMinus, $heightMinus)
     $image->cropImage($cropWidth, $cropHeight, $xCrop, $yCrop);
     $image->writeImage($path);
 }
+
 //------------------------------------------------------------------------------
 //создаем зеркальное изображение для квадратных и широких фото            6
 //------------------------------------------------------------------------------
@@ -193,6 +221,7 @@ function setMirrorImage($path)
     /* Чтение изображения */
     $im = new Imagick();
     $im->readImage($path);
+
     $width    = $im->getImageWidth();
     $height   = $im->getImageHeight();
     $cofMin   = 1.4;
@@ -201,17 +230,23 @@ function setMirrorImage($path)
         /* Клонируем изображение и зеркально поворачиваем его */
         $reflection = clone $im;
         $reflection->flipImage();
+
         /* Создаём градиент. Это будет наложением для отражения */
         $gradient = new Imagick();
+
         /* Градиент должен быть достаточно большой для изображения и его рамки */
         $gradient->newPseudoImage($reflection->getImageWidth() + 10,
             $reflection->getImageHeight() + 10, "gradient:transparent-white");
+
         /* Наложение градиента на отражение */
         $reflection->compositeImage($gradient, imagick::COMPOSITE_OVER, 0, 0);
+
         /* Добавляем прозрачность. Требуется ImageMagick 6.2.9 или выше */
         $reflection->setImageOpacity(0.9);
+
         /* Создаём пустой холст */
         $canvas = new Imagick();
+
         /* Холст должен быть достаточно большой, чтобы вместить оба изображения */
         $widthNew  = $im->getImageWidth() + 40;
         $heightNew = ($im->getImageHeight() * 2) + 30;
@@ -220,6 +255,7 @@ function setMirrorImage($path)
         }
         $canvas->newImage($widthNew, $heightNew, new ImagickPixel("white"));
         $canvas->setImageFormat("jpg");
+
         /* Наложение оригинального изображения и отражения на холст */
         $canvas->compositeImage($im, imagick::COMPOSITE_OVER, 20, 10);
         $canvas->compositeImage($reflection, imagick::COMPOSITE_OVER, 20,
@@ -227,6 +263,7 @@ function setMirrorImage($path)
         $canvas->writeImage($path);
     }
 }
+
 //==============================================================================
 //                   Функции обработки описания товара
 //==============================================================================
@@ -236,6 +273,7 @@ function setMirrorImage($path)
 function findStringDesc($str, $searchArray, $descProd)
 {
     $str = mb_strtolower(trim($str), 'utf-8');
+
     foreach ($searchArray as $searchString) {
         $pos      = mb_strpos($str, $searchString);
         $findWord = mb_strstr($str, $searchString);
@@ -260,6 +298,7 @@ function findStringDesc($str, $searchArray, $descProd)
     }
     return $descProd;
 }
+
 //------------------------------------------------------------------------------
 //             Вытаскиваем описание из строки по ключевым словам            2
 //------------------------------------------------------------------------------
@@ -302,6 +341,7 @@ function getDesc($strDesc, $descProd, $wovels, $searchArray)
     }
     return $descProd;
 }
+
 //------------------------------------------------------------------------------
 //           удаляем пустые строки с массива описания                   3
 //------------------------------------------------------------------------------
@@ -317,6 +357,7 @@ function deleteEmptyArrDescValues($arrayDesc)
     }
     return $arrayDescNew;
 }
+
 //------------------------------------------------------------------------------
 //   улчшенная функция strstr(обрезает только после указанного символа)      4
 //------------------------------------------------------------------------------
@@ -329,12 +370,14 @@ function strstr_after($haystack, $needle, $case_insensitive = false)
     }
     return $pos;
 }
+
 //==============================================================================
 //                      Функции фильтрации данных
 //==============================================================================
 //------------------------------------------------------------------------------
 //                       фильтр цены товара                                 1
 //------------------------------------------------------------------------------
+
 function filterPrice($price, $regexp)
 {
     $price = htmlentities($price, null, 'utf-8');
@@ -344,9 +387,11 @@ function filterPrice($price, $regexp)
     }
     return $price;
 }
+
 //------------------------------------------------------------------------------
 //                       фильтр размеров и цветов товара                     2
 //------------------------------------------------------------------------------
+
 function filterSizeColors($propertyProd)
 {
     $vowelsSizeColor = array("--- Выберите --- ;", " ", "---Оберіть---;", "всеразмеры;",
@@ -357,8 +402,10 @@ function filterSizeColors($propertyProd)
     $propertyProd    = str_replace($vowelsSizeColor, "", $propertyProd);
     $propertyProd    = substr($propertyProd, 0, strlen($propertyProd) - 1);
     $propertyProd    = (string) $propertyProd;
+
     return $propertyProd;
 }
+
 //------------------------------------------------------------------------------
 //                       фильтр картинок товара                             3
 //------------------------------------------------------------------------------
@@ -366,21 +413,27 @@ function filterUrlImage($srcImage, $curLink)
 {
     $eff    = str_replace("http://", "", $curLink);
     $adasda = explode("/", $eff);
+
     $domain   = array_shift($adasda);
     $srcImage = str_replace("http://", "", $srcImage);
     $srcImage = str_replace($domain, "", $srcImage);
+
     $src = $domain."/".$srcImage;
     $src = str_replace("//", "/", $src);
     $src = "http://".$src;
+
     $src = str_replace("majaly.com.ua/", "", $src);
     $src = str_replace("nelli-co.com/", "", $src);
     if (strpos($src, "%") === false) {
         $src = rawurlencode($src);
     }
+
     $src = str_replace("%3A", ":", $src);
     $src = str_replace("%2F", "/", $src);
+
     return $src;
 }
+
 //------------------------------------------------------------------------------
 //                       фильтр ссылки товара                             4
 //------------------------------------------------------------------------------
@@ -389,6 +442,7 @@ function filterLink($curLink)
     $curLink = str_replace("amp;", "", $curLink);
     return $curLink;
 }
+
 /**
  * Transliterate alias string for shop_com table
  * @param string $input - input alias string
@@ -414,6 +468,7 @@ function transliterate($input)
         "%" => "", "^" => "", "&" => "", "*" => "", "(" => "", ")" => "",
         "+" => "", "=" => "", ";" => "", ":" => "", "'" => "", '"' => '_'
     );
+
     $replacement = array(
         '____',
         '___',
@@ -421,14 +476,18 @@ function transliterate($input)
         "\r\n",
         ' '
     );
+
     $string = strtolower(str_replace($replacement, '_', strtr($input, $chars)));
     $string = '_' === substr($string, -1) ? substr($string, 0, -1) : $string;
+
     return $string;
 }
+
 //==============================================================================
 // Проверяем есть ли селектор в таблице parser если есть то
 //  есть ли селектор на страничке товара который парсится
 //==============================================================================
+
 function checkEmptyOrChangeSelector($selector, $saw, $columnNameSelector)
 {
     if ($selector == "") {
@@ -443,12 +502,14 @@ function checkEmptyOrChangeSelector($selector, $saw, $columnNameSelector)
     } else {
         $arrayProperty = $saw ? $saw->get($selector)->toArray() : null;
     }
+
     if (empty($arrayProperty)) {
         echo "<span style='color:blue'>Массив пуст, на странице товара нет {$selector} - селектора, {$columnNameSelector}!</span>\n";
         return;
     }
     return $arrayProperty;
 }
+
 //==============================================================================
 //                         Функции удаления товара
 //==============================================================================
@@ -501,6 +562,7 @@ function deleteCommodityAll($idBrand, $comId, $delUrl, $mysqli, $visible)
     }
     return $delete;
 }
+
 //------------------------------------------------------------------------------
 //                рекурсивное удаление папок с файлами                      2
 //------------------------------------------------------------------------------
@@ -513,9 +575,11 @@ function removeDirectory($dir)
     }
     rmdir($dir);
 }
+
 //------------------------------------------------------------------------------
 //                      просто скрываем товар                                3
 //------------------------------------------------------------------------------
+
 function updateVisiblOnly($comVisibl, $commodityID, $mysqli)
 {
     if (!($stmt = $mysqli->prepare("UPDATE shop_commodity SET  commodity_visible=?
@@ -526,6 +590,7 @@ function updateVisiblOnly($comVisibl, $commodityID, $mysqli)
     $stmt->execute();
     $stmt->close();
 }
+
 //------------------------------------------------------------------------------
 //                          проверяем если у товра теги                      4
 //------------------------------------------------------------------------------
@@ -542,6 +607,7 @@ function checkTags($id, $mysqli)
     }
     return $result;
 }
+
 //==============================================================================
 //                  Запускаем обрезку и запись картинки
 //==============================================================================
@@ -616,6 +682,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
     } else if (46 == $idBrand || 47 == $idBrand || 49 == $idBrand) {
         require 'brands_parsers/VisionFS/image.php';
     }
+
     return $srcProdArray;
 }
 //==============================================================================
@@ -646,6 +713,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
 //==============================================================================
 //                  Функции для запуска парсинга
 //==============================================================================
+
 /**
  * получаем страницу по ссылке товара
  * @param type $url
@@ -724,6 +792,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
   $result = curl_exec($ch);
   curl_close($ch);
   } */
+
 /**
  * Выбираем курс грн для кардо
  * @param type $url
@@ -756,6 +825,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
   $result = curl_exec($ch);
   curl_close($ch);
   } */
+
 //------------------------------------------------------------------------------
 // Проверяем читаеться ли ссылка если да создаем обьект нокогири            3
 //------------------------------------------------------------------------------
@@ -777,6 +847,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
   }
   return $result;
   } */
+
 //==============================================================================
 //                   Функции для отчета и интерфейса
 //==============================================================================
@@ -797,6 +868,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
         "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан</h4>");
     fclose($fp);
 }*/
+
 //------------------------------------------------------------------------------
 //                      Записать в файл отчета                          2
 //------------------------------------------------------------------------------
@@ -831,6 +903,7 @@ XML;
 XML;
     $wovels = array("<data>", "</data>");
     $xmlstr = str_replace($wovels, "", $xmlstr);
+
     if (file_exists($xmlPathAll)) {
         file_put_contents($xmlPathAll, $xmlstr);
     } else {
@@ -841,6 +914,7 @@ XML;
     $saw = simplexml_load_file($xmlPathAll);
     return $saw;
 }
+
 //------------------------------------------------------------------------------
 //                      Создаем обькт XML                               2
 //------------------------------------------------------------------------------
@@ -849,6 +923,7 @@ function xmlnewObjload($xml)
     $xml = simplexml_load_file($xml);
     return $xml;
 }
+
 //------------------------------------------------------------------------------
 //                       Паттерн XML                                  3
 //------------------------------------------------------------------------------

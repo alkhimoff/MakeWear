@@ -33,7 +33,7 @@ class MySQLi
 
         require_once($_SERVER['DOCUMENT_ROOT'] . '/settings/conf.php');
 
-        $this->mysqli = new \mysqli('p:' . $glb['db_host'], $glb['db_user'], $glb['db_password'], $glb['db_basename']); // p: - add connection pool
+        $this->mysqli = new \mysqli($glb['db_host'], $glb['db_user'], $glb['db_password'], $glb['db_basename']);
         if ($this->mysqli->connect_error) {
             die('Connect Error (' . $this->mysqli->connect_errno . ') ' . $this->mysqli->connect_error);
         }

@@ -24,13 +24,9 @@ session_start();
 //==============================================================================
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
-    
-    //require_once '../dumphper.php';
-    //dump($GLOBALS);    
-    
     if (isset($step) && $step == 0 && $step != "") {
 
-        //Сохраняем массив ссылок на товар из БД
+        //Сохраняем массив ссылок на товар
         $linkArray  = $_SESSION['updateData']['from_url'];
         $countLinks = count($linkArray);
 
@@ -66,7 +62,7 @@ session_start();
             }
         }
 
-        //сохраняем количество ссылок из БД в сессии выводим начало работы
+        //сохраняем количество ссылок в сессии выводим начало работы
         $_SESSION["linkArray"]  = $linkArray;
         $_SESSION["countLinks"] = $countLinks;
 
@@ -77,7 +73,6 @@ session_start();
 
         InterfaceAdmin::init($_SESSION["id"], $countLinks)->setInterfaceVerify($step,
             $content, FALSE, FALSE);
-        /// отрабатывает не сразу а в конце файла (step=0)
         ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $domenName ?>/parser/vir_main.php?step=1"><?php
     }
 
