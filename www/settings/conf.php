@@ -45,7 +45,7 @@ if($_SERVER['HTTP_HOST'] == $localHostName){
     $glb["db_host"] = "13.94.255.147";
 }
 
-echo '<title>' . $glb["db_host"] . '</title>';
+//echo '<title>' . $glb["db_host"] . '</title>';
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
