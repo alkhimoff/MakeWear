@@ -43,6 +43,31 @@
   display: block;
   margin: 4px auto 0;
 }
+.but-up {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #888;
+  border-radius: 600px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear 0s;
+  -moz-transition: all 0.25s linear 0s;
+  -o-transition: all 0.25s linear 0s;
+  transition: all 0.25s linear 0s;
+}
+.but-up:before {
+  content: "";
+  background: url(../image/sprite.png) no-repeat -823px -166px;
+  width: 23px;
+  height: 15px;
+  display: block;
+  margin: 8px auto 0;
+}
+.but-up:hover {
+  border-color: #e8d4d4;
+}
 /* ====================================================
    resset
 ======================================================= */

@@ -57,6 +57,29 @@
 		}
 	}
 }
+.but-up {
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #888;
+	border-radius: 600px;
+	cursor: pointer;
+	.transition();
+    
+    &:before {
+    	content: "";
+    	background: url(../image/sprite.png) no-repeat -823px -166px;
+	    width: 23px;
+	    height: 15px;
+	    display: block;
+	    margin: 8px auto 0;
+    }
+    &:hover {
+    	border-color: #e8d4d4;
+    }
+}
 
 /* ====================================================
    resset
