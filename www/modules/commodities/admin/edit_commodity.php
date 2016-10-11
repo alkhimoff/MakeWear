@@ -190,7 +190,7 @@ if ($_SESSION['status'] == "admin") {
 				$title               = $row->title;
 				$keywords            = $row->keywords;
 				$seodescription      = $row->description;
-				$img                 = $commodity_bigphoto != 0 ? "<img src='http://makewear-images.azureedge.net//{$commodityID}/s_title.jpg'>
+				$img                 = $commodity_bigphoto != 0 ? "<img src='http://makewear-images.azureedge.net/{$commodityID}/s_title.jpg'>
 				<br /><br />
 				<input type='checkbox' name='use_photo' id='id_use_photo' value='1' checked><label for='id_use_photo'>Отображать изображение</label>"
 					: "";

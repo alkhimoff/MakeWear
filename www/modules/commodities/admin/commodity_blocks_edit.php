@@ -467,7 +467,7 @@ if(isset($_GET['sort'])){
 			
 			$star=is_numeric($addimgs[$r_commodity_id])?$addimgs[$r_commodity_id]:0;
 			$commodity_bigphoto=$row->commodity_bigphoto;
-			$photo=$commodity_bigphoto=="1"?"<img src='http://makewear-images.azureedge.net//{$r_commodity_id}/s_title.jpg' style='max-width:80px;max-height:80px;'>":"";
+			$photo=$commodity_bigphoto=="1"?"<img src='http://makewear-images.azureedge.net/{$r_commodity_id}/s_title.jpg' style='max-width:80px;max-height:80px;'>":"";
 			$f=ggg($r_commodity_id);
 			
 			//$commodity_hit=$row->commodity_hit;
