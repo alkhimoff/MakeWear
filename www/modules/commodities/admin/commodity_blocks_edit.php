@@ -737,7 +737,7 @@ if(isset($_GET['sort'])){
 					<div class=\"cl_sidebar\" style='padding: 11px;padding-top: 0px;'>
 						<h3>Изображение</h3>
 						<div class=\"cl_edit_phoo\" style='width: initial;'>
-							<img src=\"/templates/shop/image/block_share/block-{$block}.jpg\">
+							<img src=\"http://makewear-images.azureedge.net/{$block}.jpg\">
 							<br><br>
 							<input type=\"checkbox\" name=\"use_photo\" id=\"id_use_photo\" value=\"1\" checked><label for=\"id_use_photo\">Отображать изображение</label><br>
 							<input name=\"myfile1\" type=\"file\" id='uploadBlock' >
