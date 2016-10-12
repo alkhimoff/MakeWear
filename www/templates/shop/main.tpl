@@ -190,7 +190,7 @@
                                 {$topMenu}
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                        <div class=" col-lg-4 col-md-3 col-sm-12 col-xs-12 tech-info-wrap">
                             <div class="tech-info row">
                                 <div class="tech-info__item tech-info__item-basket col-md-4 col-sm-4 col-xs-4">
                                     <div class="out">               
