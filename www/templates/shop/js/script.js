@@ -2866,15 +2866,19 @@ $(document).ready(function(){
     $('.s-button-hide').click(function(){
         if ($('.insets-wrap').css('height') == '1620px')
             {
-                $('.insets-wrap').animate({height: "699"}, 900);
-                $('#s-button-hide_show').css('display','table');
+                $('.insets-wrap').css('height','699');
+                $('#s-button-hide_show').css('display','block');
                 $('#s-button-hide_hide').css('display','none');
+                $('.show-more-brands__but').addClass('_down');
+                $('.show-more-brands__but').removeClass('_up');
             }
         else
             {
-                $('.insets-wrap').animate({height: "1620"}, 900);
+                $('.insets-wrap').css('height','1620');
                 $('#s-button-hide_show').css('display','none');
-                $('#s-button-hide_hide').css('display','table');
+                $('#s-button-hide_hide').css('display','block');
+                $('.show-more-brands__but').addClass('_up');
+                $('.show-more-brands__but').removeClass('_down');
             }
         /*$('.insets-wrap').animate({height: $(this)[927].scrollHeight}, 200);*/
     });

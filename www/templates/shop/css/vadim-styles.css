@@ -16,6 +16,12 @@
 .gift-slider_home {
   padding-bottom: 20px;
 }
+.insets-wrap {
+  -webkit-transition: all 0.25s linear 0s;
+  -moz-transition: all 0.25s linear 0s;
+  -o-transition: all 0.25s linear 0s;
+  transition: all 0.25s linear 0s;
+}
 /****** tabs category */
 .tabs-wrap-category_home {
   margin: 20px 0;
@@ -28,12 +34,13 @@
   height: inherit!important;
 }
 .about-icon i {
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   border: 1px solid #BACCCD;
   border-radius: 600px;
-  margin: 3px 10px 0 0;
+  margin: 2px 10px 0 0;
   float: left;
+  position: relative;
 }
 .about-icon i:before {
   content: "";
@@ -41,32 +48,33 @@
   width: 13px;
   height: 12px;
   display: block;
-  margin: 4px auto 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .but-up {
   position: fixed;
   bottom: 40px;
   right: 10px;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #888;
-  border-radius: 600px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   -webkit-transition: all 0.25s linear 0s;
   -moz-transition: all 0.25s linear 0s;
   -o-transition: all 0.25s linear 0s;
   transition: all 0.25s linear 0s;
-}
-.but-up:before {
-  content: "";
-  background: url(../image/sprite.png) no-repeat -823px -166px;
-  width: 23px;
-  height: 15px;
-  display: block;
-  margin: 8px auto 0;
+  background: url(../image/sprite.png) no-repeat -384px -527px;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .but-up:hover {
-  border-color: #e8d4d4;
+  opacity: 0.7;
 }
 /* ====================================================
    resset
@@ -150,6 +158,59 @@
   text-decoration: none;
   opacity: 0.7;
 }
+.show-more-brands-wrap {
+  position: relative;
+  height: 70px;
+  border-top: 1px solid #ccc;
+  margin-top: 36px;
+}
+.show-more-brands__txt {
+  position: absolute;
+  top: -22px;
+  left: -174px;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.show-more-brands__txt._hidden {
+  display: none;
+}
+.show-more-brands__but {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  z-index: 200;
+  background-color: #F1F1F1;
+  border-radius: 50px;
+  border: 1px #ccc solid;
+  cursor: pointer;
+}
+.show-more-brands__but:before {
+  content: "";
+  background: url('../image/sprite.png') no-repeat;
+  background-position: -776px -275px;
+  width: 23px;
+  height: 14px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.show-more-brands__but._down:before {
+  background-position: -776px -276px;
+}
+.show-more-brands__but._up:before {
+  background-position: -824px -276px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue297 {
+  background-position: -7103px -1687px;
+}
 /* ====================================================
    independet block
 ======================================================= */
@@ -208,7 +269,9 @@
 .main-feedback-item input::-webkit-input-placeholder {
   color: #D6D6D6;
 }
-/****** apdate styles */
+/* ====================================================
+   adapts styles
+======================================================= */
 .main-container .main-content .brand-item .info__top__column:first-child .name {
   line-height: 14px!important;
 }
@@ -227,4 +290,30 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
 .insets-wrap {
   overflow: hidden;
   height: 699px;
+}
+/****** 1279 -> 1024 */
+@media handheld, only screen and (max-width: 1234px) {
+  header .header-bottom .top-menu ul .first-level {
+    padding-left: 14px;
+  }
+  header .top-menu ul .first-level {
+    font-size: 11px;
+  }
+}
+/****** 980 -> 768 */
+@media handheld, only screen and (max-width: 980px) {
+  header .header-bottom .header-bottom__main .search-field {
+    width: 80%;
+    float: right;
+  }
+}
+/****** 768 ->  */
+@media handheld, only screen and (max-width: 768px) {
+  header .header-bottom .header-bottom__main .search-field {
+    width: 100%;
+    float: none;
+  }
+  .banner-special {
+    display: none;
+  }
 }

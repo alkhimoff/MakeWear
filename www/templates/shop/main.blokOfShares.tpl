@@ -23,9 +23,9 @@
                 </div>
             </div>
 
-            <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0 0px;">
+            <div class="col-md-12 col-sm-12 col-xs-12 banner-special" style="padding: 0 0px;">
                 <a href="/organizer-sp/">
-                    <img style="width: 100%;" src="http://makewear-images.azureedge.net/assets/sp-special.jpg">
+                    <img style="width: 100%;" src="templates/shop/image/baner_comment_slider/banner-special.png">
                 </a>
             </div>
         </div>
@@ -960,9 +960,15 @@
                     <!--brends all-->
 
                 </div>
-                <!--insets-wrap-->
+                <!--insets-wrap
 				<a href="#main_content" id="s-button-hide_show" class="button_hide s-button-hide">Показать все...</a>
-				<a href="#main_content" id="s-button-hide_hide" class="button_hide s-button-hide _hidden">Скрыть...</a>
+				<a href="#main_content" id="s-button-hide_hide" class="button_hide s-button-hide _hidden">Скрыть...</a>-->
+
+				<div class="show-more-brands-wrap">
+			       <a href="#main_content" id="s-button-hide_show" class="show-more-brands__txt s-button-hide">Показать все</a>
+			       <a href="#main_content" id="s-button-hide_hide" class="show-more-brands__txt s-button-hide _hidden">Скрыть</a>
+			       <div class="show-more-brands__but s-button-hide"></div> 
+			    </div>
 
             </div>
             <!--tabs-wrap-category tabs-wrap-category_home-->
