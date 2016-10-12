@@ -56,8 +56,8 @@ define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_basename"]         = getenv('DB_NAME'));
-$glb["db_user"]             = getenv('DB_PASSWORD'));
+$glb["db_basename"]         = getenv('DB_NAME');
+$glb["db_user"]             = getenv('DB_PASSWORD');
 
 $glb["db_password"]         = "festivall1299";
 $glb["session_id"]          = $session_id;
