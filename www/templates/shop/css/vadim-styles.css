@@ -22,6 +22,25 @@
   -o-transition: all 0.25s linear 0s;
   transition: all 0.25s linear 0s;
 }
+.main-container.commodities .main-content .tabs-wrap-category .insets-wrap {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.main-container.commodities .main-content .tabs-wrap-category > ul .my-inset {
+  top: 1px;
+  position: relative;
+  z-index: 1;
+}
+.slick-slider-comments {
+  padding-bottom: 80px;
+  padding-top: 20px;
+  margin-bottom: 20px!important;
+  background: #fff;
+}
+.slick-slider-comments .slick-dots {
+  bottom: 35px!important;
+}
 /****** tabs category */
 .tabs-wrap-category_home {
   margin: 20px 0;
@@ -160,13 +179,16 @@
 }
 .show-more-brands-wrap {
   position: relative;
-  height: 70px;
-  border-top: 1px solid #ccc;
-  margin-top: 36px;
+  height: 40px;
+  margin-top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 .show-more-brands__txt {
   position: absolute;
-  top: -22px;
+  top: 13px;
   left: -174px;
   right: 0;
   margin: 0 auto;
@@ -177,7 +199,7 @@
 }
 .show-more-brands__but {
   position: absolute;
-  top: -26px;
+  top: 14px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -294,7 +316,7 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
 /****** 1279 -> 1024 */
 @media handheld, only screen and (max-width: 1234px) {
   header .header-bottom .top-menu ul .first-level {
-    padding-left: 14px;
+    padding-left: 10px;
   }
   header .top-menu ul .first-level {
     font-size: 11px;
@@ -306,7 +328,12 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     width: 80%;
     float: right;
   }
+  header .header-bottom .tech-info {
+    float: right;
+    left: -16px;
+  }
 }
+/****** 800 -> 768 */
 /****** 768 ->  */
 @media handheld, only screen and (max-width: 768px) {
   header .header-bottom .header-bottom__main .search-field {

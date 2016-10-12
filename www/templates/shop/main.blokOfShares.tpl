@@ -960,9 +960,7 @@
                     <!--brends all-->
 
                 </div>
-                <!--insets-wrap
-				<a href="#main_content" id="s-button-hide_show" class="button_hide s-button-hide">Показать все...</a>
-				<a href="#main_content" id="s-button-hide_hide" class="button_hide s-button-hide _hidden">Скрыть...</a>-->
+                <!--insets-wrap-->
 
 				<div class="show-more-brands-wrap">
 			       <a href="#main_content" id="s-button-hide_show" class="show-more-brands__txt s-button-hide">Показать все</a>
