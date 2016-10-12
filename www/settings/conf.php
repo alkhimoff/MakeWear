@@ -57,9 +57,9 @@ define('CACHE_TIME_MENU', 60*60*2);
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
 $glb["db_basename"]         = getenv('DB_NAME');
-$glb["db_user"]             = getenv('DB_PASSWORD');
+$glb["db_user"]             = getenv('USER_NAME');
+$glb["db_password"]         = getenv('DB_PASSWORD');
 
-$glb["db_password"]         = "festivall1299";
 $glb["session_id"]          = $session_id;
 $glb["teg_robots"]          = false;
 $glb["sys_mail"]            = $global_meil              = "sales@makewear.com.ua";
