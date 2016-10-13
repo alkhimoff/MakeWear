@@ -2871,6 +2871,7 @@ $(document).ready(function(){
                 $('#s-button-hide_hide').css('display','none');
                 $('.show-more-brands__but').addClass('_down');
                 $('.show-more-brands__but').removeClass('_up');
+                $('.insets-wrap').css('overflow','hidden');
             }
         else
             {
@@ -2879,6 +2880,7 @@ $(document).ready(function(){
                 $('#s-button-hide_hide').css('display','block');
                 $('.show-more-brands__but').addClass('_up');
                 $('.show-more-brands__but').removeClass('_down');
+                $('.insets-wrap').css('overflow','overlay');
             }
         /*$('.insets-wrap').animate({height: $(this)[927].scrollHeight}, 200);*/
     });
