@@ -52,7 +52,7 @@ if (!isset($arrayIdUrl) || ($arrayIdUrl["mainSrcImg"][0] == "http://www.glem.com
 } else {
     // action discount 40%
     $price  = ceil($arrayIdUrl["price"] * $_SESSION['updatePrice']);
-    $price2 = ceil($arrayIdUrl["price2"] * 1.15);
+    $price2 = ceil($arrayIdUrl["price2"]);
 
     $optionsProdArr = $arrayIdUrl["colorSize"];
     if ($price == 0) {
