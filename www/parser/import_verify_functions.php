@@ -55,7 +55,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $bren
             cropInboxImg($path, 335, 0);
         }
 
-        setMirrorImage($path);
+        //setMirrorImage($path);
         if ($handle !== FALSE) {
             $nameImg  = $nameImArray[0];
             $sNameImg = $nameImArray[1];
@@ -102,8 +102,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $bren
 //------------------------------------------------------------------------------
 //                  Обработка и запись картинок                             2
 //------------------------------------------------------------------------------
-function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
-                           $idBrand)
+function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName, $idBrand)
 {
     $blobStorage = new BlobStorage();
 

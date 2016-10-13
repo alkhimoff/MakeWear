@@ -196,8 +196,7 @@ session_start();
 
         //ПЕРЕЗАЛИВАЕМ ФОТО
         if ($_SESSION['changeIm'] == TRUE) {
-            $resultImageArray = writeImage($idBrand, $curLink, $saw,
-                $commodityID, $mysqli, $verify);
+            $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
 
             //отчет если перезалилось фото
             $report->echoChangePphoto($resultImageArray['mainSrcImg'],
@@ -225,8 +224,7 @@ session_start();
                 $report->echoDeleteProd(true, $commodityID);
             }
             $content = $report->reportEnd();
-            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step,
-                $content, TRUE, $visibleUpdate);
+            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step, $content, TRUE, $visibleUpdate);
             //die('asd');
             ?><meta http-equiv="refresh" content="2;URL=http://<?php echo $requestUrl ?>"><?php
             die;
