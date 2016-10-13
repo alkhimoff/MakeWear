@@ -230,11 +230,74 @@
 .show-more-brands__but._up:before {
   background-position: -824px -276px;
 }
+/****** clothes women */
 .main-container.commodities .catalog_item .catalog_image#catalogue297 {
   background-position: -7547px -1687px;
 }
 .main-container.commodities .catalog_item .catalog_image#catalogue318 {
   background-position: -1998px -726px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue298 {
+  background-position: -1997px -252px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue313 {
+  background-position: -2221px -252px;
+}
+/****** clothes men */
+.main-container.commodities .catalog_item .catalog_image#catalogue296 {
+  background-position: -1110px -1929px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue319 {
+  background-position: -1333px -1929px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue320 {
+  background-position: -1553px -1929px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue304 {
+  background-position: -221px -965px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue314 {
+  background-position: -885px -489px;
+}
+/****** clothes kids */
+.main-container.commodities .catalog_item .catalog_image#catalogue288 {
+  background-position: -3329px -1205px;
+}
+/****** brands */
+.main-container.commodities .catalog_item .catalog_image#catalogue316 {
+  background: url(../image/sprite-brand.jpg) -888px -1118px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue317 {
+  background: url(../image/sprite-brand.jpg) 8px -1282px;
+}
+.main-container.commodities .catalog_item .catalog_image#catalogue321 {
+  background: url(../image/sprite-brand.jpg) -231px -1288px;
+}
+.main-container .main-content .brand-slider-317 {
+  background-position: -176px -1082px;
+}
+.main-container .main-content .brand-slider-324 {
+  background-position: -178px -922px;
+}
+.main-container .main-content .brand-slider-316 {
+  background-position: 28px -1081px;
+}
+.main-container .main-content .brand-slider-321 {
+  background-position: -897px -365px;
+}
+.main-container .main-content .brand-slider-325 {
+  background-position: -539px -10px;
+}
+.main-container .main-content .product__info__bottom .column .counter-group input {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 /* ====================================================
    independet block
