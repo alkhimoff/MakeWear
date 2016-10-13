@@ -101,8 +101,8 @@ session_start();
             //Готовим ссылку для парсинга
             $wovels        = array("$", "#");
             $wovelsReplace = array($i, ";");
-            $curLink       = trim(str_replace($wovels, $wovelsReplace,
-                    $curLinkCat));
+            $curLink       = trim(str_replace($wovels, $wovelsReplace, $curLinkCat));
+            
             if ($idBrand == 9) {
                 $curLink = trim(str_replace("**", $sellinI, $curLinkCat));
                 $sellinI = $sellinI + 51;
@@ -110,8 +110,8 @@ session_start();
 
             //страница поставщика по URL
             try {
-                $provaderPage = ProvaderPageFactory::build($idBrand, $step,
-                        $curLink);
+                $provaderPage = ProvaderPageFactory::build($idBrand, $step, $curLink);
+                
                 if (property_exists($provaderPage, 'nokogiriObject')) {
                     $saw = $provaderPage->nokogiriObject;
                 } else {

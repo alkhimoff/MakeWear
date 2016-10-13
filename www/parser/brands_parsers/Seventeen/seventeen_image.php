@@ -7,14 +7,12 @@ $srcProdArray = array('mainSrcImg' => "", 'dopSrcImg' => "");
 $photoIdArray = array();
 
 //Image
-$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
-    'img - главная картинка');
+$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка');
 
 $srcProd = "";
 if (isset($arrayImage)) {
     $wovels                     = array("s_", "m_");
-    $lowSrc                     = str_replace($wovels, "_",
-        $arrayImage[0]['src']);
+    $lowSrc                     = str_replace($wovels, "_", $arrayImage[0]['src']);
     $wovels1                    = array("s", "m");
     $lowSrc                     = str_replace($wovels1, "", $lowSrc);
     $lowSrc                     = str_replace("_h", "_sh", $lowSrc);
@@ -22,10 +20,9 @@ if (isset($arrayImage)) {
     $srcProdArray['mainSrcImg'] = $srcProd;
     $existIm                    = TRUE;
 }
-//var_dump($srcProd);
+
 //DopImage
-$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw,
-    'dopimg - дополнительны картинки');
+$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw, 'dopimg - дополнительны картинки');
 
 $srcDopIm = "";
 if (isset($arrayDopImage)) {
@@ -41,13 +38,11 @@ if (isset($arrayDopImage)) {
         if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
             $srcProdArray['dopSrcImg'][] = $srcDopIm;
             $existIm                     = TRUE;
-            $photoIdArray[]              = insertInShopImBd($commodityID,
-                $mysqli);
+            $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
         }
     }
 }
-//var_dump($srcProdArray);
-//die;
+
 //CropandWrite images
 if ($existIm == TRUE) {
     if (!empty($srcProdArray['dopSrcImg'])) {
@@ -55,7 +50,6 @@ if ($existIm == TRUE) {
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
     $brendName   = "jhiva_images/";
-    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
-        $brendName, $idBrand);
+    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);
 }
 

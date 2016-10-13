@@ -61,8 +61,7 @@ session_start();
             //setcookie("PHPSESSID", null);
             die("НЕТУ ССЫЛОК НА ТОВАР!!!");
         } else {
-            $report = new ReportParser($_SESSION["cat_id"], 0, $step, "",
-                $countLinks);
+            $report = new ReportParser($_SESSION["cat_id"], 0, $step, "", $countLinks);
             $report->createFileReport();
         }
 
@@ -75,8 +74,7 @@ session_start();
         $report->echoStart($countLinks);
         $content = $report->reportEnd();
 
-        InterfaceAdmin::init($_SESSION["id"], $countLinks)->setInterfaceParser($step,
-            $content, FALSE);
+        InterfaceAdmin::init($_SESSION["id"], $countLinks)->setInterfaceParser($step, $content, FALSE);
         ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $domenName ?>/parser/parser_main.php?step=1"><?php
     }
 
@@ -113,8 +111,7 @@ session_start();
         }
 
         //начало записи отчета
-        $report = new ReportParser($_SESSION["cat_id"], $remeindLinks, $step,
-            $curLink, $countLinks);
+        $report = new ReportParser($_SESSION["cat_id"], $remeindLinks, $step, $curLink, $countLinks);
         $report->reportStart();
         if ($comExistId == FALSE) {
 //==============================================================================
@@ -134,8 +131,7 @@ session_start();
 
             //страница поставщика по URL
             try {
-                $provaderPage = ProvaderPageFactory::build($idBrand, $step,
-                        $curLink);
+                $provaderPage = ProvaderPageFactory::build($idBrand, $step, $curLink);
                 if (property_exists($provaderPage, 'nokogiriObject')) {
                     $saw = $provaderPage->nokogiriObject;
                 } else {
@@ -151,8 +147,7 @@ session_start();
 
                 //записываем данные в файл отчета и в интерфейс
                 $content = $report->reportEnd();
-                InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
-                    $content, FALSE);
+                InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step, $content, FALSE);
                 ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $requestUrl ?>"><?php
                 die;
             }
@@ -217,24 +212,20 @@ session_start();
 
                 //end cardo
                 //записываем привязку категории к id товара
-                $mysqli->query("INSERT INTO `shop_commodities-categories` SET
-                      commodityID='{$commodityID}',
-                      categoryID={$catId}");
+                $mysqli->query("INSERT INTO `shop_commodities-categories` SET commodityID='{$commodityID}', categoryID={$catId}");
                 if ($mysqli->errno) {
                     die('Insert shop_commodities-categories Error ('.$mysqli->errno.') '.$mysqli->error);
                 }
 
                 //записываем алиас в бд
                 $alias = transliterate($comName).'_'.transliterate($code);
-                $mysqli->query("UPDATE shop_commodity SET
-                      alias='{$alias}' WHERE commodity_ID='{$commodityID}'");
+                $mysqli->query("UPDATE shop_commodity SET alias='{$alias}' WHERE commodity_ID='{$commodityID}'");
                 if ($mysqli->errno) {
                     die('Update shop_commodity SET alias Error ('.$mysqli->errno.') '.$mysqli->error);
                 }
 
                 //вызываем обработку и запись фоток
-                $resultImageArray = writeImage($idBrand, $curLink, $saw,
-                    $commodityID, $mysqli, $verify);
+                $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
 
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,
@@ -245,35 +236,30 @@ session_start();
                 $_SESSION['linkArrayCom'][$curLink] = $commodityID;
                 $insert                             = TRUE;
             } else {
-
                 //Выводим отчет если дубликат или нет в наличие
-                $report->echoDublicatOrNotExist($resultParsArray['existDub'][0],
-                    $remeindLinks, $step, $curLink, $catId, $code, $comName);
+                $report->echoDublicatOrNotExist($resultParsArray['existDub'][0], $remeindLinks, $step, $curLink, $catId, $code, $comName);
             }
 
             //записываем данные в файл отчета и в интерфейс
             $content = $report->reportEnd();
 
-            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
-                $content, $insert);
+            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step, $content, $insert);
 //            die("end");
             //Рендирим на новыю ссылку товара
             ?><meta http-equiv="refresh" content="3;URL=http://<?php echo $requestUrl ?>"><?php
         } else {
 
             //Если товар уже есть выводим мини отчет, рендирим на новыю ссылку товара
-            $report->echoExistProd($remeindLinks, $step, $curLink, $comExistId,
-                $catId);
+            $report->echoExistProd($remeindLinks, $step, $curLink, $comExistId, $catId);
 
             //записываем данные в файл отчета и в интерфейс
             $insert  = FALSE;
             $content = $report->reportEnd();
 
-            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step,
-                $content, $insert);
+            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceParser($step, $content, $insert);
             //die("end");
             //Рендирим на новыю ссылку товара
-            ?><meta http-equiv="refresh" content="0;URL=http://<?php echo $requestUrl ?>"><?php
+            ?><meta http-equiv="refresh" content="3;URL=http://<?php echo $requestUrl ?>"><?php
         }
     }
     ?>
@@ -297,8 +283,7 @@ session_start();
  * @param type $pageBody
  * @return type
  */
-function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
-                              $statusCode, $pageBody)
+function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate, $statusCode, $pageBody)
 {
     switch ($idBrand) {
         case 1:

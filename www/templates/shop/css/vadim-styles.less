@@ -6,6 +6,16 @@
     visibility: hidden;
 }
 
+/**
+ * Всякие заготовки
+ */
+.transition (@property: all, @duration: 0.25s, @function:linear, @delay:0s){
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+
 /****** other */
 .wrap-color {
     background-color: #fff;
@@ -87,6 +97,24 @@
 	    background: linear-gradient(to bottom,#63adb7 0%,#4a949f 100%);
     }
 }
+.button_hide {
+    margin: 10px auto 0;
+    display: table;
+    background-color: #54A5B2;
+    height: 35px;
+    color: #fff;
+    padding: 0 25px;
+    line-height: 35px;
+    .transition();
+    &._hidden {
+        display: none;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.7;
+    }
+}
 
 /* ====================================================
    independet block
@@ -158,8 +186,17 @@
 }
 #click-podarok,
 #click-regestration {
-    display: none;
+    opacity: 0; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 375px;
 }
 header .tech-info__item .out .out__info-block .pop-title .summ {
     font-size: 13px;  
+}
+.insets-wrap {
+    overflow: hidden;
+    height: 699px;
 }

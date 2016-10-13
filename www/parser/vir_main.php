@@ -184,8 +184,7 @@ session_start();
         $comCount    = $_SESSION['updateData']['size_count'][$step];
 
         //запускаем парсинг
-        if ($_SESSION['changeCod'] == TRUE || $_SESSION['changeName'] == TRUE || $_SESSION['changeDesc']
-            == TRUE) {
+        if ($_SESSION['changeCod'] == TRUE || $_SESSION['changeName'] == TRUE || $_SESSION['changeDesc']  == TRUE) {
             $verify = "verifyImp";
         } else {
             $verify = "verify";

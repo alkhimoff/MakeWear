@@ -2,7 +2,7 @@
 if ($_SESSION['status']=="admin")
 {
 	$center = "
-		<form action='action_page.php' method="POST">
+		<form action='action_page.php' method='POST'>
 		Имя:<br>
 		<input type='text' name= 'name' >
 		<br>

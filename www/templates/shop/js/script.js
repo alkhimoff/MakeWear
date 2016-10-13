@@ -2860,3 +2860,23 @@ function clear_brends() {
     $(".brands-category .slick-dots").css({"display": "block"});
     $(".item_brr").remove();
 }
+
+//Скрываем и открываем контент категорий
+$(document).ready(function(){
+    $('.s-button-hide').click(function(){
+        if ($('.insets-wrap').css('height') == '1620px')
+            {
+                $('.insets-wrap').animate({height: "699"}, 900);
+                $('#s-button-hide_show').css('display','table');
+                $('#s-button-hide_hide').css('display','none');
+            }
+        else
+            {
+                $('.insets-wrap').animate({height: "1620"}, 900);
+                $('#s-button-hide_show').css('display','none');
+                $('#s-button-hide_hide').css('display','table');
+            }
+        /*$('.insets-wrap').animate({height: $(this)[927].scrollHeight}, 200);*/
+    });
+    
+});
