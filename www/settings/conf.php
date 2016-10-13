@@ -47,7 +47,8 @@ if($_SERVER['HTTP_HOST'] == $localHostName){
 
 //echo '<title>' . $glb["db_host"] . '</title>';
 
-define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
+//константа EXIST_ACTION_BRANDS определяет 40%-е скидки на бренды. Равна строке номеров брендов, перечисленных через запятую.
+define('EXIST_ACTION_BRANDS', '');
 
 //caching time
 define('CACHE_TIME_PRODUCT', 60*60*3);
@@ -56,19 +57,18 @@ define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_basename"]         = "test_zoond_make"; 
-$glb["db_user"]             = "test_zoond_make";
-$glb["db_password"]         = "festivall1299";
+$glb["db_basename"]         = getenv('DB_NAME');
+$glb["db_user"]             = getenv('USER_NAME');
+$glb["db_password"]         = getenv('DB_PASSWORD');
+
 $glb["session_id"]          = $session_id;
 $glb["teg_robots"]          = false;
 $glb["sys_mail"]            = $global_meil              = "sales@makewear.com.ua";
 $glb["mail_host"]           = str_replace("www.", "", $_SERVER['HTTP_HOST']);
 $glb["request_url_encode"]  = urldecode($request_url);
 $glb["request_url"]         = urldecode($request_url);
-$glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
-    //$glb["domain"]              = $_SERVER['HTTP_HOST'];
+$glb["domain"]              = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
-    //$glb["gallery_domen"]       = $gallery_domen            = "makewear";
 /*
 $dblocation = "13.94.255.147";    
 $dbname = "test_zoond_make";    
