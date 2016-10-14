@@ -165,13 +165,13 @@ session_start();
             $comExist         = $resultParsArray['exist'];
             $price            = $resultParsArray["price"];
             $price2           = $resultParsArray["price2"];
-            $comSizes         = $resultParsArray["sizes"];
+            $comSizes         = $resultParsArray["sizes"];///?=""
             $comOptions       = $resultParsArray["options"];
-            $comCount         = $resultParsArray['count'];
+            $comCount         = $resultParsArray['count'];///?=""
             $code             = $resultParsArray['cod'];
             $comName          = $resultParsArray['name'];
             $comFullDesc      = $resultParsArray['desc'];
-            $comDuplicate     = $resultParsArray['existDub'][1];
+            $comDuplicate     = $resultParsArray['existDub'][1];///?=""
             $commodityAddDate = date("Y-m-d h:i:s");
             $catId;
             $step;
@@ -204,7 +204,7 @@ session_start();
                         $comDuplicate)) {
                     die('Insert shop_commodity Error ('.$stmt->errno.') '.$stmt->error);
                 }
-                if (!$stmt->execute() || !$stmt->close()) {
+                if (!$stmt->execute() || !$stmt->close()) {///?
                     die('Insert shop_commodity Error ('.$stmt->errno.') '.$stmt->error);
                 }
 
@@ -225,7 +225,7 @@ session_start();
                 }
 
                 //вызываем обработку и запись фоток
-                $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
+              //  $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
 
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,

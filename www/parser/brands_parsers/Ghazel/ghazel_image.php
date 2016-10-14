@@ -28,8 +28,7 @@ if (isset($_SESSION["imgDop"]) && $_SESSION["imgDop"][0] !== "") {
         if ($srcProdArray['mainSrcImg'] !== $srcDopIm && $srcDopIm !== 'http://www.glem.com.ua/') {
             $srcProdArray['dopSrcImg'][] = $srcDopIm;
             $existIm                     = TRUE;
-            $photoIdArray[]              = insertInShopImBd($commodityID,
-                $mysqli);
+            $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
         }
     }
 

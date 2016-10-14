@@ -10,6 +10,7 @@ ini_set('magic_quotes_gpc', 'on');
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
+// перед push for git - править!
 $localHost       = 'mwdev';
 $myBranchGitHost = 'makewear-admin-dyachuksergey.azurewebsites';
 $mainSiteHost    = 'makewear';
@@ -41,23 +42,22 @@ if($_SERVER['HTTP_HOST'] == $localHost){
     // https://makewear.blob.core.windows.net/ 
     define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');  
     $glb["db_host"]         = "127.0.0.1";
-    $glb["db_basename"]     = "test_zoond_make"; 
-    $glb["db_user"]         = "test_zoond_make";
-    $glb["db_password"]     = "festivall1299";
-}else if($_SERVER['HTTP_HOST'] == $myBranchGitHost){
-    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
-    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-    $glb["db_host"]         = "13.94.255.147";
-    $glb["db_basename"]     = "test_zoond_make"; 
-    $glb["db_user"]         = "test_zoond_make";
-    $glb["db_password"]     = "festivall1299";
 }else if($_SERVER['HTTP_HOST'] == $mainSiteHost){
-    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
-    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-    $glb["db_host"]         = "13.94.255.147";
     $glb["db_basename"]     = getenv('DB_NAME');
     $glb["db_user"]         = getenv('USER_NAME');
     $glb["db_password"]     = getenv('DB_PASSWORD');
+}
+
+if($_SERVER['HTTP_HOST'] == $localHost || $_SERVER['HTTP_HOST'] == $myBranchGitHost){
+    $glb["db_basename"]     = "test_zoond_make"; 
+    $glb["db_user"]         = "test_zoond_make";
+    $glb["db_password"]     = "festivall1299";
+}
+
+if($_SERVER['HTTP_HOST'] == $myBranchGitHost || $_SERVER['HTTP_HOST'] == $mainSiteHost){
+    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
+    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
+    $glb["db_host"]         = "13.94.255.147";
 }
 
 //echo '<title>' . $glb["db_host"] . '</title>';
