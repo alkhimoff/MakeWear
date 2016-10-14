@@ -27,7 +27,7 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
 
     if ($url == $curLink && $offer['available'] == TRUE) {
-        $exist = $size  = (string) $offer->param[1]; /// размеры
+        $exist = $size  = (string) $offer->param[1]; 
         $color = (string) $offer->param[0];
 
         $imgMain     = (string) $offer->picture[0];
