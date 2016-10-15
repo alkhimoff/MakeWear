@@ -96,7 +96,7 @@ session_start();
         $report->echoNewLinks();
 
         $sellinI = 1;
-        for ($i = 1; $i < 200; $i++) {
+        for ($i = 1; $i < 200; $i++) {///
 
             //Готовим ссылку для парсинга
             $wovels        = array("$", "#");
@@ -106,7 +106,10 @@ session_start();
             if ($idBrand == 9) {
                 $curLink = trim(str_replace("**", $sellinI, $curLinkCat));
                 $sellinI = $sellinI + 51;
-            }
+            }/*
+            if($idBrand == 43){ /// Ghazle заморожено (xml)
+                $curlink = 'http://ghazel.com.ua/vesennie-platya/'. $sellinI .'/;';
+            }*/
 
             //страница поставщика по URL
             try {

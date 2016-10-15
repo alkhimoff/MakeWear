@@ -26,7 +26,9 @@ session_start();
 
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
-
+if($step == 800){
+    $xyz = 0;
+}
     if (44 == $_SESSION["id"]) {
         $action = 'parser';
         require 'brands_parsers/FashionLook/fashion_look_44_312.php';
@@ -154,7 +156,7 @@ session_start();
 
             //запускаем парсинг
             $verify          = "import";
-            $resultParsArray = selectAndParserBrend($idBrand, $curLink, $saw,
+            $resultParsArray = selectAndParserBrend($idBrand, $curLink, $saw, /// <--
                 $verify, $_SESSION["duplicateArray"], $statusCode, $pageBody);
 
 //==============================================================================
@@ -224,9 +226,10 @@ session_start();
                     die('Update shop_commodity SET alias Error ('.$mysqli->errno.') '.$mysqli->error);
                 }
 
+                if(!$_SERVER['HTTP_HOST'] == 'mwdev'){
                 //вызываем обработку и запись фоток
-              //  $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
-
+                $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
+                }
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,
                     $price2, $resultImageArray['mainSrcImg'],

@@ -25,10 +25,9 @@ class ProvaderPageFactory
         switch ($idBrand) {
             case 1:
             case 6:
-            case 43:
                 $provaderPage = new ProvaderXML($idBrand, $step);
                 $provaderPage->createXMLObject();
-                break;
+                break;          
             case 14:
                 $provaderPage = new ProvaderPageSkHouse($url);
                 $provaderPage->getWebPage("");
@@ -44,7 +43,15 @@ class ProvaderPageFactory
                 $provaderPage->getWebPage();
                 $provaderPage->createNokogiriObject();
                 break;
+            case 43: /// Ghazel заморожено, если не будет xml продолжить
+                $provaderPage = new ProvaderXML($idBrand, $step);
+               // if(!$provaderPage->xmlObject == NULL){             
+                    $provaderPage->createXMLObject();
+                    break;
+               // }
+                   // goto def; 
             default:
+                //def:
                 $provaderPage = new ProvaderPage($url);
                 $provaderPage->getWebPage("");
                 $provaderPage->createNokogiriObject();
