@@ -59,7 +59,7 @@ if (isset($arrayPrice)) {
         $price2 = filterPrice(trim($arrayPrice[3]), $regexp);
     }
     $price = ceil(intval($price2 * 1.8) * $_SESSION['updatePrice']);
-    $price2 = ceil(1.15 * $price2);
+    $price2 = ceil($price2);
 }
 
 if ($price == 0) {

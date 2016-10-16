@@ -62,7 +62,8 @@ if($_SERVER['HTTP_HOST'] == $myBranchGitHost || $_SERVER['HTTP_HOST'] == $mainSi
 
 // echo '<title>' . $glb["db_host"] . '</title>';
 
-define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
+//константа EXIST_ACTION_BRANDS определяет 40%-е скидки на бренды. Равна строке номеров брендов, перечисленных через запятую.
+define('EXIST_ACTION_BRANDS', '');
 
 //caching time
 define('CACHE_TIME_PRODUCT', 60*60*3);
