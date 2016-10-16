@@ -70,15 +70,24 @@ if (isset($matches[1])) {
     }
     $sizesProd = substr($sizesProd, 1);
 }
-//var_dump($sizesProd);
+if($sizesProd == ""){ ///
+    $arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,'sizeCol - размер');
+
+    if (isset($arraySize)) {
+        foreach ($arraySize as $value) {
+            $sizesProd = $sizesProd.trim($value).";";
+        }
+        $sizesProd = filterSizeColors($sizesProd);
+    }
+}
 //--------------------------------Cod------------------------------------5-----
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
     'cod - код товара');
-//var_dump($arrayCod);
 
 if (isset($arrayCod)) {
     $codProd = trim($arrayCod[0]);
-    $codProd = substr($codProd, -9, 6);
+   // $codProd = substr($codProd, -9, 6);
+    $codProd = mb_substr($codProd, 9, 6, 'utf-8');
 }
 //var_dump($codProd);
 //-----------------------------price2---------------------------------------6---
@@ -133,11 +142,16 @@ if (isset($arrayName)) {
 }
 //var_dump($nameProd);
 //-------------------------------Description--------------------------------8---
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание'); 
+// UDALIT PUSTIE ZNACHENIYA ARRAY
+$arrayDesc = deleteEmptyArrDescValues($arrayDesc);
+
+if($arrayDesc == null){
+    $arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"].' p', $saw, 'desc - описание');
+}
 
 if (isset($arrayDesc)) {
+  
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
     $searchArray = array('матеріал:');
     foreach ($arrayDesc as $key => $value) {
@@ -149,10 +163,31 @@ if (isset($arrayDesc)) {
                     $wovelsOut, $arrayDesc[$key + 1]).'</p>';
         }
     }
-    $arrayProperty = $saw->get('.description_block')->toTextArray();
+    
+            //require_once 'C:\OpenServer\domains\localhost\dumphper.php';
+           // dump($saw);
+            //die();
+    $arrayProperty = $saw->get('.product-description .text')->toTextArray();
+    $arrayProperty = deleteEmptyArrDescValues($arrayProperty);
+/*
     if (!empty($arrayProperty)) {
         $descProd .= "<p>{$arrayProperty[0]}</p>";
     }
+ * 
+ */
+    if (isset($arrayProperty)) {
+    $beginSelectorP    = '<p>';
+    $endSelectorP      = '</p>';
+    $beginSelectorSpan = '<span>';
+    $endSelectorSpan   = '</span>';
+    $arrayDesc         = deleteEmptyArrDescValues($arrayProperty);
+    $pos               = strpos($arrayDesc[0], ":");
+    //if ($pos == FALSE) {
+        $descProd = $beginSelectorP.$beginSelectorSpan."Описание: ".$endSelectorSpan.trim($arrayDesc[0]).$endSelectorP;
+   // }
+    }  
+   // $tmp = $descProd;
+    //$descProd .= "<p>{$arrayDesc[0]}</p>";
 }
 //var_dump($arrayDesc);
 //var_dump($descProd);

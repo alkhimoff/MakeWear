@@ -12,9 +12,8 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 // перед push for git - править!
 $localHost       = 'mwdev';
-$myBranchGitHost = 'makewear-admin.azurewebsites';
-//$myBranchGitHost = 'makewear-admin-dyachuksergey.azurewebsites';
-$mainSiteHost    = 'makewear';
+$myBranchGitHost = 'makewear-admin-dyachuksergey.azurewebsites';
+$mainSiteHost    = 'makewear-admin.azurewebsites';
 
 $_SESSION["s_id"] = 0;
 $host_name        = parse_url($_SERVER['HTTP_REFERER']);
