@@ -8,6 +8,25 @@
 /**
  * Всякие заготовки
  */
+.hvr_none {
+  border-bottom: none;
+  border: none;
+}
+.hvr_none:hover {
+  border-bottom: none;
+  border: none;
+}
+.hvr_none span,
+.hvr_none a {
+  border-bottom: none;
+  border: none;
+}
+.hvr_none span:hover,
+.hvr_none a:hover {
+  border-bottom: none;
+  border: none;
+}
+/****** HVR  - 2 */
 /****** other */
 .wrap-color {
   background-color: #fff;
@@ -94,6 +113,58 @@
 }
 .but-up:hover {
   opacity: 0.7;
+}
+.main-container .main-info .SEO-text p {
+  line-height: 25px;
+  color: #a5a2a2;
+}
+.main-container .main-content .brand-item .info__top__column .number {
+  position: relative;
+  top: -1px;
+}
+header .top-menu ul .first-level:not(:nth-last-of-type(-n+2)):after {
+  content: " ";
+  position: absolute;
+  right: -10px;
+  top: 8px;
+  background: url(../image/sprite.png) no-repeat -264px -31px;
+  width: 7px;
+  height: 6px;
+}
+.main-container.commodities .catalog_item > a {
+  font-size: 13px;
+  -webkit-transition: all 0.25s linear 0s;
+  -moz-transition: all 0.25s linear 0s;
+  -o-transition: all 0.25s linear 0s;
+  transition: all 0.25s linear 0s;
+  border-bottom: 1px solid transparent;
+}
+.main-container.commodities .catalog_item > a:after {
+  top: 9px;
+}
+.main-container.commodities .catalog_item > a:hover {
+  text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
+}
+.main-container.commodities .catalog_item > a:hover {
+  border-color: initial;
+}
+/* loader */
+.loaded .main-wrapper {
+  visibility: hidden;
+}
+.icon-load {
+  background: url('../image/loader.gif') no-repeat left top;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  display: none;
+}
+.loaded .icon-load {
+  display: block;
 }
 /* ====================================================
    resset
@@ -193,6 +264,7 @@
   right: 0;
   margin: 0 auto;
   text-align: center;
+  color: #999;
 }
 .show-more-brands__txt._hidden {
   display: none;
