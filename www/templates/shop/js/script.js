@@ -2860,3 +2860,53 @@ function clear_brends() {
     $(".brands-category .slick-dots").css({"display": "block"});
     $(".item_brr").remove();
 }
+
+//Скрываем и открываем контент категорий
+$(document).ready(function(){
+    $('.s-button-hide').click(function(){
+        if ($('.insets-wrap').css('height') == '1620px')
+            {
+                $('.insets-wrap').css('height','699');
+                $('#s-button-hide_show').css('display','block');
+                $('#s-button-hide_hide').css('display','none');
+                $('.show-more-brands__but').addClass('_down');
+                $('.show-more-brands__but').removeClass('_up');
+                $('.insets-wrap').css('overflow','hidden');
+            }
+        else
+            {
+                $('.insets-wrap').css('height','1620');
+                $('#s-button-hide_show').css('display','none');
+                $('#s-button-hide_hide').css('display','block');
+                $('.show-more-brands__but').addClass('_up');
+                $('.show-more-brands__but').removeClass('_down');
+                $('.insets-wrap').css('overflow','overlay');
+            }
+        /*$('.insets-wrap').animate({height: $(this)[927].scrollHeight}, 200);*/
+    });
+    
+});
+/****** Кнопка ВВЕРХ */
+$(function() {
+                 
+    $(window).scroll(function() {
+     
+    if($(this).scrollTop() != 0) {
+     
+    $('#toTop').fadeIn();
+     
+    } else {
+     
+    $('#toTop').fadeOut();
+     
+    }
+     
+    });
+     
+    $('#toTop').click(function() {
+     
+    $('body,html').animate({scrollTop:0},800);
+     
+    });
+     
+});

@@ -27,11 +27,11 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
 
     if ($url == $curLink && $offer['available'] == TRUE) {
-        $exist = $size  = (string) $offer->param[1];
+        $exist = $size  = (string) $offer->param[1]; 
         $color = (string) $offer->param[0];
 
         $imgMain     = (string) $offer->picture[0];
-        $imgDopArr[] = (string) $offer->picture[0];
+        $imgDopArr[] = (string) $offer->picture[1];///
 
         foreach ($offer->param as $key => $value) {
             $descArr[(string) $value['name'][0].':'] = (string) $value;

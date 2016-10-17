@@ -3,7 +3,7 @@
 //			B1   	24 (64,66)         		
 //==============================================================================
 //Переменные для записи в БД по умолчанию
-$existProd     = FALSE;
+$existProd     = FALSE; // не будет опубликован
 $deleteProd    = FALSE;
 $codProd       = "";
 $price         = 0;
@@ -29,15 +29,12 @@ if (isset($matches[1])) {
     $optionsProdStr = "";
     $json           = json_decode(trim($matches[1]), true);
     if (isset($json)) {
-
         $dataArray = array_values($json);
         //var_dump($dataArray);
         foreach ($dataArray as $value) {
-
             if ($value['kindAvail'] == "yes") {
                 $existProd = TRUE;
                 $optionsProdStr .= $value['kindDescription']."=".$value['kindCsize'].",";
-
                 //Colors Size
             }
         }
@@ -59,6 +56,7 @@ if (isset($matches[1])) {
                 $optionsArray[$curColor][] = $size;
             }
         }
+        
         if (isset($optionsArray)) {
             foreach ($optionsArray as $key => $valueArr) {
                 $optionsProd .= $key."=";
@@ -154,6 +152,7 @@ if ($nameProd == "Кэжуал" || "Классические") {
         'name - название товара');
 //var_dump($arrayName);
 
+    
     if (isset($arrayName)) {
         foreach ($arrayName as $key => $value) {
             $value = trim($value);

@@ -172,7 +172,7 @@ session_start();
 //==============================================================================
 //       Подготовка данных проверяймого товара и запуск парсинга
 //==============================================================================
-        //Подготовка данных проверяймого товара
+        //Подготовка данных проверяймого товара /// из БД
         $commodityID = $_SESSION['updateData']['commodity_ID'][$step];
         $price       = $_SESSION['updateData']['commodity_price'][$step];
         $price2      = $_SESSION['updateData']['commodity_price2'][$step];
@@ -184,8 +184,7 @@ session_start();
         $comCount    = $_SESSION['updateData']['size_count'][$step];
 
         //запускаем парсинг
-        if ($_SESSION['changeCod'] == TRUE || $_SESSION['changeName'] == TRUE || $_SESSION['changeDesc']
-            == TRUE) {
+        if ($_SESSION['changeCod'] == TRUE || $_SESSION['changeName'] == TRUE || $_SESSION['changeDesc']  == TRUE) {
             $verify = "verifyImp";
         } else {
             $verify = "verify";
@@ -197,8 +196,7 @@ session_start();
 
         //ПЕРЕЗАЛИВАЕМ ФОТО
         if ($_SESSION['changeIm'] == TRUE) {
-            $resultImageArray = writeImage($idBrand, $curLink, $saw,
-                $commodityID, $mysqli, $verify);
+            $resultImageArray = writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify);
 
             //отчет если перезалилось фото
             $report->echoChangePphoto($resultImageArray['mainSrcImg'],
@@ -226,8 +224,7 @@ session_start();
                 $report->echoDeleteProd(true, $commodityID);
             }
             $content = $report->reportEnd();
-            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step,
-                $content, TRUE, $visibleUpdate);
+            InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step, $content, TRUE, $visibleUpdate);
             //die('asd');
             ?><meta http-equiv="refresh" content="2;URL=http://<?php echo $requestUrl ?>"><?php
             die;
@@ -237,7 +234,7 @@ session_start();
 //==============================================================================
 //          Подготовка,проверка,сравнение новых пропарсенных данных
 //==============================================================================
-        //записываем пропарсенные данные в переменные
+        //записываем пропарсенные данные в переменные /// из xml, site
         $comExist    = $resultParsArray["exist"];
         $priceNew    = (float) $resultParsArray["price"];
         $price2New   = (float) $resultParsArray["price2"];

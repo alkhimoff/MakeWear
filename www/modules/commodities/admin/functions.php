@@ -143,8 +143,9 @@ if ($_SESSION['status'] == "admin" || true) {
 
     function get_commodities_images($item_id) {
         $photo_items = '';
-        $sql = "SELECT * FROM `shop_images` WHERE `com_id`='{$item_id}' ORDER BY `order`";
-        $result = mysql_query($sql);
+        //$sql = "SELECT * FROM `shop_images` WHERE `com_id`='{$item_id}' ORDER BY `order`";
+        $sql = "SELECT * FROM `shop_images` WHERE `com_id`='{$item_id}'"; 
+        $result = mysql_query($sql); /// получаем img_id
         while ($row = mysql_fetch_assoc($result)) {
             $photo_id = $row['img_id'];
             $photo_name = $row['img_name'];

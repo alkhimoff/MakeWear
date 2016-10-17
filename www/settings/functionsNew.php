@@ -219,12 +219,19 @@ function countr() {
         die();
     }
 }
-
+/* ВРОДЕ БЫ НЕВЕРНО НО НУЖНО ПЕРЕПРОВЕРИТЬ
 function fix_request_url($str) {
     if (substr_count($str, "?prin") > 0) {
         $ret = current(explode("?print", $ret));
     }
     return $str;
+}
+*/
+function fix_request_url($str) {
+    if (substr_count($str, "?prin") > 0) {
+        $ret = current(explode("?print", $str));
+    }
+    return $ret;
 }
 
 function cleanstring($str) {
@@ -404,6 +411,8 @@ if (false) {
 }
 
 function creatfolder($url) {
+    global $glb, $gallery_domen, $parrent_dir;
+    
     if ($glb["use_ftp"]) {
         $ftp_conn = ftp_connect($gallery_domen);
         $ftp_log = ftplogin($ftp_conn);
@@ -412,7 +421,7 @@ function creatfolder($url) {
         if ($glb["use_ftp"]) {
             ftp_mkdir($ftp_conn, $parrent_dir . "/" . $url);
         } else {
-//            mkdir($url);
+           mkdir($url);
         }
     }
     $_SESSION["upload_dir"] = $url;
@@ -428,9 +437,7 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
      * @return boolean
      */
     global $parrent_dir, $gallery_domen, $glb;
-
-
-
+    
     $wm = ($glb["watermark"] == 0) ? 0 : $wm;
     $dest = "uploads/temp_image.jpg";
     $src = "images/{$prefix}/{$item_id}/" . $new_file_name;
@@ -444,7 +451,7 @@ function getnewimg($type = 1, $x, $y, $prefix, $item_id, $new_file_name, $wm = 0
             if ($glb["use_ftp"]) {
                 ftp_mkdir($ftp_conn, $parrent_dir . "/images/{$prefix}/{$item_id}");
             } else {
-//                mkdir("images/{$prefix}/{$item_id}");
+                mkdir("images/{$prefix}/{$item_id}");
             }
         }
         if ($url == "") {
@@ -688,7 +695,8 @@ function delete_img($dir, $item_id, $file_name) {
 }
 
 function sql_line_tpl($sql, $tplfile) {
-    global $glb;
+    global $glb, $countries, $all_lines; /// $countries, $all_lines - ПОД ВОПРОСОМ
+    
     $res = mysql_cache_query($sql);
     while ($row = mysql_fetch_assoc($res)) {
         $countries.="<option value='{$row['country_id']}'>{$row['country_name_ru']}</option>";
@@ -702,10 +710,8 @@ function sql_line_tpl($sql, $tplfile) {
 }
 
 class modul {
-
 // данные (свойства):
     var $name, $name1, $name2, $name3, $name4, $enabled;
-
 }
 
 class templ {
@@ -1060,7 +1066,8 @@ function newsize($new_width, $new_height, $watermark_img_obj_w, $watermark_img_o
 }
 
 function get_admin_content_tree() {
-    global $templates, $modules;
+    global $templates, $modules, $all_lines; /// $all_lines - ПОД ВОПРОСОМ
+    
     foreach ($modules as $key => $value) {
         if ($value == 1) {
             $icfunc = "get_tree_" . $key;

@@ -1,4 +1,4 @@
-<?
+<?php
 $edit=<<<HERE
 <link rel='stylesheet' type='text/css' media='all' href='/templates/{$theme_name}/css/uploadify.css' title='win2k-cold-1' />
 <link rel='stylesheet' type='text/css' href='/templates/{$theme_name}/css/colorbox.css' />

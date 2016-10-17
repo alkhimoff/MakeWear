@@ -1,4 +1,5 @@
-<?
+<?php
+
 if ($_SESSION['status']=="admin")
 {
 	$_SESSION["lastpage2"]="/?admin=all_commodities";

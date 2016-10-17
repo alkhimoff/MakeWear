@@ -28,8 +28,7 @@ if (isset($id) && !empty($id) && $id != "") {
     //выбираем данные
     session_start();
     $_SESSION = array();
-    if (!($stmt     = $mysqli->prepare("SELECT id, name, cat_id, h1, img ,price,
-                                    price2, no_nal, sizeColor, `desc`, 
+    if (!($stmt     = $mysqli->prepare("SELECT id, name, cat_id, h1, img ,price, price2, no_nal, sizeColor, `desc`, 
                                     cod, dopimg, new_links, per FROM parser WHERE id=?"))) {
         die('Select Error parser('.$mysqli->errno.') '.$mysqli->error);
     } else {
@@ -81,15 +80,12 @@ if (isset($id) && !empty($id) && $id != "") {
     $_SESSION['linkArrayCom']   = array_flip(array_unique($_SESSION['linkArrayCom']));
     $_SESSION["duplicateArray"] = $duplicateArray;
     $_SESSION['updatePrice'] = 1;
-    //var_dump($_SESSION["duplicateArray"]);
-    //var_dump($_SESSION['linkArrayCom']);
-    //die;
+
     //Закрываем соединение
     $mysqli->close();
 
     //Запускаем скрипт парсинга
-    header("Location: http://".filter_input(INPUT_SERVER, 'HTTP_HOST',
-            FILTER_SANITIZE_STRING)."/parser/parser_main.php?step=0");
+    header("Location: http://".filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING)."/parser/parser_main.php?step=0");
 } else {
     die("Id not found!!!");
 }

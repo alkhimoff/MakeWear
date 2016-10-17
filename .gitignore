@@ -72,3 +72,18 @@ bower.json
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+# err.log
+www/err.log
+www/modules/basket_fastOrder/ajax/err.log
+www/modules/comments/ajax/err.log
+www/modules/commodities/ajax/err.log
+www/modules/content/ajax/err.log
+
+
+
+
+
+
+
+

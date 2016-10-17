@@ -25,8 +25,7 @@ function myShutdown()
 //------------------------------------------------------------------------------
 //        Подготовка к обработке картинок запись временной картинки          1
 //------------------------------------------------------------------------------
-function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
-                                $brendName, $idBrand)
+function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand)
 {
     $blobStorage = new BlobStorage();
 
@@ -36,7 +35,6 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
 
     if ($blobStorage->isContainer((string)$commodityID)) {
         $blobStorage->deleteAllBlobsInContainer((string)$commodityID);
-
     }
 
     if (!$blobStorage->isContainer((string) $commodityID)) {
@@ -44,13 +42,12 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
     }
 
     if ($srcProdArray['mainSrcImg'] !== "" && isset($srcProdArray['mainSrcImg'])) {
-
         $path   = 'uploads/temp_image.jpg';
         $handle = file_get_contents($srcProdArray['mainSrcImg']);
         if ($handle !== FALSE) {
-            file_put_contents($path, $handle);
+            file_put_contents($path, $handle); // $handle пуст на локале
         }
-
+        
         //обрезка белих полей
         if ($idBrand == 19) {
             cropInboxImg($path, 140, 10);
@@ -58,12 +55,11 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
             cropInboxImg($path, 335, 0);
         }
 
-        setMirrorImage($path);
+        //setMirrorImage($path);
         if ($handle !== FALSE) {
             $nameImg  = $nameImArray[0];
             $sNameImg = $nameImArray[1];
-            cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg,
-                $brendName, $idBrand);
+            cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName, $idBrand);
         }
     }
 
@@ -85,7 +81,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
                     cropInboxImg($path, 335, 0);
                 }
 
-                //not set mirror for adidas dop images
+                //не устанавливается зеркало для adidas доп изображений
                 if (45 != $idBrand) {
                     setMirrorImage($path);
                 }
@@ -93,8 +89,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
                 $nameImg  = $nameImArray[2][$i];
                 $sNameImg = "s_".$nameImg;
                 $i++;
-                cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg,
-                    $brendName, $idBrand);
+                cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName, $idBrand);
             }
         }
     }
@@ -107,8 +102,7 @@ function cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
 //------------------------------------------------------------------------------
 //                  Обработка и запись картинок                             2
 //------------------------------------------------------------------------------
-function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
-                           $idBrand)
+function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName, $idBrand)
 {
     $blobStorage = new BlobStorage();
 
@@ -122,8 +116,7 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
 
     //upload image to blob storage
     $blobStorage->uploadBlob(
-        '../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg',
-        $nameImg.'.jpg', (string) $commodityID
+        '../images/commodities/'.$commodityID.'/'.$nameImg.'.jpg', $nameImg.'.jpg', (string) $commodityID
     );
 
     list($width, $height) = getimagesize($path);
@@ -165,8 +158,7 @@ function cropAndWriteImage($path, $commodityID, $nameImg, $sNameImg, $brendName,
 
         //upload image to blob storage
         $blobStorage->uploadBlob(
-            '../images/commodities/'.$commodityID.'/'.$sNameImg.'.jpg',
-            $sNameImg.'.jpg', (string) $commodityID
+            '../images/commodities/'.$commodityID.'/'.$sNameImg.'.jpg', $sNameImg.'.jpg', (string) $commodityID
         );
     }
 }
@@ -582,8 +574,7 @@ function removeDirectory($dir)
 
 function updateVisiblOnly($comVisibl, $commodityID, $mysqli)
 {
-    if (!($stmt = $mysqli->prepare("UPDATE shop_commodity SET  commodity_visible=?
-                                                            WHERE commodity_ID=?"))) {
+    if (!($stmt = $mysqli->prepare("UPDATE shop_commodity SET  commodity_visible=?  WHERE commodity_ID=?"))) {
         die('Update shop_commodity visible Error ('.$mysqli->errno.') '.$mysqli->error);
     }
     $stmt->bind_param("ii", $comVisibl, $commodityID);

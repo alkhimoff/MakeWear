@@ -1,4 +1,10 @@
 <?php
+function convert($arr) {
+    for ($i=0; $i<count($arr); $i++) {
+        $arr[$i] = iconv('utf-8','iso8859-1',$arr[$i]);
+    }
+    return $arr;
+}
 //==============================================================================
 //				Vitality    31;30-205;88				
 //==============================================================================
@@ -24,6 +30,10 @@ if ($verify !== "import" && ($statusCode == 503 || $statusCode == 404)) {
 //--------------------------------Exist-----------------------------------2----- 
 $arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
     'no_nal - наличие');
+	
+$arrayExist2 = convert($arrayExist);
+if($arrayExist2[0] != false && $arrayExist2[0] != '')
+    $arrayExist = $arrayExist2;
 //var_dump($arrayExist);
 
 if (isset($arrayExist)) {
@@ -49,7 +59,9 @@ if (isset($arrayExist)) {
 //--------------------------------Price price2------------------------------3---
 $arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
     'price - цена');
-
+$arrayPrice2 = convert($arrayPrice);
+if($arrayPrice2[0] != false && $arrayPrice2[0] != '')
+    $arrayPrice = $arrayPrice2;
 if (isset($arrayPrice)) {
     $regexp = '/[^0-9,]/';
     $price  = filterPrice(trim($arrayPrice[0]), $regexp);
@@ -88,7 +100,9 @@ if (isset($matches[1])) {
 //--------------------------------Name------------------------------------5-----
 $arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
     'name - название товара');
-
+$arrayName2 = convert($arrayName);
+if($arrayName2[0] != false && $arrayName2[0] != '')
+    $arrayName = $arrayName2;
 if (isset($arrayName)) {
     $strName  = findEncode(trim($arrayName[0]));
     $regexp   = '/[0-9]/u';
@@ -117,7 +131,9 @@ if ($verify == "verify") {
 //--------------------------------Cod-------------------------------------6-----
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
     'cod - код товара');
-
+$arrayCod2 = convert($arrayCod);
+if($arrayCod2[0] != false && $arrayCod2[0] != '')
+    $arrayCod = $arrayCod2;
 if (isset($arrayCod)) {
     $regexp  = "/[^0-9]/";
     $codProd = trim(preg_replace($regexp, "", $arrayCod[0]));
@@ -126,6 +142,9 @@ if (isset($arrayCod)) {
 //-------------------------------Description--------------------------------7---
 $arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
     'desc - описание');
+$arrayDesc2 = convert($arrayDesc);
+if($arrayDesc2[0] != false && $arrayDesc2[0] != '')
+    $arrayDesc = $arrayDesc2;
 //var_dump($arrayDesc);
 if (isset($arrayDesc)) {
     $strDesc   = "";
@@ -147,6 +166,9 @@ if (isset($arrayDesc)) {
 //--------------------------------Image-------------------------------------1---
 $arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
     'img - главная картинка');
+$arrayImage2 = convert($arrayImage);
+if($arrayImage2[0] != false && $arrayImage2[0] != '')
+    $arrayImage = $arrayImage2;
 //var_dump($arrayImage);
 
 $srcProd = "";

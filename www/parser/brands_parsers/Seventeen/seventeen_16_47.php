@@ -3,7 +3,7 @@
 //			seventeen 	16-47         		
 //==============================================================================
 //-------------------Переменные для записи в БД по умолчанию--------------------
-$existProd     = TRUE;
+$existProd     = TRUE; // будет опубликован
 $deleteProd    = FALSE;
 $codProd       = "";
 $price         = 0;
@@ -15,66 +15,78 @@ $nameProd      = "";
 $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
-//var_dump($curLink);
+
 //Exist URL
 /* if ($verify !== "import" && ($statusCode == 404)) {
   $deleteProd = TRUE;
   return;
   } */
 //Exist
-$arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
-    'no_nal - наличие');
-//var_dump($arrayExist);
+$arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
 
 if (isset($arrayExist)) {
-    $pos  = strpos($arrayExist[0], "Нет в наличии!");
-    $pos1 = strpos($arrayExist[0], "Замена цвет");
-    $pos2 = strpos($arrayExist[0], "Ожидается");
+    $codPrice   = str_replace("http://seventeen.com.ua/shop/", "", $curLink);
+    $codPrice   = strstr($codPrice, "/", true);
+    
+    // цена
+    $arrayPrice = checkEmptyOrChangeSelector('.id-good-'.$codPrice.'-price', $saw, 'price - цена');  
+  
+    // цена со скидкой
+    $newPrice = checkEmptyOrChangeSelector('span.newprice', $saw,'new-price - цена со скидкой');
 
-    if ($pos !== false || $pos1 !== FALSE || $pos2 !== FALSE) {
-        $existProd = FALSE;
+    if($newPrice){
+        // если нет по селектору ..-price ищем по -oldprice // значит есть цена со скидкой
+        $arrayPrice = checkEmptyOrChangeSelector('.id-good-'.$codPrice.'-oldprice', $saw, 'price - цена');
     }
-    $arrayProperty = $saw->get('span.newprice')->toArray();
-    if (!empty($arrayProperty)) {
-        $existProd = FALSE;
-    }
-}
-//var_dump($existProd);
-//Price price2
-$codPrice   = str_replace("http://seventeen.com.ua/shop/", "", $curLink);
-$codPrice   = strstr($codPrice, "/", true);
-$arrayPrice = checkEmptyOrChangeSelector('.id-good-'.$codPrice.'-price', $saw,
-    'price - цена');
-//var_dump($arrayPrice);
-
-if (isset($arrayPrice)) {
-    $regexp = '/[^0-9]/';
-    $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
-    $price2 = ceil(1.15 * $price2);
-
-    // action discount 40%
-    $price  = ceil(($price2 + 70) * $_SESSION['updatePrice']);
-}
-if ($price2 == 0) {
-    $existProd = FALSE;
-    $price     = 0;
-}
-//var_dump($price);
-//var_dump($price2);
-//Size
-$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,
-    'sizeCol - размер');
-//var_dump($arraySize);
-
-if (isset($arraySize)) {
-    foreach ($arraySize as $value) {
-        if (strstr($value, "пояс") == FALSE) {
-            $sizesProd = $sizesProd.trim($value).";";
+    
+    // если есть цена или цена со скидкой
+    ($arrayPrice || $newPrice)
+         ? $existProd = TRUE : $existProd = FALSE;  
+    
+    if($arrayPrice || $newPrice){
+        $regexp = '/[^0-9]/';
+        if($newPrice){
+            $price2 = filterPrice(trim($newPrice[0]), $regexp);
+        }else{
+            $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
         }
+
+        // action discount 40%
+        // $price  = ceil(($price2 + 70) * $_SESSION['updatePrice']);
+        $price  = ceil(($price2 + $_SESSION['per']) * $_SESSION['updatePrice']);
     }
-    $sizesProd = filterSizeColors($sizesProd);
+    
+    if ($price2 == 0) {
+        $existProd = FALSE;
+        $price     = 0;
+    }
+       
+    $arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,'sizeCol - размер');
+
+    if (isset($arraySize)) {
+        foreach ($arraySize as $value) {
+            if (strstr($value, "пояс") == FALSE) {
+                $sizesProd = $sizesProd.trim($value).";";
+            }
+        }
+        $sizesProd = filterSizeColors($sizesProd);
+    }
+      
+    $pos1  = strpos($arrayExist[0],"Нет в наличии!");
+    $pos2 = strpos($arrayExist[0], "Замена цвет");
+    $pos3 = strpos($arrayExist[0], "Ожидается");
+    
+    // если: Нет в наличии, ...
+    if($pos1 === FALSE && $pos2 === FALSE && $pos3 === FALSE){
+        $existProd = TRUE;
+    }else{
+        $existProd = FALSE;
+    } 
+
+}else{
+    $existProd = FALSE;
+    return;
 }
-//var_dump($sizesProd);
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -83,27 +95,21 @@ if ($verify == "verify") {
 }
 
 //Cod
-$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
-    'cod - код товара');
-//var_dump($arrayCod);
+$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
     $codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
 }
-//var_dump($codProd);
+
 //Name
-$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
-    'name - название товара');
-//var_dump($arrayName);
+$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
 
 if (isset($arrayName)) {
     $nameProd = trim(str_replace($codProd, "", trim($arrayName[0])));
 }
-//var_dump($nameProd);
+
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION['desc'], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION['desc'], $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
     $beginSelectorP    = '<p>';
@@ -124,9 +130,3 @@ if (isset($arrayDesc)) {
         $descProd = trim(findStringDesc($value, $searchArray, $descProd));
     }
 }
-//var_dump($arrayDesc);
-//var_dump($descProd);
-//echo $descProd;
-//die;
-
-

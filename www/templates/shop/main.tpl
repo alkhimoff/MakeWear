@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="/templates/shop/css/vadim-styles.css">
 
     </head>
-    <body>
+    <body class="loaded">
 
         <!--0.055708885192871-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--> 
@@ -190,7 +190,7 @@
                                 {$topMenu}
                             </div>
                         </div>
-                        <div class=" col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                        <div class=" col-lg-4 col-md-3 col-sm-12 col-xs-12 tech-info-wrap">
                             <div class="tech-info row">
                                 <div class="tech-info__item tech-info__item-basket col-md-4 col-sm-4 col-xs-4">
                                     <div class="out">               
@@ -409,13 +409,16 @@
                 </div>
             </div>
         </div> 
-               
+           <div class="icon-load"></div>    
+           <script type="text/javascript" src="/templates/shop/js/jquery-1.11.0.min.js"></script>   
+           <script type="text/javascript" src="/templates/shop/js/jquery-migrate.min.js" ></script>
+           <script type="text/javascript" src="/templates/shop/js/custom.js" ></script>
             <!--footer-->
             <footer>
                 <div class="row main-width">
                     <div class="col-md-3 col-sm-12 col-xs-12 main_version">
                         <div id="footer-logo"></div>
-                        <p class="copy">makewear.com.ua 2015  &copy;</p>
+                        <p class="copy">makewear.com.ua 2013  &copy;</p>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <ul class="icon-pad info-icon">
@@ -439,8 +442,8 @@
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="icon-pad phone-icon">
-                            <p>+38 (098) 474-22-82</p>
-                            <p>+38 (099) 098-00-82</p>
+                            <p>+38 (068) 098-49-71</p>
+                            <p>+38 (093) 381-34-72</p>
                             <p class="info-mail">
                                 <a href="#">
                                     info@makewear.com.ua
@@ -479,7 +482,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-12 col-xs-12 mobile_version">
                         <div id="footer-logo"></div>
-                        <p class="copy">makewear.com.ua 2015  &copy;</p>
+                        <p class="copy">makewear.com.ua 2013  &copy;</p>
                     </div>
                 </div>
             </footer>

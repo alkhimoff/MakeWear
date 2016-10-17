@@ -6,7 +6,7 @@ if ($_SESSION['status'] == "admin") {
 	$_SESSION["lastpage2"] = "/?admin=all_commodities";
 	if (isset($_GET["commodityID"])) {
 		$commodityID = $_GET["commodityID"];
-//        creatfolder("images/commodities/{$commodityID}");
+                creatfolder("images/commodities/{$commodityID}");///
 		if (isset($_POST["add_commodity"])) {
 			$_SESSION["lastpage"] = $request_url;
 			$an_n                 = $_POST['name'];
@@ -315,7 +315,8 @@ if ($_SESSION['status'] == "admin") {
 
 			$alvaColors = $brandId == 43 ? getAlvaColors($comColors) : '';
 			$filters            = $alvaColors.get_filters_list($commodityID, $active_cats);
-			$commodities_images = '';//get_commodities_images($commodityID);
+			//$commodities_images = '';//get_commodities_images($commodityID);
+                        $commodities_images = get_commodities_images($commodityID);
 			$ses_id             = session_id();
 
 			$it_item            = "Редактирование товара";

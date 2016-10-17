@@ -30,8 +30,8 @@ $arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
 if (isset($arrayExist)) {
     foreach ($arrayExist as $value) {
         $exist = mb_strtolower(trim($value), 'utf-8');
-        $pos   = mb_strpos($exist, 'є в наяв');
-        $pos1  = mb_strpos($exist, 'під замов');
+        $pos1   = mb_strpos($exist, 'в наявності');
+        $pos2  = mb_strpos($exist, 'під замов');
         if ($pos !== false || $pos1 !== false) {
             $existProd = TRUE;
             break;
@@ -70,21 +70,35 @@ if (isset($matches[1])) {
     }
     $sizesProd = substr($sizesProd, 1);
 }
-//var_dump($sizesProd);
+if($sizesProd == ""){ ///
+    $arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,'sizeCol - размер');
+
+    if (isset($arraySize)) {
+        foreach ($arraySize as $value) {
+            $sizesProd = $sizesProd.trim($value).";";
+        }
+        $sizesProd = filterSizeColors($sizesProd);
+    }
+}
 //--------------------------------Cod------------------------------------5-----
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
     'cod - код товара');
-//var_dump($arrayCod);
 
 if (isset($arrayCod)) {
     $codProd = trim($arrayCod[0]);
+   // $codProd = substr($codProd, -9, 6);
+    $codProd = mb_substr($codProd, 9, 6, 'utf-8');
 }
 //var_dump($codProd);
 //-----------------------------price2---------------------------------------6---
+/*
 if (file_exists('brands_parsers/Jhiva/price.json')) {
     $exelJson = file_get_contents('brands_parsers/Jhiva/price.json');
     if (isset($exelJson)) {
         $exelArray = json_decode($exelJson, true);
+               // require_once 'C:\OpenServer\domains\localhost\dumphper.php';
+                //dump($exelArray);
+                //die();
     }
     if (isset($exelArray)) {
         foreach ($exelArray as $value) {
@@ -99,7 +113,10 @@ if (file_exists('brands_parsers/Jhiva/price.json')) {
 } else {
     echo "<h4 style='color:red'>\nПрайс не записался в json!!!</h4>";
 }
-//var_dump($price2);
+ */
+
+$price2 = $price;
+
 if ($price2 == 0) {
     echo "<h4 style='color:red'>\nНет оптовой цены!!!Нет кода товара-{$codProd}, в прайсе jhiva!!!</h4>";
     $existProd = FALSE;
@@ -125,11 +142,16 @@ if (isset($arrayName)) {
 }
 //var_dump($nameProd);
 //-------------------------------Description--------------------------------8---
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание'); 
+// UDALIT PUSTIE ZNACHENIYA ARRAY
+$arrayDesc = deleteEmptyArrDescValues($arrayDesc);
+
+if($arrayDesc == null){
+    $arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"].' p', $saw, 'desc - описание');
+}
 
 if (isset($arrayDesc)) {
+  
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
     $searchArray = array('матеріал:');
     foreach ($arrayDesc as $key => $value) {
@@ -141,10 +163,31 @@ if (isset($arrayDesc)) {
                     $wovelsOut, $arrayDesc[$key + 1]).'</p>';
         }
     }
-    $arrayProperty = $saw->get('.description_block')->toTextArray();
+    
+            //require_once 'C:\OpenServer\domains\localhost\dumphper.php';
+           // dump($saw);
+            //die();
+    $arrayProperty = $saw->get('.product-description .text')->toTextArray();
+    $arrayProperty = deleteEmptyArrDescValues($arrayProperty);
+/*
     if (!empty($arrayProperty)) {
         $descProd .= "<p>{$arrayProperty[0]}</p>";
     }
+ * 
+ */
+    if (isset($arrayProperty)) {
+    $beginSelectorP    = '<p>';
+    $endSelectorP      = '</p>';
+    $beginSelectorSpan = '<span>';
+    $endSelectorSpan   = '</span>';
+    $arrayDesc         = deleteEmptyArrDescValues($arrayProperty);
+    $pos               = strpos($arrayDesc[0], ":");
+    //if ($pos == FALSE) {
+        $descProd = $beginSelectorP.$beginSelectorSpan."Описание: ".$endSelectorSpan.trim($arrayDesc[0]).$endSelectorP;
+   // }
+    }  
+   // $tmp = $descProd;
+    //$descProd .= "<p>{$arrayDesc[0]}</p>";
 }
 //var_dump($arrayDesc);
 //var_dump($descProd);
