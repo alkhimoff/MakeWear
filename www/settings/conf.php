@@ -52,18 +52,18 @@ define('CACHE_TIME_SLIDER', 60*60*1);
 define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
-/*
-// $glb["db_host"] = "127.0.0.1";
-$glb["db_host"] = "13.94.255.147";
+
+ $glb["db_host"] = "127.0.0.1";
+//$glb["db_host"] = "13.94.255.147";
 $glb["db_basename"]         = "test_zoond_make"; 
 $glb["db_user"]             = "test_zoond_make";
 $glb["db_password"]         = "festivall1299";
-*/
+/*
 $glb["db_host"] = "PRODACTION?";
 $glb["db_basename"]     = getenv('DB_NAME');
 $glb["db_user"]         = getenv('USER_NAME');
 $glb["db_password"]     = getenv('DB_PASSWORD');
-    
+  */  
 $glb["session_id"]          = $session_id;
 $glb["teg_robots"]          = false;
 $glb["sys_mail"]            = $global_meil              = "sales@makewear.com.ua";
