@@ -245,8 +245,7 @@ if ($nameProd == "Ветровки") {
 //var_dump($price);
 //var_dump($price2);
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
 //var_dump($arrayDesc);
 
 if (isset($arrayDesc)) {
