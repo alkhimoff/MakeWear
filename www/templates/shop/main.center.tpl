@@ -9,6 +9,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12" id="banner-slider" dir='rtl'>
         <!--<div><img src="{$photoDomain}banners/main-page-banner_0005.jpg" alt="main-page-banner-5"></div>-->
         <div><img src="/templates/shop/image/baner_comment_slider/opt-ot-5.png" alt="main-page-banner-3"></div>
+        <div><img src="/templates/shop/image/baner_comment_slider/opt-ot-5-2.png" alt="main-page-banner-2"></div>
         <!-- <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0000.jpg" alt="main-page-banner-1"></div>
          <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0001.jpg" alt="main-page-banner-2"></div>-->
         </div>
