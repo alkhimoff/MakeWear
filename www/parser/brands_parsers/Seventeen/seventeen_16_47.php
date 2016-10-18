@@ -96,7 +96,13 @@ if ($verify == "verify") {
 
 //Cod
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
-
+/*test
+if($arrayCod == 1860){
+    $t1 = $arrayCod;
+}else if($arrayCod == "1860"){
+    $t2 = $arrayCod;
+}
+*/
 if (isset($arrayCod)) {
     $codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
 }
