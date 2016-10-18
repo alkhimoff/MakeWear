@@ -23,8 +23,7 @@ if ($verify !== "import" && ($statusCode == 404 || $statusCode == 410)) {
 }
 
 //Exist
-$arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
-    'no_nal - наличие');
+$arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
 //var_dump($arrayExist);
 
 if (isset($arrayExist)) {
@@ -41,8 +40,7 @@ if (isset($arrayExist)) {
 }
 //var_dump($existProd);
 //----------------------------------Price-----------------------------------3---
-$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
-    'price - цена');
+$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
 //var_dump($arrayPrice);
 
 if (isset($arrayPrice)) {
@@ -81,8 +79,7 @@ if($sizesProd == ""){ ///
     }
 }
 //--------------------------------Cod------------------------------------5-----
-$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
-    'cod - код товара');
+$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
     $codProd = trim($arrayCod[0]);
@@ -131,8 +128,7 @@ if ($verify == "verify") {
     return;
 }
 //--------------------------------Name------------------------------------7-----
-$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
-    'name - название товара');
+$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
 //var_dump($arrayName);
 
 if (isset($arrayName)) {
@@ -143,7 +139,7 @@ if (isset($arrayName)) {
 //var_dump($nameProd);
 //-------------------------------Description--------------------------------8---
 $arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание'); 
-// UDALIT PUSTIE ZNACHENIYA ARRAY
+
 $arrayDesc = deleteEmptyArrDescValues($arrayDesc);
 
 if($arrayDesc == null){
