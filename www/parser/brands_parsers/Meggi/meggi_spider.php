@@ -7,8 +7,9 @@ $existUrl   = TRUE;
 $pagination = array();
 
 //Exist page
-$arrayPagination = checkEmptyOrChangeSelector('.pager', $saw,
-    'pagination - страницы');
+//$arrayPagination = checkEmptyOrChangeSelector('.pager', $saw,'pagination - страницы');
+$arrayPagination = checkEmptyOrChangeSelector('.bx-pagination-container', $saw,'pagination - страницы');
+
 //var_dump($arrayPagination);
 if (isset($arrayPagination)) {
     foreach ($arrayPagination as $value) {
@@ -26,8 +27,7 @@ if (isset($arrayPagination)) {
 }
 //var_dump($pagination);
 //Get Links
-$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw,
-    'a_href - ссылки');
+$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw, 'a_href - ссылки');
 //var_dump($arrayLinks);
 
 if (isset($arrayLinks)) {
