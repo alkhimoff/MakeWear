@@ -149,6 +149,15 @@ header .top-menu ul .first-level:not(:nth-last-of-type(-n+2)):after {
 .main-container.commodities .catalog_item > a:hover {
   border-color: initial;
 }
+.main-container .main-content .brands .title .brand-search input {
+  padding: 0 5px 0;
+  text-align: center;
+}
+header .search-field__input input {
+  text-transform: lowercase;
+  padding: 0 0 0 15px;
+  font-weight: normal;
+}
 /* loader */
 .loaded .main-wrapper {
   visibility: hidden;

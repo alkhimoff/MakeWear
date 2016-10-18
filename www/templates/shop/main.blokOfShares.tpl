@@ -4,6 +4,12 @@
                 <div>
                     <img src="/templates/shop/image/baner_comment_slider/shok1275х375.jpg" alt="shock">
                 </div>
+                <div>
+                    <img src="/templates/shop/image/baner_comment_slider/vugruzka-bazu1275х375.jpg" alt="shock">
+                </div>
+                <div>
+                    <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="shock">
+                </div>
                 <!--<div>
                     <a href="/akcionnie-predlojeniya/#150gr/">
                         <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="main-page-banner-4">
