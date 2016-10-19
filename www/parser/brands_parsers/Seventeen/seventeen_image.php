@@ -49,7 +49,8 @@ if ($existIm == TRUE) {
         $srcProdArray['dopSrcImg'] = array_values(array_unique($srcProdArray['dopSrcImg']));
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
-    $brendName   = "jhiva_images/";
+    ///$brendName   = "jhiva_images/";
+    $brendName   = "seventeen_images/";
     cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);
 }
 

@@ -20,6 +20,8 @@ $parrent_dir     = "";
 $dostavka_defcur = 1;
 $session_id      = session_id();
 
+$glb = array();
+
 //ключ для почтового сервісу SendGrid
 define('SEND_GRID_KEY', getenv('SEND_GRID_KEY'));
 
@@ -29,19 +31,13 @@ define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 //ключ к google
 //define('GOOGLE_API_KEY', getenv('GOOGLE_API_KEY'));
 
-$glb = array();
+//blob storage key
+define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
 
-    //define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=aH+lu8lePhPKmiNBsnRfdoaEbYhrsR35JjB+sP00bQZOewvEIrKozXTHcF4JmWYjxA8m0oFvO3hbEReE7MexKA==');
-    //define('BLOB_STORAGE', 'DefaultEndpointsProtocol=https;AccountName=makewear;AccountKey=JbpoRul2hnIixQjWXmq/YrVNEv3BnAje7fYm7srGH2slrsxYfRR7Wo30t6V4PGo/VOgeVX00pOEInv/A89aiaQ==');
-    //define('PHOTO_DOMAIN', 'http://makewear-images.azureedge.net/');
+//фото домен
+define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
     //cdn     - http://makewear-images.azureedge.net/
-    //storage - https://makewear.blob.core.windows.net/   
-
-    define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
-    define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
-
-
-//echo '<title>' . $glb["db_host"] . '</title>'; 
+    //storage - https://makewear.blob.core.windows.net/ 
 
 define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
 
@@ -51,13 +47,7 @@ define('CACHE_TIME_SLIDER', 60*60*1);
 define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
-/*
-// $glb["db_host"] = "127.0.0.1";
-$glb["db_host"] = "13.94.255.147";
-$glb["db_basename"]         = "test_zoond_make"; 
-$glb["db_user"]             = "test_zoond_make";
-$glb["db_password"]         = "festivall1299";
-*/
+
 $glb["db_host"]         = "13.94.255.147";
 $glb["db_basename"]     = getenv('DB_NAME');
 $glb["db_user"]         = getenv('USER_NAME');
@@ -71,12 +61,7 @@ $glb["request_url_encode"]  = urldecode($request_url);
 $glb["request_url"]         = urldecode($request_url);
 $glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
-/*
-$dblocation = "13.94.255.147";    
-$dbname = "test_zoond_make";    
-$dbuser = "test_zoond_make";    
-$dbpasswd = "festivall1299";    
-
+/*   
   $dbcnx = mysql_connect($dblocation, $dbuser, $dbpasswd);    
   if (!$dbcnx)    
   {    
