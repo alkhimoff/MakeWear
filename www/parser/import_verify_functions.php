@@ -353,6 +353,7 @@ function deleteEmptyArrDescValues($arrayDesc)
 //------------------------------------------------------------------------------
 //   улчшенная функция strstr(обрезает только после указанного символа)      4
 //------------------------------------------------------------------------------
+// некорректная работа если в коде 2 искомых символа / пример замены в meggi_10_42.php
 function strstr_after($haystack, $needle, $case_insensitive = false)
 {
     $strpos = ($case_insensitive) ? 'stripos' : 'strpos';
