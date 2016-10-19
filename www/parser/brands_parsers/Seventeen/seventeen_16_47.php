@@ -106,6 +106,7 @@ $arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - назв�
 
 if (isset($arrayName)) {
     $nameProd = trim(str_replace($codProd, "", trim($arrayName[0])));
+    $nameProd = addcslashes($nameProd, '"'); // экранируем \"
 }
 
 //Description
