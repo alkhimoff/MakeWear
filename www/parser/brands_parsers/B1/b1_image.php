@@ -55,7 +55,8 @@ if ($existIm == TRUE) {
         $srcProdArray['dopSrcImg'] = array_values(array_unique($srcProdArray['dopSrcImg']));
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
-    $brendName   = "vitalityKIDS_images/";
+    //$brendName   = "vitalityKIDS_images/";
+    $brendName   = "b1_images/";
     cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
         $brendName, $idBrand);
 }
