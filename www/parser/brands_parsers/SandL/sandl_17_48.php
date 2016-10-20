@@ -27,18 +27,14 @@ $duplicateProd = "";
   }
   } */
 //Exist
-$arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
-    'no_nal - наличие');
-//var_dump($arrayExist);
+$arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
 
 if (!empty($arrayExist)) {
     $existProd = FALSE;
 }
-//var_dump($existProd);
+
 //Price price2
-$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
-    'price - цена');
-//var_dump($arrayPrice);
+$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
 
 if (isset($arrayPrice)) {
     foreach ($arrayPrice as $key => $value) {
@@ -46,7 +42,7 @@ if (isset($arrayPrice)) {
             $arrayPriceNew[] = trim($value);
         }
     }
-    //var_dump($arrayPriceNew);
+
     $regexp = '/[^0-9]/';
     foreach ($arrayPriceNew as $value) {
         $value  = mb_strtolower(trim($value), 'utf-8');
@@ -61,7 +57,7 @@ if (isset($arrayPrice)) {
             $price = ceil(filterPrice(trim(strstr($value, ":")), $regexp) * $_SESSION['updatePrice']);
             break;
         }
-        $price2 = ceil(1.15 * $price2);
+        //$price2 = ceil(1.15 * $price2);
     }
     if ($price == 0) {
         $existProd = FALSE;
@@ -69,12 +65,8 @@ if (isset($arrayPrice)) {
     }
 }
 
-//var_dump($price);
-//var_dump($price2);
 //Options
-$arrayOptions = checkEmptyOrChangeSelector($_SESSION['sizeCol'], $saw,
-    'sizeCol - размер');
-//var_dump($arrayOptions);
+$arrayOptions = checkEmptyOrChangeSelector($_SESSION['sizeCol'], $saw, 'sizeCol - размер');
 
 if (isset($arrayOptions)) {
     foreach ($arrayOptions as $value) {
@@ -83,7 +75,8 @@ if (isset($arrayOptions)) {
         if ($pos !== FALSE) {
 
             //Cod
-            $codProd = trim(strstr_after($value, ":"));
+            //$codProd = trim(strstr_after($value, ":"));
+            $codProd = trim(substr(stristr($value, ":"), 1)); // удаляем первый символ(:) / вырезаем слово в коде
             //----------------------
             break;
         } else {
@@ -101,8 +94,6 @@ if (isset($arrayOptions)) {
     }
     $optionsProd = substr($optionsProd, 1);
 }
-//var_dump($optionsProd);
-//var_dump($codProd);
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -112,13 +103,11 @@ if ($verify == "verify") {
 
 //Name
 if (isset($arrayPriceNew)) {
-    $nameProd = trim(strstr($arrayPriceNew[0], "№", true));
+    $nameProd = trim(strstr($arrayPriceNew[1], "№", true));
 }
-//var_dump($nameProd);
+
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);

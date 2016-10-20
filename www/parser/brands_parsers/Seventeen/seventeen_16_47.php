@@ -96,13 +96,7 @@ if ($verify == "verify") {
 
 //Cod
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
-/*test
-if($arrayCod == 1860){
-    $t1 = $arrayCod;
-}else if($arrayCod == "1860"){
-    $t2 = $arrayCod;
-}
-*/
+
 if (isset($arrayCod)) {
     $codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
 }
@@ -112,6 +106,8 @@ $arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - назв�
 
 if (isset($arrayName)) {
     $nameProd = trim(str_replace($codProd, "", trim($arrayName[0])));
+    //$nameProd = addcslashes($nameProd, '"');          // экранируем \"
+    $nameProd = preg_replace('/\"/', '', $nameProd);    // удаляем \"
 }
 
 //Description
