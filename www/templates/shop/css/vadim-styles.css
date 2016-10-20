@@ -572,7 +572,7 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
   }
   header .top-line-bg .main-width .top-nav {
     display: table;
-    margin: 0 auto;
+    margin: 9px auto 0;
     width: auto;
     right: 0;
   }
