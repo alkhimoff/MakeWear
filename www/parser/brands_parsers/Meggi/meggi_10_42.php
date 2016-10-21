@@ -93,7 +93,7 @@ if (isset($arrayDesc)) {
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
     foreach ($arrayDesc as $key => $value) {
         $descProd .= $value;
-        $descProd .= '< /br>';
+        $descProd .= ' ';
     }
 }
 
