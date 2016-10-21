@@ -29,7 +29,7 @@ define('SEND_GRID_KEY', getenv('SEND_GRID_KEY'));
 define('NOVA_POSHTA_KEY', getenv('NOVA_POSHTA_KEY'));
 
 //ключ к google
-//define('GOOGLE_API_KEY', getenv('GOOGLE_API_KEY'));
+define('GOOGLE_API_KEY', getenv('GOOGLE_API_KEY'));
 
 //blob storage key
 define('BLOB_STORAGE', getenv('BLOB_STORAGE'));
