@@ -9,6 +9,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12" id="banner-slider" dir='rtl'>
         <!--<div><img src="{$photoDomain}banners/main-page-banner_0005.jpg" alt="main-page-banner-5"></div>-->
         <div><img src="/templates/shop/image/baner_comment_slider/opt-ot-5.png" alt="main-page-banner-3"></div>
+        <div><img src="/templates/shop/image/baner_comment_slider/opt-ot-5-2.png" alt="main-page-banner-2"></div>
         <!-- <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0000.jpg" alt="main-page-banner-1"></div>
          <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0001.jpg" alt="main-page-banner-2"></div>-->
         </div>
@@ -111,12 +112,12 @@
                             <div class="first_cnt">
                                 <h4>MakeWear – это оптовый интернет-магазин одежды, обуви и аксессуаров.</h4>
                                 <p>
-                                    Мы создали самый удобный сайт специально для Оптовых Закупщиков и Организаторов Совместных Покупок, которым MW будет особенно полезен.  <br><br>
+                                    Мы создали самый удобный сайт специально для Оптовых Закупщиков и Организаторов Совместных Покупок, которым MW будет особенно полезен.  <br>
 
                                     Цены на все товары установлены непосредственно производителем, а ассортимент включает в себя продукцию большинства основных украинских брендов, благодаря чему, открывать закупки с MW удобно и просто.  
-                                    Наша цель – создать универсальный оптовый online-склад, как источник товара для предпринимателей сегмента Одежда и Обувь. <br><br>
+                                    Наша цель – создать универсальный оптовый online-склад, как источник товара для предпринимателей сегмента Одежда и Обувь. <br>
 
-                                    Мы будем делать всё, чтобы обеспечить для Вас наилучший сервис и стать надёжным партнёром для каждого нашего клиента.  <br><br>
+                                    Мы будем делать всё, чтобы обеспечить для Вас наилучший сервис и стать надёжным партнёром для каждого нашего клиента.  <br>
 
                                     <div class="about-icon"><i></i>Команда MakeWear</div>
                                 </p>
