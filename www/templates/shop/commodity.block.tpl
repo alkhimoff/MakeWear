@@ -59,7 +59,7 @@
                     <div class="column big-column">
                         <div class="column__in clearfix">
                             {$sizes}
-                            <div class="counter-group">
+                            <div class="counter-group xxx">
                                 <div class="minus-btn"></div>
                                 <input type="number" id="count_{$id}" value="1" min="1" max="99" maxlength="2"/>
                                 <div class="plus-btn"></div>
