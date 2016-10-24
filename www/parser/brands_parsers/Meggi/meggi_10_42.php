@@ -119,4 +119,8 @@ if (isset($arrayDesc)) {
         $descProd = findStringDesc($value, $searchArray, $descProd);
     }
 }
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> ed5ca15fd235ea4e47366f7c23054127fd2d996f
