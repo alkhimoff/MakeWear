@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 define('MODE', getenv('MODE'));
 $envOn = 'dev' === MODE ? 'On' : 'Off';
