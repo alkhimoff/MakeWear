@@ -1,6 +1,6 @@
 <?php
 
-//namespace Modules;
+namespace Modules;
 
 require_once('../../../vendor/autoload.php');
 require_once('../../../settings/conf.php');
@@ -36,33 +36,33 @@ QUERY1
 		$massega=$_POST['txt'];
 
 
-		$mail = new PHPMailer;
-
-		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-		$mail->isSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
-		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'sales@makewear.com.ua';                 // SMTP username
-		$mail->Password = 'zoond363636';                           // SMTP password
-		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-		$mail->Port = 587;                                    // TCP port to connect to
-		$mail->CharSet = "UTF-8";
-		$mail->setFrom($whom, 'MakeWear');
-		$mail->addAddress($to);     // Add a recipient
-		$mail->isHTML(true);                              
-
-
-		$mail->Subject = $subject;
-		$mail->Body    = $massega;
-
-
-		$massega=str_replace("'", "\'", $massega);
-		$massega=str_replace('"', '\"', $massega);
+//		$mail = new PHPMailer;
+//
+//		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//
+//		$mail->isSMTP();                                      // Set mailer to use SMTP
+//		$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+//		$mail->SMTPAuth = true;                               // Enable SMTP authentication
+//		$mail->Username = 'sales@makewear.com.ua';                 // SMTP username
+//		$mail->Password = 'zoond363636';                           // SMTP password
+//		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+//		$mail->Port = 587;                                    // TCP port to connect to
+//		$mail->CharSet = "UTF-8";
+//		$mail->setFrom($whom, 'MakeWear');
+//		$mail->addAddress($to);     // Add a recipient
+//		$mail->isHTML(true);                              
+//
+//
+//		$mail->Subject = $subject;
+//		$mail->Body    = $massega;
+//
+//
+//		$massega=str_replace("'", "\'", $massega);
+//		$massega=str_replace('"', '\"', $massega);
 
 		//$flag=0;
-
-		if(!$mail->send()) {
+                    
+		if(Mail::send($to, $subject, $massega)) {
 		    echo "Message could not be sent.\n";
 		    echo 'Mailer Error: ' . $mail->ErrorInfo."\n";
 		} else {

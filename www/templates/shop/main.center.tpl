@@ -8,7 +8,7 @@
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12" id="banner-slider" dir='rtl'>
         <!--<div><img src="{$photoDomain}banners/main-page-banner_0005.jpg" alt="main-page-banner-5"></div>-->
-        <div><img src="{$photoDomain}assets/opt-5-items.jpg" alt="main-page-banner-3"></div>
+        <div><img src="/templates/shop/image/baner_comment_slider/opt-ot-5.png" alt="main-page-banner-3"></div>
         <!-- <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0000.jpg" alt="main-page-banner-1"></div>
          <div><img src="/templates/shop/image/baner_comment_slider/main-page-banner_0001.jpg" alt="main-page-banner-2"></div>-->
         </div>
@@ -93,6 +93,7 @@
             {$blockShares}
         </div>
     </div>
+     {$info}
     <!--<div class="col-md-12 col-sm-12 col-xs-12" style="margin: 5px 0;padding: 0 5px;">
         <a href="/organizer-sp/">
             <img style="width: 100%;" src="http://makewear-images.azureedge.net/assets/sp-special.jpg">
@@ -108,10 +109,17 @@
                     <div class="tab-content">
                         <div class="tab-item clearfix">
                             <div class="first_cnt">
-                                <h4>MAKEWEAR - это альянс производителей одежды, обуви и аксессуаров.</h4>
-                                <p>Лучшие фабрики и ателье объединили свои предложения на MakeWear, чтобы Вам стало проще найти необходимый товар и заказать его без наценок.<br>
-                                   Впервые все основные производители Украины полноценно представлены на одном сайте.<br>
-                                   Уникальные технические решения в сфере e-commerce определили неоспоримые преимущества MakeWear.</p>
+                                <h4>MakeWear – это оптовый интернет-магазин одежды, обуви и аксессуаров.</h4>
+                                <p>
+                                    Мы создали самый удобный сайт специально для Оптовых Закупщиков и Организаторов Совместных Покупок, которым MW будет особенно полезен.  <br><br>
+
+                                    Цены на все товары установлены непосредственно производителем, а ассортимент включает в себя продукцию большинства основных украинских брендов, благодаря чему, открывать закупки с MW удобно и просто.  
+                                    Наша цель – создать универсальный оптовый online-склад, как источник товара для предпринимателей сегмента Одежда и Обувь. <br><br>
+
+                                    Мы будем делать всё, чтобы обеспечить для Вас наилучший сервис и стать надёжным партнёром для каждого нашего клиента.  <br><br>
+
+                                    <div class="about-icon"><i></i>Команда MakeWear</div>
+                                </p>
                             </div><!--
                             <div class="second_cnt clearfix">
                                 <div class="left_block">
@@ -148,16 +156,44 @@
             </div>
         </div>
         <!-- END about company -->
-
-        <!-- comments-Slider -->
-        <div class="col-md-12 col-sm-12 col-xs-12" id="comments-slider" dir='rtl'>
-            <div><img  src="{$photoDomain}images/main-page-banner_3.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_0.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_1.jpg"></div>
-            <div><img  src="{$photoDomain}images/main-page-banner_2.jpg"></div>
+        <div class="col-md-12 col-sm-12 col-xs-12 slick-slider-comments" id="comments-slider" dir='rtl'>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_0.jpg"></div>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_1.jpg"></div>
+            <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_2.jpg"></div>
         </div>
         <!-- end comments slider -->
+        <div class="main-info"> 
+         <div class="row main-width SEO-wrap">
+            <div class="SEO-text ">
+                <p>
+                    Лучшие производители объединили свои предложения на MakeWear, чтобы купить одежду оптом было максимально
+                    просто и удобно для Вас.
+                    На сайте Вы можете как в розницу, так и оптом купить одежду, обувь и аксессуары по ценам производителя с
+                    доставкой по территории Украины и России.
+                </p>
 
+                <p>
+                    Женская одежда от отечественного производителя всегда пользуется большим спросом по причине высокого
+                    качества продукции, удобной размерной сетки и доступных цен. Не последним преимуществом украинских
+                    производителей одежды и обуви является и то, что продукция, производимая ими, всегда точно соответствует
+                    спросу населения СНГ и обязательно будет востребована на рынке Украины и России.
+                </p>
+
+                <p>
+                    Ассортимент каждого бренда постоянно пополняется новыми интересными моделями одежды, обуви и аксессуаров
+                    в соответствии с модными тенденциями и стандартами качества.
+                </p>
+
+                <p>
+                    Мы работаем для того, чтобы модная одежда оптом от производителя всегда была доступна для Вас на
+                    MakeWear. Оцените широкий ассортимент товаров на сайте, удобную навигацию и поиск по сайту в сочетании с
+                    доступными ценами на высококачественную продукцию.
+                </p>
+            </div>
+        </div>
+        </div>
+        <!-- comments-Slider -->
+        
         <!-- paymenth delivery
         <div class="col-md-12 col-sm-12 col-xs-12 oplata-delivery-container">
             <div class="payment-and-delivery-text">Оплата и доставка</div>
@@ -245,5 +281,6 @@
             <a href="https://instagram.com/makewear.com.ua/" class="btn-dark-3d" target="_blank">смотреть все</a>
         </div>-->
     </div>
-    {$info}
+   
 </div>
+<div class="but-up" id="toTop"></div>

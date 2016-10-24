@@ -31,9 +31,8 @@ class Mail
         if (null === self::$sendGrid) {
 
             //якщо екземпляр класу SendGrid не створений то створюєм
-            self::$sendGrid = new SendGrid(SEND_GRID_KEY);
+            self::$sendGrid = new SendGrid('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');
         }
-
         $email = new SendGrid\Email();
         $email
             ->addTo($to)
@@ -45,10 +44,10 @@ class Mail
         $result = self::$sendGrid->send($email);
 
         if ($result->getCode() === 200) {
-            return true;
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     public static  function sendMultiple($to, $subject, $html, $fromEmail  = 'info@makewear.com.ua', $fromName = 'Makewear')

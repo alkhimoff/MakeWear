@@ -853,10 +853,8 @@ QUERYMETA;
         $perPageSelect .= "<option value='$pages'{$selected}>$pages</option>";
     }
 
-    $minPrice         = isset($filters['GET']['priceM1']) || count($prices) == 0
-            ? $filters['GET']['priceM1'] : min($prices);
-    $maxPrice         = isset($filters['GET']['priceM2']) || count($prices) == 0
-            ? $filters['GET']['priceM2'] : max($prices);
+    $minPrice         =  min($prices);
+    $maxPrice         =  max($prices);
     $roznFilterPrice1 = isset($filters['GET']['price1']) && $filters['GET']['price1']
         != '' ?
         $filters['GET']['price1'] :

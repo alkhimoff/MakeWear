@@ -5020,8 +5020,8 @@ x-axis
     bottom: -30px;
     width: 420px;
   }
-  header .header-bottom .top-menu ul .first-level {
-    padding-left: 35px;
+  header .header-bottom .top-menu ul .first-level { 
+    padding-left: 20px;
   }
   header .header-bottom .top-menu ul .first-level:last-child {
     display: none;
