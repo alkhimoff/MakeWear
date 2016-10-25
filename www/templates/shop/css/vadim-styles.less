@@ -15,6 +15,11 @@
     -o-transition: @arguments;
     transition: @arguments;
 }
+.box () {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    }
 .tr (){
     text-transform: uppercase
     }
@@ -368,6 +373,17 @@ header .brands-names.brands-names-wooman {
     }
 }
 
+/****** end buttons */
+
+/* ====================================================
+   reviews
+======================================================= */
+
+/****** product-tab-rev */
+.product-tab-rev {
+    padding: 15px;
+    .box();
+}
 /****** clothes women */
 .main-container.commodities .catalog_item .catalog_image#catalogue297 {
     background-position: -7547px -1687px;

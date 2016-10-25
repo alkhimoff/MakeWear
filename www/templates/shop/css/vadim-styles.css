@@ -319,6 +319,17 @@ header .brands-names.brands-names-wooman {
 .show-more-brands__but._up:before {
   background-position: -824px -276px;
 }
+/****** end buttons */
+/* ====================================================
+   reviews
+======================================================= */
+/****** product-tab-rev */
+.product-tab-rev {
+  padding: 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 /****** clothes women */
 .main-container.commodities .catalog_item .catalog_image#catalogue297 {
   background-position: -7547px -1687px;
