@@ -4326,11 +4326,11 @@ header .contacts-top .service-center__columns .column p .icon {
     display: inline-block;
     vertical-align: middle}
 header .contacts-top .service-center__columns .column p .icon-phone-operator1 {
-    background: url(../image/sprite.png) -253px -483px;
+    background: url(../image/sprite.png) -253px -529px;
     width: 21px;
     height: 21px}
 header .contacts-top .service-center__columns .column p .icon-phone-operator2 {
-    background: url(../image/sprite.png) -253px -508px;
+    background: url(../image/sprite.png) -253px -484px;
     width: 21px;
     height: 18px}
 header .contacts-top .service-center__columns .column p .icon-phone-operator3 {
@@ -7309,21 +7309,21 @@ header .socialls-enter__network a.icon-odn:before {
 .main-container .main-info .main-info-list .icon {
     float: left}
 .main-container .main-info .main-info-list .icon-conten-info1 {
-    background: url(../image/sprite.png) no-repeat -194px -371px;
+    background: url(../image/sprite.png) no-repeat -194px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info2 {
-    background: url(../image/sprite.png) no-repeat -250px -371px;
+    background: url(../image/sprite.png) no-repeat -250px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info3 {
-    background: url(../image/sprite.png) no-repeat -306px -371px;
+    background: url(../image/sprite.png) no-repeat -306px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info4 {
-    background: url(../image/sprite.png) no-repeat -362px -371px;
+    background: url(../image/sprite.png) no-repeat -362px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .SEO-text {
     padding: 44px 38px 34px;
     background-color: #fbfbfb;
