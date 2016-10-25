@@ -4948,9 +4948,11 @@ header .brands-names .main-menu-title {
     color: #333}
 header .brands-names ul {
     list-style-type: none;
-    -moz-column-count: 1;
+   /* -moz-column-count: 1;
     -webkit-column-count: 1;
-    column-count: 1}
+    column-count: 1;*/
+
+}
 header .brands-names ul li {
     font-size: 12px;
     line-height: 37px;
@@ -4960,11 +4962,11 @@ header .brands-names ul li {
     display: none}
 header .brands-names ul li a {
     color: #858585;
-    white-space: nowrap;
+    
     font-family: 'helveticaneuecyrroman';
     font-weight: 300;
     font-size: 13px;
-    display: inline-block;
+    display: block;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box}

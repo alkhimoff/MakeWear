@@ -179,6 +179,10 @@ header .search-field__input input {
 .slick-list {
   padding: 0;
 }
+header .brands-names.brands-names-wooman {
+  display: block;
+}
+/****** end other */
 /* ====================================================
    resset
 ======================================================= */
