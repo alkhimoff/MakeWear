@@ -98,7 +98,8 @@ if ($verify == "verify") {
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
-    $codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
+    //$codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
+    $codProd = preg_replace("/\D/", "", trim(iconv("UTF-8", "ISO-8859-1//IGNORE", $arrayCod[0])));
 }
 
 //Name

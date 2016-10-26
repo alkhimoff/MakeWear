@@ -31,7 +31,7 @@ $arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
 if (isset($arrayPrice)) {
     $regexp = '/[^0-9]/';
     $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
-    $price2 = ceil(1.15 * $price2);
+    $price2 = ceil($price2);
 
     // action discount 40%
     $price  = ceil(($price2 + 70) * $_SESSION['updatePrice']);

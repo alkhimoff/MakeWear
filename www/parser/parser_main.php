@@ -231,11 +231,12 @@ session_start();
                 if ($mysqli->errno) {
                     die('Update shop_commodity SET alias Error ('.$mysqli->errno.') '.$mysqli->error);
                 }
-
-                //вызываем обработку и запись фоток
-                $resultImageArray = writeImage($idBrand, $curLink, $saw,
-                    $commodityID, $mysqli, $verify);
-
+                
+                if(!$_SERVER['HTTP_HOST'] == 'mwdev'){
+                    //вызываем обработку и запись фоток
+                    $resultImageArray = writeImage($idBrand, $curLink, $saw,
+                        $commodityID, $mysqli, $verify);
+                }
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,
                     $price2, $resultImageArray['mainSrcImg'],
