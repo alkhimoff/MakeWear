@@ -14,7 +14,7 @@ use Modules\BlobStorage;
 function myShutdown()
 {
     global $startTime;
-    echo "execution took: ".
+    echo "\t execution took: ".
     (microtime(true) - $startTime).
     " seconds.";
 }
