@@ -158,7 +158,6 @@ $srcProd = "";
 if (isset($arrayImage)) {
     $lowSrc  = $arrayImage[0]['data-zoom-image'];//str_replace("70x81", "500x579", $arrayImage[0]['src']);
     $srcProd = filterUrlImage($lowSrc, $curLink);
-    echo $lowSrc.'</br>'.$srcProd;
 }
 //var_dump($srcProd);
 //Проверяем по главной картинке дубликаты
