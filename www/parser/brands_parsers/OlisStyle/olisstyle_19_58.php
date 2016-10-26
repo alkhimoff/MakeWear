@@ -55,7 +55,7 @@ if (count($arrayPrice) < 1) {
 if (isset($arrayPrice)) {
     $regexp = '/[^0-9.]/';
     $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
-    $price2 = ceil(1.15 * $price2);
+    $price2 = ceil($price2);
     $price  = ceil(($price2 + 100) * $_SESSION['updatePrice']);
 }
 
@@ -149,14 +149,16 @@ if (isset($arrayDesc)) {
 //                          Проверка на дубликаты
 //==============================================================================
 //Image
+var_dump($_SESSION['img']);
 $arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
     'img - главная картинка');
-//var_dump($arrayImage);
+//var_dump($arrayImage); die();
 
 $srcProd = "";
 if (isset($arrayImage)) {
-    $lowSrc  = str_replace("70x81", "500x579", $arrayImage[0]['src']);
+    $lowSrc  = $arrayImage[0]['data-zoom-image'];//str_replace("70x81", "500x579", $arrayImage[0]['src']);
     $srcProd = filterUrlImage($lowSrc, $curLink);
+    echo $lowSrc.'</br>'.$srcProd;
 }
 //var_dump($srcProd);
 //Проверяем по главной картинке дубликаты
