@@ -7,7 +7,7 @@ interface iReport
     const FILE_CREATE_MASSEGE = "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан</h4>\n\n";
     const STRING_LINE_START   = "****************************************************************************************************\n\n";
     const STRING_LINE_BOLD    = "====================================================================\n";
-    const STRING_LINE_SLIMM   = "--------------------------------------------------------------------\n\n\n";
+    const STRING_LINE_SLIMM   = "--------------------------------------------------------------------\n\n";
     const STRING_START        = "Всем пристегнуть ремни начало работы!!!\n";
 
     public function createFileReport();
