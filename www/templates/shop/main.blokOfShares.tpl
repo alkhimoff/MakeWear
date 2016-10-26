@@ -22,10 +22,10 @@
                     </a>
                 </div>-->
                 <div>
-                    <a href="/akcionnie-predlojeniya/">
+                    <span>
                         <img src="/templates/shop/image/baner_comment_slider/pressent_order1275х375.jpg" alt="main-page-banner-2">
-                    </a>
-                    <button type="submit" id="click-podarok" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
+                    </span>
+                    <div type="submit" id="click-podarok" class="btn btn-lg btn-block btn-primary">Оформить заказ</div>
                 </div>
             </div>
 
