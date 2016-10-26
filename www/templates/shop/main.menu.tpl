@@ -173,10 +173,10 @@
             </a>
         </li>
 
-        <li class="first-level">
+        <!-- <li class="first-level">
             <a href="/akcionnie-predlojeniya/">
                 Акции
             </a>
-        </li>
+        </li> -->
     </ul>
 </div>

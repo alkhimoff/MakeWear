@@ -790,7 +790,10 @@ hr {
 .text-justify {
     text-align: justify}
 .text-nowrap,header .header-bottom .top-menu ul {
-    white-space: nowrap}
+    white-space: nowrap;
+    display: table;
+    margin: 0 auto;
+}
 .text-lowercase {
     text-transform: lowercase}
 .text-uppercase {

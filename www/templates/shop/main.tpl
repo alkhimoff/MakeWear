@@ -29,7 +29,7 @@
 
     </head>
     <body class="loaded">
-
+        <div class="loader-bg"></div>
         <!--0.055708885192871-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--bad rating
@@ -425,7 +425,7 @@
                             <li><a href="/about-company/">О компании</a></li>
                             <li><a href="/payment-delivery/">Оплата и доставка</a></li>
                             <li><a href="/about-company/">Договор оферты</a></li>
-                            <li><a href="/articles/">Статьи</a></li>
+                            <li><a href="/akcionnie-predlojeniya/">Акционные предложения</a></li>
                             <li><a href="/organizer-sp/">Условия для СП</a></li>
                         </ul>
                     </div>
