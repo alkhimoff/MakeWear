@@ -24,7 +24,7 @@ class ReportSpider extends Report
     public function echoSpiderStart($linkArray)
     {
         $this->echoArray($linkArray, "");
-        echo "\nОтсалось: {$this->countLinks}\n"
+        echo "\nОсталось: {$this->countLinks}\n"
         .self::STRING_START
         .self::STRING_LINE_BOLD;
     }
@@ -35,8 +35,8 @@ class ReportSpider extends Report
     public function echoNewLinks()
     {
         echo self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n";
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n";
     }
 
     /**
@@ -51,8 +51,8 @@ class ReportSpider extends Report
         .self::STRING_NEW_URL
         .self::STRING_LINE_BOLD
         ."Количество найденных ссылок: {$couLinks}\n"
-        ."Количество новых ссылок: {$countNewLinks}\n";
-        $this->echoArray($arrNewLinks, "УРЛЫ Новыч ссылок:");
+        ."Количество новых ссылок    : {$countNewLinks}\n";
+        $this->echoArray($arrNewLinks, "URL Новых ссылок:");
         echo self::STRING_LINE_BOLD
         .self::STRING_EXIST_URL
         .self::STRING_LINE_BOLD;

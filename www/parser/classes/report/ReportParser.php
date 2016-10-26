@@ -43,8 +43,8 @@ class ReportParser extends Report
         echo self::STRING_LINE_BOLD
         .self::STRING_INSERT_NEW
         .self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
         ."CommodityID: {$commodityID}\n"
         ."CatId: {$this->catId}\n"
@@ -89,12 +89,12 @@ class ReportParser extends Report
             echo self::STRING_NOEXIST_PROD;
         }
         echo self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
         ."CatId: {$this->catId}\n"
-        ."Cod: {$code}\n"
-        ."Name: {$comName}\n"
+        ."  Cod: {$code}\n"
+        ." Name: {$comName}\n"
         .self::STRING_LINE_SLIMM;
     }
 
@@ -107,11 +107,11 @@ class ReportParser extends Report
         echo self::STRING_LINE_BOLD
         .self::STRING_EXIST_PROD
         .self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
         ."CommodityID: {$comExistId}\n"
-        ."CatId: {$this->catId}\n"
+        ."      CatId: {$this->catId}\n"
         .self::STRING_LINE_SLIMM;
     }
 }
