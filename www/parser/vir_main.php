@@ -228,7 +228,7 @@ session_start();
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step,
                 $content, TRUE, $visibleUpdate);
             //die('asd');
-            ?><meta http-equiv="refresh" content="2;URL=http://<?php echo $requestUrl ?>"><?php
+            ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $requestUrl ?>"><?php // 2
             die;
         }
 
