@@ -133,12 +133,12 @@ if (isset($arrayDesc)) {
                 $value .= $arrayDesc[$key + 1];
             }
             $descProd = findStringDesc($value, $searchArray, $descProd);
+            if($key == 0 && $descProd == ""){
+                $descProdTmp = $value;
+            }
         }
     }
+    $descProd .= $descProdColor."<p><span>Описание:</span>".$descProdTmp."</p>";
 }
-//var_dump($arrayDesc);
-//var_dump($descProd);
-//echo $descProd;
-//die;
 
 

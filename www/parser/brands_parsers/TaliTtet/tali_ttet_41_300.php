@@ -36,9 +36,7 @@ $duplicateProd = "";
   } */
 
 //Price price2
-$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
-    'price - цена');
-//var_dump($arrayPrice);
+$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
 
 if (isset($arrayPrice) && count($arrayPrice) == 1) {
     $regexp   = '/[^0-9.]/';
@@ -51,13 +49,9 @@ if ($price == 0) {
     $existProd = FALSE;
     $price2    = 0;
 }
-//var_dump($existProd);
-//var_dump($price);
-//var_dump($price2);
+
 //Size
-$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,
-    'sizeCol - размер');
-//var_dump($arraySize);
+$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw, 'sizeCol - размер');
 
 if (isset($arraySize)) {
     foreach ($arraySize as $value) {
@@ -65,7 +59,6 @@ if (isset($arraySize)) {
     }
     $sizesProd = filterSizeColors($sizesProd);
 }
-//var_dump($sizesProd);
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -74,33 +67,25 @@ if ($verify == "verify") {
 }
 
 //Cod
-$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
-    'cod - код товара');
-//var_dump($arrayCod);
+$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
     $codProd = trim($arrayCod[0]);
 }
-//var_dump($codProd);
+
 //Name
-$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
-    'name - название товара');
-//var_dump($arrayName);
+$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
 
 if (isset($arrayName)) {
     $nameProd = str_replace($codProd, '', trim($arrayName[0]));
 }
-//var_dump($nameProd);
+
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
-    // delete all empty array data
     $arrayDesc = deleteEmptyArrDescValues($arrayDesc);
 
-    // concatinateon array in string
     $strDesc = "";
     foreach ($arrayDesc as $value) {
         $strDesc .= trim($value)." ";
@@ -118,9 +103,3 @@ if (isset($arrayDesc)) {
         $descProd = '<p>'.$strDesc.'</p>';
     }
 }
-//var_dump($arrayDesc);
-//var_dump($descProd);
-//die;
-
-
-
