@@ -56,7 +56,7 @@ class ReportVerify extends Report
         }
         echo self::STRING_LINE_BOLD
         ."Осталось  : {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
         ."CommodityID: {$commodityID}\n"
         .self::STRING_LINE_SLIMM;
@@ -86,16 +86,16 @@ class ReportVerify extends Report
         }
         echo self::STRING_LINE_BOLD
         ."Осталось  : {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
-        ."CommodityID: {$commodityID}\n"
-        ."CatId: {$this->catId}\n"
-        ."Cod: {$code}\n"
-        ."Name: {$comName}\n"
-        ."Цена: {$priceNew}\n"
+        ." CommodityID: {$commodityID}\n"
+        ."       CatId: {$this->catId}\n"
+        ."         Cod: {$code}\n"
+        ."        Name: {$comName}\n"
+        ."        Цена: {$priceNew}\n"
         ."Цена оптовая: {$price2New}\n";
         if ($comSizesNew !== "") {
-            echo "Размеры: {$comSizesNew}\n";
+            echo "     Размеры: {$comSizesNew}\n";
         }
         if ($comOptionsNew !== "") {
             echo "Цвета-размеры или опции: {$comOptionsNew}\n";
