@@ -98,8 +98,8 @@ if ($verify == "verify") {
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
-    $codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
-    //$codProd = preg_replace("/\D/", "", trim(utf8_encode($arrayCod[0]))); // проверить правильно ли льётся артикул
+    //$codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
+    $codProd = preg_replace("/\D/", "", trim(utf8_encode($arrayCod[0]))); // проверить правильно ли льётся артикул
     // если не получится попробовать: mb_strtolower($arrayCod[0], 'UTF-8') / mb_convert_encoding() / iconv() / recode_string() 
 }
 
