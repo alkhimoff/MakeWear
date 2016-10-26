@@ -5,6 +5,7 @@ namespace Parser\Report;
 interface iReport
 {
     const FILE_CREATE_MASSEGE = "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан</h4>\n\n";
+    const STRING_LINE_START   = "****************************************************************************************************\n\n";
     const STRING_LINE_BOLD    = "====================================================================\n";
     const STRING_LINE_SLIMM   = "--------------------------------------------------------------------\n\n\n";
     const STRING_START        = "Всем пристегнуть ремни начало работы!!!\n";
@@ -83,8 +84,9 @@ abstract class Report implements iReport
         $memoryMb        = round($memoryBytes / 1048576, 5);
         $memoryMbPeak    = round($memoryBytesPeak / 1048576, 5);
         register_shutdown_function('myShutdown');
-        echo "Final: {$memoryBytes}  bytes - {$memoryMb} mb\n";
-        echo "Peak:  {$memoryBytesPeak} bytes - {$memoryMbPeak} mb \n";
+        echo "\t Final: {$memoryBytes}  bytes - {$memoryMb} mb\n";
+        echo "\t Peak:  {$memoryBytesPeak}  bytes - {$memoryMbPeak} mb \n";
+	echo "\n" . self::STRING_LINE_START;
         $content         = ob_get_contents();
         file_put_contents($this->fileName, $content, FILE_APPEND);
         ob_flush();
@@ -97,7 +99,7 @@ abstract class Report implements iReport
      */
     public function echoStart()
     {
-        echo "\nОтсалось: {$this->countLinks}\n"
+        echo "\nОсталось: {$this->countLinks}\n"
         .self::STRING_START
         .self::STRING_LINE_BOLD;
     }

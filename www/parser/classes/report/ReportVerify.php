@@ -35,9 +35,9 @@ class ReportVerify extends Report
         echo self::STRING_LINE_BOLD
         .self::STRING_CHANGE_PHOTO
         .self::STRING_LINE_BOLD
-        ."УРЛ Главной картинки: <a href={$mainSrcImg} target='_blank' >{$mainSrcImg}</a>\n";
+        ."URL Главной картинки: <a href={$mainSrcImg} target='_blank' >{$mainSrcImg}</a>\n";
         if (!empty($dopSrcImg)) {
-            $this->echoArray($dopSrcImg, "УРЛЫ Доп. картинки:");
+            $this->echoArray($dopSrcImg, "URL Доп. картинки:");
         }
     }
 
@@ -55,8 +55,8 @@ class ReportVerify extends Report
             echo self::STRING_DELETE_PROD;
         }
         echo self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
         ."CommodityID: {$commodityID}\n"
         .self::STRING_LINE_SLIMM;
@@ -85,17 +85,17 @@ class ReportVerify extends Report
             echo self::STRING_NOUPDATE_PROD;
         }
         echo self::STRING_LINE_BOLD
-        ."Отсалось: {$this->remeindLinks} \n"
-        ."Пропарсено:  {$this->step}\n"
+        ."Осталось  : {$this->remeindLinks} \n"
+        ."Пропарсено: {$this->step}\n"
         ."URL: <a href={$this->curLink} target='_blank' >{$this->curLink}</a>\n"
-        ."CommodityID: {$commodityID}\n"
-        ."CatId: {$this->catId}\n"
-        ."Cod: {$code}\n"
-        ."Name: {$comName}\n"
-        ."Цена: {$priceNew}\n"
+        ." CommodityID: {$commodityID}\n"
+        ."       CatId: {$this->catId}\n"
+        ."         Cod: {$code}\n"
+        ."        Name: {$comName}\n"
+        ."        Цена: {$priceNew}\n"
         ."Цена оптовая: {$price2New}\n";
         if ($comSizesNew !== "") {
-            echo "Размеры: {$comSizesNew}\n";
+            echo "     Размеры: {$comSizesNew}\n";
         }
         if ($comOptionsNew !== "") {
             echo "Цвета-размеры или опции: {$comOptionsNew}\n";

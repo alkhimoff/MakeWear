@@ -228,7 +228,7 @@ session_start();
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step,
                 $content, TRUE, $visibleUpdate);
             //die('asd');
-            ?><meta http-equiv="refresh" content="2;URL=http://<?php echo $requestUrl ?>"><?php
+            ?><meta http-equiv="refresh" content="5;URL=http://<?php echo $requestUrl ?>"><?php // 2
             die;
         }
 
@@ -498,7 +498,7 @@ function checkChanges($propOld, $propNew, $str)
         $to      = array('&lt;', '&gt;');
         $propOld = str_replace($from, $to, $propOld);
         $propNew = str_replace($from, $to, $propNew);
-        echo "\n<span style='color:blue'>{$str}</span> Старое знач.({$propOld})\n Новое знач.({$propNew})\n";
+        echo "\n<span style='color:blue'>{$str}</span>\n Старое знач.({$propOld})\n Новое знач. ({$propNew})\n";
     }
 }
 
