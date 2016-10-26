@@ -148,15 +148,14 @@ session_start();
 
         //Проверяем работает ли ссылка если не работает то парсим следующюю
         if ($saw == FALSE) {
-            if (($idBrand == 34 && ($statusCode == 301 || $statusCode == 404)) ||
-                (($idBrand == 30 || $idBrand == 31) && $statusCode == 503) ||
-                (($idBrand == 25 || $idBrand == 21 || $idBrand == 20 || $idBrand
-                == 19 || $idBrand == 7 || $idBrand == 5 ||
-                $idBrand == 30 || $idBrand == 31 || $idBrand == 13 || $idBrand == 39
-                || $idBrand == 11 || $idBrand == 38 || $idBrand == 35) && $statusCode
-                == 404) ||
-                ($idBrand == 14 && $statusCode == 500) || ($idBrand == 35 && $statusCode
-                == 410)) {
+            if (($idBrand == 34 && ($statusCode == 301 || $statusCode == 404)) 
+                || (($idBrand == 30 || $idBrand == 31) && $statusCode == 503) 
+
+                || (($idBrand == 5 || $idBrand == 7 || $idBrand == 10 || $idBrand == 11 || $idBrand == 13 || $idBrand == 19 || $idBrand == 20 || 
+                    $idBrand == 21 || $idBrand == 25 || $idBrand == 30 || $idBrand == 31 || $idBrand == 35 || $idBrand == 38 || $idBrand == 39) && $statusCode == 404)  
+                        
+                || ($idBrand == 14 && $statusCode == 500) 
+                || ($idBrand == 35 && $statusCode == 410)) {
                 
             } else {
 

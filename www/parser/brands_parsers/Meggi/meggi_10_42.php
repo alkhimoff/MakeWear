@@ -15,12 +15,13 @@ $nameProd      = "";
 $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
-//var_dump($curLink);
+
 //Exist URL
-/* if ($verify !== "import" && ($statusCode == 404)) {
-  $deleteProd = TRUE;
-  return;
-  } */
+ if ($verify !== "import" && ($statusCode == 404)) {
+    $deleteProd = TRUE;
+    return;
+  } 
+  
 //Exist
 $arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
 $arrayNewPrice = $saw->get('span.productPrice-ofd')->toTextArray();
