@@ -99,9 +99,7 @@ $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код т�
 
 if (isset($arrayCod)) {
     //$codProd = preg_replace("/\D/", "", trim($arrayCod[0]));
-    //$codProd = preg_replace("/\D/", "", trim(utf8_encode($arrayCod[0])));
-    $codProd = preg_replace("/\D/", "", trim(mb_convert_encoding($arrayCod[0], "UTF-8")));
-    // если не получится попробовать: mb_strtolower($arrayCod[0], 'UTF-8') / mb_convert_encoding() / iconv() / recode_string() 
+    $codProd = preg_replace("/\D/", "", trim(iconv("UTF-8", "ISO-8859-1//IGNORE", $arrayCod[0])));
 }
 
 //Name
