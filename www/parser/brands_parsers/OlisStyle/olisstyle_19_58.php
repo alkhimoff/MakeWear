@@ -157,7 +157,7 @@ $arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
 $srcProd = "";
 if (isset($arrayImage)) {
     $lowSrc  = $arrayImage[0]['data-zoom-image'];//str_replace("70x81", "500x579", $arrayImage[0]['src']);
-    $srcProd = filterUrlImage($lowSrc, $curLink);
+    $srcProd = $arrayImage[0]['data-zoom-image'];//filterUrlImage($lowSrc, $curLink);
 }
 //var_dump($srcProd);
 //Проверяем по главной картинке дубликаты
