@@ -209,6 +209,11 @@ session_start();
 
         //Удалить товар из интерфейса
         $comDeleteInterfice = ($_SESSION['deleteCom']) ? TRUE : FALSE;
+        
+        require_once '..\dumphper.php';
+        dump($GLOBALS);
+        var_dump($GLOBALS);
+	die;
 
         //$comDelete = TRUE;
         if ($comDelete == TRUE || $comDeleteInterfice == TRUE) {
@@ -228,7 +233,7 @@ session_start();
             InterfaceAdmin::init($idBrand, $countLinks)->setInterfaceVerify($step,
                 $content, TRUE, $visibleUpdate);
             //die('asd');
-            ?><meta http-equiv="refresh" content="8;URL=http://<?php echo $requestUrl ?>"><?php // 2
+                ?><meta http-equiv="refresh" content="8;URL=http://<?php echo $requestUrl ?>"><?php // 2
             die;
         }
 
