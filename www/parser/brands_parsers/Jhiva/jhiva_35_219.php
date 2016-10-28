@@ -31,7 +31,7 @@ if (isset($arrayExist)) {
         $exist = mb_strtolower(trim($value), 'utf-8');
         $pos1   = mb_strpos($exist, 'в наявності');
         $pos2  = mb_strpos($exist, 'під замов');
-        if ($pos !== false || $pos1 !== false) {
+        if ($pos1 !== false || $pos2 !== false) {
             $existProd = TRUE;
             break;
         }
