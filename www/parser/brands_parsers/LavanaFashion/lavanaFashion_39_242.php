@@ -74,7 +74,7 @@ preg_match("/new Product.Config\((.*)\);/", $pageBody, $matches);
 if (isset($matches[1])) {
     $json       = json_decode($matches[1], true);
     $arraySize  = $json['attributes'][180]['options'];
-    $arrayColor = $json['attributes'][92]['options'];
+   // $arrayColor = $json['attributes'][92]['options'];
 }
 
 if (isset($arraySize)) {
@@ -83,7 +83,7 @@ if (isset($arraySize)) {
     }
     $sizesProd = filterSizeColors($sizesProd); 
 }
-
+/*
 if (isset($arrayColor)) { 
     $descProdColor = "<p><span>Цвет:</span>";
     foreach ($arrayColor as $value) {
@@ -91,6 +91,7 @@ if (isset($arrayColor)) {
     }
     //$descProdColor = filterSizeColors($descProd);
 }
+*/
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -112,7 +113,7 @@ if (isset($arrayName)) {
     $nameProd  = trim($arrayName[0]);
 }
 //-------------------------------Description--------------------------------7---
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION['desc'], $saw, 'desc - описание');//!!!!!!!!!!!!!!!!!!!!
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION['desc'], $saw, 'desc - описание');
     
 if (isset($arrayDesc)) {
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
