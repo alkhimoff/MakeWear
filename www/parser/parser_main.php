@@ -236,6 +236,10 @@ session_start();
                     //вызываем обработку и запись фоток
                     $resultImageArray = writeImage($idBrand, $curLink, $saw,
                         $commodityID, $mysqli, $verify);
+                } else {
+                    // default for me
+                    $resultImageArray['mainSrcImg'] = 'http://www.unixstickers.com/image/cache/data/stickers/php/php_bumper.sh-600x600.png'; 
+                    $resultImageArray['dopSrcImg'] = 'http://www.unixstickers.com/image/cache/data/buttons/png/php_elephant-600x600.png';
                 }
                 //выводим отчет записи в БД
                 $report->echoInsertProd($commodityID, $code, $comName, $price,
