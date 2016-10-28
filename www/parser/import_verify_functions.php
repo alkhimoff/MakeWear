@@ -347,6 +347,9 @@ function getDesc($strDesc, $descProd, $wovels, $searchArray)
 //------------------------------------------------------------------------------
 function deleteEmptyArrDescValues($arrayDesc)
 {
+    if($arrayDesc == null){
+        return;
+    }
     foreach ($arrayDesc as $value) {
         if (strlen(trim($value)) !== 0) {
             $arrayDescNew[] = trim($value);
