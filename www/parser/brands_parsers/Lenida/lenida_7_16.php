@@ -40,7 +40,7 @@ if (isset($arrayPrice)) {
     $regexp = '/[^0-9.]/';
     $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
     $price  = (int) ceil(($price2 * 1.5) * $_SESSION['updatePrice']);
-    $price2 = ceil(1.15 * $price2);
+    //$price2 = ceil(1.15 * $price2);
 }
 
 if ($price == 0) {
