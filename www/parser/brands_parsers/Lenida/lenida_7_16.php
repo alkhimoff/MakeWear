@@ -15,7 +15,7 @@ $nameProd      = "";
 $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
-//var_dump($curLink);
+
 //Exist URL
 if ($verify !== "import" && ($statusCode == 404)) {
     $deleteProd = TRUE;
@@ -23,36 +23,28 @@ if ($verify !== "import" && ($statusCode == 404)) {
 }
 
 //Exist
-//echo $pageBody;
 $arrayExist = $saw->get($_SESSION['no_nal'])->toArray();
-//var_dump($arrayExist);
 
 if (!empty($arrayExist)) {
     $existProd = FALSE;
 }
-//var_dump($existProd);
+
 //Price price2
-$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
-    'price - цена');
-//var_dump($arrayPrice);
+$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
 
 if (isset($arrayPrice)) {
     $regexp = '/[^0-9.]/';
     $price2 = filterPrice(trim($arrayPrice[0]), $regexp);
     $price  = (int) ceil(($price2 * 1.5) * $_SESSION['updatePrice']);
-    //$price2 = ceil(1.15 * $price2);
 }
 
 if ($price == 0) {
     $existProd = FALSE;
     $price2    = 0;
 }
-//var_dump($price);
-//var_dump($price2);
-//die;
+
 //Size
-$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,
-    'sizeCol - размер');
+$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw, 'sizeCol - размер');
 
 if (isset($arraySize)) {
     foreach ($arraySize as $value) {
@@ -60,7 +52,6 @@ if (isset($arraySize)) {
     }
     $sizesProd = filterSizeColors($sizesProd);
 }
-//var_dump($sizesProd);
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -69,9 +60,8 @@ if ($verify == "verify") {
 }
 
 //Image
-$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
-    'img - главная картинка');
-//var_dump($arrayImage);
+$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка');
+
 $srcProd    = "";
 if (isset($arrayImage)) {
     $lowSrc  = str_replace("h595", "h1000", $arrayImage[0]['src']);
@@ -82,13 +72,11 @@ if (isset($arrayImage)) {
     }
 } else {
     $existProd = FALSE;
+    return; // пока условие нет фото - нет в наличии
 }
-//var_dump($srcProd);
-//var_dump($existProd);
+
 //Cod
-$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
-    'cod - код товара');
-//var_dump($arrayCod);
+$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
     $codProd = trim(str_replace("'", '"', $arrayCod[0]));
@@ -100,19 +88,16 @@ if (isset($arrayCod)) {
     $sub2    = substr($codProd, $pos1, strlen($codProd));
     $codProd = str_replace($sub2, "", $codProd);
 }
-//var_dump($codProd);
+
 //Name
-$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
-    'name - название товара');
-//var_dump($arrayName);
+$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
+
 if (isset($arrayName)) {
     $nameProd = trim($arrayName[0]);
 }
-//var_dump($nameProd);
+
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
-//var_dump($arrayDesc);
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
     $beginSelectorP    = '<p>';
@@ -132,9 +117,3 @@ if (isset($arrayDesc)) {
     $desc = $beginSelectorP.$beginSelectorSpan."Описание: ".$endSelectorSpan.$descProdN.$endSelectorP;
     $descProd .= $desc;
 }
-//var_dump($arrayDesc);
-//var_dump($descProd);
-//echo $descProd;
-//die;
-
-
