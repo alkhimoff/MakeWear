@@ -8566,7 +8566,7 @@ footer .footer_part {
     width: 75%;
     position: relative}
 .main-container .main-content .brands .title .brand-search input {
-    width: 93.6%!important}
+    width: 82.6%!important}
 .main-container .main-content .brands .title .line-brands-search-person {
     clear: left;
     margin-top: 2px;
@@ -8576,11 +8576,13 @@ footer .footer_part {
     margin-right: 10px}
 .main-container .main-content .brands .title .line-brands-search-all-icons {
     margin: 0;
-    width: 18%}
+    width: 10%}
 .main-container .main-content .brands .title .icon-star-circle {
     margin-right: 15px!important}
 .main-container .main-content .brands .title .see-all-brands {
-    margin-top: 2px!important}
+    margin-top: 2px!important;
+    margin-right: 39px;
+}
 .main-container .main-content .brands .title .see-all-brands a:hover {
     text-decoration: underline}
 .main-container .main-content .brands .title ul li:first-child {
@@ -8967,7 +8969,7 @@ header .share span {
     margin-right: 25px!important;
     position: absolute;
     left: 0;
-    top: 67px}
+    top: 77px}
 .main-container .main-content .brands .title ul li a {
     padding-left: 7px}
 .main-container .main-content .brands .title ul li: nth-of-type(1) {
@@ -8984,8 +8986,8 @@ header .share span {
     letter-spacing: 2px}
 .main-container .main-content .brands .title .icon-favorite {
     position: absolute;
-    right: 0;
-    top: 67px}
+    right: -13px;
+    top: 77px}
 .main-container .main-content .brands .title .see-all-brands {
     margin: 0 20px 15px}
 .main-container .main-content .brands .title .person {
