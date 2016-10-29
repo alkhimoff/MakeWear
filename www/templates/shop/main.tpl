@@ -29,7 +29,7 @@
 
     </head>
     <body class="loaded">
-        <div class="loader-bg"></div>
+       <div class="loader-bg"></div> 
         <!--0.055708885192871-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins)--> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--bad rating
