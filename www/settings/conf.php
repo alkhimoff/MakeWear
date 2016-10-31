@@ -39,7 +39,7 @@ define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
     //cdn     - http://makewear-images.azureedge.net/
     //storage - https://makewear.blob.core.windows.net/ 
 
-define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
+define('EXIST_ACTION_BRANDS', '');
 
 //caching time
 define('CACHE_TIME_PRODUCT', 60*60*3);
