@@ -120,6 +120,8 @@ if (isset($arrayDesc)) {
         "длина:", "длина сарафана:", "декор:", "застежка:", "длина кардигана:", "длина рубашки:",
         "длина блузы:", "длина юбки:",
         "длина брюк:", "длина пиджака:", "длина блузки:");
+    
+    $descProdTmp = "";
     foreach ($arrayDesc as $key => $value) {
         $value = trim(str_replace(" :", ":", $value));
         if ($key == 0 && strpos($value, 'Материал:') != 0) {
@@ -138,7 +140,9 @@ if (isset($arrayDesc)) {
             }
         }
     }
-    $descProd .= $descProdColor."<p><span>Описание:</span>".$descProdTmp."</p>";
+    if($descProdTmp != ""){
+        $descProd .= "<p><span>Описание:</span>".$descProdTmp."</p>";
+    }
 }
 
 
