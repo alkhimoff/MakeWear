@@ -6,9 +6,8 @@ $existUrl   = TRUE;
 $pagination = array();
 
 //Exist page
-$arrayPagination = checkEmptyOrChangeSelector('.breadcrumbs', $saw,
-    'pagination - страницы');
-//var_dump($arrayPagination);
+$arrayPagination = checkEmptyOrChangeSelector('.breadcrumbs', $saw, 'pagination - страницы');
+
 if (isset($arrayPagination)) {
     foreach ($arrayPagination as $value) {
         $regexp = '/[0-9]/';
@@ -23,17 +22,15 @@ if (isset($arrayPagination)) {
 } else {
     $existUrl = FALSE;
 }
-//var_dump($pagination);
-//die;
+
 //Get Links
-$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw,
-    'a_href - ссылки');
-//var_dump($arrayLinks);
+$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw, 'a_href - ссылки');
+
 
 if (isset($arrayLinks)) {
     $countNewLinks = count($arrayLinks) / 2;
     echo "\nУРЛ текущей ссылки:  <a href={$curLink} target='_blank' >{$curLink}</a>\n";
-    echo "Запарсено новыч ссылок: {$countNewLinks}\n";
+    echo "Запарсено новых ссылок: {$countNewLinks}\n";
     foreach ($arrayLinks as $key => $value) {
         if (substr_count(trim($arrayLinks[$key]['href']), ".html") > 0) {
             $link       = "http://www.lenida.com.ua".trim($arrayLinks[$key]['href']);
@@ -41,8 +38,3 @@ if (isset($arrayLinks)) {
         }
     }
 }
-//var_dump($linksArr);
-//var_dump($existUrl);
-//die;
-
-

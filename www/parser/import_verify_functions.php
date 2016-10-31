@@ -347,6 +347,9 @@ function getDesc($strDesc, $descProd, $wovels, $searchArray)
 //------------------------------------------------------------------------------
 function deleteEmptyArrDescValues($arrayDesc)
 {
+    if($arrayDesc == null){
+        return;
+    }
     foreach ($arrayDesc as $value) {
         if (strlen(trim($value)) !== 0) {
             $arrayDescNew[] = trim($value);
@@ -573,6 +576,7 @@ function removeDirectory($dir)
             is_dir($obj) ? removeDirectory($obj) : unlink($obj);
         }
     }
+    chmod($dir, 0777);
     rmdir($dir);
 }
 

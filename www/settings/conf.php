@@ -39,7 +39,7 @@ define('PHOTO_DOMAIN', getenv('PHOTO_DOMAIN'));
     //cdn     - http://makewear-images.azureedge.net/
     //storage - https://makewear.blob.core.windows.net/ 
 
-define('EXIST_ACTION_BRANDS', '316, 15, 58, 300');
+define('EXIST_ACTION_BRANDS', '');
 
 //caching time
 define('CACHE_TIME_PRODUCT', 60*60*3);
@@ -48,7 +48,8 @@ define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_host"]         = "13.94.255.147";
+//$glb["db_host"]         = "13.94.255.147";
+$glb["db_host"]         = getenv('DB_HOST');
 $glb["db_basename"]     = getenv('DB_NAME');
 $glb["db_user"]         = getenv('USER_NAME');
 $glb["db_password"]     = getenv('DB_PASSWORD');
@@ -61,6 +62,8 @@ $glb["request_url_encode"]  = urldecode($request_url);
 $glb["request_url"]         = urldecode($request_url);
 $glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
+
+//echo '<title>' . $glb["db_host"] . '</title>'; 
 /*   
   $dbcnx = mysql_connect($dblocation, $dbuser, $dbpasswd);    
   if (!$dbcnx)    
