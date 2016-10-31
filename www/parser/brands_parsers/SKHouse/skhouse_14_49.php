@@ -127,8 +127,7 @@ if ($optionsProd !== "") {
     $optionsProd = substr($optionsProd, 1);
 }
 $sizesProd = "";
-echo $curLink.'</br>';
-var_dump($existProd); die();
+
 //var_dump($optionsProd);
 //var_dump($existProd);
 //die;
