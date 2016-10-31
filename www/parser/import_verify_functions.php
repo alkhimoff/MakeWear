@@ -576,6 +576,7 @@ function removeDirectory($dir)
             is_dir($obj) ? removeDirectory($obj) : unlink($obj);
         }
     }
+    chmod($dir, 0777);
     rmdir($dir);
 }
 
