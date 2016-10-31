@@ -138,7 +138,7 @@ if (isset($arrayDesc)) {
             }
         }
     }
-    $descProd .= $descProdColor."<p><span>Описание:</span>".$descProdTmp."</p>";
+    $descProd .= "<p><span>Описание:</span>".$descProdTmp."</p>";
 }
 
 
