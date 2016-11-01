@@ -92,9 +92,10 @@
   -o-transition: all 0.25s linear 0s;
   transition: all 0.25s linear 0s;
   background: url(../image/sprite.png) no-repeat -860px -20px;
+  opacity: 0.5;
 }
 .but-up:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .main-container .main-info .SEO-text p {
   line-height: 25px;
