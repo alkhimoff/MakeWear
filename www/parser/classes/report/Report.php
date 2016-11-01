@@ -5,7 +5,7 @@ namespace Parser\Report;
 interface iReport
 {
     const FILE_CREATE_MASSEGE = "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан </h4>";
-    const STRING_LINE_START   = "##########################################################################################################################\n\n";
+    const STRING_LINE_START   = "##########################################################################################################################</div>\n\n";
     const STRING_LINE_BOLD    = "====================================================================\n";
     const STRING_LINE_SLIMM   = "--------------------------------------------------------------------\n\n";
     const STRING_START        = "Всем пристегнуть ремни начало работы!!!\n";
@@ -61,7 +61,7 @@ abstract class Report implements iReport
     public function createFileReport()
     {
         $fp = fopen($this->fileName, "w");
-        fwrite($fp, self::FILE_CREATE_MASSEGE.date("d:m:y H:i")."\n");
+        fwrite($fp, self::FILE_CREATE_MASSEGE.date("d.m.y H:i")."\n");
         fclose($fp);
     }
 

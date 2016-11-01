@@ -4,14 +4,14 @@ namespace Parser\Report;
 
 class ReportVerify extends Report
 {
-    const STRING_CHANGE_PHOTO   = "<h4 style='color:blue'>Фото перезалито!!!</h4>";
-    const STRING_UNVISIBLE_PROD = "<h4 style='color:blue'>Товар есть в заказах или провека опубликованых товаров, будет скрыт, не удален из БД!!! Code{6}</h4>";
-    const STRING_DELETE_PROD    = "<body style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Товар удален с БД!!! Code{7}</h4></body>";
-    const STRING_UPDATE_PROD    = "<h4 style='color:red'>Данные товара изменены в БД!!! Code{1}</h4>";
-    const STRING_NOUPDATE_PROD  = "<h4 style='color:green'>Проверщик не виявил изменений в товаре!!! Code{2}</h4>";
-    const STRING_NOPRICE        = "<h4 style='color:red'>Нет цены!!! Code{5}\n";
-    const STRING_NOEXIST        = "<body style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Нет в наличии, товар будет скрыт!!! Code{3}</h4></body>";
-    const STRING_EXIST_PROD     = "<body style='background: rgba(0, 255, 0, 0.2)'><h4 style='color:blue'>Есть в наличии, товар будет опубликован!!! Code{4}</h4></body>";
+    const STRING_CHANGE_PHOTO   = "<div><h4 style='color:blue'>Фото перезалито!!!</h4>";
+    const STRING_UNVISIBLE_PROD = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:blue'>Товар есть в заказах или провека опубликованых товаров, будет скрыт, не удален из БД!!! Code{6}</h4>";
+    const STRING_DELETE_PROD    = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Товар удален с БД!!! Code{7}</h4>";
+    const STRING_UPDATE_PROD    = "<div style='background: rgba(255, 255, 0, 0.2)'><h4 style='color:red'>Данные товара изменены в БД!!! Code{1}</h4>";
+    const STRING_NOUPDATE_PROD  = "<div><h4 style='color:green'>Проверщик не виявил изменений в товаре!!! Code{2}</h4>";
+    const STRING_NOPRICE        = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Нет цены!!! Code{5}\n";
+    const STRING_NOEXIST        = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Нет в наличии, товар будет скрыт!!! Code{3}</h4>";
+    const STRING_EXIST_PROD     = "<div style='background: rgba(0, 255, 0, 0.2)'><h4 style='color:blue'>Есть в наличии, товар будет опубликован!!! Code{4}</h4>";
     const STRING_TYPE           = '_verify.html';
 
     public function __construct($catId, $remeindLinks, $step, $curLink,
