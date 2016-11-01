@@ -123,7 +123,8 @@ if (isset($arrayDesc)) {
     foreach ($arrayDesc as $key => $value) {
         $descProd = findStringDesc($value, $searchArray, $descProd);
         if (count($arrayDesc) == $key + 1) {
-            $descProd .= $descProdColor."<p><span>Описание:</span>".$arrayDesc[$key]."</p>"; 
+            $descProd .= "<p><span>Описание:</span>".$arrayDesc[$key]."</p>";
+            //$descProd .= $descProdColor."<p><span>Описание:</span>".$arrayDesc[$key]."</p>"; 
         }
     }
 }

@@ -7,8 +7,9 @@
                 <div>
                     <img src="/templates/shop/image/baner_comment_slider/vugruzka-bazu1275х375.jpg" alt="shock">
                 </div>
-                <div>
+                <div style="cursor:pointer;">
                     <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="shock">
+                    <div type="submit" id="click-register" class="btn btn-lg btn-block btn-primary">Оформить заказ</div>
                 </div>
                 <!--<div>
                     <a href="/akcionnie-predlojeniya/#150gr/">
@@ -22,10 +23,9 @@
                     </a>
                 </div>-->
                 <div>
-                    <a href="/akcionnie-predlojeniya/">
+                    <span>
                         <img src="/templates/shop/image/baner_comment_slider/pressent_order1275х375.jpg" alt="main-page-banner-2">
-                    </a>
-                    <button type="submit" id="click-podarok" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
+                    </span>
                 </div>
             </div>
 

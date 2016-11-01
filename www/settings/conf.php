@@ -48,8 +48,8 @@ define('CACHE_TIME_MENU', 60*60*2);
 
 //$connArray = explode(";", getenv('MYSQLCONNSTR_MyClientDB'));
 
-$glb["db_host"]         = "13.94.255.147";
-//$glb["db_host"]         = getenv('DB_HOST');
+//$glb["db_host"]         = "13.94.255.147";
+$glb["db_host"]         = getenv('DB_HOST');
 $glb["db_basename"]     = getenv('DB_NAME');
 $glb["db_user"]         = getenv('USER_NAME');
 $glb["db_password"]     = getenv('DB_PASSWORD');

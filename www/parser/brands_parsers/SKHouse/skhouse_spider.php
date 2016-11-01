@@ -14,7 +14,7 @@ if (isset($matches[1])) {
     $articliArray = explode("|", $matches[1]);
 
     foreach ($articliArray as $value) {
-        $linksArr[] = "http://sk-house.ua/Products/Product/".trim($value);
+        $linksArr[] = "http://sk.house/Products/Product/".trim($value);
     }
 }
 //var_dump($linksArr);

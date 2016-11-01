@@ -29,6 +29,15 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
+//интерактивный баннер
+$("#click-register").click(function () {
+
+   $('body,html').animate({scrollTop:0},800);
+     $("#sing-up").next().toggleClass('active');
+        $("#sing-up").toggleClass('active');
+            $('#sign-in').next().removeClass('active');
+            $('#sing-in').removeClass('active');
+});
 //блокировка корзины если она пустая
 $(".pjax-basket").click(function() {
 	if(document.getElementById("countproduct").innerHTML == '0'){
