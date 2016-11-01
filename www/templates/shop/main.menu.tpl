@@ -167,11 +167,11 @@
         </div>
         </li>
 
-        <li class="first-level">
+        <!-- <li class="first-level">
             <a href="/c61-hity_prodaj/">
                 Хиты продаж
             </a>
-        </li>
+        </li> -->
 
         <!-- <li class="first-level">
             <a href="/akcionnie-predlojeniya/">

@@ -426,7 +426,7 @@
                             <li><a href="/payment-delivery/">Оплата и доставка</a></li>
                             <li><a href="/about-company/">Договор оферты</a></li>
                             <li><a href="/akcionnie-predlojeniya/">Акционные предложения</a></li>
-                            <li><a href="/organizer-sp/">Условия для СП</a></li>
+                            <!-- <li><a href="/organizer-sp/">Условия для СП</a></li> -->
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-4 col-xs-12">
