@@ -32,7 +32,6 @@ if ($verify !== "import") {
 //--------------------------------Exist-----------------------------------2----- 
 $arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw,
     'no_nal - наличие');
-
 if (isset($arrayExist)) {
     foreach ($arrayExist as $value) {
         $value  = mb_strtolower(trim($value), 'utf-8');
@@ -51,7 +50,6 @@ if (isset($arrayExist)) {
 $arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
     'price2 - цена оптовая');
 //var_dump($arrayPrice);
-
 if (isset($arrayPrice2)) {
     $regexp = '/[^0-9.]/';
     if (count($arrayPrice2) == 1) {
@@ -81,11 +79,12 @@ if ($price2 == 0) {
 //--------------------------------Cod-------------------------------------4-----
 $arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw,
     'cod - код товара');
-
 if (isset($arrayCod)) {
-    $regexp  = "/[^0-9\\/]/";
-    $codProd = trim(preg_replace($regexp, "", $arrayCod[0]));
-    $codProd = str_replace("/1", "", $codProd);
+   //echo $codProd; die(); 
+    //$regexp  = "/[^0-9\\/]/";
+    //$codProd = trim(preg_replace($regexp, "", $arrayCod[0]));
+    //$codProd = str_replace("/1", "", $codProd);
+    $codProd = $arrayCod[2];
 }
 //var_dump($codProd);
 //--------------------------------Price ------------------------------------5---
@@ -163,9 +162,10 @@ $arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw,
 if (isset($arrayName)) {
     //$regexp = '/[0-9\\/-]/u';
     //$nameProd = trim(preg_replace($regexp, "", $arrayName[0]));
-    $wovels   = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
-    $nameProd = str_replace($wovels, ";", trim($arrayName[0]));
-    $nameProd = trim(strstr($nameProd, ";", true));
+    //$wovels   = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+    //$nameProd = str_replace($wovels, ";", trim($arrayName[0]));
+    //$nameProd = trim(strstr($nameProd, ";", true));
+    $nameProd = $arrayName[0];
 }
 //var_dump($nameProd);
 //-------------------------------Description--------------------------------8---
@@ -219,6 +219,3 @@ foreach ($duplicate as $value) {
 }
 $duplicateProd = $srcProd;
 //var_dump($_SESSION["duplicateArray"]);
-
-
-

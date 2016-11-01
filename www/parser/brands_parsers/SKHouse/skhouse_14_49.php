@@ -26,6 +26,7 @@ if ($verify !== "import" && ($statusCode == 500)) {
 }
 
 //Cod
+echo XML::JSON_FILE_PATH_SK_HOUSE.'</br>';
 if (isset($curLink)) {
     $codProd = strstr_after($curLink, "Products/Product/");
 }
@@ -38,12 +39,10 @@ if (isset($curLink)) {
 //}
 
 $productsFromJson = json_decode(file_get_contents(XML::JSON_FILE_PATH_SK_HOUSE), true);
-$price = isset($productsFromJson[$codProd]) ? ceil($productsFromJson[$codProd]['price']) : 0;
-
+$price = isset($productsFromJson[$codProd]) ? ceil($productsFromJson[$codProd]['prices']['price']['value']) : 0;
 //price2
 $arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price2'], $saw,
     'price - цена');
-//var_dump($arrayPrice);
 
 if (isset($arrayPrice2)) {
     $regexp = '/[^0-9.]/';
@@ -88,8 +87,7 @@ if (isset($arrayColor) && count($arrayColor) > 1) {
 //ColorSize
 //Exist
 preg_match('/var leftovers =(.*)/', $pageBody, $matches);
-//var_dump($matches);
-
+ 
 if (isset($matches[1]) && isset($colorsProd) && isset($sizesProd)) {
     $json     = json_decode($matches[1], true);
     //var_dump($json);
@@ -110,7 +108,7 @@ if (isset($matches[1]) && isset($colorsProd) && isset($sizesProd)) {
         $colorName = transleteColorSize($value['ColorId'], "col", FALSE);
         $sizeName  = transleteColorSize($value['SizeId'], "siz", FALSE);
 
-        if ($value['NotForSale'] == FALSE && $value['isAvailableForProduction'] == FALSE
+        if ($value['NotForSale'] == FALSE /*&& $value['isAvailableForProduction'] == FALSE*/
             && in_array($value['ColorId'], $colorArr) && in_array($value['SizeId'],
                 $sizesArr)) {
             if (!strpos($optionsProd, substr($colorName, 1))) {
@@ -129,6 +127,7 @@ if ($optionsProd !== "") {
     $optionsProd = substr($optionsProd, 1);
 }
 $sizesProd = "";
+
 //var_dump($optionsProd);
 //var_dump($existProd);
 //die;
