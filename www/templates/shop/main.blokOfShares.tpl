@@ -1,5 +1,5 @@
 
-        <div class="wrap-color gift-slider_home col-md-12 col-sm-12 col-xs-12 clearfix">
+        <!-- <div class="wrap-color gift-slider_home col-md-12 col-sm-12 col-xs-12 clearfix">
             <div class="col-md-12 col-sm-12 col-xs-12" id="gift-slider" dir='rtl'>
                 <div>
                     <img src="/templates/shop/image/baner_comment_slider/shok1275х375.jpg" alt="shock">
@@ -8,10 +8,10 @@
                     <img src="/templates/shop/image/baner_comment_slider/vugruzka-bazu1275х375.jpg" alt="shock">
                 </div>
                 <div style="cursor:pointer;">
-                    <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="shock">
+                	<img id="click-register" src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="shock">
                     <div type="submit" id="click-register" class="btn btn-lg btn-block btn-primary">Оформить заказ</div>
                 </div>
-                <!--<div>
+                <div>
                     <a href="/akcionnie-predlojeniya/#150gr/">
                         <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="main-page-banner-4">
                     </a>
@@ -21,7 +21,7 @@
                     <a href="/akcionnie-predlojeniya/#discount/">
                         <img src="/templates/shop/image/baner_comment_slider/vigruzka1275х375.jpg" alt="main-page-banner-1">
                     </a>
-                </div>-->
+                </div>
                 <div>
                     <span>
                         <img src="/templates/shop/image/baner_comment_slider/pressent_order1275х375.jpg" alt="main-page-banner-2">
@@ -35,7 +35,7 @@
                 </a>
             </div>
         </div>
-        <!--wrap-color-->
+         -->
 
         <div class="clear"></div>
 
