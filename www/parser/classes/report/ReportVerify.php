@@ -9,7 +9,7 @@ class ReportVerify extends Report
     const STRING_DELETE_PROD    = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Товар удален с БД!!! Code{7}</h4>";
     const STRING_UPDATE_PROD    = "<div style='background: rgba(255, 255, 0, 0.2)'><h4 style='color:red'>Данные товара изменены в БД!!! Code{1}</h4>";
     const STRING_NOUPDATE_PROD  = "<div><h4 style='color:green'>Проверщик не виявил изменений в товаре!!! Code{2}</h4>";
-    const STRING_NOPRICE        = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Нет цены!!! Code{5}\n";
+    const STRING_NOPRICE        = "<div><h4 style='color:red'>Нет цены!!! Code{5}\n";
     const STRING_NOEXIST        = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Нет в наличии, товар будет скрыт!!! Code{3}</h4>";
     const STRING_EXIST_PROD     = "<div style='background: rgba(0, 255, 0, 0.2)'><h4 style='color:blue'>Есть в наличии, товар будет опубликован!!! Code{4}</h4>";
     const STRING_TYPE           = '_verify.html';
