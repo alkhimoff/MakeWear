@@ -573,10 +573,10 @@ function removeDirectory($dir)
 {
     if ($objs = glob($dir."/*")) {
         foreach ($objs as $obj) {
+            chmod($dir, 0777);
             is_dir($obj) ? removeDirectory($obj) : unlink($obj);
         }
     }
-    chmod($dir, 0777);
     rmdir($dir);
 }
 

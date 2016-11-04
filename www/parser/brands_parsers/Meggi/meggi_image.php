@@ -7,8 +7,7 @@ $srcProdArray = array('mainSrcImg' => "", 'dopSrcImg' => "");
 $photoIdArray = array();
 
 //Image
-$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
-    'img - главная картинка');
+$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка');
 
 $srcProd = "";
 if (isset($arrayImage)) {
@@ -17,10 +16,9 @@ if (isset($arrayImage)) {
     $srcProdArray['mainSrcImg'] = $srcProd;
     $existIm                    = TRUE;
 }
-//var_dump($srcProd);
+
 //DopImage
-$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw,
-    'dopimg - дополнительны картинки');
+$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw, 'dopimg - дополнительны картинки');
 
 $srcDopIm = "";
 if (isset($arrayDopImage)) {
@@ -37,15 +35,13 @@ if (isset($arrayDopImage)) {
         }
     }
 }
-//var_dump($srcProdArray);
 //CropandWrite images
 if ($existIm == TRUE) {
     if (!empty($srcProdArray['dopSrcImg'])) {
         $srcProdArray['dopSrcImg'] = array_values(array_unique($srcProdArray['dopSrcImg']));
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
-    $brendName   = "jhiva_images/";
-    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
-        $brendName, $idBrand);
+    $brendName   = "meggi_images/";
+    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);
 }
 

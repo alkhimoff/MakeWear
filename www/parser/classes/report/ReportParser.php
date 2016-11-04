@@ -4,11 +4,11 @@ namespace Parser\Report;
 
 class ReportParser extends Report
 {
-    const STRING_NOPRICE        = "<h4 style='color:red'>Нет цены!!!</h4>\n";
-    const STRING_INSERT_NEW     = "<body style='background: rgba(0, 255, 0, 0.2)'><h4 style='color:green'>Новый товар записан в БД!!!</h4></body>";
-    const STRING_DUPLICATE_PROD = "<h4 style='color:red'>Дубликат!!!Товар с таким URL-главной картинки уже есть в БД</h4>";
-    const STRING_NOEXIST_PROD   = "<body style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Товара нет в наличии. Он не будет записан в БД!!!</h4></body>";
-    const STRING_EXIST_PROD     = "<h4 style='color:blue'>Товар по этой ссылки уже есть в БД!!!</h4>";
+    const STRING_NOPRICE        = "<div><h4 style='color:red'>Нет цены!!!</h4>\n";
+    const STRING_INSERT_NEW     = "<div style='background: rgba(0, 255, 0, 0.2)'><h4 style='color:green'>Новый товар записан в БД!!!</h4>";
+    const STRING_DUPLICATE_PROD = "<div><h4 style='color:red'>Дубликат!!!Товар с таким URL-главной картинки уже есть в БД</h4>";
+    const STRING_NOEXIST_PROD   = "<div style='background: rgba(255, 0, 0, 0.2)'><h4 style='color:red'>Товара нет в наличии. Он не будет записан в БД!!!</h4>";
+    const STRING_EXIST_PROD     = "<div><h4 style='color:blue'>Товар по этой ссылки уже есть в БД!!!</h4>";
     const STRING_TYPE           = '_import.html';
 
     public function __construct($catId, $remeindLinks, $step, $curLink,
