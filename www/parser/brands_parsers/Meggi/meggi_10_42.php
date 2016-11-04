@@ -23,7 +23,8 @@ $duplicateProd = "";
   } 
   
 //Exist
-$arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
+//$arrayExist    = checkEmptyOrChangeSelector($_SESSION['no_nal'], $saw, 'no_nal - наличие');
+  $arrayExist    = checkEmptyOrChangeSelector('div.not_avail', $saw, 'no_nal - наличие');
 $arrayNewPrice = $saw->get('span.productPrice-ofd')->toTextArray();
 
 if (isset($arrayExist) || !empty($arrayNewPrice)) {
@@ -33,7 +34,8 @@ if (isset($arrayExist) || !empty($arrayNewPrice)) {
 }
 
 //Price price2
-$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
+//$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
+$arrayPrice = checkEmptyOrChangeSelector('.item_current_price', $saw, 'price - цена');
 
 if (isset($arrayPrice)) { 
     // удаляем мелоч
@@ -52,7 +54,8 @@ if ($price == 0) {
 }
 
 //Size 
-$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw, 'sizeCol - размер'); 
+//$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw, 'sizeCol - размер');
+$arraySize = checkEmptyOrChangeSelector('.bx_size', $saw, 'sizeCol - размер');
 
 if (isset($arraySize)) {
     $arraySize = deleteEmptyArrDescValues($arraySize);
@@ -72,7 +75,8 @@ if ($verify == "verify") {
 }
 
 //Cod
-$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
+//$arrayCod = checkEmptyOrChangeSelector($_SESSION["cod"], $saw, 'cod - код товара');
+$arrayCod = checkEmptyOrChangeSelector('#pagetitle', $saw, 'cod - код товара');
 
 if (isset($arrayCod)) {
     //$codProd = trim(strstr_after($arrayCod[0], "-"));         // некорректная работа если в коде 2 искомых символа
@@ -80,7 +84,8 @@ if (isset($arrayCod)) {
 }
 
 //Name
-$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
+//$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
+$arrayName = checkEmptyOrChangeSelector('#pagetitle', $saw, 'name - название товара');
 
 if (isset($arrayName)) {
     $wovels   = array($codProd, "-");
@@ -88,7 +93,8 @@ if (isset($arrayName)) {
 }
 
 //Description
-$arrayDesc      = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
+//$arrayDesc      = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
+$arrayDesc      = checkEmptyOrChangeSelector('.bx_item_description p', $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
@@ -97,9 +103,9 @@ if (isset($arrayDesc)) {
         $descProd .= ' ';
     }
 }
-
+/*
 //Color
-//$arrayDescColor = checkEmptyOrChangeSelector('.bx_scu > ul .bx_active .cnt .cnt_item[title]', $saw, 'color - описание цвета');// Найти
+$arrayDescColor = checkEmptyOrChangeSelector('.bx_scu > ul .bx_active .cnt .cnt_item[title]', $saw, 'color - описание цвета');// Найти
 
 if (isset($arrayDescColor)) {
     $beginSelectorP    = '<p>';
@@ -108,6 +114,7 @@ if (isset($arrayDescColor)) {
     $endSelectorP      = '</p>';
     $descProd          = $beginSelectorP.$beginSelectorSpan."Цвет:".$endSelectorSpan.trim($arrayDescColor[0]).$endSelectorP;
 }
+*/
 /*
 if (isset($arrayDesc)) {
     $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
