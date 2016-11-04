@@ -32,7 +32,11 @@ if (isset($arrayDopImage)) {
        // $srcDopIm = filterUrlImage($value['style'], $curLink);
         $tmpImg = str_replace("background-image:url('/upload/iblock/", "", $value['style']);
         $tmpImg = str_replace("');", "", $tmpImg);
-        $srcDopIm = 'http://www.meggi.com.ua/upload/iblock/' . $tmpImg;
+        if($tmpImg != NULL){
+            $srcDopIm = 'http://www.meggi.com.ua/upload/iblock/' . $tmpImg;
+        } else {
+            break;
+        }
         if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
             $srcProdArray['dopSrcImg'][] = $srcDopIm;
             $existIm                     = TRUE;
