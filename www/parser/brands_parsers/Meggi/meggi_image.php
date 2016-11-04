@@ -7,7 +7,8 @@ $srcProdArray = array('mainSrcImg' => "", 'dopSrcImg' => "");
 $photoIdArray = array();
 
 //Image
-$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка');
+//$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка'); //.bx_bigimages_aligner img
+$arrayImage = checkEmptyOrChangeSelector('.bx_bigimages_aligner img', $saw, 'img - главная картинка'); //
 
 $srcProd = "";
 if (isset($arrayImage)) {
@@ -18,8 +19,28 @@ if (isset($arrayImage)) {
 }
 
 //DopImage
-$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw, 'dopimg - дополнительны картинки');
+//$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw, 'dopimg - дополнительны картинки');
+$arrayDopImage = checkEmptyOrChangeSelector('.bx_slide ul li .cnt_item', $saw, 'dopimg - дополнительны картинки');
 
+
+$srcDopIm = "";
+if (isset($arrayDopImage)) {
+    if ($verify == "verify") {
+        deleteDopImgFromDB($commodityID, $mysqli);
+    }
+    foreach ($arrayDopImage as $value) {
+       // $srcDopIm = filterUrlImage($value['style'], $curLink);
+        $tmpImg = str_replace("background-image:url('/upload/iblock/", "", $value['style']);
+        $tmpImg = str_replace("');", "", $tmpImg);
+        $srcDopIm = 'http://www.meggi.com.ua/upload/iblock/' . $tmpImg;
+        if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
+            $srcProdArray['dopSrcImg'][] = $srcDopIm;
+            $existIm                     = TRUE;
+            $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
+        }
+    }
+}
+/*
 $srcDopIm = "";
 if (isset($arrayDopImage)) {
     if ($verify == "verify") {
@@ -35,6 +56,7 @@ if (isset($arrayDopImage)) {
         }
     }
 }
+ */
 //CropandWrite images
 if ($existIm == TRUE) {
     if (!empty($srcProdArray['dopSrcImg'])) {
