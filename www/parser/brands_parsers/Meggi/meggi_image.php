@@ -42,6 +42,9 @@ if (isset($arrayDopImage)) {
             $existIm                     = TRUE;
             $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
         }
+        if((count($srcProdArray['dopSrcImg']) >= 3)){
+            break;
+        }
     }
 }
 /*
