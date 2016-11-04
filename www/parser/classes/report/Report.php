@@ -62,12 +62,14 @@ abstract class Report implements iReport
     {
         $fp = fopen($this->fileName, "w");
         fwrite($fp, self::FILE_CREATE_MASSEGE.date("d.m.y H:i")."\n");
-        ($_SESSION['comVisibl'] == 1)? fwrite($fp, "<h4 style='color:green'>* Опубликованные товары</h4>") : fwrite($fp, "<h4 style='color:red'>* НЕопубликованные товары</h4>");
-        ($_SESSION['changeIm'] == TRUE)? fwrite($fp, "* Перезалить фото\n") : '' ;
-        ($_SESSION['changeCod'] == TRUE)? fwrite($fp, "* Перезалить код товара\n") : '' ;
-        ($_SESSION['changeName'] == TRUE)? fwrite($fp, "* Перезалить имя товара\n") : '' ;
-        ($_SESSION['changeDesc'] == TRUE)? fwrite($fp, "* Перезалить описание товара\n") : '' ;
-        ($_SESSION['deleteCom'] == TRUE)? fwrite($fp, "* Скрыть(опубликовю.) или удалить(неопуб.)\n") : '' ;     
+        if (isset($_SESSION['comVisibl'])){
+            ($_SESSION['comVisibl'] == 1)? fwrite($fp, "<h4 style='color:green'>* Опубликованные товары</h4>") : fwrite($fp, "<h4 style='color:red'>* НЕопубликованные товары</h4>");
+            ($_SESSION['changeIm'] == TRUE)? fwrite($fp, "* Перезалить фото\n") : '' ;
+            ($_SESSION['changeCod'] == TRUE)? fwrite($fp, "* Перезалить код товара\n") : '' ;
+            ($_SESSION['changeName'] == TRUE)? fwrite($fp, "* Перезалить имя товара\n") : '' ;
+            ($_SESSION['changeDesc'] == TRUE)? fwrite($fp, "* Перезалить описание товара\n") : '' ;
+            ($_SESSION['deleteCom'] == TRUE)? fwrite($fp, "* Скрыть(опубликовю.) или удалить(неопуб.)\n") : '' ;  
+        }
         fclose($fp);
     }
 
