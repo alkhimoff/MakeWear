@@ -168,7 +168,7 @@
 header .top-menu ul .first-level:after {
     content: " ";
     position: absolute;
-    right: -10px;
+    right: -13px;
     top: 8px;
     background: url(../image/sprite.png) no-repeat -264px -31px;
     width: 7px;
@@ -549,7 +549,11 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     height: 699px;
 }
 
-/****** 1279 -> 1024 */
+/* 
+================================================================================
+|                                     1279 -> 1024                             |
+================================================================================
+*/ 
 @media handheld, only screen and (max-width: 1240px) {
     .tech-info-wrap { 
         float: right;
@@ -564,44 +568,45 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     }
 }
 @media handheld, only screen and (max-width: 1220px) {
-    /****** header */
-    .tech-info-wrap {
-        width: 33%;
+    header .header-bottom .top-menu ul .first-level {
+        padding-left: 20px;
     }
-    .logo-wrap-column {
-        width: 25%;
-    }
-    header .header-bottom .logo-wrap {
-        right: 0;
-    }
-    .main-search-column {
-        width: 35%;
-        position: absolute;
-        right: 85px;
-        left: 0;
-        margin: 0 auto;
-    }
-    header .header-bottom .top-menu {
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        width: 348px;
+    header .top-menu ul .first-level:after {
+        right: -13px;
     }
 }
 @media handheld, only screen and (max-width: 1200px) { 
+     .tech-info-wrap {
+        width: 30%;
+        padding-right: 18px;
+    }
+
+    /****** main search */
     .main-search-column {
-        right: 35px;
+        width: 35%;
+    }
+    header .header-bottom__main {
+        position: relative;
+    }
+
+    /****** top menu */
+    header .header-bottom .top-menu {
+        width: 100%;
+        bottom: -37px;
     }
 }
 /****** END 1279 -> 1024 */
 
-/****** 991 -> 768 */
+/* 
+================================================================================
+|                                     1024 -> 769                              |
+================================================================================
+*/ 
 @media handheld, only screen and (max-width: 991px) {
     .slick-slider-comments {
         display: none
     }
 }
-/****** 980 -> 768 */
 @media handheld, only screen and (max-width: 980px) {
     header .header-bottom .header-bottom__main .search-field {
         width: 80%;
@@ -612,7 +617,6 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
         left: -16px;
     }
 }
-/****** 800 -> 768 */
 @media handheld, only screen and (max-width: 800px) {
     .main-container .main-content #banner-slider, .main-container .main-content #comments-slider, .main-container .main-content #gift-slider {
         display: none;
@@ -621,6 +625,8 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
         display: none;
     }
 }
+/****** END 1024 -> 769 */
+
 /****** 768 ->  */
 @media handheld, only screen and (max-width: 768px) {
     header .header-bottom .header-bottom__main .search-field {
