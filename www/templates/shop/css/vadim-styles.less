@@ -165,7 +165,7 @@
     position: relative;
     top: -1px;
 }
-header .top-menu ul .first-level:not(:nth-last-of-type(-n+2)):after {
+header .top-menu ul .first-level:after {
     content: " ";
     position: absolute;
     right: -10px;
@@ -548,7 +548,13 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     overflow: hidden;
     height: 699px;
 }
+
 /****** 1279 -> 1024 */
+@media handheld, only screen and (max-width: 1240px) {
+    .tech-info-wrap { 
+        float: right;
+    }
+}
 @media handheld, only screen and (max-width: 1234px) {
     header .header-bottom .top-menu ul .first-level {
         padding-left: 10px;
@@ -557,12 +563,38 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
         font-size: 11px;
     }
 }
-/****** 1279 -> 1024 */
-@media handheld, only screen and (max-width: 1240px) {
-    .tech-info-wrap { 
-        float: right;
+@media handheld, only screen and (max-width: 1220px) {
+    /****** header */
+    .tech-info-wrap {
+        width: 33%;
+    }
+    .logo-wrap-column {
+        width: 25%;
+    }
+    header .header-bottom .logo-wrap {
+        right: 0;
+    }
+    .main-search-column {
+        width: 35%;
+        position: absolute;
+        right: 85px;
+        left: 0;
+        margin: 0 auto;
+    }
+    header .header-bottom .top-menu {
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 348px;
     }
 }
+@media handheld, only screen and (max-width: 1200px) { 
+    .main-search-column {
+        right: 35px;
+    }
+}
+/****** END 1279 -> 1024 */
+
 /****** 991 -> 768 */
 @media handheld, only screen and (max-width: 991px) {
     .slick-slider-comments {

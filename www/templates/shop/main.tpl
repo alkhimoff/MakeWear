@@ -155,13 +155,13 @@
                 </nav>
                 <div class="header-bottom">
                     <div class="row main-width">
-                        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 logo-wrap-column">
                             <div class="logo-wrap">
                                 <a href="/">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12 main-search-column">
                             <div class="header-bottom__main">
                                 <div class="search-field clearfix">
                                     <form action="/search/" id="shop-search" method="post" autocomplete="off">
@@ -549,7 +549,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.2.5/min/jquery.inputmask.bundle.min.js"></script>
         <script type="text/javascript" src="https://plug-js.azureedge.net/app.min.plug.js"></script>
         <!--<script type="text/javascript" src="/templates/shop/build/app.min.custom.js"></script>
-        <!--<script src="/templates/shop/js/bootstrap.min.js"></script>
+       <script src="/templates/shop/js/bootstrap.min.js"></script>
         <script src="/templates/shop/js/less.min.js" type="text/javascript"></script>
         <script src="/templates/shop/js/jquery.elevatezoom.js"></script> 
         <script src="/templates/shop/js/jquery.magnific-popup.min.js"></script>
@@ -562,7 +562,7 @@
         <script type="text/javascript" src="/templates/shop/slick/slick.min.js"></script> 
         <script src="/templates/shop/js/jquery.easing.1.3.js"></script>       
         <script type="text/javascript" src="/templates/shop/js/jquery.twbsPagination.min.js" ></script>
-        <!--<script type="text/javascript" src="/modules/online/chat.js" ></script>
+        <script type="text/javascript" src="/modules/online/chat.js" ></script>
         <script type="text/javascript" src="/templates/shop/js/instagram_api.js"></script>-->
         <script type="text/javascript" src="/templates/shop/js/myscript.js" ></script>
         <script type="text/javascript" src="/templates/shop/js/fast_order.js" ></script>

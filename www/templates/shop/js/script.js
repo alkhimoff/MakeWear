@@ -487,7 +487,7 @@ $(document).ready(function () {
             ]
         });
     } else {
-        $('.top-slider:not(.profil-slider), #comments-slider, #gift-slider, #banner-slider').addClass('hidden');
+        //$('.top-slider:not(.profil-slider), #comments-slider, #gift-slider, #banner-slider').addClass('hidden');
     }
 
     //4-HOVER карточки товара в главном слайдере
@@ -2183,7 +2183,7 @@ function runBrandsSlick() {
             ]
         });
     } else {
-        $('.brands-slider, .brands').addClass('hidden');
+        //$('.brands-slider, .brands').addClass('hidden');
     }
 }
 
