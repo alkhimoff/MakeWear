@@ -40,6 +40,7 @@ if (isset($curLink)) {
 
 $productsFromJson = json_decode(file_get_contents(XML::JSON_FILE_PATH_SK_HOUSE), true);
 $price = isset($productsFromJson[$codProd]) ? ceil($productsFromJson[$codProd]['prices']['price']['value']) : 0;
+
 //price2
 $arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price2'], $saw,
     'price - цена');
@@ -48,6 +49,7 @@ if (isset($arrayPrice2)) {
     $regexp = '/[^0-9.]/';
     $price2 = filterPrice(trim(str_replace(",", ".", $arrayPrice2[1])), $regexp);
     $price2 = ceil($_SESSION['per'] * $price2);
+    $price = $price2;
 }
 
 if ($price == 0) {
