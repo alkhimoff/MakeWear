@@ -25,17 +25,18 @@ class ProvaderPageFactory
         switch ($idBrand) {
             case 1:
             case 6:
+            case 48:
                 $provaderPage = new ProvaderXML($idBrand, $step);
                 $provaderPage->createXMLObject();
-                break;          
-            case 14:
-                $provaderPage = new ProvaderPageSkHouse($url);
-                $provaderPage->getWebPage("");
-                $provaderPage->createNokogiriObject();
-                break;
+                break; 
             case 5:
                 $provaderPage = new ProvaderPageCardo($url);
                 $provaderPage->getWebPage("brands_parsers/Cardo/cookie_cur.txt");
+                $provaderPage->createNokogiriObject();
+                break;        
+            case 14:
+                $provaderPage = new ProvaderPageSkHouse($url);
+                $provaderPage->getWebPage("");
                 $provaderPage->createNokogiriObject();
                 break;
             case 32:

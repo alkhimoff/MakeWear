@@ -267,7 +267,7 @@ function selectAndParserBrendLinks($idBrand, $curLink, $saw, $linksArr, $i,
             require 'brands_parsers/Ghazel/ghazel_spider.php';
             break;
         case 48:
-            require 'brands_parsers/Daminika/spider.php';
+            require 'brands_parsers/Daminika/daminika_spider.php';
             break;
         default:
             break;
