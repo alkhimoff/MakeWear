@@ -79,6 +79,8 @@ $all_head = '
         <input type="checkbox" name="flook" value="44">Fashion Look
         <input type="checkbox" name="vision" value="46">Vision FS
         <input type="checkbox" name="jadone" value="47">Jadone Fashion
+        </br>
+        <input type="checkbox" name="daminika" value="48" checked>Daminika
         <p><input type="submit" value="Запустить Проверщик" id="goVir"></p>
     </form>
 </div>

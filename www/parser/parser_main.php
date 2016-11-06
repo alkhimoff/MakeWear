@@ -409,6 +409,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
         case 45:
             require 'brands_parsers/Adidas/adidas_45_316.php';
             break;
+        case 48:
+            require 'brands_parsers/Daminika/daminika_48_322.php';
+            break;
         default:
             break;
     }

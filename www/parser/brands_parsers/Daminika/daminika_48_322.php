@@ -25,9 +25,9 @@ $duplicateProd = "";
 foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
     if ($url == $curLink) {
-        $size    = (string) $offer->param[1];
-        $color   = (string) $offer->param[0];
-        //var_dump(count($offer->picture));
+        $size    = (string) $offer->param[1];//2
+        $color   = (string) $offer->param[0];//!
+
         $imgMain = (string) $offer->picture[0];
         foreach ($offer->picture as $key => $value) {
             $imgDop      = (string) $value;
