@@ -20,12 +20,13 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
     
     if ($url == $curLink) {
+        /*
         $imgMain = (string) $offer->picture[0];
         foreach ($offer->picture as $key => $value) {
             $imgDop      = (string) $value;
             $imgDopArr[] = $imgDop;
         }
-        
+        */
         $nameProd  = $offer->name."";
         $codProd = $offer->vendorCode."";
         
