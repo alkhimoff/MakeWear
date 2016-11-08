@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2016-11-08 02:15">
+<yml_catalog date="2016-11-08 16:22">
 <shop>
 <name>DAMINIKA - интернет-магазин Одежды Оптом</name>
 <company>DAMINIKA - интернет-магазин Одежды</company>
@@ -21050,6 +21050,160 @@
 &lt;p&gt;
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">XXL</param>
+</offer>
+<offer id="215860000618" available="true" group_id="21586" >
+<url>http://daminika.com/stilnaya-bluza-nikoletta-21586#117053</url>
+<price>455.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>199</categoryId>
+<picture>http://daminika.com/image/data/product-images/21586/img_9737-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21586/img_9737-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21586/img_9760-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21586/img_9765-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21586/img_9769-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>Стильная блуза Николетта</name>
+<vendor>Daminika</vendor>
+<vendorCode>21607</vendorCode>
+<description>&lt;p&gt;
+	Изысканная и поистине элегантная блуза «Никалетта» от модного дома DAMINIKA. У этой блузы несколько изюминок… дизайнерские утонченные вырезы отходящие от центра горловины, шикарная массивная брошь с камнями графитового цвета на золотой основе, роскошный рукав – реглан и Вы… Богиня в такой блузе!&lt;/p&gt;
+&lt;p&gt;
+	Блуза застегивается на потайную молнию.&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: S – 64 см, M – 64 см, L – 64,2 см, XL – 64,4 см, XXL – 64,6 см, XXXL – 64,8 см&lt;/p&gt;
+&lt;p&gt;
+	Длина блузы по спинке: S – 63 см, M – 63 см, L – 63,5 см, XL – 64 см, XXL – 65,5 см, XXXL – 66 см&lt;/p&gt;
+&lt;p&gt;
+	Длина блузы по полочке: S – 64 см, M – 64 см, L – 64,5 см, XL – 66 см, XXL – 67,5 см, XXXL – 69 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: блузочный креп (полиамид 40%, ацетат 30%, нейлон 30%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XXL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XXXL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-95&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-103&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					104-107&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-111&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-71&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					72-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					76-79&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					80-83&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-87&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-91&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-103&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					104-107&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-111&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					112-115&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:89px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					116-120&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="Размер">XL</param>
 </offer>
 <offer id="215860000621" available="true" group_id="21586" >
 <url>http://daminika.com/stilnaya-bluza-nikoletta-21586#117055</url>
