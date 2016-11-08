@@ -72,9 +72,7 @@
             <div class="brands-category">
                 <div class="brands-slider">
                     {$brandsSlider}
-
                     <!--Brand items-->
-
                 </div>
             </div>
 
@@ -157,11 +155,11 @@
             </div>
         </div>
         <!-- END about company -->
-        <div class="col-md-12 col-sm-12 col-xs-12 slick-slider-comments" id="comments-slider" dir='rtl'>
+      <!--   <div class="col-md-12 col-sm-12 col-xs-12 slick-slider-comments" id="comments-slider" dir='rtl'>
             <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_0.jpg"></div>
             <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_1.jpg"></div>
             <div><img  src="templates/shop/image/baner_comment_slider/main-page-banner_2.jpg"></div>
-        </div>
+        </div> -->
         <!-- end comments slider -->
         <div class="main-info"> 
          <div class="row main-width SEO-wrap">
