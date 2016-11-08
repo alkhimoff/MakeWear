@@ -27,8 +27,28 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
     }
 }
 
+$srcDopIm = "";
+if (isset($arrayDopImage)) {
+    if ($verify == "verify") {
+        deleteDopImgFromDB($commodityID, $mysqli);
+    }
+    foreach ($arrayDopImage as $value) {
+        $srcDopIm = filterUrlImage($value['src'], $curLink);
+        $wovels2  = array("s.jpg", "m.jpg");
+        $srcDopIm = str_replace("s_", "_", $srcDopIm);
+        $srcDopIm = str_replace($wovels2, ".jpg", $srcDopIm);
+        $srcDopIm = str_replace($wovels, "_", $srcDopIm);
+        if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
+            $srcProdArray['dopSrcImg'][] = $srcDopIm;
+            $existIm                     = TRUE;
+            $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
+        }
+    }
+}
+
 //CropandWrite images
 if ($existIm == TRUE) {
+    $photoIdArray[] = insertInShopImBd($commodityID, $mysqli);
     $nameImArray = array('title', 's_title', $photoIdArray);
     $brendName   = "daminika_images/";
     cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);
