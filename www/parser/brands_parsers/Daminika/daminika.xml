@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2016-11-06 22:47">
+<yml_catalog date="2016-11-08 02:15">
 <shop>
 <name>DAMINIKA - интернет-магазин Одежды Оптом</name>
 <company>DAMINIKA - интернет-магазин Одежды</company>
@@ -4260,6 +4260,130 @@
 <param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
 <param name="Размер">L</param>
 </offer>
+<offer id="213640000619" available="true" group_id="21364" >
+<url>http://daminika.com/21515-a-kofta-top-holli-21364#116691</url>
+<price>299.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>187</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Пиджаки</market_category>
+<picture>http://daminika.com/image/data/product-images/21364/img_8765-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/img_8765-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/img_8762-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/img_8761-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/67.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/73.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/66.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21364/65.jpg</picture>
+<delivery>true</delivery>
+<name>21515 A Кофта-топ «Холли»</name>
+<vendor>Daminika</vendor>
+<vendorCode>21515 A</vendorCode>
+<description>&lt;p&gt;
+	Элегантная кофта с открытой спиной – для самых изысканных модниц! В этой кофте Вы будите Королевой всеобщего восхищения среди мужчин! Эту кофту можно носить как с сеткой так и без. Застегивается сзади на потайную кнопку. Если Вы сверху оденете жакет или пиджак – это буде идеальный деловой образ. А если одеть без сетки и с обтягивающими брюками или mini – юбкой, дополнить аксессуарами на шею – Вы звезда вечеринки!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина изделия: 40 см, длина кофты из сетки – 52 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 64 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					58-61&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					77-80&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:78px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-104&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">XS</param>
+<param name="На фото рост модели">165 см; ОГ – 82 см; ОТ – 65 см; ОБ – 92 см</param>
+<param name="Размер">XS</param>
+</offer>
 <offer id="213900000617" available="true" group_id="21390" >
 <url>http://daminika.com/41502-jaket-smuzi-21390#113775</url>
 <price>520.0</price>
@@ -5011,6 +5135,128 @@
 <param name="На фото размер">L</param>
 <param name="На фото рост модели">165 см; ОГ – 93 см; ОТ – 73 см; ОБ – 106 см</param>
 <param name="Размер">L</param>
+</offer>
+<offer id="213940000618" available="true" group_id="21394" >
+<url>http://daminika.com/11508-plate-latsio-21394#113988</url>
+<price>390.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21394/1-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21394/1-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21394/3-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21394/4-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21394/2-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21394/5-l.jpg</picture>
+<delivery>true</delivery>
+<name>11508 Платье «Лацио»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11508</vendorCode>
+<description>&lt;p&gt;
+	Идеальное платье на каждый день. Яркий принт придает стройности фигуре и подчеркивает выгодно грудь! Платье смотрится под туфли на шпильке. В таком платье можно пойти в кафе с подружками и на свидание. Выглядет очень стильно и модно!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 103 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XXL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-103&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					104-107&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					81-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-92&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-110&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					112-114&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">L</param>
+<param name="На фото рост модели">165 см; ОГ – 93 см; ОТ – 73 см; ОБ – 106 см</param>
+<param name="Размер">XL</param>
 </offer>
 <offer id="213970000619" available="true" group_id="21397" >
 <url>http://daminika.com/11506-plate-vudli-21397#113962</url>
@@ -6190,6 +6436,111 @@
 <param name="На фото рост модели">165 см; ОГ – 93 см; ОТ – 73 см; ОБ – 106 см</param>
 <param name="Размер">S</param>
 </offer>
+<offer id="214060000616" available="true" group_id="21406" >
+<url>http://daminika.com/41505-m-bomber-jetix-21406#113943</url>
+<price>455.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>189</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Свитеры и кардиганы</market_category>
+<picture>http://daminika.com/image/data/product-images/21406/50-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21406/50-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21406/53-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21406/51-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21406/52-l.jpg</picture>
+<delivery>true</delivery>
+<name>41505 M Бомбер «Jetix»</name>
+<vendor>Daminika</vendor>
+<vendorCode>41505 M</vendorCode>
+<description>&lt;p&gt;
+	Яркий и позитивный бомбер “Jetix”. Отличный вариант под джинсы и брюки. Согреет Вас в прохладную погоду и поднимет настроение! Бомбер “Jetix” – тренд сезона осень – зима 2015 – 2016.&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 62 см&lt;/p&gt;
+&lt;p&gt;
+	Длина бомбера: 63 см, длина увеличивается с размером&lt;/p&gt;
+&lt;table align=&quot;center&quot; border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-88&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					89-92&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					93-96&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-66&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					67-69&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					70-74&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					98-101&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div style=&quot;clear:both;&quot;&gt;
+	&amp;nbsp;&lt;/div&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
 <offer id="214060000615" available="true" group_id="21406" >
 <url>http://daminika.com/41505-m-bomber-jetix-21406#113942</url>
 <price>455.0</price>
@@ -6616,6 +6967,124 @@
 ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
 <param name="Размер">M</param>
 </offer>
+<offer id="214080000617" available="true" group_id="21408" >
+<url>http://daminika.com/41506-a-jaket-aisha-21408#113916</url>
+<price>520.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>187</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Пиджаки</market_category>
+<picture>http://daminika.com/image/data/product-images/21408/75-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21408/75-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21408/77-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21408/78-l.jpg</picture>
+<delivery>true</delivery>
+<name>41506 A Жакет «Аиша»</name>
+<vendor>Daminika</vendor>
+<vendorCode>41506 A</vendorCode>
+<description>&lt;p&gt;
+	Яркий, модный и элегантный жакт «Аиша» создан для идеального делового стиля! Пиджак действительно выглядит роскошно и элегантно! Идеально подходит под классические брюки. В таком пиджаке можно пойти в ресторан на деловую встречу и выглядеть сногсшибательно!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина пиджака: 90 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					62-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					74-80&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					80-86&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-116&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
 <offer id="214090000617" available="true" group_id="21409" >
 <url>http://daminika.com/21521-p-svitshot-gazetka-21409#113870</url>
 <price>455.0</price>
@@ -6736,6 +7205,245 @@
 <param name="На фото размер">S</param>
 <param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
 <param name="Размер">S</param>
+</offer>
+<offer id="214100000617" available="true" group_id="21410" >
+<url>http://daminika.com/21521-g-svitshot-gazetka-21410#113840</url>
+<price>455.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>189</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Свитеры и кардиганы</market_category>
+<picture>http://daminika.com/image/data/product-images/21410/90-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21410/90-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21410/91-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21410/92-l.jpg</picture>
+<delivery>true</delivery>
+<name>21521 G Свитшот «Газетка»</name>
+<vendor>Daminika</vendor>
+<vendorCode>21521 G</vendorCode>
+<description>&lt;p&gt;
+	Яркий и удобный свитшот «Газетка». Отличный вариант для будней. Согреет Вас, а рисунок придаст настроения! Удобный воротник на змейке. Отлично смотрится под джинсы и брюки!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 60 см&lt;/p&gt;
+&lt;p&gt;
+	Длина свитшота: 64, 65, 66, 67 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					62-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					74-80&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					80-86&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-116&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="214130000616" available="true" group_id="21413" >
+<url>http://daminika.com/41506-m-jaket-aisha-21413#113931</url>
+<price>520.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>187</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Пиджаки</market_category>
+<picture>http://daminika.com/image/data/product-images/21413/71-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21413/71-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21413/74-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21413/73-l.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21413/72-l.jpg</picture>
+<delivery>true</delivery>
+<name>41506 M Жакет «Аиша»</name>
+<vendor>Daminika</vendor>
+<vendorCode>41506 M</vendorCode>
+<description>&lt;p&gt;
+	Яркий, модный и элегантный жакт «Аиша» создан для идеального делового стиля! Пиджак действительно выглядит роскошно и элегантно! Идеально подходит под классические брюки. В таком пиджаке можно пойти в ресторан на деловую встречу и выглядеть сногсшибательно!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина пиджака: 90 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					62-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					74-80&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					80-86&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					102-108&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:125px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					108-116&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
 </offer>
 <offer id="214130000617" available="true" group_id="21413" >
 <url>http://daminika.com/41506-m-jaket-aisha-21413#113932</url>
@@ -7829,6 +8537,248 @@
 ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
 <param name="Размер">L</param>
 </offer>
+<offer id="214200000617" available="true" group_id="21420" >
+<url>http://daminika.com/21519-m-svitshot-riz-21420#113766</url>
+<price>494.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>189</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Свитеры и кардиганы</market_category>
+<picture>http://daminika.com/image/data/product-images/21420/img_8637-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8637-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8649-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8641-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>21519 M Свитшот «Риз»</name>
+<vendor>Daminika</vendor>
+<vendorCode>21519 M</vendorCode>
+<description>&lt;p&gt;
+	Свитшот спортивного стиля для девушек, которые любят здоровый образ жизни и спорт! Этот свитшот подойдет для повседневного образа. Отлично смотрится с брюками в обтяжку и со спортивными брюками, так же н забудьте его одеть под любимые модные джинсы!&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Длина свитшота: 68 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:630px;&quot; width=&quot;630&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					58-61&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					77-80&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-104&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">Рост - 165 см
+ОТ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="214200000619" available="true" group_id="21420" >
+<url>http://daminika.com/21519-m-svitshot-riz-21420#113765</url>
+<price>494.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>189</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Свитеры и кардиганы</market_category>
+<picture>http://daminika.com/image/data/product-images/21420/img_8637-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8637-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8649-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21420/img_8641-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>21519 M Свитшот «Риз»</name>
+<vendor>Daminika</vendor>
+<vendorCode>21519 M</vendorCode>
+<description>&lt;p&gt;
+	Свитшот спортивного стиля для девушек, которые любят здоровый образ жизни и спорт! Этот свитшот подойдет для повседневного образа. Отлично смотрится с брюками в обтяжку и со спортивными брюками, так же н забудьте его одеть под любимые модные джинсы!&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p style=&quot;margin-left:54.0pt;&quot;&gt;
+	Длина свитшота: 68 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:630px;&quot; width=&quot;630&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					58-61&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					77-80&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-104&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">Рост - 165 см
+ОТ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
+<param name="Размер">XS</param>
+</offer>
 <offer id="214220000617" available="true" group_id="21422" >
 <url>http://daminika.com/11514-f-plate-formula-21422#113896</url>
 <price>494.0</price>
@@ -8241,6 +9191,180 @@
 ОГ - 90 см, ОТ - 60 см, ОТ - 90 см</param>
 <param name="Размер">S</param>
 </offer>
+<offer id="214360000617" available="true" group_id="21436" >
+<url>http://daminika.com/plate-mersedes-21436#113898</url>
+<price>754.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21436/5-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/5-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/6-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/4-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/7-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Mersedes»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11524 TC</vendorCode>
+<description>&lt;p&gt;
+	Элегантно и грациозно Вы будете выглядеть в этом потрясающем платье! Шикарная баска, которая всегда в моде и придает изящество Вашей талии. Это платье идеально подойдет для светского мероприятия!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: креп – стрейч&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 150 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-89&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-67&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-72&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					95-98&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="214360000616" available="true" group_id="21436" >
+<url>http://daminika.com/plate-mersedes-21436#113899</url>
+<price>754.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21436/5-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/5-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/6-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/4-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21436/7-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Mersedes»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11524 TC</vendorCode>
+<description>&lt;p&gt;
+	Элегантно и грациозно Вы будете выглядеть в этом потрясающем платье! Шикарная баска, которая всегда в моде и придает изящество Вашей талии. Это платье идеально подойдет для светского мероприятия!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: креп – стрейч&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 150 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-89&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-67&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-72&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					95-98&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
 <offer id="214380000617" available="true" group_id="21438" >
 <url>http://daminika.com/plate-mahaon-21438#114058</url>
 <price>650.0</price>
@@ -8415,6 +9539,274 @@
 			&lt;td style=&quot;width:208px;&quot;&gt;
 				&lt;p align=&quot;center&quot;&gt;
 					93-97&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
+<offer id="214390000617" available="true" group_id="21439" >
+<url>http://daminika.com/plate-klodis-21439#114051</url>
+<price>455.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21439/36-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21439/36-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21439/38-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21439/37-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Клодис»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11522 A</vendorCode>
+<description>&lt;p&gt;
+	Это платье просто идеально! В нем нет ничего лишнего и оно выглядит очень эффектно, элегантно и в меру сексуально! Права была Коко Шанель – маленькое черное платье должно быть в гардеробе каждой девушке. Так же это платье выполнено в ярко красном цвете, что так модно в этом сезоне!&lt;/p&gt;
+&lt;p&gt;
+	Бретели регулируются. Вшиты чашечки&lt;/p&gt;
+&lt;p&gt;
+	Ткань: костюмная – стрейч «Барби»&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 84 – 88 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-88&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					89-94&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-67&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-72&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="214400000617" available="true" group_id="21440" >
+<url>http://daminika.com/plate-mersedes-21440#113920</url>
+<price>754.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21440/9-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/9-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/13-2-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/11-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/12-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/12-2-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Mersedes»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11524 R</vendorCode>
+<description>&lt;p&gt;
+	Элегантно и грациозно Вы будете выглядеть в этом потрясающем платье! Шикарная баска, которая всегда в моде и придает изящество Вашей талии. Это платье идеально подойдет для светского мероприятия!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: креп – стрейч&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 150 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-89&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-67&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-72&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					95-98&lt;/p&gt;
+				&lt;div&gt;
+					&amp;nbsp;&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="214400000616" available="true" group_id="21440" >
+<url>http://daminika.com/plate-mersedes-21440#113921</url>
+<price>754.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21440/9-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/9-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/13-2-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/11-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/12-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21440/12-2-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Mersedes»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11524 R</vendorCode>
+<description>&lt;p&gt;
+	Элегантно и грациозно Вы будете выглядеть в этом потрясающем платье! Шикарная баска, которая всегда в моде и придает изящество Вашей талии. Это платье идеально подойдет для светского мероприятия!&lt;/p&gt;
+&lt;p&gt;
+	Ткань: креп – стрейч&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 150 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-89&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-67&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					68-72&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 208px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					95-98&lt;/p&gt;
+				&lt;div&gt;
+					&amp;nbsp;&lt;/div&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
@@ -8694,6 +10086,444 @@
 			&lt;td style=&quot;width:156px;&quot;&gt;
 				&lt;p align=&quot;center&quot;&gt;
 					94-97&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
+<offer id="214550000616" available="true" group_id="21455" >
+<url>http://daminika.com/plate-keyp-valentino-21455#114044</url>
+<price>650.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-2-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-2-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-1-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-4-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-3-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-5-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-6-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье-кейп «Valentino»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11532 R</vendorCode>
+<description>&lt;p&gt;
+	Для наших модниц компания Daminika выпустила новое ошеломляющее платье – кейп «Valentino», которое с гордостью украшает коллекцию «Chic et charme»! Благодаря чарующему французскому крою кейп – это платье не может остаться незамеченным. Такое название выбрано не случайно – ведь оно означает шарм, элегантность и чувственность. Кейп является оригинальной и стильной вещью, это платье с «накидкой», которое не имеет рукавов. Его актуальность в сезоне весна – лето 2016 неоспорима! Это платье украшено классическим воротником и изящной брошью из серебристых камней! Французский крой, классический воротник – это взрыв элегантности и величия Вашему неповторимо – идеальному образу! Одень это магически – привлекательное платье и почувствуйте себя королевой!&lt;/p&gt;
+&lt;p&gt;
+	На спинке есть потайная змейка.&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 88см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: элитный костюмный креп – стрейч (полиэстер 60%, полиамид 30%, эластан 10%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+				&lt;div&gt;
+					&amp;nbsp;&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
+<offer id="214550000615" available="true" group_id="21455" >
+<url>http://daminika.com/plate-keyp-valentino-21455#114045</url>
+<price>650.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-2-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-2-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-1-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-4-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-3-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-5-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21455/daminika-6-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье-кейп «Valentino»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11532 R</vendorCode>
+<description>&lt;p&gt;
+	Для наших модниц компания Daminika выпустила новое ошеломляющее платье – кейп «Valentino», которое с гордостью украшает коллекцию «Chic et charme»! Благодаря чарующему французскому крою кейп – это платье не может остаться незамеченным. Такое название выбрано не случайно – ведь оно означает шарм, элегантность и чувственность. Кейп является оригинальной и стильной вещью, это платье с «накидкой», которое не имеет рукавов. Его актуальность в сезоне весна – лето 2016 неоспорима! Это платье украшено классическим воротником и изящной брошью из серебристых камней! Французский крой, классический воротник – это взрыв элегантности и величия Вашему неповторимо – идеальному образу! Одень это магически – привлекательное платье и почувствуйте себя королевой!&lt;/p&gt;
+&lt;p&gt;
+	На спинке есть потайная змейка.&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 88см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: элитный костюмный креп – стрейч (полиэстер 60%, полиамид 30%, эластан 10%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width: 156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+				&lt;div&gt;
+					&amp;nbsp;&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">L</param>
+</offer>
+<offer id="214570000615" available="true" group_id="21457" >
+<url>http://daminika.com/plate-keyp-valentino-21457#114048</url>
+<price>650.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-12-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-12-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-15-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-13-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-14-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-16-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье-кейп «Valentino»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11532 C</vendorCode>
+<description>&lt;p&gt;
+	Для наших модниц компания Daminika выпустила новое ошеломляющее платье – кейп «Valentino», которое с гордостью украшает коллекцию «Chic et charme»! Благодаря чарующему французскому крою кейп – это платье не может остаться незамеченным. Такое название выбрано не случайно – ведь оно означает шарм, элегантность и чувственность. Кейп является оригинальной и стильной вещью, это платье с «накидкой», которое не имеет рукавов. Его актуальность в сезоне весна – лето 2016 неоспорима! Это платье украшено классическим воротником и изящной брошью из серебристых камней! Французский крой, классический воротник – это взрыв элегантности и величия Вашему неповторимо – идеальному образу! Одень это магически – привлекательное платье и почувствуйте себя королевой!&lt;/p&gt;
+&lt;p&gt;
+	На спинке есть потайная змейка.&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 88см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: элитный костюмный креп – стрейч (полиэстер 60%, полиамид 30%, эластан 10%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">L</param>
+</offer>
+<offer id="214570000616" available="true" group_id="21457" >
+<url>http://daminika.com/plate-keyp-valentino-21457#114047</url>
+<price>650.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-12-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-12-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-15-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-13-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-14-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21457/daminika-16-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье-кейп «Valentino»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11532 C</vendorCode>
+<description>&lt;p&gt;
+	Для наших модниц компания Daminika выпустила новое ошеломляющее платье – кейп «Valentino», которое с гордостью украшает коллекцию «Chic et charme»! Благодаря чарующему французскому крою кейп – это платье не может остаться незамеченным. Такое название выбрано не случайно – ведь оно означает шарм, элегантность и чувственность. Кейп является оригинальной и стильной вещью, это платье с «накидкой», которое не имеет рукавов. Его актуальность в сезоне весна – лето 2016 неоспорима! Это платье украшено классическим воротником и изящной брошью из серебристых камней! Французский крой, классический воротник – это взрыв элегантности и величия Вашему неповторимо – идеальному образу! Одень это магически – привлекательное платье и почувствуйте себя королевой!&lt;/p&gt;
+&lt;p&gt;
+	На спинке есть потайная змейка.&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 88см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: элитный костюмный креп – стрейч (полиэстер 60%, полиамид 30%, эластан 10%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
@@ -9267,6 +11097,318 @@
 <param name="На фото размер">S</param>
 <param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
 <param name="Размер">M</param>
+</offer>
+<offer id="215140000617" available="true" group_id="21514" >
+<url>http://daminika.com/plate-tiffani-21514#114020</url>
+<price>390.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-51-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-51-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-53-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-52-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Tiffani»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11529 Z</vendorCode>
+<description>&lt;p&gt;
+	Романтичное платье «Tiffani» никого не оставит равнодушным: платье подобно поцелую, украденному с романтичного блестящего Парижа. В этом платье Вы выглядите изысканно, романтично и нежно. Платье А – образного силуэта с яркой и неординарной перфорацией и с имитацией маечки под платьем – что так модно в сезоне весна – лето 2016. Подарите Вашему образу яркой и романтичной девичности – купите это платье!&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 85 см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 41 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг (полиэстер 50%, ацетат 20%, котон 20%, эластан 10%), турецкое микромасло&amp;nbsp; (полиэстер 40%, нитрон 30%, вискоза 10%, эластан 20%).&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
+</offer>
+<offer id="215140000616" available="true" group_id="21514" >
+<url>http://daminika.com/plate-tiffani-21514#114021</url>
+<price>390.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-51-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-51-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-53-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21514/daminika-52-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Tiffani»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11529 Z</vendorCode>
+<description>&lt;p&gt;
+	Романтичное платье «Tiffani» никого не оставит равнодушным: платье подобно поцелую, украденному с романтичного блестящего Парижа. В этом платье Вы выглядите изысканно, романтично и нежно. Платье А – образного силуэта с яркой и неординарной перфорацией и с имитацией маечки под платьем – что так модно в сезоне весна – лето 2016. Подарите Вашему образу яркой и романтичной девичности – купите это платье!&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 85 см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 41 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг (полиэстер 50%, ацетат 20%, котон 20%, эластан 10%), турецкое микромасло&amp;nbsp; (полиэстер 40%, нитрон 30%, вискоза 10%, эластан 20%).&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
+</offer>
+<offer id="215150000617" available="true" group_id="21515" >
+<url>http://daminika.com/plate-tiffani-21515#114028</url>
+<price>390.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21515/daminika-54-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21515/daminika-54-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21515/daminika-56-emblema.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21515/daminika-55-emblema.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Tiffani»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11529 R</vendorCode>
+<description>&lt;p&gt;
+	Романтичное платье «Tiffani» никого не оставит равнодушным: платье подобно поцелую, украденному с романтичного блестящего Парижа. В этом платье Вы выглядите изысканно, романтично и нежно. Платье А – образного силуэта с яркой и неординарной перфорацией и с имитацией маечки под платьем – что так модно в сезоне весна – лето 2016. Подарите Вашему образу яркой и романтичной девичности – купите это платье!&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: S – 85 см, М – 90 см, L – 95 см&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 41 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг (полиэстер 50%, ацетат 20%, котон 20%, эластан 10%), турецкое микромасло&amp;nbsp; (полиэстер 40%, нитрон 30%, вискоза 10%, эластан 20%).&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					87-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-100&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					66-70&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					71-74&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					75-78&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">S</param>
 </offer>
 <offer id="215170000617" available="true" group_id="21517" >
 <url>http://daminika.com/kostyum-marsi-21517#113798</url>
