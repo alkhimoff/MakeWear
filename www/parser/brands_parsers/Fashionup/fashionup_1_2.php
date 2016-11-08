@@ -3,7 +3,7 @@
 use Parser\Provader\ProvaderPageFactory;
 
 //==============================================================================
-//			Fashion up   	1-2          		
+//			Fashion up   	1-2
 //==============================================================================
 //Переменные для записи в БД по умолчанию
 $existProd     = TRUE;
@@ -18,6 +18,7 @@ $nameProd      = "";
 $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
+
 //var_dump($curLink);
 //Exist URL
 /* if ($verify !== "import" && ($statusCode  == 404)) {
@@ -25,13 +26,15 @@ $duplicateProd = "";
   return;
   } */
 //Exist
+
+echo $curLink;
+
 try {
-    $provaderPage = ProvaderPageFactory::build(0, 0, $curLink);
+    $provaderPage = ProvaderPageFactory::build(1, 0, $curLink);
     $sawNok       = $provaderPage->nokogiriObject;
 } catch (Exception $ex) {
     var_dump($ex->getMessage());
 }
-
 $arrayExist = checkEmptyOrChangeSelector($_SESSION['no_nal'], $sawNok,
     'no_nal - наличие');
 //var_dump($arrayExist);
@@ -44,7 +47,6 @@ if (isset($arrayExist)) {
         $existProd = FALSE;
     }
 }
-
 if ($existProd == TRUE) {
     foreach ($saw->content as $key => $content) {
         $url = (string) $content->url;
@@ -66,7 +68,6 @@ if ($existProd == TRUE) {
             continue;
         }
     }
-
 //Price price2
     if (!isset($arrayIdUrl)) {
         $existProd = FALSE;
@@ -90,7 +91,6 @@ if ($existProd == TRUE) {
         $descProd = changeDesc($arrayIdUrl["desc"]);
     }
 }
-
 //var_dump($existProd);
 //var_dump($price);
 //var_dump($price2);
