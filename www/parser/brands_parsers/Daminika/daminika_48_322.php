@@ -39,9 +39,7 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
         array_pop($arrayDesc);
         
         // cut if: 1. Красивое платье .....
-        if(substr($arrayDesc[0], 0, 2) == "1."){
-            array_shift($arrayDesc);
-        }
+        (substr($arrayDesc[0], 0, 2) == "1.") ? array_shift($arrayDesc) : '';       
         
         // parse description
         if (isset($arrayDesc)) {
@@ -77,8 +75,13 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
 // sizes
     foreach ($saw->shop->offers->offer as $key => $offer) {
         if($codProd == $offer->vendorCode.""){
-            //$sizesProd .= $offer->param[2].';'; 
-            $sizesProd .= $offer->param.';'; 
+            //$sizeTmp = NULL;
+            $sizeTmp = $offer->param[2].";";
+            // if no: На фото размер...
+            if($sizeTmp == ";"){
+                $sizeTmp = $offer->param.";";
+            }
+            ($sizeTmp != ";") ? $sizesProd .= $sizeTmp : '';           
         }
     }
     $sizesProd = substr($sizesProd, 0, -1);
