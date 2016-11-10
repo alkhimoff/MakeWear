@@ -105,6 +105,21 @@ session_start();
             $mysqli->close();
             die("Скрипт закочил Работу!!!");
         }
+        
+        // for Daminika / Удаление # и всего что за, со всех линков
+        if($idBrand == 48){
+            if(isset($_SESSION['linkArrayCom'][''])){
+                array_shift($_SESSION['linkArrayCom']);
+            }
+            $_SESSION['linkArrayCom'] = array_flip($_SESSION['linkArrayCom']);
+            foreach ($_SESSION['linkArrayCom'] as $key => &$value) {
+                ($valueTmp = substr($value, 0, strpos($value, "#"))) ? $value = $valueTmp : '';
+            }
+            unset($value);
+            $_SESSION['linkArrayCom'] = array_flip($_SESSION['linkArrayCom']);
+            
+            ($curLinkTmp = substr($curLink, 0, strpos($curLink, "#"))) ? $curLink = $curLinkTmp : '';
+        }
 
         //Проверяем есть ли уже товар по текущей ссылке
         $comExistId = FALSE;

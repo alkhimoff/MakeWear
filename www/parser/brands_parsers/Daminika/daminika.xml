@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2016-11-08 21:04">
+<yml_catalog date="2016-11-10 11:38">
 <shop>
 <name>DAMINIKA - интернет-магазин Одежды Оптом</name>
 <company>DAMINIKA - интернет-магазин Одежды</company>
@@ -5258,6 +5258,134 @@
 <param name="На фото рост модели">165 см; ОГ – 93 см; ОТ – 73 см; ОБ – 106 см</param>
 <param name="Размер">XL</param>
 </offer>
+<offer id="213970000617" available="true" group_id="21397" >
+<url>http://daminika.com/11506-plate-vudli-21397#113963</url>
+<price>520.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21397/img_8467-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21397/img_8467-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21397/img_8460-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21397/img_8465-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21397/img_8471-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>11506 Платье «Вудли»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11506</vendorCode>
+<description>&lt;div&gt;
+	Элегантное и сдержанное платье «Вудли». Отлчный вариант для работы, делового стиля. Смотрится под туфли на высокой шпильке. Это платье для настоящих бизнес- леди! Платье украшено черными вставками из эко-кожи и перфорированной кокеткой в низу.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+	Ткань: коттон&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+	Длина рукава: 37 см&lt;/div&gt;
+&lt;div&gt;
+	Длина платья: 97 см&lt;/div&gt;
+&lt;div&gt;
+	&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;
+	&lt;div&gt;
+		&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:630px;&quot; width=&quot;630&quot;&gt;
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&amp;nbsp;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							84-86&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							88-90&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							92-94&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							96-99&lt;/p&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							58-61&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							64-68&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							73-75&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							77-80&lt;/p&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							88-90&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							90-93&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							96-97&lt;/p&gt;
+					&lt;/td&gt;
+					&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+						&lt;p align=&quot;center&quot;&gt;
+							100-104&lt;/p&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">Рост - 165 см
+ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
+<param name="Размер">S</param>
+</offer>
 <offer id="213970000619" available="true" group_id="21397" >
 <url>http://daminika.com/11506-plate-vudli-21397#113962</url>
 <price>520.0</price>
@@ -6120,6 +6248,129 @@
 <param name="На фото рост модели">Рост - 165 см
 ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
 <param name="Размер">XS</param>
+</offer>
+<offer id="214030000615" available="true" group_id="21403" >
+<url>http://daminika.com/11510-plate-per-sia-21403#113925</url>
+<price>585.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21403/img_8486-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21403/img_8486-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21403/img_8490-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21403/img_8481-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21403/img_8502-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21403/img_8494-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>11510 Платье «Per-Sia»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11510</vendorCode>
+<description>&lt;p&gt;
+	Стильное и модное платье на массивной змейке с замысловатой надписью – для тех кто следит за модой! Если Вы хотите быть в центре внимания и притягивать к себе восхищенные взгляды – это платье для Вас! Платье отлично подчеркивает талию и грудь!Смотрится с сапогами на шпильке, с туфлями и подходит под модные слипоны.&lt;/p&gt;
+&lt;p&gt;
+	Ткань: дайвинг&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 61 см&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 84 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:630px;&quot; width=&quot;630&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					58-61&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					77-80&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-104&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">Рост - 165 см
+ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
+<param name="Размер">L</param>
 </offer>
 <offer id="214040000615" available="true" group_id="21404" >
 <url>http://daminika.com/41505-a-bomber-jetix-21404#113824</url>
@@ -7563,6 +7814,129 @@
 <param name="На фото размер">S</param>
 <param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
 <param name="Размер">S</param>
+</offer>
+<offer id="214140000619" available="true" group_id="21414" >
+<url>http://daminika.com/11511-plate-rimini-21414#113934</url>
+<price>455.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21414/img_8579-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21414/img_8579-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21414/img_8585-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21414/img_8582-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21414/img_8580-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21414/img_8589-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>11511 Платье «Римини»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11511</vendorCode>
+<description>&lt;p&gt;
+	Спортивное платье «Риминни» очень удобно и практично. Идеальное платье для повседневной жизни. Очень приятное на ощупь. В этом платье учтено, в первую очередь, удобство. Отлично сочетается со спортивным жакетом «Бергамо».&lt;/p&gt;
+&lt;p&gt;
+	Ткань: французский трикотаж&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 41 см, &lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 83 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:630px;&quot; width=&quot;630&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-86&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					58-61&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-68&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					73-75&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:18px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					77-80&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					90-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-97&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:126px;height:19px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-104&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">Рост - 165 см
+ОГ - 90 см, ОТ - 60 см, ОБ - 90 см</param>
+<param name="Размер">XS</param>
 </offer>
 <offer id="214160000619" available="true" group_id="21416" >
 <url>http://daminika.com/41507-djemper-bergamo-21416#113949</url>
@@ -9190,6 +9564,95 @@
 <param name="На фото рост модели">Рост - 165 см
 ОГ - 90 см, ОТ - 60 см, ОТ - 90 см</param>
 <param name="Размер">S</param>
+</offer>
+<offer id="214310000616" available="true" group_id="21431" >
+<url>http://daminika.com/11518-plate-djordjina-21431#114033</url>
+<price>416.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21431/59-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21431/59-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21431/58-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21431/61-d-watermark.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21431/60-d-watermark.jpg</picture>
+<delivery>true</delivery>
+<name>Платье «Джорджина»</name>
+<vendor>Daminika</vendor>
+<vendorCode>11518</vendorCode>
+<description>&lt;p&gt;
+	Эффектное и сексуальное платье для ярких девушек. Глубокое декольте регулируется на молнии. Есть высокие разрез сбоку, которые тоже можно регулировать самостоятельно. Перед тем, как надеть платье, рекомендуется расстегнуть обе змейки до конца.&lt;/p&gt;
+&lt;p&gt;
+	Ткань: костюмная диагональ&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 62 см&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 87 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;width:620px;&quot; width=&quot;620&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS - S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S – M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					84-88&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					89-92&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					64-66&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:25px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					67-70&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-92&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:207px;height:23px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					93-95&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="На фото размер">S</param>
+<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
+<param name="Размер">M</param>
 </offer>
 <offer id="214360000617" available="true" group_id="21436" >
 <url>http://daminika.com/plate-mersedes-21436#113898</url>
@@ -12753,117 +13216,6 @@
 <param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
 <param name="Размер">M-L</param>
 </offer>
-<offer id="215390000622" available="true" group_id="21539" >
-<url>http://daminika.com/palto-costa-rica-21539#113892</url>
-<price>910.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>222</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Верхняя одежда/Пальто</market_category>
-<picture>http://daminika.com/image/data/product-images/21539/45vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/45vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/46vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/47vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/48vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/43vv-logotip.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21539/44vv-logotip.jpg</picture>
-<delivery>true</delivery>
-<name>Пальто «Costa Rica»</name>
-<vendor>Daminika</vendor>
-<vendorCode>61601 P</vendorCode>
-<description>&lt;p&gt;
-	Для этого удивительно красивого пальто, характерно большое количество вариантов формирования воротника. Воротник можно выкладывать «хомутом», застегивая его на самую верхнюю пуговицу, а можно выложить глубоким вырезом в разных вариантах. Это пальто можно отнести к разряду шипрового дизайна, как аромата, так как обладает запоминающим дизайном!&amp;nbsp;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;
-	&lt;span style=&quot;color:#a9a9a9;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;span style=&quot;font-family: 'Times New Roman', serif;&quot;&gt;Пальто на подкладке.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;
-	Комфортно носить при температуре от +12°… +18°&lt;/p&gt;
-&lt;p&gt;
-	Длина пальто: спереди 90 см, по спинке – 76 см&lt;/p&gt;
-&lt;p&gt;
-	Длина рукава: 62 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: эко – кожа, мягкий костюмный трикотаж (полиэстер 30%, акрил 30%, лавсан 30%, модал 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S - M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M - L&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;L - XL&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-95&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					96-100&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					-&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					-&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					-&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-97&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					98-100&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:156px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					101-104&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="На фото размер">S</param>
-<param name="На фото рост модели">168 см; ОГ – 85 см; ОТ – 62 см; ОБ – 90 см</param>
-<param name="Размер">S-M</param>
-</offer>
 <offer id="215390000627" available="true" group_id="21539" >
 <url>http://daminika.com/palto-costa-rica-21539#113894</url>
 <price>910.0</price>
@@ -14983,182 +15335,6 @@
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">M-L</param>
 </offer>
-<offer id="215550000616" available="true" group_id="21555" >
-<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21555#114960</url>
-<price>520.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-21-2.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-21-2.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-23.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-22.jpg</picture>
-<delivery>true</delivery>
-<name>Ультрамодный комбинезон Абу-Даби</name>
-<vendor>Daminika</vendor>
-<vendorCode>51602</vendorCode>
-<description>&lt;p&gt;
-	Изысканный комбинезон в восточном стиле воодушевляет на романтические приключения. Чувственность и страстность, душевный огонь и романтичность нашли свое отражение в этом ультрамодном комбинезоне от Daminika. Перед тем, как открыть пламенное сердце, где чувствуются сладкие томные ноты экзотического кроя брюк, комбинезон интригует в чарующем и тающем великолепии свою эксклюзивность и неповторимость выгодного подчеркивания фигуры за счет корсетного верха. При ходьбе, в невесомом шлейфе неожиданно проявляются истинно «городские» мотивы передающие атмосферу самых модных тенденций, что бы это увидеть наглядно – не забудьте посмотреть видео обзор. Пояс украшен черными жемчужинами. &amp;nbsp;Этот комбинезон для женщин с характером. Он дразнит и искрится. Этот комбинезон для Вас!&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстёгивается по спинке на потайной молнии.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк: 115 см, брюки с напуском на манжете&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%), шифон (60% вискоза, 40% полиэстер).&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					86-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">M</param>
-</offer>
-<offer id="215550000617" available="true" group_id="21555" >
-<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21555#114959</url>
-<price>520.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-21-2.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-21-2.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-23.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21555/daminika-22.jpg</picture>
-<delivery>true</delivery>
-<name>Ультрамодный комбинезон Абу-Даби</name>
-<vendor>Daminika</vendor>
-<vendorCode>51602</vendorCode>
-<description>&lt;p&gt;
-	Изысканный комбинезон в восточном стиле воодушевляет на романтические приключения. Чувственность и страстность, душевный огонь и романтичность нашли свое отражение в этом ультрамодном комбинезоне от Daminika. Перед тем, как открыть пламенное сердце, где чувствуются сладкие томные ноты экзотического кроя брюк, комбинезон интригует в чарующем и тающем великолепии свою эксклюзивность и неповторимость выгодного подчеркивания фигуры за счет корсетного верха. При ходьбе, в невесомом шлейфе неожиданно проявляются истинно «городские» мотивы передающие атмосферу самых модных тенденций, что бы это увидеть наглядно – не забудьте посмотреть видео обзор. Пояс украшен черными жемчужинами. &amp;nbsp;Этот комбинезон для женщин с характером. Он дразнит и искрится. Этот комбинезон для Вас!&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстёгивается по спинке на потайной молнии.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк: 115 см, брюки с напуском на манжете&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%), шифон (60% вискоза, 40% полиэстер).&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					86-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">S</param>
-</offer>
 <offer id="215560000616" available="true" group_id="21556" >
 <url>http://daminika.com/fashion-kombinezon-keri-21556#114985</url>
 <price>520.0</price>
@@ -16125,200 +16301,6 @@
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">S-M</param>
 </offer>
-<offer id="215610000616" available="true" group_id="21561" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21561#114974</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-32.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-32.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-29.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-30.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-31.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 K</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-				&lt;div&gt;
-					&amp;nbsp;&lt;/div&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">M</param>
-</offer>
-<offer id="215610000617" available="true" group_id="21561" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21561#114973</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-32.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-32.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-29.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-30.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21561/daminika-31.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 K</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width: 208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-				&lt;div&gt;
-					&amp;nbsp;&lt;/div&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">S</param>
-</offer>
 <offer id="215630000617" available="true" group_id="21563" >
 <url>http://daminika.com/fashion-kombinezon-keri-21563#114975</url>
 <price>520.0</price>
@@ -16471,196 +16453,6 @@
 			&lt;td style=&quot;width:208px;&quot;&gt;
 				&lt;p align=&quot;center&quot;&gt;
 					69-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">M</param>
-</offer>
-<offer id="215640000617" available="true" group_id="21564" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21564#114990</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-emblem-11.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-emblem-11.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-13.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-12.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-10.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 A</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">S</param>
-</offer>
-<offer id="215640000616" available="true" group_id="21564" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21564#114991</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-emblem-11.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-emblem-11.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-13.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-12.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21564/daminika-10.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 A</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 		&lt;tr&gt;
@@ -17041,194 +16833,6 @@
 		&lt;/tbody&gt;
 	&lt;/table&gt;
 &lt;/div&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">S</param>
-</offer>
-<offer id="215670000616" available="true" group_id="21567" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21567#114987</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-37.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-37.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-39.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-38.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 C</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;
-	&amp;nbsp;&lt;/p&gt;</description>
-<param name="Размер">M</param>
-</offer>
-<offer id="215670000617" available="true" group_id="21567" >
-<url>http://daminika.com/trendovyiy-kombinezon-lyuis-21567#114986</url>
-<price>715.0</price>
-<currencyId>UAH</currencyId>
-<categoryId>188</categoryId>
-<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда/Костюмы</market_category>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-37.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-37.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-39.jpg</picture>
-<picture>http://daminika.com/image/data/product-images/21567/daminika-38.jpg</picture>
-<delivery>true</delivery>
-<name>Трендовый комбинезон Льюис</name>
-<vendor>Daminika</vendor>
-<vendorCode>51601 C</vendorCode>
-<description>&lt;p&gt;
-	Это яркий, эксклюзивный комбинезон подойдет девушке, которая не боится быть разной и непредсказуемой! &amp;nbsp;Этот комбинезон уже покорил девушек Италии. Он изысканный и идеален для королевы – моды! В трендовом комбинезоне «Льюис» от Daminika изюминкой приходятся воздушные ассиметричные воланы и массивная «угольная» цепь. В комбинезоне от Daminika Вам не удастся остаться незамеченной, а восхищенные взгляды мужчин обеспечены.&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон расстегивается с двух сторон на потайных молниях. Есть силиконовая петля для съемной силиконовой бретели.&lt;/p&gt;
-&lt;p&gt;
-	Длина комбинезона: 160 см&lt;/p&gt;
-&lt;p&gt;
-	Длина брюк от талии: 115 см&lt;/p&gt;
-&lt;p&gt;
-	Длина до талии: 45 см&lt;/p&gt;
-&lt;p&gt;
-	Длина шагового шва: 85 см&lt;/p&gt;
-&lt;p&gt;
-	Комбинезон на рост 166 – 174 см&lt;/p&gt;
-&lt;p&gt;
-	Ткань: итальянский летний костюмный стрейч (не светится), (полиэффирные волокна 40%, полиэстер 30%, молочное волокно 20%, эластан 10%)&lt;/p&gt;
-&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&amp;nbsp;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					87-90&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					91-94&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					64-67&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					68-72&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					90-93&lt;/p&gt;
-			&lt;/td&gt;
-			&lt;td style=&quot;width:208px;&quot;&gt;
-				&lt;p align=&quot;center&quot;&gt;
-					94-98&lt;/p&gt;
-			&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
 &lt;p&gt;
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">S</param>
@@ -20364,6 +19968,139 @@
 &lt;p&gt;
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">S</param>
+</offer>
+<offer id="215850000616" available="true" group_id="21585" >
+<url>http://daminika.com/legkaya-bluza-felina-21585#117200</url>
+<price>299.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>199</categoryId>
+<picture>http://daminika.com/image/data/product-images/21585/img_9798-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21585/img_9798-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21585/img_9791-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21585/img_9773-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>Легкая блуза Фелина</name>
+<vendor>Daminika</vendor>
+<vendorCode>21604</vendorCode>
+<description>&lt;p&gt;
+	Стильная блуза от Daminika с ассиметричными дизайнерскими складами идеально подойдет для делового, и в тоже время, романтичного стиля. В движении и на ветру – склады невероятно красиво развиваются… Классический крой блузы позволяет ее носить и самостоятельно, и под жакеты. Блуза застегивается на потайную молнию.&lt;/p&gt;
+&lt;p&gt;
+	Длина рукав: 62 см&lt;/p&gt;
+&lt;p&gt;
+	Длина блузы: 62-68 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: креп – шелк (полиэстер 50%, ацетат 30%, вискоза 20%).&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XXL&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-95&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					96-99&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					100-103&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					104-106&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					91-94&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					95-98&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					99-102&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					103-105&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:104px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					106-110&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="Размер">M</param>
 </offer>
 <offer id="215850000617" available="true" group_id="21585" >
 <url>http://daminika.com/legkaya-bluza-felina-21585#117201</url>
@@ -26649,6 +26386,109 @@
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">S</param>
 </offer>
+<offer id="216070000616" available="true" group_id="21607" >
+<url>http://daminika.com/kurtka-parnorino-21607#117490</url>
+<price>936.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>223</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Верхняя одежда/Куртки</market_category>
+<picture>http://daminika.com/image/data/product-images/21607/img_0570000-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21607/img_0570000-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21607/img_0586-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21607/img_0576-kopiya.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21607/img_0594-kopiya.jpg</picture>
+<delivery>true</delivery>
+<name>Куртка Индиго</name>
+<vendor>Daminika</vendor>
+<vendorCode>61613</vendorCode>
+<description>&lt;p&gt;
+	Красивая стильная куртка на синтепоне. Двойной воротник. Две молнии застежки. Есть два кармана на молнии.&lt;/p&gt;
+&lt;p&gt;
+	Ткань: плащевка (70% полиэстер, 20% нейлон, 10% пропитка от влаги)&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: 58-59 см&lt;/p&gt;
+&lt;p&gt;
+	Длина куртки: 61-63 см&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;XS&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					80-85&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					86-88&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					89-91&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-90&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					91-93&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					94-96&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="Размер">M</param>
+</offer>
 <offer id="216080000616" available="true" group_id="21608" >
 <url>http://daminika.com/kurtka-parnorino-21608#117509</url>
 <price>845.0</price>
@@ -28824,6 +28664,110 @@
 &lt;p&gt;
 	&amp;nbsp;&lt;/p&gt;</description>
 <param name="Размер">S</param>
+</offer>
+<offer id="216250000616" available="true" group_id="21625" >
+<url>http://daminika.com/plate-djessika-21625#118591</url>
+<price>403.0</price>
+<currencyId>UAH</currencyId>
+<categoryId>181</categoryId>
+<market_category>Все товары/Одежда, обувь и аксессуары/Женская одежда/Одежда для спорта/Платья</market_category>
+<picture>http://daminika.com/image/data/product-images/21625/img_5155d.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21625/img_5155d.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21625/img_5158.jpg</picture>
+<picture>http://daminika.com/image/data/product-images/21625/img_5162.jpg</picture>
+<delivery>true</delivery>
+<name>Платье Джессика</name>
+<vendor>Daminika</vendor>
+<vendorCode>11613 C</vendorCode>
+<description>&lt;p&gt;
+	1.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Красивое платье «Джессика» 11613&lt;/p&gt;
+&lt;p&gt;
+	Красивое платье А – образного силуэта – тренд сезона осень – зима 2016-17. В платье есть два функциональных кармана. Изюминкой платья являются камни, которыми украшена горловина платья и карманы. Спинка выполнена из крупных склад. Платье застегивается на потайную молнию.&lt;/p&gt;
+&lt;p&gt;
+	Длина рукава: &amp;nbsp; – 50 см&lt;/p&gt;
+&lt;p&gt;
+	Длина платья: 92-95 см&lt;/p&gt;
+&lt;p&gt;
+	Ткань: текстиль, костюмный креп (полиэстер 40%, акрил 30%, хлопок 30%)&lt;/p&gt;
+&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&amp;nbsp;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;S&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;M&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;L&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОГ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					88-91&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					92-96&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					97-101&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОТ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					&lt;strong&gt;ОБ&lt;/strong&gt;&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+			&lt;td style=&quot;width:156px;&quot;&gt;
+				&lt;p align=&quot;center&quot;&gt;
+					-&lt;/p&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;</description>
+<param name="Размер">M</param>
 </offer>
 <offer id="21638" available="true" >
 <url>http://daminika.com/brelok-mehovoy-pushok-21638</url>

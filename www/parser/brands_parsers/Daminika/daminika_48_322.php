@@ -16,17 +16,17 @@ $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
 
+($curLinkTmp = substr($curLink, 0, strpos($curLink, "#"))) ? $curLink = $curLinkTmp : '';
+if($curLink == ""){
+    $existProd = FALSE;
+    return;
+}
+
 foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
-    
+    ($urlTmp = substr($url, 0, strpos($url, "#"))) ? $url = $urlTmp : '';
+   
     if ($url == $curLink) {
-        /*
-        $imgMain = (string) $offer->picture[0];
-        foreach ($offer->picture as $key => $value) {
-            $imgDop      = (string) $value;
-            $imgDopArr[] = $imgDop;
-        }
-        */
         $nameProd  = $offer->name."";
         $codProd = $offer->vendorCode."";
         
@@ -34,50 +34,51 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
         $proc = ceil($price / 100 * $_SESSION['per']);
         $price2 = ceil($price + $proc);
 
+        // get an array of descriptions
         $arrayDesc  = deleteEmptyArrDescValues(explode("<p>", $offer->description));
         array_pop($arrayDesc);
-
+        
+        // cut if: 1. Красивое платье .....
+        if(substr($arrayDesc[0], 0, 2) == "1."){
+            array_shift($arrayDesc);
+        }
+        
+        // parse description
         if (isset($arrayDesc)) {
             $searchArray = array('ткань:', 'длина изделия:', "длина рукава:");
             
-            foreach ($arrayDesc as $key => $value) {
-                $value = substr($value, 0, strpos($value, "</p>"));
+            foreach($arrayDesc as $key => $value) {
+                ($valueTmp = substr($value, 0, strpos($value, "</p>"))) ? $value = $valueTmp : '';
                 
+                // cut table
+                if (strpos($value, "<table")) {
+                    ($valueTmp = substr($value, 0, strpos($value, "<table"))) ? $value = $valueTmp : '';
+                    continue;
+                }
+                // description: ...
                 if($key == 0){
                     $descTmp = $value;
                     continue;
                 }  
                 
-                $descProd = findStringDesc($value, $searchArray, $descProd);
-                
-                if (count($arrayDesc) == $key) {
-                    $value = substr($value, 0, strpos($value, "<table"));
-                }
-                if (count($arrayDesc) == $key + 1) {
-                    $descProd .= "<p><span>На фото размер:</span>".$offer->param[0]."</p>";
-                    $descProd .= "<p><span>На фото рост модели:</span>".$offer->param[1]."</p>";
-                    $descProd .= "<p><span>Описание:</span>".$descTmp."</p>";  
-                }
+                $descProd = findStringDesc($value, $searchArray, $descProd); // $value - возможно удалить html теги
             }
-        }
-        
+            
+            ($tmp1 = $offer->param[0]."") ? $descProd .= "<p><span>На фото размер:</span>".$tmp1."</p>" : '';
+            ($tmp2 = $offer->param[1]."") ? $descProd .= "<p><span>На фото рост модели:</span>".$tmp2."</p>" : '';
+            ($descTmp) ? $descProd .= "<p><span>Описание:</span>".$descTmp."</p>" : '';          
+        } 
+        break;
     } else {
         continue;
     }
 }
 
-// size
+// sizes
     foreach ($saw->shop->offers->offer as $key => $offer) {
         if($codProd == $offer->vendorCode.""){
-            $sizesProd .= $offer->param[2].';';           
+            //$sizesProd .= $offer->param[2].';'; 
+            $sizesProd .= $offer->param.';'; 
         }
     }
     $sizesProd = substr($sizesProd, 0, -1);
-//==============================================================================
-//                   Если это проверщик то выходим из скрипта
-//==============================================================================
-/*
-    if ($verify == "verify") {
-        return;
-    }
-*/
