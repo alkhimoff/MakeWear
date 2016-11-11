@@ -1747,7 +1747,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px}
 .btn:focus {
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto -webkit-focus-ring-color; 
     outline-offset: -2px}
 .btn.focus,.btn:focus,.btn:hover {
     color: #333;
