@@ -215,8 +215,15 @@ if (isset($visibl)) {
         $idsBrend[] = $id;
     }
     if (isset($_POST['daminika']) && !empty($_POST['daminika'])) {
-        $id         = (int) filter_input(INPUT_POST, 'daminika',
-                FILTER_SANITIZE_STRING);
+        $id = (int) filter_input(INPUT_POST, 'daminika', FILTER_SANITIZE_STRING);
+        $idsBrend[] = $id;
+    }
+    if (isset($_POST['shaarm']) && !empty($_POST['shaarm'])) {
+        $id  = (int) filter_input(INPUT_POST, 'shaarm', FILTER_SANITIZE_STRING);
+        $idsBrend[] = $id;
+    }
+    if (isset($_POST['dolcedonna']) && !empty($_POST['dolcedonna'])) {
+        $id = (int) filter_input(INPUT_POST, 'dolcedonna', FILTER_SANITIZE_STRING);
         $idsBrend[] = $id;
     }
 

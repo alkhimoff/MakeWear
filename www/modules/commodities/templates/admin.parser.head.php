@@ -80,7 +80,10 @@ $all_head = '
         <input type="checkbox" name="vision" value="46">Vision FS
         <input type="checkbox" name="jadone" value="47">Jadone Fashion
         </br>
-        <input type="checkbox" name="daminika" value="48" checked>Daminika
+        <input type="checkbox" name="daminika" value="48" checked> Daminika
+        <input type="checkbox" name="shaarm" value="50" checked> Shaarm
+        <input type="checkbox" name="dolcedonna" value="51" checked> Dolcedonna
+
         <p><input type="submit" value="Запустить Проверщик" id="goVir"></p>
     </form>
 </div>
