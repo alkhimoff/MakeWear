@@ -8857,8 +8857,11 @@ footer .main-width .col-xs-12: not(:first-child) {
     width: auto}
 }
 @media screen and (max-width: 768px) {
-    header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
+header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
     text-align: center}
+header .contacts-top .service-center__columns .column p {
+        word-wrap: break-word;
+    }
 header .header-bottom .logo-wrap {
     top: 0;
     right: 0}
