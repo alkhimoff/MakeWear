@@ -5,7 +5,7 @@ namespace Parser\Report;
 interface iReport
 {
     const FILE_CREATE_MASSEGE = "<meta charset='utf-8'><pre><?php<h4 style='color:green'>Файл создан </h4>";
-    const STRING_LINE_START   = "##########################################################################################################################\n\n";
+    const STRING_LINE_START   = "</div></div></div>##########################################################################################################################\n\n";
     const STRING_LINE_BOLD    = "====================================================================\n";
     const STRING_LINE_SLIMM   = "--------------------------------------------------------------------\n\n";
     const STRING_START        = "Всем пристегнуть ремни начало работы!!!\n";
@@ -61,7 +61,15 @@ abstract class Report implements iReport
     public function createFileReport()
     {
         $fp = fopen($this->fileName, "w");
-        fwrite($fp, self::FILE_CREATE_MASSEGE.date("d:m:y H:i")."\n");
+        fwrite($fp, self::FILE_CREATE_MASSEGE.date("d.m.y H:i")."\n");
+        if (isset($_SESSION['comVisibl'])){
+            ($_SESSION['comVisibl'] == 1)? fwrite($fp, "<h4 style='color:green'>* Опубликованные товары</h4>") : fwrite($fp, "<h4 style='color:red'>* НЕопубликованные товары</h4>");
+            ($_SESSION['changeIm'] == TRUE)? fwrite($fp, "* Перезалить фото\n") : '' ;
+            ($_SESSION['changeCod'] == TRUE)? fwrite($fp, "* Перезалить код товара\n") : '' ;
+            ($_SESSION['changeName'] == TRUE)? fwrite($fp, "* Перезалить имя товара\n") : '' ;
+            ($_SESSION['changeDesc'] == TRUE)? fwrite($fp, "* Перезалить описание товара\n") : '' ;
+            ($_SESSION['deleteCom'] == TRUE)? fwrite($fp, "* Скрыть(опубликовю.) или удалить(неопуб.)\n") : '' ;  
+        }
         fclose($fp);
     }
 

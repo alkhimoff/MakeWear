@@ -573,10 +573,10 @@ function removeDirectory($dir)
 {
     if ($objs = glob($dir."/*")) {
         foreach ($objs as $obj) {
+            chmod($dir, 0777);
             is_dir($obj) ? removeDirectory($obj) : unlink($obj);
         }
     }
-    chmod($dir, 0777);
     rmdir($dir);
 }
 
@@ -684,9 +684,10 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
     } else if ($idBrand == 45) {
         require 'brands_parsers/Adidas/image.php';
     } else if (46 == $idBrand || 47 == $idBrand || 49 == $idBrand) {
-        require 'brands_parsers/VisionFS/image.php';
-    }
-
+        require 'brands_parsers/VisionFS/image.php';    
+    } else if ($idBrand == 48) {
+        require 'brands_parsers/Daminika/daminika_image.php';
+    }   
     return $srcProdArray;
 }
 //==============================================================================

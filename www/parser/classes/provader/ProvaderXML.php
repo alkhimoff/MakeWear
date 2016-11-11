@@ -15,6 +15,9 @@ class ProvaderXML
 //    const PATH_GHAZE_TOAPI    = 'http://ghazel.com.ua/ymn_uah_3500-20760,2721,23645,40721,40726,9630,40722,3656,2867,40723,40725,40724,40719,40727,40728,40720,2209,40729,6067,2226,2405,3426,4293,2324,21379.xml';
     const PATH_GHAZE_TOAPI    = 'http://ghazel.com.ua/ymn_uah_35-40721,40722,3656,2867,40725,2721,40726,41825,40719,2209,4293.xml';
 
+    const PATH_DAMINIKA           = "brands_parsers/Daminika/daminika.xml";
+    const PATH_DAMINIKA_ALL       = "brands_parsers/Daminika/daminika.xml";
+    const PATH_DAMINIKA_TOAPI     = 'http://daminika.com/index.php?route=feed/yandex_yml';
     /**
      * id's brend
      * @var int
@@ -69,15 +72,20 @@ class ProvaderXML
         } else if ($this->idBrand == 43 && $this->step == 1) {
             copy(self::PATH_GHAZE_TOAPI, self::PATH_GHAZEL);
             $this->xmlObject = simplexml_load_file(self::PATH_GHAZEL);
+        } else if ($this->idBrand == 48 && $this->step == 1) {
+            copy(self::PATH_DAMINIKA_TOAPI, self::PATH_DAMINIKA);
+            $this->xmlObject = simplexml_load_file(self::PATH_DAMINIKA);    
+            
         } else if ($this->idBrand == 1 && $this->step !== 1) {
             $this->xmlObject = simplexml_load_file(self::PATH_FASIONUP_ALL);
         } else if ($this->idBrand == 6 && $this->step !== 1) {
             $this->xmlObject = simplexml_load_file(self::PATH_GLEM_ALL);
         } else if ($this->idBrand == 43 && $this->step !== 1) {
             $this->xmlObject = simplexml_load_file(self::PATH_GHAZEL_ALL);
+        } else if ($this->idBrand == 48 && $this->step !== 1) {
+            $this->xmlObject = simplexml_load_file(self::PATH_DAMINIKA_ALL);
         }
     }
-
     /**
      * contact xml files
      * @param object $saw

@@ -7,8 +7,8 @@ $srcProdArray = array('mainSrcImg' => "", 'dopSrcImg' => "");
 $photoIdArray = array();
 
 //Image
-$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
-    'img - главная картинка');
+//$arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw, 'img - главная картинка'); //.bx_bigimages_aligner img
+$arrayImage = checkEmptyOrChangeSelector('.bx_bigimages_aligner img', $saw, 'img - главная картинка'); //
 
 $srcProd = "";
 if (isset($arrayImage)) {
@@ -17,11 +17,37 @@ if (isset($arrayImage)) {
     $srcProdArray['mainSrcImg'] = $srcProd;
     $existIm                    = TRUE;
 }
-//var_dump($srcProd);
-//DopImage
-$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw,
-    'dopimg - дополнительны картинки');
 
+//DopImage
+//$arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $saw, 'dopimg - дополнительны картинки');
+$arrayDopImage = checkEmptyOrChangeSelector('.bx_slide ul li .cnt_item', $saw, 'dopimg - дополнительны картинки');
+
+
+$srcDopIm = "";
+if (isset($arrayDopImage)) {
+    if ($verify == "verify") {
+        deleteDopImgFromDB($commodityID, $mysqli);
+    }
+    foreach ($arrayDopImage as $value) {
+       // $srcDopIm = filterUrlImage($value['style'], $curLink);
+        $tmpImg = str_replace("background-image:url('/upload/iblock/", "", $value['style']);
+        $tmpImg = str_replace("');", "", $tmpImg);
+        if($tmpImg != NULL){
+            $srcDopIm = 'http://www.meggi.com.ua/upload/iblock/' . $tmpImg;
+        } else {
+            break;
+        }
+        if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
+            $srcProdArray['dopSrcImg'][] = $srcDopIm;
+            $existIm                     = TRUE;
+            $photoIdArray[]              = insertInShopImBd($commodityID, $mysqli);
+        }
+        if((count($srcProdArray['dopSrcImg']) >= 3)){
+            break;
+        }
+    }
+}
+/*
 $srcDopIm = "";
 if (isset($arrayDopImage)) {
     if ($verify == "verify") {
@@ -37,15 +63,14 @@ if (isset($arrayDopImage)) {
         }
     }
 }
-//var_dump($srcProdArray);
+ */
 //CropandWrite images
 if ($existIm == TRUE) {
     if (!empty($srcProdArray['dopSrcImg'])) {
         $srcProdArray['dopSrcImg'] = array_values(array_unique($srcProdArray['dopSrcImg']));
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
-    $brendName   = "jhiva_images/";
-    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
-        $brendName, $idBrand);
+    $brendName   = "meggi_images/";
+    cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);
 }
 

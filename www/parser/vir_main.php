@@ -473,6 +473,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 43:
             require 'brands_parsers/Ghazel/ghazel_43_311.php';
             break;
+        case 48:
+            require 'brands_parsers/Daminika/daminika_48_322.php';
+            break;
         default:
             break;
     }

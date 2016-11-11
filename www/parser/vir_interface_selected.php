@@ -199,22 +199,24 @@ if (isset($visibl)) {
                 FILTER_SANITIZE_STRING);
         $idsBrend[] = $id;
     }
-
     if (isset($_POST['flook']) && !empty($_POST['flook'])) {
         $id         = (int) filter_input(INPUT_POST, 'flook',
             FILTER_SANITIZE_STRING);
         $idsBrend[] = $id;
     }
-
     if (isset($_POST['vision']) && !empty($_POST['vision'])) {
         $id         = (int) filter_input(INPUT_POST, 'vision',
             FILTER_SANITIZE_STRING);
         $idsBrend[] = $id;
     }
-
     if (isset($_POST['jadone']) && !empty($_POST['jadone'])) {
         $id         = (int) filter_input(INPUT_POST, 'jadone',
             FILTER_SANITIZE_STRING);
+        $idsBrend[] = $id;
+    }
+    if (isset($_POST['daminika']) && !empty($_POST['daminika'])) {
+        $id         = (int) filter_input(INPUT_POST, 'daminika',
+                FILTER_SANITIZE_STRING);
         $idsBrend[] = $id;
     }
 
