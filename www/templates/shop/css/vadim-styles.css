@@ -597,4 +597,14 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
   header .tech-info__item .out .out__info-block {
     padding-left: 0;
   }
+  .main-container .main-content .brands .title .icon-favorite {
+    top: 4px;
+    right: -3px;
+  }
+  .main-container .main-content .brands .title .icon-star-circle {
+    top: 4px;
+  }
+  .main-container .main-content .brands .title .see-all-brands {
+    background: url(/templates/shop/image/see-all-brands.png) no-repeat 0 1px;
+  }
 }
