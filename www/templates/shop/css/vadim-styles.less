@@ -165,10 +165,10 @@
     position: relative;
     top: -1px;
 }
-header .top-menu ul .first-level:not(:nth-last-of-type(-n+2)):after {
+header .top-menu ul .first-level:after {
     content: " ";
     position: absolute;
-    right: -10px;
+    right: -13px;
     top: 8px;
     background: url(../image/sprite.png) no-repeat -264px -31px;
     width: 7px;
@@ -447,6 +447,9 @@ header .brands-names.brands-names-wooman {
 .main-container .main-content .brand-slider-321 {
     background-position: -897px -365px;
 }
+.main-container .main-content .brand-slider-322 {
+    background-position: -367px -1080px;
+}
 .main-container .main-content .brand-slider-325 {
     background-position: -539px -10px; 
 }
@@ -548,47 +551,8 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     overflow: hidden;
     height: 699px;
 }
-/****** 1279 -> 1024 */
-@media handheld, only screen and (max-width: 1234px) {
-    header .header-bottom .top-menu ul .first-level {
-        padding-left: 10px;
-    }
-    header .top-menu ul .first-level {
-        font-size: 11px;
-    }
-}
-/****** 1279 -> 1024 */
-@media handheld, only screen and (max-width: 1240px) {
-    .tech-info-wrap { 
-        float: right;
-    }
-}
-/****** 991 -> 768 */
-@media handheld, only screen and (max-width: 991px) {
-    .slick-slider-comments {
-        display: none
-    }
-}
-/****** 980 -> 768 */
-@media handheld, only screen and (max-width: 980px) {
-    header .header-bottom .header-bottom__main .search-field {
-        width: 80%;
-        float: right;
-    }
-    header .header-bottom .tech-info {
-        float: right;
-        left: -16px;
-    }
-}
-/****** 800 -> 768 */
-@media handheld, only screen and (max-width: 800px) {
-    .main-container .main-content #banner-slider, .main-container .main-content #comments-slider, .main-container .main-content #gift-slider {
-        display: none;
-    }
-    .gift-slider_home {
-        display: none;
-    }
-}
+
+
 /****** 768 ->  */
 @media handheld, only screen and (max-width: 768px) {
     header .header-bottom .header-bottom__main .search-field {
@@ -709,5 +673,15 @@ header .tech-info__item .out .out__info-block .pop-title .summ {
     }
     header .tech-info__item .out .out__info-block {
         padding-left: 0;
+    }
+    .main-container .main-content .brands .title .icon-favorite {
+        top: 4px;
+        right: -3px;
+    }
+    .main-container .main-content .brands .title .icon-star-circle {
+        top: 4px;
+    }
+    .main-container .main-content .brands .title .see-all-brands {
+        background: url(/templates/shop/image/see-all-brands.png) no-repeat 0 1px;
     }
 }

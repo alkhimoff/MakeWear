@@ -238,7 +238,7 @@
                 </div>
             </div>
         </div>
-        <!--
+        
         <div class="recomended-wrap">
             <div class="recomended-title">
                 <h3><span class="active" data-slider="recomended">Рекомендации</span><span data-slider="last-seeing">Недавно просмотренные</span></h3>
@@ -249,7 +249,7 @@
             <div class="top-slider in-prod-page last-seeing">
                 {$sliderSeeing}
             </div>
-        </div>-->
+        </div>
     </div>
     {$info}
 </div>

@@ -1747,7 +1747,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px}
 .btn:focus {
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto -webkit-focus-ring-color; 
     outline-offset: -2px}
 .btn.focus,.btn:focus,.btn:hover {
     color: #333;
@@ -7624,7 +7624,9 @@ footer .copy {
     margin: 15px auto;
     opacity: .4}
 .success-message {
-    font-size: 11pt;
+    font-size: 24px!important;
+    color: #989898;
+    text-transform: uppercase;
     margin: 10px auto!important;
     max-width: 550px;
     padding: 11px;
@@ -8855,8 +8857,11 @@ footer .main-width .col-xs-12: not(:first-child) {
     width: auto}
 }
 @media screen and (max-width: 768px) {
-    header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
+header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
     text-align: center}
+header .contacts-top .service-center__columns .column p {
+        word-wrap: break-word;
+    }
 header .header-bottom .logo-wrap {
     top: 0;
     right: 0}

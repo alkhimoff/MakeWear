@@ -72,9 +72,7 @@
             <div class="brands-category">
                 <div class="brands-slider">
                     {$brandsSlider}
-
                     <!--Brand items-->
-
                 </div>
             </div>
 
