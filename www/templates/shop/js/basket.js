@@ -352,7 +352,7 @@ function addToBasket(properties) {
                 if (data.error === 0) {
                     getMiniBasket(1);
                 } else {
-                    magnificPopupOpenError('Во время доьовления в корзину произошла ошибка! Попробуйте еще раз');
+                    magnificPopupOpenError('Во время добавления в корзину произошла ошибка! Попробуйте еще раз');
                 }
             })
             .fail(function () {

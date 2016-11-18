@@ -690,8 +690,7 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
     } else if ($idBrand == 50) {
         require 'brands_parsers/Shaarm/shaarm_image.php';
     } else if ($idBrand == 51) {
-        require 'brands_parsers/Dolcedonna/dolcedonna_image.php';
-        
+        require 'brands_parsers/Dolcedonna/dolcedonna_image.php';       
     }   
     return $srcProdArray;
 }
