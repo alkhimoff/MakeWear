@@ -617,60 +617,60 @@ function checkTags($id, $mysqli)
 //==============================================================================
 function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
 {
-    if ($idBrand == 36) {
-        require 'brands_parsers/Zdes/zdes_image.php';
-    } else if ($idBrand == 35) {
-        require 'brands_parsers/Jhiva/jhiva_image.php';
-    } else if ($idBrand == 34) {
-        require 'brands_parsers/DemboHouse/dembo_house_image.php';
-    } else if ($idBrand == 33) {
-        require 'brands_parsers/Dajs/dajs_image.php';
-    } else if ($idBrand == 32) {
-        require 'brands_parsers/HelenLaven/helen_laven_image.php';
-    } else if ($idBrand == 37) {
-        require 'brands_parsers/FrancoCasel/francocassel_image.php';
-    } else if ($idBrand == 31 || $idBrand == 30) {
-        require 'brands_parsers/VitalityAll/vitality_image.php';
-    } else if ($idBrand == 29) {
-        require 'brands_parsers/Crisma/crisma_image.php';
-    } else if ($idBrand == 27) {
-        require 'brands_parsers/Aliya/aliya_image.php';
-    } else if ($idBrand == 26) {
-        require 'brands_parsers/SergioTorri/sergio_torri_image.php';
-    } else if ($idBrand == 25) {
-        require 'brands_parsers/Majaly/majaly_image.php';
-    } else if ($idBrand == 24 || $idBrand == 23) {
-        require 'brands_parsers/B1/b1_image.php';
-    } else if ($idBrand == 21) {
-        require 'brands_parsers/FStyle/fstyle_image.php';
-    } else if ($idBrand == 20) {
-        require 'brands_parsers/Nelli-Co/nellico_image.php';
-    } else if ($idBrand == 19) {
-        require 'brands_parsers/OlisStyle/olisstyle_image.php';
-    } else if ($idBrand == 17) {
-        require 'brands_parsers/SandL/sandl_image.php';
-    } else if ($idBrand == 16) {
-        require 'brands_parsers/Seventeen/seventeen_image.php';
-    } else if ($idBrand == 14) {
-        require 'brands_parsers/SKHouse/skhouse_image.php';
-    } else if ($idBrand == 13) {
-        require 'brands_parsers/Flfashion/flfashion_image.php';
-    } else if ($idBrand == 11) {
-        require 'brands_parsers/Alva/alva_image.php';
-    } else if ($idBrand == 10) {
-        require 'brands_parsers/Meggi/meggi_image.php';
-    } else if ($idBrand == 9) {
-        require 'brands_parsers/Sellin/sellin_image.php';
-    } else if ($idBrand == 7) {
-        require 'brands_parsers/Lenida/lenida_image.php';
-    } else if ($idBrand == 6) {
-        require 'brands_parsers/Glem/glem_image.php';
-    } else if ($idBrand == 5) {
-        require 'brands_parsers/Cardo/cardo_image.php';
+    if ($idBrand == 1) {
+        require 'brands_parsers/Fashionup/fashionup_image.php';   
     } else if ($idBrand == 4) {
         require 'brands_parsers/SwirlBySwirl/swirlbyswirl_image.php';
-    } else if ($idBrand == 1) {
-        require 'brands_parsers/Fashionup/fashionup_image.php';
+    } else if ($idBrand == 5) {
+        require 'brands_parsers/Cardo/cardo_image.php';
+    } else if ($idBrand == 6) {
+        require 'brands_parsers/Glem/glem_image.php';       
+    } else if ($idBrand == 7) {
+        require 'brands_parsers/Lenida/lenida_image.php'; 
+    } else if ($idBrand == 9) {
+        require 'brands_parsers/Sellin/sellin_image.php';        
+    } else if ($idBrand == 10) {
+        require 'brands_parsers/Meggi/meggi_image.php';
+    } else if ($idBrand == 11) {
+        require 'brands_parsers/Alva/alva_image.php';
+    } else if ($idBrand == 13) {
+        require 'brands_parsers/Flfashion/flfashion_image.php';
+    } else if ($idBrand == 14) {
+        require 'brands_parsers/SKHouse/skhouse_image.php';
+    } else if ($idBrand == 16) {
+        require 'brands_parsers/Seventeen/seventeen_image.php';
+    } else if ($idBrand == 17) {
+        require 'brands_parsers/SandL/sandl_image.php';
+    } else if ($idBrand == 19) {
+        require 'brands_parsers/OlisStyle/olisstyle_image.php';
+    } else if ($idBrand == 20) {
+        require 'brands_parsers/Nelli-Co/nellico_image.php';
+    } else if ($idBrand == 21) {
+        require 'brands_parsers/FStyle/fstyle_image.php';
+    } else if ($idBrand == 23 || $idBrand == 24) {
+        require 'brands_parsers/B1/b1_image.php';
+    } else if ($idBrand == 25) {
+        require 'brands_parsers/Majaly/majaly_image.php';        
+    } else if ($idBrand == 26) {
+        require 'brands_parsers/SergioTorri/sergio_torri_image.php';       
+    } else if ($idBrand == 27) {
+        require 'brands_parsers/Aliya/aliya_image.php';        
+    } else if ($idBrand == 29) {
+        require 'brands_parsers/Crisma/crisma_image.php';
+    } else if ($idBrand == 30 || $idBrand == 31) {
+        require 'brands_parsers/VitalityAll/vitality_image.php';
+    } else if ($idBrand == 32) {
+        require 'brands_parsers/HelenLaven/helen_laven_image.php';
+    } else if ($idBrand == 33) {
+        require 'brands_parsers/Dajs/dajs_image.php';        
+    } else if ($idBrand == 34) {
+        require 'brands_parsers/DemboHouse/dembo_house_image.php';                       
+    } else if ($idBrand == 35) {
+        require 'brands_parsers/Jhiva/jhiva_image.php';
+    } else if ($idBrand == 36) {
+        require 'brands_parsers/Zdes/zdes_image.php';
+    } else if ($idBrand == 37) {
+        require 'brands_parsers/FrancoCasel/francocassel_image.php';
     } else if ($idBrand == 38) {
         require 'brands_parsers/Vidoli/vidoli_image.php';
     } else if ($idBrand == 39) {
@@ -684,9 +684,14 @@ function writeImage($idBrand, $curLink, $saw, $commodityID, $mysqli, $verify)
     } else if ($idBrand == 45) {
         require 'brands_parsers/Adidas/image.php';
     } else if (46 == $idBrand || 47 == $idBrand || 49 == $idBrand) {
-        require 'brands_parsers/VisionFS/image.php';
-    }
-
+        require 'brands_parsers/VisionFS/image.php';    
+    } else if ($idBrand == 48) {
+        require 'brands_parsers/Daminika/daminika_image.php';
+    } else if ($idBrand == 50) {
+        require 'brands_parsers/Shaarm/shaarm_image.php';
+    } else if ($idBrand == 51) {
+        require 'brands_parsers/Dolcedonna/dolcedonna_image.php';       
+    }   
     return $srcProdArray;
 }
 //==============================================================================

@@ -423,8 +423,8 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 21:
             require 'brands_parsers/FStyle/fstyle_21_63.php';
             break;
+        case 23:       
         case 24:
-        case 23:
             require 'brands_parsers/B1/b1_artmilano_24(64,66).php';
             break;
         case 25:
@@ -439,8 +439,8 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 29:
             require 'brands_parsers/Crisma/crisma_29_87.php';
             break;
-        case 31:
         case 30:
+        case 31:
             require 'brands_parsers/VitalityAll/vitality_31;30_205;88.php';
             break;
         case 32:
@@ -473,6 +473,15 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 43:
             require 'brands_parsers/Ghazel/ghazel_43_311.php';
             break;
+        case 48:
+            require 'brands_parsers/Daminika/daminika_48_322.php';
+            break;
+        case 50:
+            require 'brands_parsers/Shaarm/shaarm_50_324.php';
+            break;
+        case 51:
+            require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+            break;       
         default:
             break;
     }

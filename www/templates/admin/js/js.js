@@ -192,7 +192,7 @@ $(document).ready(function () {
                     //	alert(lit);
                 });
     });
-
+/*
     //js код для интерфеса запуска проверщика
     $('#deleteCh').click(function () {
         $("input[type=checkbox]").not('.comProp').prop('checked', false);
@@ -201,6 +201,17 @@ $(document).ready(function () {
         if (this.clicked) {
             $("input[type=checkbox]").not('.comProp').prop('checked', true);
             $(this).text("Снять выделение").css({backgroundColor: "#98FB98"});
+        }
+    });
+    */
+       //js код для интерфеса запуска проверщика
+    $('#deleteCh').click(function () {
+        $("input[type=checkbox]").not('.comProp').prop('checked', true);
+        $(this).text("Снять выделение").css({backgroundColor: "#3CB371"});
+        this.clicked = this.clicked === undefined ? false : !this.clicked;
+        if (this.clicked) {
+            $("input[type=checkbox]").not('.comProp').prop('checked', false);
+            $(this).text("Выделить все").css({backgroundColor: "#98FB98"});
         }
     });
 //=========================Конец================================================

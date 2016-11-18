@@ -103,7 +103,22 @@ session_start();
             $_SESSION = array();
             /* Закрываем соединение */
             $mysqli->close();
-            die("Скрипт закочил Работу!!!");
+            die("Ссылок было: ".$countLinks."<br>Скрипт закочил Работу!!!");
+        }
+        
+        // for Daminika / Удаление # и всего что за, со всех линков
+        if($idBrand == 48){
+            if(isset($_SESSION['linkArrayCom'][''])){
+                array_shift($_SESSION['linkArrayCom']);
+            }
+            $_SESSION['linkArrayCom'] = array_flip($_SESSION['linkArrayCom']);
+            foreach ($_SESSION['linkArrayCom'] as $key => &$value) {
+                ($valueTmp = substr($value, 0, strpos($value, "#"))) ? $value = $valueTmp : '';
+            }
+            unset($value);
+            $_SESSION['linkArrayCom'] = array_flip($_SESSION['linkArrayCom']);
+            
+            ($curLinkTmp = substr($curLink, 0, strpos($curLink, "#"))) ? $curLink = $curLinkTmp : '';
         }
 
         //Проверяем есть ли уже товар по текущей ссылке
@@ -408,6 +423,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
             break;
         case 45:
             require 'brands_parsers/Adidas/adidas_45_316.php';
+            break;
+        case 48:
+            require 'brands_parsers/Daminika/daminika_48_322.php';
             break;
         default:
             break;
