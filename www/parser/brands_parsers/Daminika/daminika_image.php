@@ -8,7 +8,7 @@ $photoIdArray = array();
 
 foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
-    
+    ($urlTmp = substr($url, 0, strpos($url, "#"))) ? $url = $urlTmp : '';
     if ($url == $curLink) {
         foreach ($offer->picture as $key => $value) {
             $allImg      = (string) $value;
