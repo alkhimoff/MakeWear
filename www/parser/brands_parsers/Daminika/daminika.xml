@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2016-11-18 22:46">
+<yml_catalog date="2016-11-19 18:23">
 <shop>
 <name>DAMINIKA - интернет-магазин Одежды Оптом</name>
 <company>DAMINIKA - интернет-магазин Одежды</company>
@@ -29495,7 +29495,7 @@
 <param name="Размер">L</param>
 </offer>
 <offer id="216650000617" available="true" group_id="21665" >
-<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21665#120064</url>
+<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21665#120147</url>
 <price>520.0</price>
 <currencyId>UAH</currencyId>
 <categoryId>188</categoryId>
@@ -29590,7 +29590,7 @@
 <param name="Размер">S</param>
 </offer>
 <offer id="216650000616" available="true" group_id="21665" >
-<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21665#120063</url>
+<url>http://daminika.com/ultramodnyiy-kombinezon-abu-dabi-21665#120146</url>
 <price>520.0</price>
 <currencyId>UAH</currencyId>
 <categoryId>188</categoryId>

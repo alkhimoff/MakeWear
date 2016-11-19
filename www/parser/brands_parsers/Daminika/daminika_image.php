@@ -9,28 +9,32 @@ $photoIdArray = array();
 foreach ($saw->shop->offers->offer as $key => $offer) {
     $url = (string) $offer->url;
     ($urlTmp = substr($url, 0, strpos($url, "#"))) ? $url = $urlTmp : '';
+    
     if ($url == $curLink) {
         foreach ($offer->picture as $key => $value) {
-            $allImg      = (string) $value;
-            $allImgArr[] = $allImg;
+            $allImgArr[] = (string) $value;
         }
-        
-        $allImgArr = array_values(array_unique($allImgArr));
-        
-        $srcProdArray['mainSrcImg'] = array_shift($allImgArr);
-        $srcProdArray['dopSrcImg'] = $allImgArr;
-        
-        if($allImgArr != NULL){
-            $existIm = TRUE;           
+
+        if (isset($allImgArr)) {
+            $existIm = TRUE;        
+            if ($verify == "verify") {
+                deleteDopImgFromDB($commodityID, $mysqli);
+            }            
+            $srcProdArray['mainSrcImg'] = array_shift($allImgArr);
+
+            foreach ($allImgArr as $value) {
+                if ($srcProdArray['mainSrcImg'] !== $value) {
+                    $srcProdArray['dopSrcImg'][] = $value;
+                    //$existIm = TRUE;
+                    $photoIdArray[]  = insertInShopImBd($commodityID, $mysqli);
+                }
+            }
         }
         break;
     }
 }
 
 if ($existIm == TRUE) {
-    if ($verify == "verify") {
-        deleteDopImgFromDB($commodityID, $mysqli);
-    }
     $photoIdArray[] = insertInShopImBd($commodityID, $mysqli);
     $nameImArray = array('title', 's_title', $photoIdArray);
     $brendName   = "daminika_images/";
