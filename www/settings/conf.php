@@ -63,7 +63,7 @@ $glb["request_url"]         = urldecode($request_url);
 $glb["domain"]             = $glb["gallery_domen"]      = $gallery_domen             = $_SERVER['HTTP_HOST'];
 $glb["dom_mail"]            = str_replace("www.", "", $_SERVER['HTTP_HOST']);
 
-echo '<title>' . $glb["db_host"] . '</title>'; 
+//echo '<title>' . $glb["db_host"] . '</title>'; 
 /*   
   $dbcnx = mysql_connect($dblocation, $dbuser, $dbpasswd);    
   if (!$dbcnx)    
