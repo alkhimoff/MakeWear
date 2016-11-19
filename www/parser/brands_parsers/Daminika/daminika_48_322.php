@@ -73,15 +73,19 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
     }
 }
 
+if ($price == 0 && $codProd == "") {
+    $deleteProd = TRUE;
+}
+    
 // sizes
-    foreach ($saw->shop->offers->offer as $key => $offer) {
-        if($codProd == $offer->vendorCode.""){
-            $sizeTmp = $offer->param[2].";";
-            // if no: На фото размер...
-            if($sizeTmp == ";"){
-                $sizeTmp = $offer->param.";";
-            }
-            ($sizeTmp != ";") ? $sizesProd .= $sizeTmp : "";           
+foreach ($saw->shop->offers->offer as $key => $offer) {
+    if($codProd == $offer->vendorCode.""){
+        $sizeTmp = $offer->param[2].";";
+        // if no: На фото размер...
+        if($sizeTmp == ";"){
+            $sizeTmp = $offer->param.";";
         }
+        ($sizeTmp != ";") ? $sizesProd .= $sizeTmp : "";           
     }
-    $sizesProd = substr($sizesProd, 0, -1);
+}
+$sizesProd = substr($sizesProd, 0, -1);
