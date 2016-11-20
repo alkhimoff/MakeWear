@@ -137,7 +137,7 @@ session_start();
 //==============================================================================
 //
             //усли есть exeles прайс
-            if (($idBrand == 35 || $idBrand == 34 || $idBrand == 29 || $idBrand == 25)
+            if (($idBrand == 25 || $idBrand == 29 || $idBrand == 34 || $idBrand == 35 || $idBrand == 50)
                 && $step == 1) {
                 //try {
                 $exelDoc = new PHPExcelParser($idBrand);
