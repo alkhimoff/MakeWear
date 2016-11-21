@@ -270,10 +270,10 @@ function selectAndParserBrendLinks($idBrand, $curLink, $saw, $linksArr, $i,
             require 'brands_parsers/Daminika/daminika_spider.php';
             break;
         case 50:
-            require 'brands_parsers/Shaarm/shaarm_50_324.php';
+            require 'brands_parsers/Shaarm/shaarm_spider.php';
             break;
         case 51:
-            require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+            require 'brands_parsers/Dolcedonna/dolcedonna_spider.php';
             break;
         default:
             break;

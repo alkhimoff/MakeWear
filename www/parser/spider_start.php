@@ -23,8 +23,8 @@ if (isset($id) && !empty($id) && $id != "") {
         require 'brands_parsers/JadoneFashion/spider.php';
     } elseif (49 == $id) {
         require 'brands_parsers/Beezy/spider.php';
-    } elseif (50 == $id) {
-        require 'brands_parsers/Shaarm/shaarm_spider.php';
+  /*  } elseif (50 == $id) {
+        require 'brands_parsers/Shaarm/shaarm_spider.php';*/
     } elseif ($id == 23 || $id == 24) {
         //бренд Art Milano
         $catIdArtM = 66;
@@ -70,6 +70,14 @@ if (isset($id) && !empty($id) && $id != "") {
         }
         $stmt->close();
     }
+//==============================================================================
+//      Exel
+//==============================================================================
+if(id == 50){
+    $_SESSION["cat_id"] = 324; 
+    $_SESSION["im_url"] = '';
+    $_SESSION["a_href"] = '';
+}
 //==============================================================================
 //              проверяем есть ли товары для проверки
 //==============================================================================

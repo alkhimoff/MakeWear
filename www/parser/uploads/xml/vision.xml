@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <!DOCTYPE yml_catalog SYSTEM "shops.dtd">
-<yml_catalog date="2016-11-19 23:55">
+<yml_catalog date="2016-11-20 18:51">
 <shop>
 <name>Vision FS</name>
 <company>Vision FS</company>
@@ -29975,8 +29975,6 @@ XL+</category>
 	Модельное платье для вечеринок! Придет по нраву истинным искусительницам мужских сердец.&amp;nbsp;&lt;/p&gt;
 &lt;p style="color: rgb(51, 51, 51); font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; line-height: 20.8px;"&gt;
 	Цвета: черный + принт "жарптица"&lt;/p&gt;</description>
-<param name="Размер">L</param>
-<param name="Размер">L</param>
 <param name="Размер">S</param>
 <param name="Размер">S</param>
 <picture general="1">http://visionfs.com.ua/image/data/product-images/22588/plate-yubka-setka.jpg</picture>

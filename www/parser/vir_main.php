@@ -130,6 +130,13 @@ session_start();
             //} catch (Exception $ex) {
             //    $ex->getMessage();
             //}
+        } elseif($idBrand == 50){
+            $saw = json_decode(file_get_contents('brands_parsers/Shaarm/data.json'), true);
+            if($saw != NULL){
+                $statusCode = 200;
+                $pageBody = '';
+            }
+            goto vir;
         }
 
         //страница поставщика по URL
@@ -173,6 +180,7 @@ session_start();
 //       Подготовка данных проверяймого товара и запуск парсинга
 //==============================================================================
         //Подготовка данных проверяймого товара
+        vir:
         $commodityID = $_SESSION['updateData']['commodity_ID'][$step];
         $price       = $_SESSION['updateData']['commodity_price'][$step];
         $price2      = $_SESSION['updateData']['commodity_price2'][$step];

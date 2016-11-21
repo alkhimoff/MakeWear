@@ -43,6 +43,13 @@ session_start();
         //xml parser
         require 'brands_parsers/Beezy/49_323.php';
         goto parse;
+  /*  } elseif(50 == $_SESSION["id"]) {
+        //Exel parser / str 187
+        $nextStep     = $step + 1;
+        $requestUrl   = $domenName."/parser/parser_main.php?step={$nextStep}";
+        $report = new ReportParser(324, 0, $step, "", 100);
+        require 'brands_parsers/Shaarm/shaarm_50_324.php';
+        goto parse; */
     }
 
     if (isset($step) && $step == 0 && $step != "") {
@@ -137,7 +144,7 @@ session_start();
 //==============================================================================
 //
             //усли есть exeles прайс
-            if (($idBrand == 25 || $idBrand == 29 || $idBrand == 34 || $idBrand == 35 || $idBrand == 50)
+            if (($idBrand == 25 || $idBrand == 29 || $idBrand == 34 || $idBrand == 35)
                 && $step == 1) {
                 //try {
                 $exelDoc = new PHPExcelParser($idBrand);
@@ -426,6 +433,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
             break;
         case 48:
             require 'brands_parsers/Daminika/daminika_48_322.php';
+            break;
+        case 50:
+            require 'brands_parsers/Shaarm/shaarm_50_324.php';
             break;
         default:
             break;
