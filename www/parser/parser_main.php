@@ -26,9 +26,9 @@ session_start();
 
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
-
+    $action = 'parser';
+        
     if (44 == $_SESSION["id"]) {
-        $action = 'parser';
         require 'brands_parsers/FashionLook/fashion_look_44_312.php';
         exit;
     } elseif (46 == $_SESSION["id"]) {
@@ -436,6 +436,7 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
             break;
         case 50:
             require 'brands_parsers/Shaarm/shaarm_50_324.php';
+            //return $resultParsArray = new Brand();
             break;
         default:
             break;

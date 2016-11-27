@@ -16,16 +16,107 @@ $descProd      = "";
 $existDub      = FALSE;
 $duplicateProd = "";
 
+////////////$_SESSION['shaarmNameProd'] = []; // создать переменную в сессии
+$COLORS = "";
+//Name
+//$arrayName = checkEmptyOrChangeSelector($_SESSION["h1"], $saw, 'name - название товара');
+$arrName = checkEmptyOrChangeSelector('section #center_column h1', $saw, 'name - название товара');
+
+if (isset($arrName)) {
+    $nameProd  = trim($arrName[0]);
+}
+
+    // if exist new Exel file
+ /* 
+    use Parser\PHPExcelParser;
+    $idBrand = 50;
+    $exelDoc = new PHPExcelParser($idBrand);
+    $exelDoc->writeJsonFile();
+*/
+// get json
+$json = file_get_contents('brands_parsers/Shaarm/data.json');
+
+if ($json) {
+    $arrJson = json_decode($json, true);
+    // del header desc
+    array_shift($arrJson[0]);//unset($arrJson[0]);//не сдвигает массив
+} else {
+    die("Don't open json file");
+}
+// проверяет проверялся ли уже такой товар
+if(isset($_SESSION['shaarmNameProd']) && $_SESSION['shaarmNameProd'] == $nameProd){ // + foreach
+    $existProd = FALSE;
+    return;
+}
+// заполнение данными из json по имени товара
+foreach($arrJson as $key => $value){  
+    //foreach($saw as $sawKey => $value){
+        if($value[1] == $nameProd && $value == 'В наличии'){
+            $i = 0;
+            if($i == 0){
+                //$arrJson[$key]['brandName']  = $value[0];
+                //$arrJson[$key]['nameProd']   = $value[1];
+                $codProd   = $value[2];
+                $price      = $value[3];
+                $price2     = 0;
+                $descProd  = $value[5];
+                $DESC2   = $value[9];
+                //$arrJson[$key]['images']     = $value[10];
+            }                              
+                $value[6] ? $sizesProd.$value[6].";" : '';
+                $value[7] ? $COLORS.$value[7].";" : '';                             
+            $i++;
+        }
+    //}
+}
+
+$_SESSION['shaarmNameProd'][] = $nameProd;
+
+if($sizesProd != NULL)
+    $sizesProd = array_values(array_unique($sizesProd));
+if($COLORS != NULL)
+    $COLORS    = array_values(array_unique($COLORS));
+
+
+
+use Parser\Brand;
+$brand = new Brand();
+
+
+$g = 0;
+
+
+
+
+
+
+
+
+//require_once 'C:\OpenServer\domains\localhost\dumphper.php';
+//dump($excelJsonArray);
+//die;
+/*
+foreach($jsonArray as $value){
+    $arrCod[] = $value[2]; 
+}
+
+    array_shift($arrCod);
+    $arrCod = array_values(array_unique($arrCod));
+//--------------
+$existUrl = FALSE;
+
+//Get Links
+if (isset($arrCod)) {
+    $countCod = count($arrCod);
+    echo "Запарсено новых товаров: {$countCod}\n";
+
+    $linksArr = $arrCod;
+}
+ 
+*/
+/* if $saw != nokogiri
 // del header desc
 unset($saw[0]);
-
-/* 
-$arrCod[];
-foreach($saw as $val){
-
-}
-*/
-//$arrCod[] = '';
 foreach($saw as $value){
     $arrCod[] = $value[2]; 
 }
@@ -77,4 +168,4 @@ $resultParsArray = array(
         ''
     )
 );
-
+*/
