@@ -132,7 +132,9 @@ session_start();
             //} catch (Exception $ex) {
             //    $ex->getMessage();
             //}
-        } elseif($idBrand == 50){
+        } 
+        /*
+        elseif($idBrand == 50){
             $saw = json_decode(file_get_contents('brands_parsers/Shaarm/data.json'), true);
             if($saw != NULL){
                 $statusCode = 200;
@@ -140,7 +142,7 @@ session_start();
             }
             goto vir;
         }
-
+*/
         //страница поставщика по URL
         try {
             $provaderPage = ProvaderPageFactory::build($idBrand, $step, $curLink);
@@ -488,7 +490,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
             break;
         case 50:
             require 'brands_parsers/Shaarm/shaarm_50_324.php';
-            break;
+            //return $resultParsArray = new Brand();
+            $brand = new Shaarm($saw);
+            return $brand->getResultParsArray();
         case 51:
             require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
             break;       

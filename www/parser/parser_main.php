@@ -437,7 +437,9 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
         case 50:
             require 'brands_parsers/Shaarm/shaarm_50_324.php';
             //return $resultParsArray = new Brand();
-            break;
+            $brand = new Shaarm($saw);
+            return $brand->getResultParsArray();
+            //break;
         default:
             break;
     }
