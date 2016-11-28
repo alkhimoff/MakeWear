@@ -85,3 +85,4 @@ if(isset($_SESSION['shaarmNameProd']) && $_SESSION['shaarmNameProd'] == $namePro
 }
 
 $_SESSION['shaarmNameProd'][] = $nameProd;
+*/
