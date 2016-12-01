@@ -907,9 +907,9 @@
 		                    <a class="link-categoties" data-id="312" style="visibility: visible;">Выбрать категории</a>
 		                </div>            <div class="catalog_item category-name-font-large">
 		                    <div class="catalog_image" id="catalogue316">
-		                        <a href="/c316-adidas/" style="visibility: visible;"></a>
+		                        <a href="/c316-/" style="visibility: visible;"></a>
 		                    </div>
-		                    <h2>Adidas</h2>
+		                    <h2></h2>
 		                    <a class="link-categoties" data-id="316" style="visibility: visible;">Выбрать категории</a>
 		                </div>            <div class="catalog_item category-name-font-little">
 		                    <div class="catalog_image" id="catalogue317">
