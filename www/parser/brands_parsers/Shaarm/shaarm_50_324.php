@@ -2,28 +2,35 @@
 //==============================================================================
 //			Shaarm	50-324        		
 //==============================================================================
-use Parser\Brand;
+use Parser\Brand\AbstractBrand;
 
 
-class Shaarm extends Brand {
+class Shaarm extends AbstractBrand {
+    
+    public static $brandName = 'Shaarm';
     
     public function __construct($saw) {
         parent::__construct($saw);
-        // $this->getJsonFile(50); // if exist new Exel file / param == idBrand
-        $this->setExcelJson('brands_parsers/Shaarm/data.json');
-        $this->setName();
-        $this->setFromJson();
-        $this->delDuplicateFromString($this->sizesProd);
-        $this->delDuplicateFromString($this->colorsProd);
-        $this->setPriceOpt(-15); // $_SESSION['per']
-        $this->changeDescription();
+        try{
+             // $this->getJsonFile(50); // if exist new Exel file / param == idBrand
+             $this->setExcelJson('brands_parsers/Shaarm/data.json');
+             $this->setName();
+             $this->setFromJson();
+             $this->delDuplicateFromString($this->sizesProd);
+             $this->delDuplicateFromString($this->colorsProd);
+             $this->setPriceOpt(-15); // $_SESSION['per']
+             //$this->changeDesc();
+             $this->changeDescription();
+        }catch(BrandException $ex){
+            return null;
+        }
     }
 
     /**
      * Set exelJson, read json file
      * @param string $jsonPath
      */
-    public function setExcelJson($jsonPath){
+    protected function setExcelJson($jsonPath){
         parent::setExcelJson($jsonPath);
         // del header desc / (excelJson[0])
         array_shift($this->excelJson);//unset не сдвигает массив   
@@ -32,7 +39,7 @@ class Shaarm extends Brand {
     /**
     * Set string nameProd
     */
-    public function setName(){
+    private function setName(){
         //$selector = $_SESSION["h1"]
         $this->nameProd = $this->getName('section #center_column h1');
     }
@@ -46,7 +53,7 @@ class Shaarm extends Brand {
     * string $sizesProd
     * string $colorsProd
     */
-    public function setFromJson(){
+    private function setFromJson(){
         $x = 0;
         foreach($this->excelJson as $key => $value){  
             if($value[1] == $this->nameProd && $value[11] == 'В наличии'){      
@@ -54,7 +61,6 @@ class Shaarm extends Brand {
                     $this->codProd  = $value[2];
                     $this->price    = ceil($value[3]);
                     $this->descProd = strip_tags($value[9] . '; Описание: ' . $value[5]);
-                    //$this->descProd = $value[9] . '; Описание: ' . $value[5];
                 }                              
                     $value[6] ? $this->sizesProd  .= $value[6] . ';' : '';
                     $value[7] ? $this->colorsProd .= $value[7] . ';' : '';                         
@@ -66,14 +72,18 @@ class Shaarm extends Brand {
     /**
     * Change Description
     */ 
-    public function changeDescription(){
+   // protected function changeDesc(){
+    protected function changeDescription($searchArray=[]){
         $searchArray = array("стиль:", "сезон:", "размеры:", "коллекция:", "размер упаковки:", 
             "состав:", "тип ткани:","обхват груди", "обхват талии", "обхват бедер",
             "длина изделия:", "вес изделия:", "цвета:", "описание:");
         parent::changeDescription($searchArray);       
     }
-        
-        
+/*
+    protected static function setBrandName() {
+        $this->brandName = 'ShaArm';
+    }
+*/
 }
 //new Shaarm($saw);
 ////////////$_SESSION['shaarmNameProd'] = []; // создать переменную в сессии

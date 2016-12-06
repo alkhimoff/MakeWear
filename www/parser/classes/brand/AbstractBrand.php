@@ -1,12 +1,13 @@
 <?php
 
-namespace Parser;
+namespace Parser\Brand;
 
 use Parser\PHPExcelParser;
 
-class Brand {       
+abstract class AbstractBrand {       
     protected $saw;
     protected $excelJson;
+    protected static $brandName;
     
     // Переменные для записи в БД по умолчанию
     protected $existProd;
@@ -79,7 +80,7 @@ class Brand {
     /**
     * Set Price Opt
     */    
-    public function setPriceOpt($discount){     
+    protected function setPriceOpt($discount){     
         $proc = ceil($this->price / 100 * $discount);
         $this->price2 = ceil($this->price + $proc);
     } 
@@ -87,7 +88,10 @@ class Brand {
     /**
     * Change Description
     */ 
-    public function changeDescription($searchArray){
+    protected function changeDescription($searchArray){
+        if($searchArray == NULL){ 
+            return;
+        }
         $arrayDesc = explode(';', $this->descProd);
         $this->descProd = "";
         if (isset($arrayDesc)) {
@@ -101,10 +105,22 @@ class Brand {
     /**
     * Del Duplicate sizes and colors
     */
-    public function delDuplicateFromString(&$prop){
+    protected function delDuplicateFromString(&$prop){
         $tmp = explode(';', $prop);
         $tmp = array_diff($tmp, ['']);
         $prop = implode(';', array_values(array_unique($tmp)));
+    }
+    
+    /**
+    * 
+    */
+    //protected abstract function setBrandName();
+    
+    /**
+    * Позднее статическое связывание
+    */
+    public static function getBrandName(){
+        return static::$brandName;
     }
 
     /**
@@ -121,6 +137,7 @@ class Brand {
             "options" => $this->optionsProd, 
             'count'   => $this->comCount,
             'desc'    => $this->descProd,
+            "delete"  => $this->deleteProd,
             'existDub'=> [
                 $this->existDub, 
                 $this->duplicateProd
@@ -128,16 +145,5 @@ class Brand {
                 ];
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //$class = getCalledClass(); - узнать класс который вызывает методы абстрактного класса
 }
