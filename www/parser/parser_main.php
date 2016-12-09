@@ -436,10 +436,12 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
             break;
         case 50:
             require 'brands_parsers/Shaarm/shaarm_50_324.php';
-            //return $resultParsArray = new Brand();
             $brand = new Shaarm($saw);
             return $brand->getResultParsArray();
-            //break;
+        case 51:
+            require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+            $brand = new Dolcedonna($saw);
+            return $brand->getResultParsArray();
         default:
             break;
     }
