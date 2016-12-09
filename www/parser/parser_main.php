@@ -5,6 +5,7 @@ use Parser\InterfaceAdmin;
 use Parser\PHPExcelParser;
 use Parser\Provader\ProvaderPageFactory;
 use Parser\Report\ReportParser;
+use Parser\Brand\NotAvailableCommodityException;
 
 session_start();
 ?>
@@ -26,9 +27,9 @@ session_start();
 
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
-
+    $action = 'parser';
+        
     if (44 == $_SESSION["id"]) {
-        $action = 'parser';
         require 'brands_parsers/FashionLook/fashion_look_44_312.php';
         exit;
     } elseif (46 == $_SESSION["id"]) {
@@ -43,6 +44,13 @@ session_start();
         //xml parser
         require 'brands_parsers/Beezy/49_323.php';
         goto parse;
+  /*  } elseif(50 == $_SESSION["id"]) {
+        //Exel parser / str 187
+        $nextStep     = $step + 1;
+        $requestUrl   = $domenName."/parser/parser_main.php?step={$nextStep}";
+        $report = new ReportParser(324, 0, $step, "", 100);
+        require 'brands_parsers/Shaarm/shaarm_50_324.php';
+        goto parse; */
     }
 
     if (isset($step) && $step == 0 && $step != "") {
@@ -137,7 +145,7 @@ session_start();
 //==============================================================================
 //
             //усли есть exeles прайс
-            if (($idBrand == 35 || $idBrand == 34 || $idBrand == 29 || $idBrand == 25)
+            if (($idBrand == 25 || $idBrand == 29 || $idBrand == 34 || $idBrand == 35)
                 && $step == 1) {
                 //try {
                 $exelDoc = new PHPExcelParser($idBrand);
@@ -427,6 +435,18 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
         case 48:
             require 'brands_parsers/Daminika/daminika_48_322.php';
             break;
+        case 50:
+            require 'brands_parsers/Shaarm/shaarm_50_324.php';
+            $brand = new Shaarm($saw);
+            return $brand->getResultParsArray();
+        case 51:
+            try{
+                require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+                $brand = new Dolcedonna($saw);
+                return $brand->getResultParsArray();
+            } catch(NotAvailableCommodityException $e){
+                return null;
+            }
         default:
             break;
     }

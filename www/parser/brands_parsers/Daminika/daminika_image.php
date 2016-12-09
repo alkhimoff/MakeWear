@@ -35,7 +35,6 @@ foreach ($saw->shop->offers->offer as $key => $offer) {
 }
 
 if ($existIm == TRUE) {
-    $photoIdArray[] = insertInShopImBd($commodityID, $mysqli);
     $nameImArray = array('title', 's_title', $photoIdArray);
     $brendName   = "daminika_images/";
     cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray, $brendName, $idBrand);

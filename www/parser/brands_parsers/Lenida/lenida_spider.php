@@ -16,6 +16,7 @@ if (isset($arrayPagination)) {
         }
     }
     $pagination = max($pagination);
+    // $i is in spider_main.php
     if ($i == $pagination) {
         $existUrl = FALSE;
     }

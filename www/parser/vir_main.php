@@ -24,6 +24,8 @@ session_start();
 //==============================================================================
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
+    $action = 'vir';
+            
     if (isset($step) && $step == 0 && $step != "") {
 
         //Сохраняем массив ссылок на товар
@@ -130,8 +132,17 @@ session_start();
             //} catch (Exception $ex) {
             //    $ex->getMessage();
             //}
+        } 
+        /*
+        elseif($idBrand == 50){
+            $saw = json_decode(file_get_contents('brands_parsers/Shaarm/data.json'), true);
+            if($saw != NULL){
+                $statusCode = 200;
+                $pageBody = '';
+            }
+            goto vir;
         }
-
+*/
         //страница поставщика по URL
         try {
             $provaderPage = ProvaderPageFactory::build($idBrand, $step, $curLink);
@@ -173,6 +184,7 @@ session_start();
 //       Подготовка данных проверяймого товара и запуск парсинга
 //==============================================================================
         //Подготовка данных проверяймого товара
+        vir:
         $commodityID = $_SESSION['updateData']['commodity_ID'][$step];
         $price       = $_SESSION['updateData']['commodity_price'][$step];
         $price2      = $_SESSION['updateData']['commodity_price2'][$step];
@@ -478,9 +490,12 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
             break;
         case 50:
             require 'brands_parsers/Shaarm/shaarm_50_324.php';
-            break;
+            $brand = new Shaarm($saw);
+            return $brand->getResultParsArray();
         case 51:
             require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+            $brand = new Dolcedonna($saw);
+            return $brand->getResultParsArray();
             break;       
         default:
             break;

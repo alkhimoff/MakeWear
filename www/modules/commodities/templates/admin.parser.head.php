@@ -4,7 +4,7 @@ $all_head = '
     <form action="/parser/vir_interface_selected.php" target="_blank" method="post">
         <p><input type="radio" name="visibl" value="1" checked>Опубликованные товары
         <input type="radio" name="visibl" value="0">НЕопубликованные товары
-        <p><input type="checkbox" name="img" value="true" class="comProp" checked> Перезалить фото
+        <p><input type="checkbox" name="img" value="true" class="comProp"> Перезалить фото
         <input type="checkbox" name="cod" value="true" class="comProp" checked> Перезалить код товара
         <input type="checkbox" name="name" value="true" class="comProp" checked> Перезалить имя товара
         <input type="checkbox" name="desc" value="true" class="comProp" checked> Перезалить описание товара
@@ -53,7 +53,7 @@ $all_head = '
         <br><br>
         <input type="checkbox" name="daminika"   value="48" > Daminika &nbsp;
         <input type="checkbox" name="shaarm"     value="50" > Shaarm &nbsp;
-        <input type="checkbox" name="dolcedonna" value="51" > Dolcedonna
+        <input type="checkbox" name="dolcedonna" value="51" checked> Dolcedonna
         
         <p><input type="submit" value="Запустить Проверщик" id="goVir"></p>
     </form>
