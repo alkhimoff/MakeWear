@@ -24,6 +24,8 @@ session_start();
 //==============================================================================
     $step      = filter_input(INPUT_GET, 'step', FILTER_SANITIZE_NUMBER_INT);
     $domenName = filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING);
+    $action = 'vir';
+            
     if (isset($step) && $step == 0 && $step != "") {
 
         //Сохраняем массив ссылок на товар
@@ -130,8 +132,17 @@ session_start();
             //} catch (Exception $ex) {
             //    $ex->getMessage();
             //}
+        } 
+        /*
+        elseif($idBrand == 50){
+            $saw = json_decode(file_get_contents('brands_parsers/Shaarm/data.json'), true);
+            if($saw != NULL){
+                $statusCode = 200;
+                $pageBody = '';
+            }
+            goto vir;
         }
-
+*/
         //страница поставщика по URL
         try {
             $provaderPage = ProvaderPageFactory::build($idBrand, $step, $curLink);
@@ -173,6 +184,7 @@ session_start();
 //       Подготовка данных проверяймого товара и запуск парсинга
 //==============================================================================
         //Подготовка данных проверяймого товара
+        vir:
         $commodityID = $_SESSION['updateData']['commodity_ID'][$step];
         $price       = $_SESSION['updateData']['commodity_price'][$step];
         $price2      = $_SESSION['updateData']['commodity_price2'][$step];
@@ -423,8 +435,8 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 21:
             require 'brands_parsers/FStyle/fstyle_21_63.php';
             break;
+        case 23:       
         case 24:
-        case 23:
             require 'brands_parsers/B1/b1_artmilano_24(64,66).php';
             break;
         case 25:
@@ -439,8 +451,8 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 29:
             require 'brands_parsers/Crisma/crisma_29_87.php';
             break;
-        case 31:
         case 30:
+        case 31:
             require 'brands_parsers/VitalityAll/vitality_31;30_205;88.php';
             break;
         case 32:
@@ -473,6 +485,18 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $statusCode,
         case 43:
             require 'brands_parsers/Ghazel/ghazel_43_311.php';
             break;
+        case 48:
+            require 'brands_parsers/Daminika/daminika_48_322.php';
+            break;
+        case 50:
+            require 'brands_parsers/Shaarm/shaarm_50_324.php';
+            $brand = new Shaarm($saw);
+            return $brand->getResultParsArray();
+        case 51:
+            require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+            $brand = new Dolcedonna($saw);
+            return $brand->getResultParsArray();
+            break;       
         default:
             break;
     }

@@ -5,8 +5,8 @@ use \Modules\Mail;
 use Modules\User;
 use Modules\Basket\BasketDb;
 use Modules\Basket\DiscountGift;
-use LisDev\Delivery\NovaPoshtaApi2;
 
+require_once("../../../modules/commodities/ajax/NovaPoshtaApi2.php");
 require_once("../../../vendor/autoload.php");
 require_once("../../../settings/functionsNew.php");
 bd_session_start();
@@ -65,7 +65,7 @@ switch ($getBasket) {
 function getWarehouseNovaPosta()
 {
     $userCity   = filter_input(INPUT_GET, 'userCity', FILTER_SANITIZE_STRING);
-    $userRegion = filter_input(INPUT_GET, 'userRegion', FILTER_SANITIZE_STRING);
+    $userRegion = filter_input(INPUT_GET, 'userRegion', FILTER_SANITIZE_STRING);  
     $np         = new NovaPoshtaApi2(
         NOVA_POSHTA_KEY,
         'ru', // Язык возвращаемых данных: ru (default) | ua | en

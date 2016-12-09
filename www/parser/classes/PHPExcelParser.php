@@ -16,6 +16,11 @@ class PHPExcelParser
     const PATH_MAJALY_JSON = 'brands_parsers/Majaly/price.json';
     const PATH_FASHIONLOOK_EXEL = '../parser/excel/fashion_look.xlsx';
     const PATH_FASHIONLOOK_JSON = 'brands_parsers/FashionLook/data.json';
+    const PATH_SHAARM_EXEL     = '../parser/excel/Shaarm.xlsx';
+    const PATH_SHAARM_JSON     = 'brands_parsers/Shaarm/data.json';
+    const PATH_DOLCEDONNA_EXEL     = '../parser/excel/Dolcedonna.xlsx';
+    const PATH_DOLCEDONNA_JSON     = 'brands_parsers/Dolcedonna/data.json';
+    
 
     /**
      * id of brend
@@ -111,6 +116,14 @@ class PHPExcelParser
             case 44:
                 $this->exelPath = self::PATH_FASHIONLOOK_EXEL;
                 $this->jsonPath = self::PATH_FASHIONLOOK_JSON;
+                break;
+            case 50:
+                $this->exelPath = self::PATH_SHAARM_EXEL;
+                $this->jsonPath = self::PATH_SHAARM_JSON;
+                break;
+            case 51:
+                $this->exelPath = self::PATH_DOLCEDONNA_EXEL;
+                $this->jsonPath = self::PATH_DOLCEDONNA_JSON;
                 break;
             default:
                 break;

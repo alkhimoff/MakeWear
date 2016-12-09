@@ -10,7 +10,6 @@ $pagination = array();
 //$arrayPagination = checkEmptyOrChangeSelector('.pager', $saw,'pagination - страницы');
 $arrayPagination = checkEmptyOrChangeSelector('.bx-pagination-container', $saw,'pagination - страницы');
 
-//var_dump($arrayPagination);
 if (isset($arrayPagination)) {
     foreach ($arrayPagination as $value) {
         $regexp = '/[0-9]/';
@@ -25,10 +24,10 @@ if (isset($arrayPagination)) {
 } else {
     $existUrl = FALSE;
 }
-//var_dump($pagination);
+
 //Get Links
-$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw, 'a_href - ссылки');
-//var_dump($arrayLinks);
+//$arrayLinks = checkEmptyOrChangeSelector($_SESSION["a_href"], $saw, 'a_href - ссылки');
+$arrayLinks = checkEmptyOrChangeSelector('.bx_catalog_item_container a', $saw, 'a_href - ссылки');
 
 if (isset($arrayLinks)) {
     $countNewLinks = count($arrayLinks);
@@ -38,9 +37,3 @@ if (isset($arrayLinks)) {
         $linksArr[] = "http://www.meggi.com.ua".trim($arrayLinks[$key]['href']);
     }
 }
-//var_dump($linksArr);
-//var_dump($existUrl);
-//die;
-
-
-
