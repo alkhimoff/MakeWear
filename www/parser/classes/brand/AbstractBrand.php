@@ -43,6 +43,19 @@ abstract class AbstractBrand {
     }
     
     /**
+     * 
+     * @param type $selector
+     * @return type
+     */
+    protected function getCodProd($selector){
+        $arrayCod = checkEmptyOrChangeSelector($selector, $this->saw, 'cod - код товара');
+        if (isset($arrayCod) && is_array($arrayCod)) {
+            return $this->codProd  = trim($arrayCod[0]);
+        }
+        return FALSE;
+    }
+    
+    /**
      * Create json file
      * @param int $idBrand
      */  
@@ -85,19 +98,25 @@ abstract class AbstractBrand {
         $this->price2 = ceil($this->price + $proc);
     } 
     
+    protected function getDescription($selector){
+        // $_SESSION['desc']
+        return checkEmptyOrChangeSelector($selector, $this->saw, 'desc - описание');
+    }
+    
     /**
     * Change Description
     */ 
-    protected function changeDescription($searchArray){
-        if($searchArray == NULL){ 
-            return;
-        }
-        $arrayDesc = explode(';', $this->descProd);
+    protected function changeDescription($searchArray, $arrDescTmp = []){
+        if (isset($arrDescTmp[0])) {
+            $arrayDesc = $arrDescTmp;
+        }else{
+            $arrayDesc = explode(';', $this->descProd);
+        }   
         $this->descProd = "";
         if (isset($arrayDesc)) {
             $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
-            foreach ($arrayDesc as $key => $value) {
-                $this->descProd = findStringDesc($value, $searchArray, $this->descProd);
+            foreach ($arrayDesc as $value) {
+                $this->descProd .= findStringDesc($value, $searchArray, $this->descProd);
             }   
         }
     }
@@ -110,11 +129,6 @@ abstract class AbstractBrand {
         $tmp = array_diff($tmp, ['']);
         $prop = implode(';', array_values(array_unique($tmp)));
     }
-    
-    /**
-    * 
-    */
-    //protected abstract function setBrandName();
     
     /**
     * Позднее статическое связывание
@@ -145,5 +159,4 @@ abstract class AbstractBrand {
                 ];
     }
     
-    //$class = getCalledClass(); - узнать класс который вызывает методы абстрактного класса
 }

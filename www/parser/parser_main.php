@@ -5,6 +5,7 @@ use Parser\InterfaceAdmin;
 use Parser\PHPExcelParser;
 use Parser\Provader\ProvaderPageFactory;
 use Parser\Report\ReportParser;
+use Parser\Brand\NotAvailableCommodityException;
 
 session_start();
 ?>
@@ -439,9 +440,13 @@ function selectAndParserBrend($idBrand, $curLink, $saw, $verify, $duplicate,
             $brand = new Shaarm($saw);
             return $brand->getResultParsArray();
         case 51:
-            require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
-            $brand = new Dolcedonna($saw);
-            return $brand->getResultParsArray();
+            try{
+                require 'brands_parsers/Dolcedonna/dolcedonna_51_325.php';
+                $brand = new Dolcedonna($saw);
+                return $brand->getResultParsArray();
+            } catch(NotAvailableCommodityException $e){
+                return null;
+            }
         default:
             break;
     }
