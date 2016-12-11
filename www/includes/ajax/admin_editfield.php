@@ -1,4 +1,4 @@
-<?
+<?php
 header("Content-Type: application/x-javascript; charset=UTF-8");
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 session_destroy();
