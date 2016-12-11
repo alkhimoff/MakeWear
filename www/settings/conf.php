@@ -1,5 +1,5 @@
 <?php
-echo 'MODE = ' . getenv('MODE');die();
+
 define('MODE', getenv('MODE'));
 $envOn = 'dev' === MODE ? 'On' : 'Off';
 
