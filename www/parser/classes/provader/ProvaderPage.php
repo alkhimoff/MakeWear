@@ -69,7 +69,6 @@ class ProvaderPage implements iProvaderPage
                 $response = $e->getResponse();
             }
         }
-        var_dump($this->url);
         $this->pageBody   = $response->getBody()->getContents();
         $this->statusCode = $response->getStatusCode();
         $this->reason     = $response->getReasonPhrase();
