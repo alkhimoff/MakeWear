@@ -1,5 +1,5 @@
 <?php
-
+echo phpinfo(); die();
 header('Content-Type: text/html; charset=utf-8');
 $time1 = microtime(1);
 
