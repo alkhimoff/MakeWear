@@ -12,8 +12,8 @@ $arrayImage = checkEmptyOrChangeSelector($_SESSION['img'], $saw,
 
 $srcProd = "";
 if (isset($arrayImage)) {
-    $lowSrc                     = str_replace("70x81", "500x579",
-        $arrayImage[0]['src']);
+    $lowSrc                     = $arrayImage[0]['data-zoom-image'];//str_replace("70x81", "500x579",
+        //$arrayImage[0]['src']);
     $srcProd                    = filterUrlImage($lowSrc, $curLink);
     $srcProdArray['mainSrcImg'] = $srcProd;
     $existIm                    = TRUE;
@@ -29,8 +29,8 @@ if (isset($arrayDopImage)) {
         deleteDopImgFromDB($commodityID, $mysqli);
     }
     foreach ($arrayDopImage as $value) {
-        $srcDopIm = filterUrlImage(str_replace("70x81", "500x579", $value['src']),
-            $curLink);
+        $srcDopIm = $arrayImage[0]['data-zoom-image']; //filterUrlImage(str_replace("70x81", "500x579", $value['src']),
+            //$curLink);
         if ($srcProdArray['mainSrcImg'] !== $srcDopIm) {
             $srcProdArray['dopSrcImg'][] = $srcDopIm;
             $existIm                     = TRUE;

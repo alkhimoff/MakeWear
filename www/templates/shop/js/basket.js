@@ -584,7 +584,7 @@ function sendOrder() {
             myAnimat();
         },
         success: function (data) {
-            if (data.error === 0) {
+            if (data.error == 1) {
                 $('.basket-conteiner').children().remove();
                 $('.basket-conteiner').append(data.finalPageOrder);
                 //initTooltipCommision();

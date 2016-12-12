@@ -790,7 +790,10 @@ hr {
 .text-justify {
     text-align: justify}
 .text-nowrap,header .header-bottom .top-menu ul {
-    white-space: nowrap}
+    white-space: nowrap;
+    display: table;
+    margin: 0 auto;
+}
 .text-lowercase {
     text-transform: lowercase}
 .text-uppercase {
@@ -1744,7 +1747,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px}
 .btn:focus {
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 5px auto -webkit-focus-ring-color; 
     outline-offset: -2px}
 .btn.focus,.btn:focus,.btn:hover {
     color: #333;
@@ -4326,11 +4329,11 @@ header .contacts-top .service-center__columns .column p .icon {
     display: inline-block;
     vertical-align: middle}
 header .contacts-top .service-center__columns .column p .icon-phone-operator1 {
-    background: url(../image/sprite.png) -253px -483px;
+    background: url(../image/sprite.png) -253px -529px;
     width: 21px;
     height: 21px}
 header .contacts-top .service-center__columns .column p .icon-phone-operator2 {
-    background: url(../image/sprite.png) -253px -508px;
+    background: url(../image/sprite.png) -253px -484px;
     width: 21px;
     height: 18px}
 header .contacts-top .service-center__columns .column p .icon-phone-operator3 {
@@ -4818,6 +4821,8 @@ header .sub-menu-in.sub-menu-in-cat1 .image-wrap .brand-img .brand-logo {
     background-position: -134px -865px}
 #category312 {
     background-position: -269px -865px}
+    #category322 {
+background-position: -446px -870px}
 header .sub-menu-in.sub-menu-in-cat2 {
     left: -279px}
 header .sub-menu-in.sub-menu-in-cat2,header .sub-menu-in.sub-menu-in-cat3,header .sub-menu-in.sub-menu-in-cat4 {
@@ -4948,9 +4953,11 @@ header .brands-names .main-menu-title {
     color: #333}
 header .brands-names ul {
     list-style-type: none;
-    -moz-column-count: 1;
+   /* -moz-column-count: 1;
     -webkit-column-count: 1;
-    column-count: 1}
+    column-count: 1;*/
+
+}
 header .brands-names ul li {
     font-size: 12px;
     line-height: 37px;
@@ -4960,11 +4967,11 @@ header .brands-names ul li {
     display: none}
 header .brands-names ul li a {
     color: #858585;
-    white-space: nowrap;
+    
     font-family: 'helveticaneuecyrroman';
     font-weight: 300;
     font-size: 13px;
-    display: inline-block;
+    display: block;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box}
@@ -7307,21 +7314,21 @@ header .socialls-enter__network a.icon-odn:before {
 .main-container .main-info .main-info-list .icon {
     float: left}
 .main-container .main-info .main-info-list .icon-conten-info1 {
-    background: url(../image/sprite.png) no-repeat -194px -371px;
+    background: url(../image/sprite.png) no-repeat -194px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info2 {
-    background: url(../image/sprite.png) no-repeat -250px -371px;
+    background: url(../image/sprite.png) no-repeat -250px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info3 {
-    background: url(../image/sprite.png) no-repeat -306px -371px;
+    background: url(../image/sprite.png) no-repeat -306px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .main-info-list .icon-conten-info4 {
-    background: url(../image/sprite.png) no-repeat -362px -371px;
+    background: url(../image/sprite.png) no-repeat -362px -369px;
     width: 51px;
-    height: 52px}
+    height: 54px}
 .main-container .main-info .SEO-text {
     padding: 44px 38px 34px;
     background-color: #fbfbfb;
@@ -7619,7 +7626,9 @@ footer .copy {
     margin: 15px auto;
     opacity: .4}
 .success-message {
-    font-size: 11pt;
+    font-size: 24px!important;
+    color: #989898;
+    text-transform: uppercase;
     margin: 10px auto!important;
     max-width: 550px;
     padding: 11px;
@@ -8101,7 +8110,7 @@ main-container .main-content .oplata-delivery-container .tab-content .first_cnt 
     position: relative;
     overflow: hidden;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     outline: none;
     direction: ltr}
 .mCSB_container {
@@ -8561,7 +8570,7 @@ footer .footer_part {
     width: 75%;
     position: relative}
 .main-container .main-content .brands .title .brand-search input {
-    width: 93.6%!important}
+    width: 82.6%!important}
 .main-container .main-content .brands .title .line-brands-search-person {
     clear: left;
     margin-top: 2px;
@@ -8571,11 +8580,13 @@ footer .footer_part {
     margin-right: 10px}
 .main-container .main-content .brands .title .line-brands-search-all-icons {
     margin: 0;
-    width: 18%}
+    width: 10%}
 .main-container .main-content .brands .title .icon-star-circle {
     margin-right: 15px!important}
 .main-container .main-content .brands .title .see-all-brands {
-    margin-top: 2px!important}
+    margin-top: 2px!important;
+    margin-right: 39px;
+}
 .main-container .main-content .brands .title .see-all-brands a:hover {
     text-decoration: underline}
 .main-container .main-content .brands .title ul li:first-child {
@@ -8848,8 +8859,11 @@ footer .main-width .col-xs-12: not(:first-child) {
     width: auto}
 }
 @media screen and (max-width: 768px) {
-    header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
+header .header-bottom .col-lg-3.col-md-4.col-sm-5.col-xs-12,header .header-bottom .top-menu ul {
     text-align: center}
+header .contacts-top .service-center__columns .column p {
+        word-wrap: break-word;
+    }
 header .header-bottom .logo-wrap {
     top: 0;
     right: 0}
@@ -8962,7 +8976,7 @@ header .share span {
     margin-right: 25px!important;
     position: absolute;
     left: 0;
-    top: 67px}
+    top: 77px}
 .main-container .main-content .brands .title ul li a {
     padding-left: 7px}
 .main-container .main-content .brands .title ul li: nth-of-type(1) {
@@ -8979,8 +8993,8 @@ header .share span {
     letter-spacing: 2px}
 .main-container .main-content .brands .title .icon-favorite {
     position: absolute;
-    right: 0;
-    top: 67px}
+    right: -13px;
+    top: 77px}
 .main-container .main-content .brands .title .see-all-brands {
     margin: 0 20px 15px}
 .main-container .main-content .brands .title .person {

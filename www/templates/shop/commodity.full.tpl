@@ -169,28 +169,17 @@
                                         {$comDesc}
                                     </div>
                                     <div class="open-inset2 all-insets">
-                                        <div class="d-table">
-                                            {$tableSizes}
-                                            <!-- <div class="d-table-row">
-                                                <div class="d-table-cell">Размер</div>
-                                                <div class="d-table-cell">Объем груди</div>
-                                                <div class="d-table-cell">Объем талии</div>
-                                                <div class="d-table-cell">Объем бедер</div>
-                                            </div>
-                                            <div class="d-table-row">
-                                                <div class="d-table-cell">42</div>
-                                                <div class="d-table-cell">84-86</div>
-                                                <div class="d-table-cell">66</div>
-                                                <div class="d-table-cell">88-90</div>
-                                            </div>
-                                             -->
-                                        </div>
+                                        <div class="d-table">{$tableSizes}</div>
                                     </div>
                                     <div class="open-inset3 all-insets">
                                         <div class="users-reviews">
                                             <div class="tab-head">
                                                 <!--<span>Последние отзывы пользователей</span>-->
-                                                <div class="to-write-review toggle-review"><div class="to-write-review-text">Оставить отзыв<div class="to-write-review-img"></div></div></div>
+                                                <div class="to-write-review toggle-review">
+                                                    <div class="to-write-review-text">
+                                                        Оставить отзыв<div class="to-write-review-img"></div>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                             <div class="write-review">
@@ -249,7 +238,7 @@
                 </div>
             </div>
         </div>
-        <!--
+        
         <div class="recomended-wrap">
             <div class="recomended-title">
                 <h3><span class="active" data-slider="recomended">Рекомендации</span><span data-slider="last-seeing">Недавно просмотренные</span></h3>
@@ -260,7 +249,7 @@
             <div class="top-slider in-prod-page last-seeing">
                 {$sliderSeeing}
             </div>
-        </div>-->
+        </div>
     </div>
     {$info}
 </div>
