@@ -66,7 +66,7 @@ class ProvaderPage implements iProvaderPage
             $response = $client->request('GET', $this->url);
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
-                $response = $e->getResponse();
+                var_dump($response = $e->getResponse());die();
             }
         }
         $this->pageBody   = $response->getBody()->getContents();
