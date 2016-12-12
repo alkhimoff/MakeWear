@@ -46,6 +46,8 @@ class ProvaderPage implements iProvaderPage
      * @var string
      */
     public $pageBody;
+    
+    public $response;
 
     public function __construct($url)
     {
@@ -64,16 +66,16 @@ class ProvaderPage implements iProvaderPage
         ]);
         try {
             echo '-try{';
-            var_dump($response = $client->request('GET', $this->url));die();
+            var_dump($this->response = $client->request('GET', $this->url));die();
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
                 echo '-catch';
-                var_dump($response = $e->getResponse());die();
+                var_dump($this->response = $e->getResponse());die();
             }
         }
-        $this->pageBody   = $response->getBody()->getContents();
-        $this->statusCode = $response->getStatusCode();
-        $this->reason     = $response->getReasonPhrase();
+        $this->pageBody   = $this->response->getBody()->getContents();
+        $this->statusCode = $this->response->getStatusCode();
+        $this->reason     = $this->response->getReasonPhrase();
     }
 
     /**
