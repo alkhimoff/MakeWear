@@ -29,39 +29,50 @@ if ($verify !== "import" && ($statusCode == 500)) {
 if (isset($curLink)) {
     $codProd = strstr_after($curLink, "Products/Product/");
 }
-//Price
-//$arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw,
-//    'price - цена');
-//if (isset($arrayPrice)) {
-//    $regexp = '/[^0-9.]/';
-//    $price  = ceil(filterPrice(trim(str_replace(",", ".", $arrayPrice[1])), $regexp) * $_SESSION['updatePrice']);
-//}
+/*
+    //Price
+    $arrayPrice = checkEmptyOrChangeSelector($_SESSION['price'], $saw, 'price - цена');
+    if (isset($arrayPrice)) {
+        $regexp = '/[^0-9.]/';
+        $price  = ceil(filterPrice(trim(str_replace(",", ".", $arrayPrice[1])), $regexp) * $_SESSION['updatePrice']);
+    }
 
-$productsFromJson = json_decode(file_get_contents(XML::JSON_FILE_PATH_SK_HOUSE), true);
-$price = isset($productsFromJson[$codProd]) ? ceil($productsFromJson[$codProd]['price']) : 0;
+    $productsFromJson = json_decode(file_get_contents(XML::JSON_FILE_PATH_SK_HOUSE), true);
+    $price = isset($productsFromJson[$codProd]) ? ceil($productsFromJson[$codProd]['price']) : 0;
 
-//price2
-$arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price2'], $saw,
-    'price - цена');
-//var_dump($arrayPrice);
+    //price2
+    $arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price2'], $saw, 'price - цена');
+
+    if (isset($arrayPrice2)) {
+        $regexp = '/[^0-9.]/';
+        $price2 = filterPrice(trim(str_replace(",", ".", $arrayPrice2[1])), $regexp);
+        $price2 = ceil($_SESSION['per'] * $price2);
+    }
+
+    if ($price == 0) {
+        $existProd = FALSE;
+        $price2    = 0;
+    }
+*/
+$arrayPrice2 = checkEmptyOrChangeSelector($_SESSION['price2'], $saw, 'price - цена');
 
 if (isset($arrayPrice2)) {
     $regexp = '/[^0-9.]/';
-    $price2 = filterPrice(trim(str_replace(",", ".", $arrayPrice2[1])), $regexp);
-    $price2 = ceil($_SESSION['per'] * $price2);
+    $price2tmp = filterPrice(trim(str_replace(",", ".", $arrayPrice2[1])), $regexp);
+    //$price2 = ceil($_SESSION['per'] * $price2);     
+    $proc = ceil($price2tmp / 100 * $_SESSION['per']); // +75%
+    $price = ceil($price2tmp + $proc);
 }
 
 if ($price == 0) {
     $existProd = FALSE;
     $price2    = 0;
 }
-//var_dump($price);
-//var_dump($price2);
-//die;
+
+
+
 //Size
-$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw,
-    'sizeCol - размер');
-//var_dump($arraySize);
+$arraySize = checkEmptyOrChangeSelector($_SESSION["sizeCol"], $saw, 'sizeCol - размер');
 
 if (isset($arraySize)) {
     $colorsProd = "";
@@ -71,10 +82,9 @@ if (isset($arraySize)) {
 } else {
     $existProd = FALSE;
 }
-//var_dump($sizesProd);
+
 //Color
 $arrayColor = checkEmptyOrChangeSelector('#ColorId option', $saw, 'Col - цвет');
-//var_dump($arrayColor);
 
 if (isset($arrayColor) && count($arrayColor) > 1) {
     foreach ($arrayColor as $value) {
@@ -84,7 +94,7 @@ if (isset($arrayColor) && count($arrayColor) > 1) {
     $colorsProd = str_replace($vowels, "", $colorsProd);
     $colorsProd = (string) substr($colorsProd, 0, strlen($colorsProd) - 1);
 }
-//var_dump($colorsProd);
+
 //ColorSize
 //Exist
 preg_match('/var leftovers =(.*)/', $pageBody, $matches);
@@ -92,19 +102,16 @@ preg_match('/var leftovers =(.*)/', $pageBody, $matches);
 
 if (isset($matches[1]) && isset($colorsProd) && isset($sizesProd)) {
     $json     = json_decode($matches[1], true);
-    //var_dump($json);
+
     $colorArr = explode(";", $colorsProd);
     $sizesArr = explode(";", $sizesProd);
-    //var_dump($colorArr);
-    //var_dump($sizesArr);
+
     foreach ($colorArr as $key => $value) {
         $colorArr[$key] = transleteColorSize($value, "col", TRUE);
     }
     foreach ($sizesArr as $key => $value) {
         $sizesArr[$key] = transleteColorSize($value, "siz", TRUE);
     }
-    //var_dump($colorArr);
-    //var_dump($sizesArr);
 
     foreach ($json as $key => $value) {
         $colorName = transleteColorSize($value['ColorId'], "col", FALSE);
@@ -129,9 +136,7 @@ if ($optionsProd !== "") {
     $optionsProd = substr($optionsProd, 1);
 }
 $sizesProd = "";
-//var_dump($optionsProd);
-//var_dump($existProd);
-//die;
+
 //==============================================================================
 //                   Если это проверщик то выходим из скрипта
 //==============================================================================
@@ -139,23 +144,18 @@ if ($verify == "verify") {
     return;
 }
 
-//var_dump($codProd);
 //Name
-$arrayName = checkEmptyOrChangeSelector($_SESSION['h1'], $saw,
-    'name - название товара');
-//var_dump($arrayName);
+$arrayName = checkEmptyOrChangeSelector($_SESSION['h1'], $saw, 'name - название товара');
 
 if (isset($arrayName)) {
     $nameProd = trim(preg_replace("/\\d/", "", trim($arrayName[0])));
 }
-//var_dump($nameProd);
+
 //Description
-$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw,
-    'desc - описание');
+$arrayDesc = checkEmptyOrChangeSelector($_SESSION["desc"], $saw, 'desc - описание');
 
 if (isset($arrayDesc)) {
     $arrayDesc = deleteEmptyArrDescValues($arrayDesc);
-    //var_dump($arrayDesc);
 
     $descProd = '<p>'.trim($arrayDesc[0]).'</p>';
     if (count($arrayDesc) > 1) {
@@ -168,7 +168,6 @@ if (isset($arrayDesc)) {
         $descProd .= '</p>';
     }
 }
-//var_dump($descProd);
 //==============================================================================
 //                             Функции
 //==============================================================================

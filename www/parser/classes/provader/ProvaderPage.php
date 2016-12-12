@@ -46,8 +46,6 @@ class ProvaderPage implements iProvaderPage
      * @var string
      */
     public $pageBody;
-    
-    public $response;
 
     public function __construct($url)
     {
@@ -65,17 +63,15 @@ class ProvaderPage implements iProvaderPage
             'headers' => ['User-Agent' => 'Shacal makewear.com.ua']
         ]);
         try {
-            echo '-try{';
-            var_dump($this->response = $client->request('GET', $this->url));die();
+            $response = $client->request('GET', $this->url);
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
-                echo '-catch';
-                var_dump($this->response = $e->getResponse());die();
+                $response = $e->getResponse();
             }
         }
-        $this->pageBody   = $this->response->getBody()->getContents();
-        $this->statusCode = $this->response->getStatusCode();
-        $this->reason     = $this->response->getReasonPhrase();
+        $this->pageBody   = $response->getBody()->getContents();
+        $this->statusCode = $response->getStatusCode();
+        $this->reason     = $response->getReasonPhrase();
     }
 
     /**
