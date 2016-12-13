@@ -136,6 +136,10 @@ abstract class AbstractBrand {
     public static function getBrandName(){
         return static::$brandName;
     }
+    
+    public function getPrice($selector){
+        return checkEmptyOrChangeSelector($selector, $this->saw, 'price - цена');;
+    }
 
     /**
     * Get Result Array
