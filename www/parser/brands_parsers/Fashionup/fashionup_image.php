@@ -1,14 +1,13 @@
 <?php
 
 use Parser\Provader\ProvaderPageFactory;
-
 //var_dump($_SESSION["imgMain"]);
 //var_dump($_SESSION["imgDop"]);
 //==============================================================================
 //			Fashion up   	1-2  				
 //==============================================================================
 try {
-    $provaderPage = ProvaderPageFactory::build(0, 0, $curLink);
+    $provaderPage = ProvaderPageFactory::build(1, 0, $curLink);
     $sawNok       = $provaderPage->nokogiriObject;
 } catch (Exception $ex) {
     var_dump($ex->getMessage());
@@ -28,7 +27,8 @@ if (isset($_SESSION["imgMain"])) {
     $existIm                    = TRUE;
 }
 //var_dump($srcProd);
-//DopImage
+//DopImage    
+
 $arrayDopImage = checkEmptyOrChangeSelector($_SESSION["dopimg"], $sawNok,
     'dopimg - дополнительны картинки');
 
@@ -37,6 +37,7 @@ if (isset($arrayDopImage)) {
     if ($verify == "verify") {
         deleteDopImgFromDB($commodityID, $mysqli);
     }
+
     foreach ($arrayDopImage as $value) {
         $srcDopIm = filterUrlImage(str_replace("tov/204_", "tov/", $value['src']),
             $curLink);
@@ -47,17 +48,23 @@ if (isset($arrayDopImage)) {
                 $mysqli);
         }
     }
+   /* for($i=1;$i<count($srcProdArray['dopSrcImgTmp']);$i++) {
+        $srcProdArray['dopSrcImg'][] = $srcProdArray['dopSrcImgTmp'][$i];
+    } */
 }
 //var_dump($srcProdArray);
 //die;
 //CropandWrite images
+
 if ($existIm == TRUE) {
     if (!empty($srcProdArray['dopSrcImg'])) {
         $srcProdArray['dopSrcImg'] = array_values(array_unique($srcProdArray['dopSrcImg']));
     }
     $nameImArray = array('title', 's_title', $photoIdArray);
-    $brendName   = "jhiva_images/";
+    $brendName   = "jhiva_images/";    
+  
     cropAndWriteImageBegin($srcProdArray, $commodityID, $nameImArray,
         $brendName, $idBrand);
 }
+
 

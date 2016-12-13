@@ -1,43 +1,5 @@
 
-        <div class="wrap-color gift-slider_home col-md-12 col-sm-12 col-xs-12 clearfix">
-            <div class="col-md-12 col-sm-12 col-xs-12" id="gift-slider" dir='rtl'>
-                <div>
-                    <img src="/templates/shop/image/baner_comment_slider/shok1275х375.jpg" alt="shock">
-                </div>
-                <div>
-                    <img src="/templates/shop/image/baner_comment_slider/vugruzka-bazu1275х375.jpg" alt="shock">
-                </div>
-                <div>
-                    <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="shock">
-                </div>
-                <!--<div>
-                    <a href="/akcionnie-predlojeniya/#150gr/">
-                        <img src="/templates/shop/image/baner_comment_slider/150grn1275х375.jpg" alt="main-page-banner-4">
-                    </a>
-                    <button type="submit" id="click-regestration" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
-                </div>
-                <div>
-                    <a href="/akcionnie-predlojeniya/#discount/">
-                        <img src="/templates/shop/image/baner_comment_slider/vigruzka1275х375.jpg" alt="main-page-banner-1">
-                    </a>
-                </div>-->
-                <div>
-                    <a href="/akcionnie-predlojeniya/">
-                        <img src="/templates/shop/image/baner_comment_slider/pressent_order1275х375.jpg" alt="main-page-banner-2">
-                    </a>
-                    <button type="submit" id="click-podarok" class="btn btn-lg btn-block btn-primary">Оформить заказ</button>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12 banner-special" style="padding: 0 0px;">
-                <a href="/organizer-sp/">
-                    <img style="width: 100%;" src="templates/shop/image/baner_comment_slider/banner-special.png">
-                </a>
-            </div>
-        </div>
-        <!--wrap-color-->
-
-        <div class="clear"></div>
+    <div class="clear"></div>
 
     <div class="main-container commodities">
         <div class="main-content row main-width commodities">
