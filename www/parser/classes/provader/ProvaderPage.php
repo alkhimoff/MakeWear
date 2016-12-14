@@ -63,10 +63,15 @@ class ProvaderPage implements iProvaderPage
             'headers' => ['User-Agent' => 'Shacal makewear.com.ua']
         ]);
         try {
-            $response = $client->request('GET', $this->url);
+            $response = $client->request('GET', $this->url.'bb');
+            echo 'try';
+            var_dump($response); die(); 
         } catch (RequestException $e) {
+            echo 'catch';
             if ($e->hasResponse()) {
                 $response = $e->getResponse();
+                 echo 'catch2';
+                var_dump($response); die();
             }
         }
         $this->pageBody   = $response->getBody()->getContents();
