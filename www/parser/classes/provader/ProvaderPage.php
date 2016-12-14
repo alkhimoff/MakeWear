@@ -67,7 +67,7 @@ class ProvaderPage implements iProvaderPage
             echo 'try';
             var_dump($response); die(); 
         } catch (RequestException $e) {
-            echo 'catch';
+            var_dump('-catch ' . $e);
             if ($e->hasResponse()) {
                 $response = $e->getResponse();
                  echo 'catch2';
