@@ -19,7 +19,7 @@ class Shaarm extends AbstractBrand {
              $this->delDuplicateFromString($this->sizesProd);
              $this->delDuplicateFromString($this->colorsProd);
              $this->setPriceOpt(-15); // $_SESSION['per']
-             $this->changeDescription();
+             $this->changeDesc();
         }catch(BrandException $ex){
             return null;
         }
@@ -70,11 +70,11 @@ class Shaarm extends AbstractBrand {
     /**
     * Change Description
     */ 
-    protected function changeDescription($searchArray=[]){
+    protected function changeDesc(){
         $searchArray = array("стиль:", "сезон:", "размеры:", "коллекция:", "размер упаковки:", 
             "состав:", "тип ткани:","обхват груди", "обхват талии", "обхват бедер",
             "длина изделия:", "вес изделия:", "цвета:", "описание:");
-        parent::changeDescription($searchArray);       
+        parent::changeDescription($searchArray, []);       
     }
 /*
     protected static function setBrandName() {

@@ -112,12 +112,14 @@ abstract class AbstractBrand {
         }else{
             $arrayDesc = explode(';', $this->descProd);
         }   
-        $this->descProd = "";
+        $tmp = "";
         if (isset($arrayDesc)) {
             $arrayDesc   = deleteEmptyArrDescValues($arrayDesc);
             foreach ($arrayDesc as $value) {
-                $this->descProd .= findStringDesc($value, $searchArray, $this->descProd);
-            }   
+                $tmp = findStringDesc($value, $searchArray, $tmp);
+                                    //$this->descProd .= findStringDesc($value, $searchArray, $this->descProd);
+            }
+            $this->descProd = $tmp;
         }
     }
     
@@ -135,6 +137,10 @@ abstract class AbstractBrand {
     */
     public static function getBrandName(){
         return static::$brandName;
+    }
+    
+    public function getPrice($selector){
+        return checkEmptyOrChangeSelector($selector, $this->saw, 'price - цена');;
     }
 
     /**

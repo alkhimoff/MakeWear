@@ -35,7 +35,7 @@ class Dolcedonna extends AbstractBrand {
              $this->setName();
              $this->setCodProd();
              $this->setFromJson();
-
+             $this->changePrice();
              $this->setDescription();
             // $this->changeDescription();
         }catch(BrandException $e){
@@ -96,7 +96,20 @@ class Dolcedonna extends AbstractBrand {
         }
         $this->colorsProd = implode(';', array_unique($colorsTmp));//?
     }    
-
+    
+    protected function changePrice(){
+        if($this->price == 0){
+            $existProd = FALSE;
+            $tmp = $this->getPrice('.product-price-big');
+            if($tmp != NULL){
+                $existProd = TRUE;
+                $this->price = $tmp[0];
+                     
+                $proc = ceil($this->price / 100 * -12); // -12%
+                $this->price2 = ceil($this->price + $proc);               
+            }
+        }
+    }
     
     protected function setDescription(){
         $arrDesc = $this->getDescription('.seo-text > p');
